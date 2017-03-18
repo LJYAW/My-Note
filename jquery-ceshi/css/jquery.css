@@ -1,0 +1,53 @@
+html,body,ul,li{
+	margin:0;
+	padding:0;
+}
+.box{
+	width:100px;
+	height:100px;
+	/*background: red;*/
+	display:none;
+}
+/*.background{
+	background-color:pink;
+}*/
+ul{
+	list-style: none;
+}
+ul li{
+	float:left;
+	/*padding:5px 10px;*/
+}
+.clearfix::after{
+	clear:both;
+	display: block;
+	content:"";
+	height:0;
+}
+.tab{
+	width:300px;
+
+}
+.tab ul{
+	list-style: none;
+}
+.tab ul li{
+	cursor:pointer;
+	text-align: center;
+	line-height: 30px;
+	height:30px;
+	width:98px;
+	float:left;
+	border:1px solid #000;
+}
+.tab div{
+	width:298px;
+	height:100px;
+	border:1px solid #000;
+}
+.background{
+	background: red;
+}
+.hide{
+	display: none;
+}
