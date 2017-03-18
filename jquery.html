@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet"  type="text/css" href="css/jquery.css">
+	<script type="text/javascript" src="./js/jquery-3.2.0.min.js"></script>
+</head>
+<body>
+	<div class="tab">
+		<ul class="tabbox clearfix">
+			<li>1</li>
+			<li>2</li>
+			<li>3</li>
+		</ul>
+		<div class="content">
+			<div>11111</div>
+			<div class="hide">22222</div>
+			<div class="hide">33333</div>
+		</div>
+	</div>
+	<!-- <div class="box background"></div>
+	<ul class="nav clearfix">
+		<li>热门</li>
+		<li>24小时</li>
+		<li>糗百</li>
+		<li>热门</li>
+		<li>热门</li>
+		<li>热门</li>
+	</ul> -->
+	<!-- <p><button class="show">显示</button><button class="hide">隐藏</button><button class="point">点击</button></p> -->
+	<script type="text/javascript">
+		$(function(){
+			$(".tabbox li").click(function(){
+				$(this).addClass("background").siblings().removeClass("background");
+			});
+			$(".tabbox li").click(function(){
+				var index=$(this).index();
+				$(".content div").eq(index).removeClass("hide").siblings().addClass("hide");
+			});
+
+		});
+		// var tabLi=$(".tabbox li")
+		// tabLi.click(function(){
+		// 	$(this).addClass("background")
+		// })
+		// $(function(){
+		// 	$(".show").click(function(){
+		//  	$(".box").show("speed");
+		//  	 alert(111);
+		//  	 console.log(222);
+		//  });
+		// 	$(".hide").click(function(){
+		//  	$(".box").hide("speed");
+		//  	alert(111);
+		//  	console.log(222);
+		//  });
+		// 	$(".point").click(function(){
+		// 	$(".box").css("background","blue");
+		//  });
+			// $(".box").addClass("background")
+			 
+			//  if($(".box").hasClass("background")){
+			//  	alert(111);
+			//  }else{
+			//  	alert(222);
+			// }
+			// var nav_li=$(".nav li")
+			// nav_li.click(function(){
+			// 	 $(this).css("background","red");
+			// 	$(this).addClass("background").siblings().removeClass("background");
+			// })//
+	
+	</script>
+</body>
+</html>
