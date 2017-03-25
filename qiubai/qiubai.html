@@ -1,0 +1,1085 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	html,body,ul,li,h2{
+		margin:0;
+		padding:0;
+	}
+	.clearfix::after{
+		display:block;
+		height:0;
+		content:"";
+		clear:both;
+	}
+	.top{
+		height:82px;
+		background-color:#ffd52b;
+	}
+	.top img{
+		width:207px;
+		height:79px;
+		float:left;
+	}
+	.top ul{
+		float:left;
+	}
+	.top ul li{
+		float:left;
+		list-style: none;
+		height:78px;
+		margin-left:1px;
+	}
+	.top ul li a{
+		margin-right: 1px;
+		
+    	padding: 0 13px;
+    	line-height: 82px;
+    	font-size: 16.5px; 
+    	color: #7A4624;
+    	height: 78px;
+    	/*border-bottom: 4px solid #ffd52b;*/
+    	font-family: "Microsoft YaHei",Arial,"Hiragino Sans GB";
+    	text-decoration: none;
+
+	}
+	.content{
+		width:960px;
+		height:82px;
+		margin:0 auto;
+	}
+	.bottoms{
+		width:960px;
+		margin:0 auto;
+	}
+	.mall {
+		margin-left: 175px;
+		float:right;
+	}
+	.center{
+		background-color:#f7f7f7;
+	
+	}
+	.left a{
+		text-decoration: none;
+		color:#333;
+		font-family:PingHei,"PingFang SC","Helvetica Neue",Helvetica,STHeitiSC-Light,"Microsoft YaHei",Arial,sans-serif;
+	}
+	.main{
+		width:960px;
+		margin:0 auto;
+		padding-top: 20px;
+	}
+	.left{
+		float:left;
+		width:660px;
+	}
+	.one{
+		width:640px;
+		background-color:#fff;
+		/*float:left;*/
+	}
+	.car{
+		float:left;
+	}
+	.car img{
+		width:35px;
+		height:35px;
+		border-radius:100%;
+		margin-top: 20px;
+		margin-left: 20px;
+	}
+	.car h2{
+		display: inline;
+		font-size: 85%;
+    	font-weight: 400;
+    	font-family: PingHei,"PingFang SC","Helvetica Neue",Helvetica,STHeitiSC-Light,"Microsoft YaHei",Arial,sans-serif;
+    	color: #9b8878;
+    	vertical-align:12px;
+	}
+	.women img{
+		width: 34px;
+    	height: 17px;
+    	vertical-align: middle;
+    	margin-top: 30px;
+    	margin-left: 10px;
+    	position:relative;
+	}
+	.man img{
+		width: 34px;
+    	height: 17px;
+    	vertical-align: middle;
+    	margin-top: 30px;
+    	margin-left: 10px;
+    	position:relative;
+	}
+	.age h3{
+		font-size: 13px;
+		position:absolute;
+		left:334px;
+		top:120px;
+		color:white;
+	}
+	.pile p{
+		padding-left:20px;
+		padding-right:20px;
+		padding-top:10px;
+		font-family: PingHei,"PingFang SC","Helvetica Neue",Helvetica,STHeitiSC-Light,"Microsoft YaHei",Arial,sans-serif;
+		font-weight: 400;
+		line-height: 1.8;
+	}
+	.first{
+		font-family:PingHei,"PingFang SC","Helvetica Neue",Helvetica,STHeitiSC-Light,"Microsoft YaHei",Arial,sans-serif; 
+		font-size: 12px;
+		color: #999;
+		margin:20px 0 20px 20px;
+	}
+	.point{
+		vertical-align:3px;
+	}
+	.numbers{
+		margin-top:20px;
+	}
+	.numbers a{
+		text-decoration: none;
+		color: #999;
+	}
+	.leftimage{
+		margin-left:26px;
+		float:left;
+	}
+	.leftimage img{
+		width:30px;
+		height:30px;
+		padding-right:13px;
+	}
+	.rightimage{
+		float:right;
+		margin-right: 20px;
+	}
+	.rightimage img{
+		padding-left: 5px;
+	}
+	.second{
+		height:35px;
+	}
+	.third{
+		margin-bottom:20px;
+		padding-bottom: 20px;
+	}
+	.third img{
+		width:16px;
+		height:15px;
+		margin-top:15px;
+		margin-left:20px;
+	}
+	.name{
+		 font-size: 13px;
+		color: #9B8878;
+    	vertical-align: 4px;
+	}
+	.theme{
+		font-family:PingHei,"PingFang SC","Helvetica Neue",Helvetica,STHeitiSC-Light,"Microsoft YaHei",Arial,sans-serif; 
+		color: #404040;
+		vertical-align: 5px;
+		font-size: 14px;
+	}
+	.theme p{
+		padding-left: 20px;
+		margin-top: 7px;
+		line-height: 12.8px;
+	}
+	.le{
+		padding-left: 20px;
+	}
+	.zan{
+		display:inline;
+	}
+	.zan a{
+		text-decoration: none;
+	}
+	.zan img{
+		width:21px;
+		height:21px;
+		margin:0;
+	}
+	.zannumbers{
+		font-family:PingHei,"PingFang SC","Helvetica Neue",Helvetica,STHeitiSC-Light,"Microsoft YaHei",Arial,sans-serif; 
+		color: #b4b4b4;
+		font-size: 12px;
+		vertical-align: 6px;
+	}
+	.two{
+		width:640px;
+		background-color:#fff;
+	}
+	.three{
+		width:640px;
+		background-color:#fff;
+	}
+	.four{
+		width:640px;
+		background-color:#fff;
+	}
+	.five{
+		width:640px;
+		background-color:#fff;
+	}
+	.six{
+		width:640px;
+		background-color:#fff;
+	}
+	.seven{
+		width:640px;
+		background-color:#fff;
+	}
+	.car{
+		float:left;
+	}
+	.car a{
+		text-decoration: none;
+	}
+	.car img{
+		width:35px;
+		height:35px;
+		border-radius:100%;
+		margin-top: 20px;
+		margin-left: 20px;
+	}
+	.car h2{
+		display: inline;
+		font-size: 85%;
+    	font-weight: 400;
+    	font-family: PingHei,"PingFang SC","Helvetica Neue",Helvetica,STHeitiSC-Light,"Microsoft YaHei",Arial,sans-serif;
+    	color: #9b8878;
+    	vertical-align:12px;
+	}
+	.women img{
+		width: 35px;
+    	height: 17px;
+    	vertical-align: middle;
+    	margin-top: 30px;
+    	margin-left: 10px;
+    	position:relative;
+	}
+	/*.women-r img{
+		width: 35px;
+    	height: 17px;
+    	vertical-align: middle;
+    	margin-top: 30px;
+    	margin-left: 10px;
+    	position:relative;
+	}*/
+	.age-o h3{
+		font-size: 13px;
+		position:absolute;
+		left:333px;
+		top:443px;
+		color:white;
+	}
+	.age-t h3{
+		font-size: 13px;
+		position:absolute;
+		left:332px;
+		top:906px;
+		color:white;
+	}
+	.age-r h3{
+		font-size: 13px;
+		position:absolute;
+		left:346px;
+		top:1313px;
+		color:white;
+	}
+	.age-u h3{
+		font-size: 13px;
+		position:absolute;
+		left:305px;
+		top:1636px;
+		color:white;
+	}
+	.age-v h3{
+		font-size: 13px;
+		position:absolute;
+		left:319px;
+		top:1960px;
+		color:white;
+	}
+	.age-i h3{
+		font-size: 13px;
+		position:absolute;
+		left:306px;
+		top:2283px;
+		color:white;
+	}
+	.pile-o p{
+		padding-left:20px;
+		padding-right:20px;
+		padding-top:10px;
+		font-family: PingHei,"PingFang SC","Helvetica Neue",Helvetica,STHeitiSC-Light,"Microsoft YaHei",Arial,sans-serif;
+		font-weight: 400;
+		line-height: 1.8;
+	}
+	.pile-t p{
+		padding-left:20px;
+		padding-right:20px;
+		padding-top:10px;
+		font-family: PingHei,"PingFang SC","Helvetica Neue",Helvetica,STHeitiSC-Light,"Microsoft YaHei",Arial,sans-serif;
+		font-weight: 400;
+		line-height: 1.8;
+		/*margin-bottom:-25px;*/
+	}
+	.pile-r p{
+		padding-left:20px;
+		padding-right:20px;
+		padding-top:10px;
+		font-family: PingHei,"PingFang SC","Helvetica Neue",Helvetica,STHeitiSC-Light,"Microsoft YaHei",Arial,sans-serif;
+		font-weight: 400;
+		line-height: 1.8;
+		/*margin-bottom:-25px;*/
+	}
+	.right{
+		float:right;
+		width:300px;
+		margin-right:0px;
+	}
+	.rightfirst img{
+		width:300px;
+		height:250px;
+	}
+	.rightsecond{
+		margin-top:12px;
+	}
+	.rightsixth{
+		margin-top:12px;
+	}
+	.rightseventh{
+		margin-top:12px;
+		margin-bottom:20px;
+	}
+	.rightsixth img{
+		width:300px;
+		height:250px;
+	}
+	.rightseventh img{
+		width:300px;
+		height:250px;
+	}
+	.rightthird{
+		width:300px;
+		background-color:white;
+	}
+	.rightfourth a{
+		color:#333;
+	}
+	.rightfourth{
+		width:300px;
+		background-color:white;
+	}
+	.rightfifth{
+		width:300px;
+		background-color:white;
+	}
+	.more{
+		font-family: PingHei,"PingFang SC","Helvetica Neue",Helvetica,STHeitiSC-Light,"Microsoft YaHei",Arial,sans-serif;
+		float:right;
+		font-size:13px;
+		color:#9b8878;
+		font-weight: 400;
+	}
+	.rightthird h3{
+		padding-top: 15px;
+    	padding-bottom: 10px;
+  		margin-left: 15px;
+    	width: 270px;
+    	border-bottom: 1px solid #f0f0f0;
+    	font-size: 16px;
+    	color:#333;
+    	font-family: PingHei,"PingFang SC","Helvetica Neue",Helvetica,STHeitiSC-Light,"Microsoft YaHei",Arial,sans-serif;
+	}
+	.rightfourth h3{
+		padding-top: 15px;
+    	padding-bottom: 10px;
+  		margin-left: 15px;
+    	width: 270px;
+    	border-bottom: 1px solid #f0f0f0;
+    	font-size: 16px;
+    	color:#333;
+    	font-family: PingHei,"PingFang SC","Helvetica Neue",Helvetica,STHeitiSC-Light,"Microsoft YaHei",Arial,sans-serif;
+	}
+	.rightfifth h3{
+		padding-top: 15px;
+    	padding-bottom: 10px;
+  		margin-left: 15px;
+    	width: 270px;
+    	border-bottom: 1px solid #f0f0f0;
+    	font-size: 16px;
+    	color:#333;
+    	font-family: PingHei,"PingFang SC","Helvetica Neue",Helvetica,STHeitiSC-Light,"Microsoft YaHei",Arial,sans-serif;
+	}
+	.rightfifth a{
+		text-decoration: none;
+	}
+	.rightthird img{
+		padding-top: 10px;
+		padding-left: 30px;
+	}
+	.rightthird p{
+		text-align: center;
+		font-weight: 400;
+		font-family: PingHei,"PingFang SC","Helvetica Neue",Helvetica,STHeitiSC-Light,"Microsoft YaHei",Arial,sans-serif;
+    	font-size: 14px;
+    	color: #333;
+    	padding-bottom:20px;
+	}
+	.type{
+		width:300px;
+	}
+	.type img{
+		width:129px;
+		height:100px;
+	}
+	.type p{
+		text-align: center;
+		font-family: PingHei,"PingFang SC","Helvetica Neue",Helvetica,STHeitiSC-Light,"Microsoft YaHei",Arial,sans-serif;
+		font-size:12px;
+		margin-top:5px;
+		margin-bottom: 15px;
+	}
+	.types{
+		padding-bottom: 10px;
+	}
+	.types p{
+		font-family: PingHei,"PingFang SC","Helvetica Neue",Helvetica,STHeitiSC-Light,"Microsoft YaHei",Arial,sans-serif;
+		font-size:13px;
+		margin-left:15px;
+		color: #6a5c4e;
+	}
+	.types a{
+		color: #6a5c4e;
+	}
+	.typeleft{
+		float:left;
+		width:129px;
+		margin-left:15px;
+	}
+	.typeright{
+		float:right;
+		width:129px;
+		margin-right:15px;
+	}
+	.typeleft a{
+		text-decoration: none;
+	}
+	.typeright a{
+		text-decoration: none;
+	}
+	.page{
+		padding-top:78px;
+	}
+	.page li{
+		display: inline;
+	}
+	.pagenumbers {
+		background-color: #ffaa14;
+		padding:10px 16px;
+		color:#fff;
+		font-size: 13px;
+		font-family: PingHei,"PingFang SC","Helvetica Neue",Helvetica,STHeitiSC-Light,"Microsoft YaHei",Arial,sans-serif;
+	}
+	.pagenum {
+		padding:10px 16px;
+		color:#333;
+		font-size: 13px;
+		font-family: PingHei,"PingFang SC","Helvetica Neue",Helvetica,STHeitiSC-Light,"Microsoft YaHei",Arial,sans-serif;
+		background-color: #fff;
+	}
+	.pagenums{
+		background-color: #ffaa14;
+		padding:10px 16px;
+		color:#fff;
+		font-size: 15px;
+		font-family: PingHei,"PingFang SC","Helvetica Neue",Helvetica,STHeitiSC-Light,"Microsoft YaHei",Arial,sans-serif;
+	}
+	.dian{
+		padding:10px 4px;
+		color:#666;
+		font-family: PingHei,"PingFang SC","Helvetica Neue",Helvetica,STHeitiSC-Light,"Microsoft YaHei",Arial,sans-serif;
+	}
+	.bottoms-o{
+		width:960px;
+		margin:0 auto;
+	}
+	.bottoms-o img{
+		width:728px;
+		height:90px;
+		margin-top:20px;
+		margin-left:110px;
+		margin-bottom:20px;
+	}
+	.navs{
+		width:960px;
+		margin:0 auto;
+		border-bottom:1px solid #efefef;
+		
+	}
+	.navs h3{
+		font-family: PingHei,"PingFang SC","Helvetica Neue",Helvetica,STHeitiSC-Light,"Microsoft YaHei",Arial,sans-serif;
+		font-weight: 400;
+		color:#333;
+	}
+	.navs p{
+		font-family: PingHei,"PingFang SC","Helvetica Neue",Helvetica,STHeitiSC-Light,"Microsoft YaHei",Arial,sans-serif;
+		font-weight: 400;
+		font-size: 14px;
+		margin-top:-5px;
+	}
+	.navs a{
+		text-decoration: none;
+		color:#666;
+	}
+	.navs-o{
+		width:192px;
+		margin-right:0;
+		float:left;
+	}
+	.navs-t{
+		width:192px;
+		margin-right:0;
+		float:left;
+	}
+	.navs-r{
+		width:192px;
+		margin-right:0;
+		float:left;
+	}
+	.navs-i{
+		width:192px;
+		margin-right:0;
+		float:left;
+	}
+	.navs-v{
+		width:192px;
+		margin-right:0;
+		float:left;
+	}
+	.bottomrs-o{
+		width:960px;
+		margin:0 auto;
+		text-align: center;
+		margin-top:15px;
+		margin-bottom:15px;
+	}
+	.bottomra-o span{
+		margin-right:20px;
+	}
+	.bottomrs-o p{
+		display: inline;
+		font-family: PingHei,"PingFang SC","Helvetica Neue",Helvetica,STHeitiSC-Light,"Microsoft YaHei",Arial,sans-serif;
+		font-weight: 400;
+		font-size: 14px;
+		color:#333;
+		padding-right:15px;
+		margin-bottom:20px;
+		line-height: 25.8px;
+	}
+	.bottomrs-o a{
+		text-decoration: none;
+		color:#333;
+	}
+	.mit {
+		border-bottom:4px solid #7a4624;
+		background: #ffe36f;
+	}
+	.mat:hover{
+		background: #ffe36f;
+		border-bottom:4px solid #ffe36f;
+
+	}
+	/*.mit a{
+		border-bottom: 4px solid #ffd52b;
+
+	}*/
+	</style>
+</head>
+<body >
+	<div class="top">
+		<div class="content clearfix">
+			<img src="./image/logo2016.png" alt="">
+			<ul class="clearfix">
+				<li class="mit"><a href="">热门</a></li>
+				<li class="mat"><a href="">24小时</a></li>
+				<li class="mat"><a href="">热图</a></li>
+				<li class="mat"><a href="">文字</a></li>
+				<li class="mat"><a href="">穿越</a></li>
+				<li class="mat"><a href="">糗图</a></li>
+				<li class="mat"><a href="">新鲜</a></li>
+				<li class="mat"><a href="">投稿</a></li>
+				<div class="mall"><li><a href="">登录</a></li></div>
+			</ul>
+		</div>
+	</div>
+	<div class="center">
+		<div class="main clearfix">
+			<div class="left">
+				<div class="one">
+					<div class="car">
+						<a href=""><img src="./image/o.JPEG" alt="白玉无尘"> <h2>白玉无尘</h2></a>
+					</div>
+					<div class="women">
+						<img src="./image/women.png" alt="">
+						<div class="age"><h3>21</h3></div>
+					</div>
+					<div class="pile">
+						<a href=""><p>老爸最拿手的一道菜是辣子鸡，，老妈最爱啃的是鸡爪，每一次买鸡炒辣子鸡的时候，老爸都会多买几个鸡爪放进去，，老妈总抱怨鸡爪不够啃，，渐渐地，不顾我的反对和抗议，我们家的炒辣子鸡，就变成了炒辣子凤爪。</p></a>
+					</div>
+					<div class="first">
+						<span class="numbers">
+							<span class="number">7682 好笑</span>
+							<span class="point">.</span>
+							<a href=""><span>128 评论</span></a>
+						</span>
+					</div>
+					<div class="second">
+						<div class="leftimage">
+							<a href=""><img src="./image/smile.png" alt=""></a>
+							<a href=""><img src="./image/sad.png" alt=""></a>
+							<a href=""><img src="./image/message.png" alt=""></a>
+						</div>
+						<div class="rightimage">
+							<a href=""><img src="./image/weixin.png" alt=""></a>
+							<a href=""><img src="./image/QQ.png" alt=""></a>
+							<a href=""><img src="./image/space.png" alt=""></a>
+							<a href=""><img src="./image/blog.png" alt=""></a>
+						</div>
+					</div>
+					<div class="third">
+						 <a><img src="./image/god.png" alt=""></a>
+						 <a href=""><span class="name">隽葆坊</span></a>
+						 <a href="">
+						 	<span class="theme"><span>:</span>
+							<span>亲，能退货吗？</span>
+							</span></a>
+							<a><div class="zan">
+								<a href="">
+									<img src="./image/zan.png" alt=""><span class="zannumbers">2398</span>
+								</a>
+							</div></a>
+					</div>
+				</div>
+				<div class="two">
+					<div class="car">
+						<a href=""><img src="./image/t.JPEG" alt="白玉无尘"> <h2>清风拂面</h2></a>
+					</div>
+					<div class="women">
+						<img src="./image/women.png" alt="">
+						<div class="age-o"><h3>32</h3></div>
+					</div>
+					<div class="pile-o">
+						<a href=""><p>楼主东北人，深圳回来一个同学，楼主请吃饭，他带来一个深圳本地朋友。这哥们真牛，桌上有一盘爆炒丝螺，他吃的时候夹一个说：公的。扔掉。又夹一个：公的。扔掉。直到认为不是公的才吃.
+						<br>
+						借着上厕所的机会我就问朋友:你这个朋友真牛，吃个丝螺都能分出公母，怎么分的？
+						<br>
+						朋友:他说的是   空的……</p></a>
+					</div>
+					<div class="first">
+						<span class="numbers">
+							<span class="number">681 好笑</span>
+							<span class="point">.</span>
+							<a href=""><span>320 评论</span></a>
+						</span>
+					</div>
+					<div class="second">
+						<div class="leftimage">
+							<a href=""><img src="./image/smile.png" alt=""></a>
+							<a href=""><img src="./image/sad.png" alt=""></a>
+							<a href=""><img src="./image/message.png" alt=""></a>
+						</div>
+						<div class="rightimage">
+							<a href=""><img src="./image/weixin.png" alt=""></a>
+							<a href=""><img src="./image/QQ.png" alt=""></a>
+							<a href=""><img src="./image/space.png" alt=""></a>
+							<a href=""><img src="./image/blog.png" alt=""></a>
+						</div>
+					</div>
+					<div class="third">
+						 <a><img src="./image/god.png" alt=""></a>
+						 <a href=""><span class="name">土摇之王</span></a>
+						 <a href="">
+						 	<span class="theme">
+						 		<span>:</span>
+								<span>当你去银行取钱时都是连号，说明物价要涨了。当平时爱说话的同学突然不说话了，
+								 <p>说明老师来了。当小县城出现了很多美女，说明外面扫黄了。当所有人吃完饭不说话了，说明该你</p>
+								 <p>结账了。当中了500W不知道怎么花，说明梦该醒了。当你看到我的评论时，说明缘分已到该点赞</p>
+								 <span class="le">了。</span>
+								 </span>
+							</span></a>
+							<a><div class="zan">
+								<a href="">
+									<img src="./image/zan.png" alt=""><span class="zannumbers">1861</span>
+								</a>
+							</div></a>
+					</div>
+				</div>
+				<div class="three">
+					<div class="car">
+						<a href=""><img src="./image/r.JPEG" alt="白玉无尘"> <h2>星夜雨农</h2></a>
+					</div>
+					<div class="man">
+						<img src="./image/man.png" alt="">
+						<div class="age-t"><h3>24</h3></div>
+					</div>
+					<div class="pile-t">
+						<a href=""><p>早些年，跟女朋友吵架，我去她小区等她，她还是一言不发，这时门卫大爷说：姑凉，你知道吗？你男朋友昨晚一两点就在这里等，我叫他上去找你吧，他说，我就在这等着吧，，吵着她睡觉就不好了，她最近没休息好……</br>
+						女友眼圈红红的说，你个傻瓜，你不冷啊……然后就原谅我了……</br>
+						其实我昨晚打游戏去了，刚刚才来，然后给了门卫大爷两百块，叫大爷说这些话的……</p></a>
+					</div>
+					<div class="first">
+						<span class="numbers">
+							<span class="number">762 好笑</span>
+							<span class="point">.</span>
+							<a href=""><span>96 评论</span></a>
+						</span>
+					</div>
+					<div class="second">
+						<div class="leftimage">
+							<a href=""><img src="./image/smile.png" alt=""></a>
+							<a href=""><img src="./image/sad.png" alt=""></a>
+							<a href=""><img src="./image/message.png" alt=""></a>
+						</div>
+						<div class="rightimage">
+							<a href=""><img src="./image/weixin.png" alt=""></a>
+							<a href=""><img src="./image/QQ.png" alt=""></a>
+							<a href=""><img src="./image/space.png" alt=""></a>
+							<a href=""><img src="./image/blog.png" alt=""></a>
+						</div>
+					</div>
+					<div class="third">
+						 <a><img src="./image/god.png" alt=""></a>
+						 <a href=""><span class="name">嗯嗯</span></a>
+						 <a href="">
+						 	<span class="theme"><span>:</span>
+							<span>门卫大爷心里乐坏了</span>
+							</span></a>
+							<a><div class="zan">
+								<a href="">
+									<img src="./image/zan.png" alt=""><span class="zannumbers">2981</span>
+								</a>
+							</div></a>
+					</div>
+				</div>
+				<div class="four">
+					<div class="car">
+						<a href=""><img src="./image/girl.jpg" alt="白玉无尘"> <h2>幸福就知足</h2></a>
+					</div>
+					<div class="women">
+						<img src="./image/women.png" alt="">
+						<div class="age-r"><h3>29</h3></div>
+					</div>
+					<div class="pile-r">
+						<a href=""><p>岳父大人腿不方便每天大部分时间是坐着的，还是可以走的……儿子今年五岁，非常调皮！去他家就到处翻东西，岳父要打他他就说“姥爷你起来打我啊！追上就打我啊！结果那次他没跑掉……”</p></a>
+					</div>
+					<div class="first">
+						<span class="numbers">
+							<span class="number">1098 好笑</span>
+							<span class="point">.</span>
+							<a href=""><span>980 评论</span></a>
+						</span>
+					</div>
+					<div class="second">
+						<div class="leftimage">
+							<a href=""><img src="./image/smile.png" alt=""></a>
+							<a href=""><img src="./image/sad.png" alt=""></a>
+							<a href=""><img src="./image/message.png" alt=""></a>
+						</div>
+						<div class="rightimage">
+							<a href=""><img src="./image/weixin.png" alt=""></a>
+							<a href=""><img src="./image/QQ.png" alt=""></a>
+							<a href=""><img src="./image/space.png" alt=""></a>
+							<a href=""><img src="./image/blog.png" alt=""></a>
+						</div>
+					</div>
+					<div class="third">
+						 <a><img src="./image/god.png" alt=""></a>
+						 <a href=""><span class="name">对方正在输入</span></a>
+						 <a href="">
+						 	<span class="theme"><span>:</span>
+							<span>楼主真贪心</span>
+							</span></a>
+							<a><div class="zan">
+								<a href="">
+									<img src="./image/zan.png" alt=""><span class="zannumbers">2398</span>
+								</a>
+							</div></a>
+					</div>
+				</div>
+				<div class="five">
+					<div class="car">
+						<a href=""><img src="./image/handou.jpg" alt="白玉无尘"> <h2>憨豆</h2></a>
+					</div>
+					<div class="women">
+						<img src="./image/women.png" alt="">
+						<div class="age-u"><h3>35</h3></div>
+					</div>
+					<div class="pile">
+						<a href=""><p>想约女神出来玩，怎奈她妈妈是一个性格特别霸道的人，打电话之前就一直酝酿着“阿姨你好，XXX在家吗？我可以约她出来玩嘛？”，没想到电话打过去，接电话的是她爸爸，记得当时脑抽的说道“叔叔你好，阿姨在家嘛？我想约她出来玩可以吗？”</p></a>
+					</div>
+					<div class="first">
+						<span class="numbers">
+							<span class="number">745 好笑</span>
+							<span class="point">.</span>
+							<a href=""><span>897 评论</span></a>
+						</span>
+					</div>
+					<div class="second">
+						<div class="leftimage">
+							<a href=""><img src="./image/smile.png" alt=""></a>
+							<a href=""><img src="./image/sad.png" alt=""></a>
+							<a href=""><img src="./image/message.png" alt=""></a>
+						</div>
+						<div class="rightimage">
+							<a href=""><img src="./image/weixin.png" alt=""></a>
+							<a href=""><img src="./image/QQ.png" alt=""></a>
+							<a href=""><img src="./image/space.png" alt=""></a>
+							<a href=""><img src="./image/blog.png" alt=""></a>
+						</div>
+					</div>
+					<div class="third">
+						 <a><img src="./image/god.png" alt=""></a>
+						 <a href=""><span class="name">姑娘，借个火</span></a>
+						 <a href="">
+						 	<span class="theme"><span>:</span>
+							<span>美女，你的孩子来电话了，怎么不接啊？</span>
+							</span></a>
+							<a><div class="zan">
+								<a href="">
+									<img src="./image/zan.png" alt=""><span class="zannumbers">6738</span>
+								</a>
+							</div></a>
+					</div>
+				</div>
+				<div class="six">
+					<div class="car">
+						<a href=""><img src="./image/boy.JPEG" alt="白玉无尘"> <h2>范特西</h2></a>
+					</div>
+					<div class="man">
+						<img src="./image/man.png" alt="">
+						<div class="age-v"><h3>45</h3></div>
+					</div>
+					<div class="pile">
+						<a href=""><p>儿子上小学二年级了，今天儿子的老师终于把我叫到学校去了。老师把儿子的作业本往桌子上一摔说:“你以为我看不出来吗？你这已经是第三次帮儿子做作业了！去！面冲墙站着去！”我看着当年对我恩重如山，如今白发苍苍的老师二话没说站了过去！</p></a>
+					</div>
+					<div class="first">
+						<span class="numbers">
+							<span class="number">980 好笑</span>
+							<span class="point">.</span>
+							<a href=""><span>64 评论</span></a>
+						</span>
+					</div>
+					<div class="second">
+						<div class="leftimage">
+							<a href=""><img src="./image/smile.png" alt=""></a>
+							<a href=""><img src="./image/sad.png" alt=""></a>
+							<a href=""><img src="./image/message.png" alt=""></a>
+						</div>
+						<div class="rightimage">
+							<a href=""><img src="./image/weixin.png" alt=""></a>
+							<a href=""><img src="./image/QQ.png" alt=""></a>
+							<a href=""><img src="./image/space.png" alt=""></a>
+							<a href=""><img src="./image/blog.png" alt=""></a>
+						</div>
+					</div>
+					<div class="third">
+						 <a><img src="./image/god.png" alt=""></a>
+						 <a href=""><span class="name">花落自知</span></a>
+						 <a href="">
+						 	<span class="theme"><span>:</span>
+							<span>狗不咬牛尾巴，牛也不会跑几里地。</span>
+							</span></a>
+							<a><div class="zan">
+								<a href="">
+									<img src="./image/zan.png" alt=""><span class="zannumbers">8956</span>
+								</a>
+							</div></a>
+					</div>
+				</div>
+				<div class="seven">
+					<div class="car">
+						<a href=""><img src="./image/girl.jpg" alt="白玉无尘"> <h2>承诺</h2></a>
+					</div>
+					<div class="women">
+						<img src="./image/women.png" alt="">
+						<div class="age-i"><h3>32</h3></div>
+					</div>
+					<div class="pile">
+						<a href=""><p>早餐吃的是鸡蛋   同事拿了两个   说他要吃两个   我问同事：别人都吃一个鸡蛋你干嘛吃俩 ？同事：我怕补偏了   尼玛！补偏了……我在想～自己蛋长偏了吃什么都没用   哼！</p></a>
+					</div>
+					<div class="first">
+						<span class="numbers">
+							<span class="number">589 好笑</span>
+							<span class="point">.</span>
+							<a href=""><span>34 评论</span></a>
+						</span>
+					</div>
+					<div class="second">
+						<div class="leftimage">
+							<a href=""><img src="./image/smile.png" alt=""></a>
+							<a href=""><img src="./image/sad.png" alt=""></a>
+							<a href=""><img src="./image/message.png" alt=""></a>
+						</div>
+						<div class="rightimage">
+							<a href=""><img src="./image/weixin.png" alt=""></a>
+							<a href=""><img src="./image/QQ.png" alt=""></a>
+							<a href=""><img src="./image/space.png" alt=""></a>
+							<a href=""><img src="./image/blog.png" alt=""></a>
+						</div>
+					</div>
+					<div class="third">
+						 <a><img src="./image/god.png" alt=""></a>
+						 <a href=""><span class="name">胖香</span></a>
+						 <a href="">
+						 	<span class="theme"><span>:</span>
+							<span>这孩子。</span>
+							</span></a>
+							<a><div class="zan">
+								<a href="">
+									<img src="./image/zan.png" alt=""><span class="zannumbers">2398</span>
+								</a>
+							</div></a>
+					</div>
+				</div>
+				<div class="page">
+					<span class="pagenumbers">1</span>
+					<a href=""><span class="pagenum">2</span></a>
+					<a href=""><span class="pagenum">3</span></a>
+					<a href=""><span class="pagenum">4</span></a>
+					<a href=""><span class="pagenum">5</span></a>
+					<span class="dian">...</span>
+					<a href=""><span class="pagenum">35</span></a>
+					<a href=""><span class="pagenums">下一页</span></a>
+				</div>
+			</div>	
+			<div class="right">
+				<div class="rightfirst"><a href=""><img src="./image/ado.png" alt=""></a></div>
+				<div class="rightsecond"><a href=""><img src="./image/adt.png" alt=""></a></div>
+				<div class="rightthird">
+					<h3>糗百小提示</h3>
+					<img src="./image/ctrl.png" alt="">
+					<p>按 Ctrl+D 键，把糗事百科加入收藏夹</p>
+				</div>
+				<div class="rightfourth clearfix">
+					<h3>爆笑糗事精选</h3>
+					<div class="type">
+						<div class="typeleft">
+							<a href=""><img src="./image/guess.jpg" alt=""></a>
+							<a href=""><p>猜猜我是谁</p></a>
+							<a href=""><img src="./image/person.jpg" alt=""></a>
+							<a href=""><p>我们既不能因为爱情就</p></a>
+							<a href=""><img src="./image/beau.jpg" alt=""></a>
+							<a href=""><p>你们生活的累不累</p></a>
+							<a href=""><img src="./image/zhangjie.jpg" alt=""></a>
+							<a href=""><p>要画像的可以找我哦</p></a>
+						</div>
+						<div class="typeright">
+							<a href=""><img src="./image/reciuit.jpg" alt=""></a>
+							<a href=""><p>有没有应聘的</p></a>
+							<a href=""><img src="./image/hair.jpg" alt=""></a>
+							<a href=""><p>最刁发型没有之一</p></a>
+							<a href=""><img src="./image/hu.jpg" alt=""></a>
+							<a href=""><p>嗯</p></a>
+							<a href=""><img src="./image/heart.jpg" alt=""></a>
+							<a href=""><p>心意还是有的</p></a>
+						</div>
+					</div>
+				</div>
+				<div class="rightfifth">
+					<h3>热门话题
+						<a class="more" href="">更多></a>
+					</h3>
+					<div class="types">
+						<p><i>#</i><a href="">2017年春节放假时间安排</a><i>#</i></p>
+						<p><i>#</i><a href="">霸气搞笑点的开黑id</a><i>#</i></p>
+						<p><i>#</i><a href="">群主搞笑打油诗</a><i>#</i></p>
+						<p><i>#</i><a href="">新闻联播搞笑开场白</a><i>#</i></p>
+						<p><i>#</i><a href="">数学小笑话20字</a><i>#</i></p>
+						<p><i>#</i><a href="">分享几个经典的逗女孩子开心的笑话</a><i>#</i></p>
+						<p><i>#</i><a href="">38妇女节笑话</a><i>#</i></p>
+						<p><i>#</i><a href="">开心一刻幽默笑话带图片</a><i>#</i></p>
+						<p><i>#</i><a href="">起床了搞笑图片表情</a><i>#</i></p>
+						<p><i>#</i><a href="">多玩搞笑gif</a><i>#</i></p>
+						<p><i>#</i><a href="">群聊搞笑图片笑死人</a><i>#</i></p>
+						<p><i>#</i><a href="">当代雷锋人物有哪些</a><i>#</i></p>
+						<p><i>#</i><a href="">机关三八妇女节活动通知</a><i>#</i></p>
+						<p><i>#</i><a href="">小学生幽默小品剧本</a><i>#</i></p>
+						<p><i>#</i><a href="">段子来了</a><i>#</i></p>
+						<p><i>#</i><a href="">小学生组词笑话</a><i>#</i></p>
+						<p><i>#</i><a href="">小学生搞笑作文老师评语</a><i>#</i></p>
+						<p><i>#</i><a href="">搞笑情侣头像</a><i>#</i></p>
+						<p><i>#</i><a href="">情侣之间的搞笑称呼</a><i>#</i></p>
+						<p><i>#</i><a href="">带字搞笑图片</a><i>#</i></p>
+					</div>
+				</div>
+				<div class="rightsixth">
+					<a href=""><img src="./image/adf.png" alt=""></a>
+				</div>
+				<div class="rightseventh">
+					<a href=""><img src="./image/adi.png" alt=""></a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="bottom">
+		<div class="bottoms">
+			<div class="bottoms-o">
+				<img src="./image/ken.jpg" alt="">
+			</div>
+		</div>
+		<div class="nav">
+			<div class="navs clearfix">
+				<div class="navs-o">
+					<h3>关于</h3>
+					<a href=""><p>关于糗百</p></a>
+					<a href=""><p>加入我们</p></a>
+					<a href=""><p>联系方式</p></a>
+				</div>
+				<div class="navs-t">
+					<h3>帮助</h3>
+					<a href=""><p>在线反馈</p></a>
+					<a href=""><p>用户协议</p></a>
+					<a href=""><p>隐私政策</p></a>
+				</div>
+				<div class="navs-r">
+					<h3>下载</h3>
+					<a href=""><p>Android客户端</p></a>
+					<a href=""><p>iphone客户端</p></a>
+				</div>
+				<div class="navs-i">
+					<h3>关注</h3>
+					<a href=""><p>微信</p></a>
+					<a href=""><p>新浪微博</p></a>
+					<a href=""><p>QQ空间</p></a>
+				</div>
+				<div class="navs-v">
+					<h3>组织</h3>
+					<a href=""><p>网站反馈群</p></a>
+					<a href=""><p>官方粉丝群</p></a>
+				</div>
+			</div>
+		</div>
+		<div class="bottomrs">
+			<div class="bottomrs-o">
+				<p>© Qiushibaike.com 糗事百科版权所有</p>
+				<p>京ICP备14028348号-1</p>
+				<p>京ICP证140448号</p>
+				<p><a href=""><img src="./image/p.png" alt="">京公网安备11010502031601号</a></p>
+				</br>
+				<p><span>友际无限（北京）科技有限公司</span></p>
+				<p><span>互联网违法和不良信息举报电话：010-84872896</span></p>
+				<p><span>邮箱：kefu@qiushibaike.com</span></p>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
