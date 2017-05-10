@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/ch.css" type="text/css">
+	<script type="text/javascript" src="./js/jquery-3.2.0.min.js"></script>
+	<title>作业</title>
+</head>
+<body>
+<div class="main">
+	<div class="head">
+		<!--头部的导航-->
+		<div class="header">
+			<div class="nav-head">
+				<a href="" class="head_a">
+					<img src="./image/header.png" alt="">
+					<img src="./image/logo_text.png" alt="">
+				</a>
+			</div>
+			<div id="nav">
+				<ul class="clearfix navbar navbar-hide">
+					<li><a href="">首页</a></li>
+					<li><a href="">开放平台</a></li>
+					<li><a href="">医生专用</a></li>
+					<li><a href="">全部应用</a></li>
+					<li><a href="">M站</a></li>
+				</ul>
+			</div>
+		</div>
+		<!--隐藏的头部-->
+		<div class="header_next">
+			<div class="bt">
+					<button type="button" class="navbar-toggle">
+						<span class="icon"></span>
+						<span class="icon"></span>
+						<span class="icon"></span>
+					</button>
+			</div>
+			<div class="h_main">
+				<div class="false_img">
+					<img src="./image/false.png" alt="">
+				</div>
+				<div class="hide_ul">
+					<li><a href="">首页</a></li>
+					<li><a href="">开放平台</a></li>
+					<li><a href="">医生专用</a></li>
+					<li><a href="">全部应用</a></li>
+					<li><a href="">M站</a></li>
+				</div>
+			</div>
+		</div>
+		<div class="hide_nav_head">
+			<div class="nav-head">
+					<a href="" class="head_a">
+						<img src="./image/header.png" alt="">
+						<img src="./image/logo_text.png" alt="">
+					</a>
+			</div>
+		</div>
+		<!--头部导航中间的图片信息-->
+		<div class="head-center clearfix">
+			<div  class="h_center_left">
+					<div class="ch_img">
+						<img src="./image/logo_text.png" alt="">
+					</div>
+					<div class="banner">
+						<img src="./image/banne.png" alt="">
+					</div>
+					<div class="ch_app"><a href="">下载春雨APP</a></div>
+					<div class="ch_wei"><a href="">关注公众号，微信小程序</a></div>
+				</div>
+				<div class="h_center_right">
+					<img src="./image/phone.png" alt="">
+				</div>
+			</div>
+		</div>
+	<!--中间部分-->
+	<div class="center">
+		<div class="center_list">
+			<ul class="list clearfix">
+				<li class="left"><img src="./image/center.png" alt=""></li>
+				<li class="right"><img src="./image/center.png" alt=""></li>
+			</ul>
+			<ul class="list clearfix">
+				<li class="left"><img src="./image/center.png" alt=""></li>
+				<li class="right"><img src="./image/center.png" alt=""></li>
+			</ul>
+		</div>
+	</div>
+	<!--春雨动态-->
+	<div class="dynamic">
+		<div class="dy_head">
+			<span>春雨动态</span>
+			<a href="">更多<img src="./image/go.png" alt=""></a>
+		</div>
+		<ul class="dy_news">
+			<li class="clearfix li">
+				<a href=""><img src="./image/news-1.jpg" alt=""></a>
+				<div class="news_content">
+					<p>春雨医生宣布信任CEO 原华润医疗张琨先生出任</p>
+					<span>原华润医疗集团信息管理部总经理张琨先生将出任春雨医生新任CEO，张琨先生在内部信中表示，扛起张瑞的大旗，在移动医疗事业的道路上前行，心怀敬畏，使命必答。</span>
+					<p class="last_p">春雨医生<b>2017-4-17</b></p>
+				</div>
+			</li>
+			<li class="clearfix li li-next">
+				<a href=""><img src="./image/news-1.jpg" alt=""></a>
+				<div class="news_content">
+					<p>春雨医生宣布信任CEO 原华润医疗张琨先生出任</p>
+					<span>原华润医疗集团信息管理部总经理张琨先生将出任春雨医生新任CEO，张琨先生在内部信中表示，扛起张瑞的大旗，在移动医疗事业的道路上前行，心怀敬畏，使命必答。</span>
+					<p class="last_p">春雨医生<b>2017-4-17</b></p>
+				</div>
+			</li>
+		</ul>
+	</div>
+	<!--底部-->
+	<div class="footer">
+		<div class="foot">
+			<div class="f_top"><a href="">下载春雨医生APP</a></div>
+			<div class="f_list">
+				<a href="">M站</a></li>
+				<a href="">关于春雨</a>
+				<a href="">合作机会</a>
+				<a href="">加入春雨</a>
+				<a href="">关于我们</a>
+			</div>
+			<p>Copyright @ 2011-2017 <a href="">北京春雨天下软件有限公司  </a>All Right Reserved</p>
+			<p>京ICP证120150号  京ICP备12050281号-1  京卫网审[2014]第0335号</p>
+			<p><img src="./image/foot.png" alt="">京公网安备  11010802020212</p>
+		</div>
+	</div>
+</div>
+<script>
+	$(".bt>button").click(function(){
+		$(".h_main").show();
+	});
+	$(".false_img img").click(function(){
+		$(".h_main").hide();
+	});
+</script>
+</body>
+</html>
