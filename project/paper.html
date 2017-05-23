@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>模拟试卷</title>
+	<script src="./js/vue.js"></script>
+	<link rel="stylesheet" href="./css/font-awesome.css">
+	<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,initial-scale=1.0,user-scalable=no">
+	<script type="text/javascript" src="./js/jquery-3.2.0.min.js"></script>
+	<script type="text/javascript" src="./js/function.js"></script>
+	<link rel="stylesheet" href="./css/classlist.css">
+</head>
+<body>
+<div id="opp">
+	<div class="app">
+		<p class="app_p"><img src="./image/return.png">模拟试卷<img src="./image/star.png"></p>
+	</div>
+	<div v-for="items in drug.subject">
+		<p class="opp_p" v-for="item in items">{{item}}<img src="./image/more.png" alt=""></p>
+	</div>	
+</div>
+<script>
+	var vm=new Vue({
+		el:"#opp",
+		data:{
+			drug:[],
+			name:"",
+		},
+		mounted:function(){
+			this.s();
+		},
+		methods:{
+			s:function(res){
+				$.ajax({
+					type:"post",
+					dataType:"json",
+					url:"http://toget.cn/index.php/Api/Catalogue/subject",
+					data:{
+
+					},
+					success:function(res){
+						if(res.status=="success"){
+							this.drug=res.data;
+							this.name=this.drug.title.name;
+							console.log(this.drug.subject)
+						}
+					}.bind(this)
+ 
+				})
+			}
+		}
+	})
+</script>
+</body>
+</html>

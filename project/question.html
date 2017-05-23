@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/vue/2.1.3/vue.js"></script>
+    <title>Document</title>
+</head>
+<body>
+<div id="container">
+    <div>
+        <p>题目标题:<span>{{ questionItem.stem }}</span></p>
+        <p v-for="option in questionItem.content"><button>{{ option.sn }}</button><span>{{ option.title }}</span></p>
+    </div>
+    <p><button @click="preQuestion">上一题</button><button @click="nextQuestion">下一题</button></p>
+</div>
+    <script>
+        var question = new Vue({
+            el:"#container",
+            data:{
+                questionShowItem:0,
+                questionItem:{},
+                res:{
+                    "status" : "ok",
+                    "lists"  : [
+                        {
+                            "id" : 1,
+                            "sn" : 1, 		//序号 前端显示序号
+                            "stem" : "谁是好人？",
+                            "type"  : 1,   //1：单选 2：多选
+                            "content"  : [
+                                {
+                                    "sn"    : "A",
+                                    "title" : "我是。",
+                                    "is_true" : true,
+                                },
+                                {
+                                    "sn"    : "B",
+                                    "title" : "你是",
+                                    "is_true" : false,
+                                },
+                                {
+                                    "sn"    : "B",
+                                    "title" : "他是",
+                                    "is_true" : false,
+                                },
+                                {
+                                    "sn"    : "B",
+                                    "title" : "都不是",
+                                    "is_true" : false,
+                                }
+                            ],
+                            "explain" : "",
+                        },
+                        {
+                            "id" : 1,
+                            "sn" : 1, 		//序号 前端显示序号
+                            "stem" : "哈哈哈哈哈哈哈哈？",
+                            "type"  : 1,   //1：单选 2：多选
+                            "content"  : [
+                                {
+                                    "sn"    : "A",
+                                    "title" : "海口。",
+                                    "is_true" : true,
+                                },
+                                {
+                                    "sn"    : "B",
+                                    "title" : "大撒的",
+                                    "is_true" : false,
+                                },
+                                {
+                                    "sn"    : "B",
+                                    "title" : "大师大师",
+                                    "is_true" : false,
+                                },
+                                {
+                                    "sn"    : "B",
+                                    "title" : "大大说",
+                                    "is_true" : false,
+                                }
+                            ],
+                            "explain" : "",
+                        },
+                        {
+                            "id" : 1,
+                            "sn" : 1, 		//序号 前端显示序号
+                            "stem" : "大撒的撒的撒？",
+                            "type"  : 1,   //1：单选 2：多选
+                            "content"  : [
+                                {
+                                    "sn"    : "A",
+                                    "title" : "大撒的。",
+                                    "is_true" : true,
+                                },
+                                {
+                                    "sn"    : "B",
+                                    "title" : "大撒的",
+                                    "is_true" : false,
+                                },
+                                {
+                                    "sn"    : "B",
+                                    "title" : "大师大师",
+                                    "is_true" : false,
+                                },
+                                {
+                                    "sn"    : "B",
+                                    "title" : "dasds 啊",
+                                    "is_true" : false,
+                                }
+                            ],
+                            "explain" : "",
+                        }
+                    ]
+                }
+            },
+            mounted:function(){
+                this.showItemQuestion();
+            },
+            methods:{
+                showItemQuestion:function(){
+                    this.questionItem = this.res.lists[this.questionShowItem]
+                },
+                nextQuestion:function(){
+                    if(this.questionShowItem >=this.res.lists.length-1){
+                        alert("最后一题");
+                        return false;
+                    }else {
+                        this.questionShowItem++;
+                        this.showItemQuestion();
+                    }
+                },
+                preQuestion:function(){
+                    if(this.questionShowItem <= 0){
+                        alert("最前一题");
+                        return false;
+                    }else {
+                        this.questionShowItem--;
+                        this.showItemQuestion();
+                    }
+                }
+            }
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>练习题</title>
+	<link rel="stylesheet" href="./css/font-awesome.css">
+	<link rel="stylesheet" href="./css/practice.css">
+	<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,initial-scale=1.0,user-scalable=no">
+	<script type="text/javascript" src="./js/jquery-3.2.0.min.js"></script>
+	<script src="./js/vue.js"></script>
+	<script src="./js/function.js"></script>
+</head>
+<body>
+	<div id="opp">
+		<div class="back" v-show="shows">	
+		</div>
+		<div class="top">
+			<p class="top_p"><img src="./image/return.png" alt="" @click="onClick"><span>第一章 社会主义的篇章</span></p>
+		</div>
+		<div class="center" >
+			<p class="center_p"><span id="select" v-if="questionItem.question_type==1">单选</span><span id="select" v-if="questionItem.question_type==2">多选</span><span>{{questionItem.sn}}.</span>{{questionItem.stem}}( <i>  </i> )</p>
+			<p class="center_ps" v-for="(items,index) in questionItem.content"><span @click="pak(items)" :class="items.color?'backs':''">{{items.sn}}</span>{{items.title}}</p>
+		</div>
+		<div class="hide" v-show="shows">
+			<p class="hide_p">已经为您记录练习进度</p>
+			<div class="hide_div">
+				<button @click="left">退出</button><button @click="right">继续练习</button>
+			</div>
+		</div>
+		<div class="select" v-show="show">
+			<p><span>试题解析：{{answer[0]}}</span></p>
+			<p>{{questionItem.explain}}</p>
+		</div>
+		<p class="bottoms"><i class="fa fa-arrow-circle-o-left" @click="before"></i><span>23/40</span><i class="fa fa-arrow-circle-o-right" @click="next"></i></p>
+		<p class="bottom" @click="hold" v-show="pake">查看解析</p><p class="bottom" @click="click" v-show="push">收起解析</p>
+	</div>
+<script>
+var id=getQueryStr("id");
+var num=getQueryStr("num");
+	var vm=new Vue({
+		el:"#opp",
+		data:{
+			// b:[false,false,false,false],
+			// renter:false,
+			// renters:false,
+			pake:true,
+			push:false,
+			show:false,
+			shows:false,
+			questionItem:[],
+			questionAll:[],
+			questionshowItem:0,
+			answer:'',
+		},
+		mounted:function(){
+			this.s();
+		},
+		methods:{
+			s:function(){
+				$.ajax({
+					type:"post",
+					dataType:"json",
+					url:"http://toget.cn/index.php/home/question/getquestion",
+					data:{
+						course_id:id,
+						obj_id:id,
+						type:num,
+					},
+					success:function(res){
+						if(res.status=="ok"){
+							this.questionAll=res.lists;
+							this.questionItem=res.lists[this.questionshowItem];
+							console.log(this.questionAll)
+							
+							// console.log(res)
+						}
+					}.bind(this)
+
+			})
+			},
+			hold:function(){
+				for( var i=0;i<this.questionItem.content.length;i++){
+					console.log(this.questionItem.content[i].is_true);
+					if(this.questionItem.content[i].is_true=='true'){
+							this.answer=this.questionItem.content[i].sn;
+							console.log(this.questionItem.content[i].sn);
+					}
+				
+				}
+				console.log(this.answer);
+				this.pake=false;
+				this.push=true;
+				this.show=true;
+			},
+			click:function(){
+				this.pake=true;
+				this.push=false;
+				this.show=false;
+			},
+			before:function(){
+				var a=[false,false,false,false];
+				this.b=a;
+                if(this.questionshowItem==0){
+                    alert("最前一题喽！");
+                   
+                }else {
+                    this.questionshowItem--;  
+                    this.questionItem=this.questionAll[this.questionshowItem];     
+                }   
+                
+			},
+			next:function(){
+                if(this.questionshowItem>=this.questionAll.length-1){
+                    alert("已经没有喽！");
+                    return false;
+                }else {
+                	this.shows=false;
+                    this.questionshowItem++;
+                    this.questionItem=this.questionAll[this.questionshowItem];  
+                }   
+            },
+			onClick:function(){
+				this.show=true;
+				this.shows=true;
+			},
+			left:function(){
+				window.location.href="details.html"
+			},
+			right:function(){
+				this.show=false;
+				this.shows=false;
+			},
+			pak:function(items){
+				if(this.questionItem.question_type==1){
+					for( var i=0;i<this.questionItem.content.length-1;i++){
+					this.questionItem.content[i].color=false;
+				}
+				items.color=true;
+			}else{
+				if(items.color==true){
+					items.color=false;
+				}else{
+					items.color=true;
+				}
+			}			
+			},
+		}
+	})
+</script>
+</body>
+</html>

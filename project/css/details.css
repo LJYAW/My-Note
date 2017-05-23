@@ -1,0 +1,137 @@
+html,body,p,ul,li{
+	margin:0;
+	padding:0;
+	font-size: 62.5%;
+}
+body{
+	background-color: #ddd;
+}
+.app_p{
+	padding-top: 0.5rem;
+	border-bottom: 1px solid #ccc;
+	text-align: center;
+	font-size: 1.5rem;
+	height:3rem;
+	line-height: 3rem;
+	position: relative;
+}
+.app_p img:nth-child(1){
+	display: inline-block;
+	width:1.5rem;
+	height: 1.5rem;
+	position: absolute;
+	left:1rem;
+	top:1.3rem;
+}
+.app_p img:nth-child(2){
+	display: inline-block;
+	width:1.5rem;
+	height: 1.5rem;
+	position: absolute;
+	right:1rem;
+	top:1.3rem;
+}
+.comment{
+	width:100%;
+	overflow: hidden;
+	position:relative;
+}
+.carousel_ul{
+	position: relative;
+	width:100%;
+	height:12rem;
+	list-style: none;
+	margin:0;
+	padding:0;
+}
+.carousel_li{
+	width:100%;
+	height:12rem;
+	float: left;
+}
+.carousel_li img{
+	display:inline-block;
+	width:100%;
+	height:12rem;
+}
+.pointer{
+	position: absolute;
+	left:0;
+	right:0;
+	margin:0 auto;
+	bottom:0rem;
+}
+.pointer p{
+	text-align: center;
+	margin-bottom:0rem;
+}
+.pointer p .owner{
+	background-color:#333;
+}
+.pointer p span{
+	display: inline-block;
+	/*width:1rem;
+	height:1rem;*/
+	background-color: #fff;
+	margin-left:0.6rem;
+	margin-right:0.6rem;
+	border-radius:100%;
+}
+.center ul{
+	list-style: none;
+	height:6rem;
+	border-bottom: 0.7rem solid #ddd;
+}
+.center ul:nth-child(2){
+	border-bottom: 0.7rem solid #ddd;
+}
+.center_li{
+	float: left;
+	width:33%;
+	height:6rem;
+	/*line-height: 4rem;*/
+	text-align: center;
+	border-right:1px solid #ccc;
+}
+.center_ul li:nth-child(3){
+	border-right:none;
+}
+.center_li a{
+	text-decoration: none;
+	display: block;
+	font-size: 1.2rem;
+	color:#333;
+	margin-top:1.5rem;
+}
+i{
+	margin-right:0.5rem;
+	
+}
+.center_li p{
+	margin-top: 0.5rem;
+	font-size: 0.7rem;
+	color:#aaa;
+}
+.clearfix{
+	display: block;
+	height:0;
+	content:"";
+	clear:both;
+}
+.center_p{
+	height:3rem;
+	line-height: 3rem;
+	position: relative;
+}
+.center_p i{
+	margin:0 0.5rem;
+	margin-left: 1.5rem;
+}
+#opp{
+	background-color: #fff;
+}
+.center_p img{
+	position: absolute;
+	right:1rem;
+	top:1rem;
+}
