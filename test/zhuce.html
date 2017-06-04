@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>注册</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+	<script type="text/javascript" src="./js/jquery-3.2.0.min.js"></script>
+	<link rel="stylesheet" href="./css/zhuce.css">
+</head>
+<body>
+	<p class="welcome">欢迎加入豆瓣</p>
+	<div class="content">
+		<input type="text" placeholder="手机号 / 邮箱" name="email">
+		<input type="text" placeholder="密码 (最少6位)" name="password">
+		<input type="text" placeholder="昵称" name="name">
+		<button>提交</button>
+	</div>
+	<p class="point">点击「下一步」代表你已阅读并同意<a href="#">用户使用协议</a></p>
+	<p class="app">下载豆瓣App</p>
+	<script>
+		$(function(){
+			$(".content button").click(function(){
+				$.ajax({
+				type:'post',
+				dataType:'json',
+				url:'http://ztshop.net/index.php/Home/user/reg',
+				data:{
+					email:$("input[name='email']").val(),
+					password:$("input[name='password']").val(),
+					name:$("input[name='name']").val(),
+				},
+				success:function(data){
+					if(data.status=="ok"){
+						window.location.href="login.html"
+					}
+				}
+			});
+		})		
+	});
+
+	</script>
+</body>
+</html>

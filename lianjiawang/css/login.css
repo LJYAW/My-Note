@@ -1,0 +1,34 @@
+html,body,ul,li,p{
+	margin:0;
+	padding:0;
+	font-size: 62.5%;
+}
+.clearfix::after{
+	clear:both;
+	height:0;
+	display: block;
+	content:"";
+}
+.top_li{
+	width:50%;
+	float: left;
+	text-align: center;
+	font-size: 1.5rem;
+	padding:0.5rem 0;
+}
+.top_ul{
+	list-style: none;
+}
+.top_ul li:nth-child(1){
+	border-bottom: .25rem solid #333;
+}
+.top_ul li:nth-child(2){
+	border-bottom: .25rem solid gray;
+}
+.top_p{
+	height:3rem;
+	line-height: 3rem;
+}
+.top_p span:nth-child(2){
+	float: right;
+}

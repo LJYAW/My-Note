@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>饮食</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+	<script type="text/javascript" src="./js/jquery-3.2.0.min.js"></script>
+	<script type="text/javascript" src="./js/swiper-3.4.2.min.js"></script>
+	<script src="./js/function.js"></script>
+	<link rel="stylesheet" href="./css/diet.css">
+	<link rel="stylesheet" href="./css/swiper-3.4.2.min.css">
+</head>
+<body>
+	<div class="top">
+		<div class="top_div">
+			<p><a href="">首页</a><span>饮食<img src="./image/arrow.png" alt=""></span></p>
+		</div>
+	</div>
+	<div class="nav">
+		<ul class="nav_ul clearfix">
+			<li><a  class="own" href="#" rel="1">全部</a></li>
+			<li><a href="#" rel="2">酒水</a></li>
+			<li><a href="#" rel="3">特产待产</a></li>
+			<li><a href="#" rel="4">饮料冲调</a></li>
+			<li><a href="#" rel="5">生鲜食品</a></li>
+		</ul>
+	</div>
+	<div class="navs">
+		<ul class="navs_ul clearfix">
+			<li><a class="active" href="#">综合排序<img src="./image/2.png" alt=""></a></li>
+			<li><a href="#">上架时间<img src="./image/1.png" alt=""></a></li>
+			<li><a href="#">价格<img src="./image/1.png" alt=""></a></li>
+			<li><a href="#">喜欢数<img src="./image/1.png" alt=""></a></li>
+		</ul>
+	</div>
+	<div class="center clearfix">
+		<div class="center_div">
+			<img src="./image/logo.jpg" alt="">
+			<span><img src="./image/heart.png" alt=""></span>
+			<p><a href="#">韩国直邮 绿吕-洗发450ml +180ml</a></p>
+			<p><span>￥69.9</span><s>￥99</s></p>
+		</div>
+		<div class="center_div">
+			<img src="./image/p1.jpg" alt="">
+			<span><img src="./image/heart.png" alt=""></span>
+			<p><a href="#">现货PISN休闲百搭学院风2017夏季衬衫女天丝衬衫女宽松牛仔衬衣外套</a></p>
+			<p><span>￥169</span><s>￥199</s></p>
+		</div>
+		<div class="center_div">
+			<img src="./image/p6.jpg" alt="">
+			<span><img src="./image/heart.png" alt=""></span>
+			<p><a href="#">韩国直邮 绿吕-洗发450ml +180ml</a></p>
+			<p><span>￥69.9</span><s>￥99</s></p>
+		</div>
+		<div class="center_div">
+			<img src="./image/p2.jpg" alt="">
+			<span><img src="./image/heart.png" alt=""></span>
+			<p><a href="#">现货PISN休闲百搭学院风2017夏季衬衫女天丝衬衫女宽松牛仔衬衣外套</a></p>
+			<p><span>￥169</span><s>￥199</s></p>
+		</div>
+		<div class="center_div">
+			<img src="./image/p5.jpg" alt="">
+			<span><img src="./image/heart.png" alt=""></span>
+			<p><a href="#">韩国直邮 绿吕-洗发450ml +180ml</a></p>
+			<p><span>￥69.9</span><s>￥99</s></p>
+		</div>
+		<div class="center_div">
+			<img src="./image/p4.jpg" alt="">
+			<span><img src="./image/heart.png" alt=""></span>
+			<p><a href="#">现货PISN休闲百搭学院风2017夏季衬衫女天丝衬衫女宽松牛仔衬衣外套</a></p>
+			<p><span>￥169</span><s>￥199</s></p>
+		</div>
+	</div>
+	<div class="diet_div">
+		<p>饮食</p>
+	</div>
+<script>
+	$(function(){
+		var pid = getParam('pid');
+		var id  = getParam('id');
+		var order  = getParam('order');
+		var tpl="";
+		$.ajax({
+			url : "http://ztshop.net/index.php/home/goods/lists",
+			data : {"parent_id":pid,"category":id, "order":order},
+			type : "get",
+			dataType : "json",
+			success :function(data) {
+				for(var i=0;i<data.category.length;i++){
+					var tpl="<p><a href='#'>首页</a><span>"+data.category[i].name+"<img src='./image/arrow.png' alt=''></span></p>"
+				}
+				$(".top_div").html(tpl);
+			}
+		});
+		// $('.nav_ul a').click(function() {
+		// 	var id = $(this).attr('rel');
+		// 	window.location.href= "diet.html?pid="+pid+"&id="+id;
+		// 	return false;
+		// });
+	})
+</script>
+</body>
+</html>

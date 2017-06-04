@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<!-- <meta name="author" content="phpstudy.net" />
+	<meta name="copyright" content="www.phpstudy.net" /> -->
+	<title>响应式</title>
+	<style>
+		.test1, .test2{
+			display: none;
+		}
+		@media screen{
+			body{
+				color:#f00;
+			}
+		}
+		@media screen and (min-width:960px){
+			body{
+				background-color: #999;
+			}
+			.test2{
+				display: block;
+			}
+		}
+		@media screen and (min-width:0px) and (max-width:960px){
+			body{
+				background-color:#e0e0e0;
+			}
+			.test1{
+				display: block;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div>媒体查询</div>
+	<div class="test1">显示器分辨率为1024能看到</div>
+	<div class="test2">视口宽度为1024能看到</div>
+</body>
+</html>

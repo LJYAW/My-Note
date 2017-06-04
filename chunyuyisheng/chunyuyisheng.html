@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>春雨医生</title>
+	<link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
+	<link href="css/chunyuyisheng.css" rel="stylesheet" type="text/css" />
+	<script type="text/javascript" src="./js/jquery-3.2.0.min.js"></script>
+</head>
+<body>
+	<div class="comment">
+		<div class="main">
+			<nav class="navbar navbar-inverse navbar-fixed-top">
+				<div class="container">
+					<div class="navbar-header">
+						<a class="navbar-brand" href="#"><img src="./image/logo.png" alt=""><img src="./image/chunyu.png" alt=""></a>
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+							<span class="sr-only">Toggle navigation</span>
+		                    <span class="icon-bar"></span>
+		                    <span class="icon-bar"></span>
+		                    <span class="icon-bar"></span>
+						</button>
+					</div>
+					<div id="navbar" class="collapse navbar-collapse">
+			          <ul class="nav navbar-nav">
+			            <li><a href="#">首页</a></li>
+			            <li><a href="#about">开放平台</a></li>
+			            <li><a href="#contact">医生专用</a></li>
+			            <li><a href="#contact">全部应用</a></li>
+			            <li><a href="#contact">M站</a></li>
+			          </ul>
+			        </div>
+				</div>
+				<div class="list">
+			        	<p><img src="./image/false.png" alt=""></p>
+			        	<ul class="list_ul">
+			        		<li><a href="#">首页</a></li>
+			        		<li><a href="#">开放平台</a></li>
+			        		<li><a href="#">医生专用</a></li>
+			        		<li><a href="#">全部应用</a></li>
+			        		<li><a href="#">M站</a></li>
+			        	</ul>
+			        </div>
+			</nav>
+			<div class="center clearfix">
+				<div  class="center_left">
+					<div class="img">
+						<img src="./image/logo_text.png" alt="">
+					</div>
+					<div class="banner">
+						<img src="./image/banne.png" alt="">
+					</div>
+					<div class="app"><a href="">下载春雨APP</a></div>
+					<div class="weixin"><a href="">关注公众号，微信小程序</a></div>
+				</div>
+				<div class="center_right">
+					<img src="./image/phone.png" alt="">
+				</div>
+			</div>
+		</div>
+		<div class="content">
+			<div class="content_list">
+				<ul class="lists clearfix">
+					<li class="left"><img src="./image/9200.png" alt="">
+						<p>春雨平台迄今聚集9200万+激活用户</p>
+					</li>
+					<li class="right"><img src="./image/50.png" alt="">
+					<p>春雨平台迄今聚集9200万+激活用户</p></li>
+				</ul>
+				<ul class="lists clearfix">
+					<li class="left"><img src="./image/72.png" alt="">
+					<p>春雨平台迄今聚集9200万+激活用户</p></li>
+					<li class="right"><img src="./image/3.png" alt="">
+					<p>春雨平台迄今聚集9200万+激活用户</p></li>
+				</ul>
+			</div>
+		</div>
+		<div class="dy">
+			<div class="dy_head">
+				<span>春雨动态</span>
+				<a href="">更多<img src="./image/go.png" alt=""></a>
+			</div>
+			<ul class="dy_ul">
+				<li class="clearfix li">
+					<a href=""><img src="./image/1.jpg" alt=""></a>
+					<div class="li_div">
+						<p>春雨医生宣布信任CEO 原华润医疗张琨先生出任</p>
+						<span>原华润医疗集团信息管理部总经理张琨先生将出任春雨医生新任CEO，张琨先生在内部信中表示，扛起张瑞的大旗，在移动医疗事业的道路上前行，心怀敬畏，使命必答。</span>
+						<p class="last_p">春雨医生<b>2017-4-17</b></p>
+					</div>
+				</li>
+				<li class="clearfix li li-next">
+					<a href=""><img src="./image/1.jpg" alt=""></a>
+					<div class="li_div">
+						<p>春雨医生宣布信任CEO 原华润医疗张琨先生出任</p>
+						<span>原华润医疗集团信息管理部总经理张琨先生将出任春雨医生新任CEO，张琨先生在内部信中表示，扛起张瑞的大旗，在移动医疗事业的道路上前行，心怀敬畏，使命必答。</span>
+						<p class="last_p">春雨医生<b>2017-4-17</b></p>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<div class="down">
+			<div class="down_div">
+				<div class="f_top"><a href="">下载春雨医生APP</a></div>
+				<div class="f_list">
+					<a href="">M站</a></li>
+					<a href="">关于春雨</a>
+					<a href="">合作机会</a>
+					<a href="">加入春雨</a>
+					<a href="">关于我们</a>
+				</div>
+				<p>Copyright @ 2011-2017 <a href="">北京春雨天下软件有限公司  </a>All Right Reserved</p>
+				<p>京ICP证120150号  京ICP备12050281号-1  京卫网审[2014]第0335号</p>
+				<p><img src="./image/foot.png" alt="">京公网安备  11010802020212</p>
+			</div>
+		</div>
+	</div>	
+<script>
+	$(function(){
+		$(".navbar-toggle").click(function(){
+			$(".list").show();
+		})
+		$(".list p img").click(function(){
+			$(".list").hide();
+		})
+		window.onscroll=function(){
+		$(document).scroll(function(){
+     	 var scrTop = $(document).scrollTop();
+      	 if(scrTop>50){
+         	$(".navbar").addClass("fixed");
+         	$(".navbar").addClass("bg");
+      	 }
+      	 else if(scrTop<= 50){
+          	$(".navbar").removeClass("fixed");
+          	$(".navbar").removeClass("bg");
+         } 
+        });
+	}
+})
+</script>
+</body>
+</html>

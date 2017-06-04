@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=no,minimum-scale=1.0">
+	<link rel="stylesheet" href="./css/comment.css">
+	<script type="text/javascript" src="./js/jquery-3.2.0.min.js"></script>
+	<title>首页</title>
+</head>
+<body>
+	<div class="moment">
+		<p class="title">欢迎使用留言板</p>
+		<button class="left">注册</button>
+		<button class="right">登录</button>
+	</div>
+	<script>
+		$(function(){
+			$(".right").click(function(){
+				window.location.href="./login.html";
+			})
+			$(".left").click(function(){
+				window.location.href="./enroll.html";
+			})
+		})
+	</script>
+</body>
+</html>

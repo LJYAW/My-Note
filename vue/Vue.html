@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Vue</title>
+	<script src="./js/vue.js"></script>
+	<link rel="stylesheet" href="./css/Vue.css">
+	<script type="text/javascript" src="./js/jquery-3.2.0.min.js"></script>
+</head>
+<body>
+	<div class="message">
+		<p>用户名：<input type="text" name="username"  v-model="name" placeholder="请输入用户名"></p>
+		<p>年龄：<input type="text" name="age"  v-model="number" placeholder="请输入年龄"></p>
+		<p><button @click="onClick(name,number)">确定</button><button @click="click">取消</button></p>
+	<h3>用户信息表</h3>
+	<table>
+		<thead>
+			<tr><th>序号</th><th v-for="item in head">{{item.title}}</th><th>操作</th></tr>
+		</thead>
+		<tbody>
+			<tr v-for="(bodys,index) in body" v-show="app">
+				<td>{{index+1}}</td><td v-for="heads in head" v-html="renter(bodys,heads)" v-show="ok"></td><td v-show="del"><button @click="wrap(index)">删除</button></td>
+			</tr>
+			<tr v-show="body !=0" @click="comment">
+				<td colspan="4">删除全部</td>
+			</tr>
+			<tr v-show="body==0">
+				<td colspan="4">暂无数据</td>
+			</tr>
+
+		</tbody>
+	</table>
+	<div class="tip" v-show="vivo">
+		<p>确定要删除吗？</p>
+		<p><button @click="yes">Yes</button><button @click="No">No</button></p>
+	</div>
+	<p>{{message}}</p>
+	<p><input type="text" v-model="firstName"></p>
+	<p><input type="text" v-model="lastName"></p>
+	<p>{{fullName}}</p>
+	<p><span v-once>This will never change: {{ msg }}</span></p>
+	</div>
+</body>
+<script>
+	var message=new Vue({
+		el:".message",
+		data:{
+			msg:"hello",
+			firstName:"liu",
+			lastName:"junyu",
+			fullName:"liujunyu",
+			message:"hello",
+			index:"",
+			vivo:false,
+			ok:true,
+			app:true,
+			show:true,
+			content:false,
+			name:"",
+			number:"",
+			num:"",
+
+			del:false,
+			head:[
+				{
+					key:"name",
+					title:"用户名"
+				},
+				{
+					key:"number",
+					title:"年龄"
+				},
+				
+			],
+			body:[
+				]
+		},
+		methods:{
+			renter:function(bodys,heads){
+				return bodys[heads.key];
+		
+			},
+			onClick:function(name,number){
+				if(name==""){
+					alert("用户名不能为空")
+				};
+				if(number==""){
+					alert("年龄不能为空")
+				}
+				else{
+					// this.show=false;
+					// this.content=true;
+					this.del=true;
+					var length=(this.body.length)*1+1*1;
+					this.body.push({"name":this.name,"num":length,"number":this.number});
+					this.name="";
+					this.number="";
+				}
+			},
+			click:function(){
+				this.name=null;
+				this.number=null;
+			},
+			comment:function(){
+				this.index=-1;
+				this.vivo=true;
+				
+			},
+			wrap:function(index){
+				this.vivo=true;
+				this.index=index;
+				
+			},
+			yes:function(){
+				var index=this.index;
+				if(index==-1){
+					this.body=[];
+					// this.content=false;
+					// this.show=true;
+					this.vivo=false;
+				}else{
+					this.body.splice(index,1);
+					this.vivo=false;
+					// if(this.body.length==0){
+					// 	this.show=true;
+					// 	this.content=false;
+					// }
+				}
+				
+			},
+			No:function(){
+				this.vivo=false;
+			},
+		},
+		// computed:{
+		// 		fullName:function(){
+		// 			return this.firstName+" "+this.lastName;
+		// 		}
+		// 	},
+		watch:{
+			firstName:function(val){
+				this.fullName=val+" "+this.lastName;
+			},
+			lastName:function(val){
+				this.fullName=this.lastName+" "+val;
+			}
+		}
+	})
+</script>
+</html>

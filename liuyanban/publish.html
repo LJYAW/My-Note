@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,maximum-scale=1.0,minimum-scale=1.0,initial-scale=1.0,user-scalable=no">
+	<link rel="stylesheet" href="./css/comment.css">
+	<script type="text/javascript" src="./js/jquery-3.2.0.min.js"></script>
+	<title>发布文章</title>
+</head>
+<body>
+	<div class="publish">
+		<p class="word">留言板</p>
+		<p class="author"><span>作者</span><input type="text" name="author" placeholder="请输入作者名"></p>
+		<p class="caption"><span>标题</span><input type="text" name="title" placeholder="请输入标题"></p>
+		<div class="big">
+			<span>正文</span>
+			<textarea name="page" id="fills" cols="30" rows="10"></textarea>
+			<p class="submit"><button>发布博客</button></p>
+		</div>
+	</div>
+	<script>
+		$(function(){
+			$(".submit button").click(function(){
+				$.ajax({
+				type:"post",
+				dataType:"json",
+				url:"http://test.zhituteam.com/zttesttp/index.php?m=home&c=blog&a=add",
+				data:{
+					title:$("input[name='title']").val(),
+					author:$("input[name='author']").val(),
+					content:$("#fills").val(),
+				},
+				success:function(res){
+					if(res.status=="ok"){
+						window.location.href="./matter.html";
+					}
+				}
+
+			})
+			})
+		})
+	</script>
+</body>
+</html>

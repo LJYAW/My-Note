@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>详情</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+	<script type="text/javascript" src="./js/jquery-3.2.0.min.js"></script>
+	<script type="text/javascript" src="./js/swiper-3.4.2.min.js"></script>
+	<link rel="stylesheet" href="./css/diet.css">
+	<script src="./js/function.js"></script>
+	<link rel="stylesheet" href="./css/swiper-3.4.2.min.css">
+</head>
+<body>
+	<div class="mains">
+		<img src="./image/logo.jpg" alt="">
+	</div>
+	<p class="wash"><a href="#"><span>韩国直邮</span> <span>绿吕-洗发450ml +180ml</span></a></p>
+	<p class="money"><span>￥69.9</span><s>￥99</s></p>
+	<p class="pay"><span class="zero">运费：￥0.00</span><span class="no">非包邮区域</span><span class="image"><img src="./image/4.png" alt=""><img src="./image/5.png" alt=""></span></p>
+	<div class="quan">
+		<span>优惠券</span>
+		<ul class="clip clearfix">
+			<li><a href="#">满99-5</a></li>
+			<li><a href="#">满399-5</a></li>
+			<li><a href="#">满599-5</a></li>
+			<li><a href="#">满999-5</a></li>
+		</ul>
+	</div>
+	<p class="green"><span>颜色</span><span>绿色</span></p>
+	<p class="number"><span>数量</span><span class="minus"><b>-</b></span><span class="num">1</span><span class="add">+</span></p>
+	<p class="last"><span>豆瓣市集担保</span><span class="shu">|</span><span>七天无理由退货</span><span class="shu">|</span><span>正品保证</span><span class="shu">|</span><span>独立品牌</span></p>
+	<div class="bottom">
+		<ul class="bottom_ul clearfix">
+			<li class="bottom_li bg">商品详情</li>
+			<li class="bottom_li">评价</li>
+			<li class="bottom_li">讨论</li>
+		</ul>
+		<div class="cos">
+			<div class="cos_div">ere</div>
+			<div class="cos_div">eef</div>
+			<div class="cos_div">axaxxx</div>
+		</div>
+	</div>
+	<div class="adds">
+		<button>加入购物车</button>
+	</div>
+<script>
+	$(function(){
+		var num=parseInt($(".num").text());
+		$(".bottom_li").click(function(){
+			var index=$(this).index();
+			$(this).addClass("bg").siblings().removeClass("bg");
+			$(".cos>div").eq(index).show().siblings().hide();
+		})
+		$(".add").click(function(){
+			num=num+1;
+			$(".num").html(num);
+			if(num!=1){
+				$(".minus").addClass("back");
+			}
+		})
+		$(".minus").click(function(){
+			if(num!=1){
+				$(this).addClass("back");
+				num=num-1;
+				$(".num").html(num);
+			}
+			if(num==1){
+				$(this).removeClass("back");
+			}
+		})
+	})
+	var tpl="";
+	var id = getParam('id');
+	var name=$(".wash a").text();
+	var num=$(".num").text();
+	$.ajax({
+		type:"get",
+		dataType:"json",
+		url:"http://ztshop.net/index.php/Home/goods/detail",
+		data:{
+			id:id,
+			name:name,
+
+		},
+		success:function(res){
+			var tpl="<img class='ok' id='"+res.id+"' src='"+res.img+"'/>";
+			var tt="<a><span>"+res.name+"</span><span>"+res.desc+"</span></a>"
+			$(".mains").html(tpl);
+			$(".wash").html(tt);
+		}
+	})
+	$(".adds button").click(function(){
+		var dd=getParam('id');
+		var goods_id=$(".ok").attr('id');
+		$.ajax({
+			type:"post",
+			dataType:"json",
+			url:"http://ztshop.net/index.php/Home/cart/add",
+			data:{
+				goods_id:goods_id,
+				goods_num:num,
+				user_id:dd,
+			},
+			success:function(res){
+				console.log()
+				window.location.href="shopcar.html?id="+dd+"";
+			}
+		})
+		// window.location.href="shopcar.html?id=1";
+	})
+</script>
+</body>
+</html>

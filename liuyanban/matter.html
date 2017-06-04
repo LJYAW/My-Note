@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=no,minimum-scale=1.0">
+	<link rel="stylesheet" href="./css/comment.css">
+	<script type="text/javascript" src="./js/jquery-3.2.0.min.js"></script>
+	<title>正文页面</title>
+</head>
+<body>
+	<p class="blog">博客详情</p>
+	<div class="prote clearfix">
+		<div class="prote-left">
+			<h2>文章列表</h2>
+			<p class="prote-p"><input type="text"value=""><img src="./image/search.png" alt=""></p>
+			<div class="list">
+				
+			</div>
+		</div>
+		<div class="prote-right">
+			<p>PROTFOLIO BLOG</p>
+			<div class="capt">
+				
+			</div>
+		</div>
+	</div>
+	<button class="up">上一页</button>
+	<button class="down">下一页</button>
+<script>
+	$(function(){
+		var offset=0;
+    	getList(0);
+	    function getList(a){
+	        var tpl="";
+	        $.ajax({
+	            url:"http://test.zhituteam.com/zttesttp/index.php?m=home&c=blog&a=lists",
+	            type:"get",
+	            dataType:"json",
+	            data:{
+	                offset:a,
+	                limit:20,
+	            },
+	            success:function(res){
+	            	if(res.status=="ok"){
+	            		var lists=res.lists;
+	            		for(var i=0;i<lists.length;i++){
+	            			tpl+="<p class='list-p'><span>"+lists[i].title+"</span><span class='store'>"+lists[i].id+"</span></p>";
+	            		};
+	            		if(lists.length==0){
+	                    	offset=offset-20;
+	                    	alert("最后一页");
+	                    	return false;
+                    	}
+	            		else{
+	            			$(".list").html(tpl);
+	            		}
+	            	}
+	            }
+	        })
+	    }
+	    $(".prote .prote-left .list").on("click",".list-p",function(){
+	    	var $this=$(this);
+	    	var id=$this.children(".store").text();
+	    	$.ajax({
+				type:"get",
+				dataType:"json",
+				url:"http://test.zhituteam.com/zttesttp/index.php?m=home&c=blog&a=info",
+				data:{
+					id:id,
+				},
+				success:function(res){
+					console.log(res)
+					if(res.status=="ok"&&res.info!="null"){
+							var tal="<div>"+res.info.content+"</div>";
+						};
+						$(".capt").html(tal);
+					}
+			})
+	    })
+	    $(".up").click(function(){
+	    	offset=offset-20;
+	    	if(offset<0){
+	    		offset=0;
+	    		alert("第一页")
+	    	}
+	    	else{
+	    		getList(offset);
+	    	}
+	    })
+	    $(".down").click(function(){
+	    	offset=offset+20;
+	    	getList(offset);
+    	})
+	})
+</script>
+</body>
+</html>

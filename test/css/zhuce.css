@@ -1,0 +1,126 @@
+html,body,p{
+	margin:0;
+	padding:0;
+}
+html,body{
+	font-size: 62.5%;
+}
+.welcome{
+	font-size: 4rem;
+	text-align: center;
+	color:#42bd56;
+	margin:2rem 0;
+}
+.content{
+	position: relative;
+	height:20rem;
+}
+.content input{
+	outline: none;
+	padding-left: 1rem;
+	width:87%;
+	display: block;
+	margin:0 auto;
+	height:4rem;
+	position: absolute;
+	left:5%;
+	color:#999;
+	border:1px solid #d7d7d7;
+}
+.content input:nth-child(1){
+	position: absolute;
+	top:0;
+}
+.content input:nth-child(2){
+	top:4rem;
+}
+.content input:nth-child(3){
+	top:8rem;
+}
+.content button{
+	display: block;
+	text-align: center;
+	width:90%;
+	height:3.5rem;
+	position: absolute;
+	left:0;
+	right:0;
+	margin:0 auto;
+	top:15rem;
+	border:none;
+	outline: none;
+	color:#fff;
+	background-color: #42bd56;
+	font-size: 1.5rem;
+}
+.point{
+	font-size: 1.3rem;
+	text-align: center;
+	color:#ccc;
+}
+.point a{
+	color:#ccc;
+}
+.app{
+	color:#42bd56;
+	text-align: center;
+	font-size: 1.5rem;
+	margin-top: 2rem;
+}
+.logins{
+	text-align: center;
+	margin-top:0.5rem;
+	padding-bottom: 0.5rem;
+	position: relative;
+	width:100%;
+	font-size: 1.8rem;
+	font-weight: 600;
+	height:3rem;
+	line-height: 3rem;
+	border-bottom: 1px solid #ccc;
+}
+.logins span{
+	color:#42bd56;
+	font-size:1.5rem;
+	position: absolute;
+	left:5%;
+	font-weight:100;
+}
+.login_div{
+	padding-top: 2.5rem;
+}
+.login_div input{
+	display: block;
+	width:86%;
+	outline: none;
+	height:3rem;
+	margin:0 auto;
+	padding-left: 1rem;
+	border:1px solid #ccc;
+}
+.login_div input:nth-child(2){
+	margin-top: -0.1rem;
+}
+.login_div button{
+	width:90%;
+	height:3rem;
+	display: block;
+	margin:0 auto;
+	border:none;
+	outline: none;
+	color:#fff;
+	background-color: #17aa52;
+	margin-top: 2rem;
+}
+.login_div p{
+	text-align: center;
+	font-size: 1.5rem;
+	color:#aaa;
+	margin:1rem 0;
+	margin-bottom: 2rem;
+}
+.login_div p span{
+	margin-right: 1rem;
+	margin-left: 1rem;
+	color:#17aa52;
+}

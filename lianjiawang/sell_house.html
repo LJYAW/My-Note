@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
+	<link rel="stylesheet" href="css/sell_house.css" type="text/css" />
+	<link rel="stylesheet" href="css/font-awesome.css" type="text/css">
+	<script src="./js/jquery-3.2.0.min.js"></script>
+	<script src="./js/vue.js"></script>
+	<title>卖房</title>
+</head>
+<body>
+<div id="main">
+	<div class="header">
+		<img src="./image/return.png" alt="">
+		<span @click="sell">返回</span>
+		<p>免费发布房源</p>
+	</div>
+	<!--信息栏-->
+	<div class="list">
+		<ul>
+			<li>小区名字<span>{{message}}</span><img src="./image/go-r.png" alt="" @click="click"></li>
+			<li>楼栋号<span>{{messages}}</span><img src="./image/go-r.png" alt="" @click="clicks"></li>
+			<li>单元号<span>{{info}}</span><img src="./image/go-r.png" alt="" @click="point"></li>
+			<li>门牌号<span>{{infos}}</span><img src="./image/go-r.png" alt="" @click="points"></li>
+		</ul>
+	</div>
+	<!--下一步-->
+	<p class="next"><button @click="nexts">下一步</button></p>
+	<p class="last"><img src="./image/pic.png" alt=""></p>
+	<div class="hide" v-show="show">
+		<p><span @click="returns"><img src="./image/return1.png" alt="">返回</span><strong>选择小区</strong></p>
+		<div class="hide_div">
+			<p><input type="text" placeholder="请输入小区名称" v-model="message"><span @click="ok">完成</span></p>
+		</div>
+	</div>
+	<div class="hide floor" v-show="shows">
+		<p><span @click="floors"><img src="./image/return1.png" alt="">返回</span><strong>楼栋号</strong></p>
+		<div class="hide_div">
+			<p><input type="text" placeholder="请输入楼栋号" v-model="messages"><span @click="ok">完成</span></p>
+		</div>
+	</div>
+	<div class="hide" v-show="unit">
+		<p><span @click="units"><img src="./image/return1.png" alt="">返回</span><strong>单元号</strong></p>
+		<div class="hide_div">
+			<p><input type="text" placeholder="请输入单元号" v-model="info"><span @click="ok">完成</span></p>
+		</div>
+	</div>
+	<div class="hide" v-show="plate">
+		<p><span @click="plates"><img src="./image/return1.png" alt="">返回</span><strong>门牌号</strong></p>
+		<div class="hide_div">
+			<p><input type="text" placeholder="请输入门牌号" v-model="infos"><span @click="ok">完成</span></p>
+		</div>
+	</div>
+	<div class="sourse" v-show="sourses">
+		<div class="header">
+			<img src="./image/return.png" alt="">
+			<span @click="fabu">返回</span>
+			<p>免费发布房源</p>
+		</div>
+		<p class="sourse_p">您的期望售价</p>
+		<p class="money">售价 <span><input type="text" v-model="moneys">万</span></p>
+		<p class="money">暂无定价参考信息</p>
+		<p class="sourse_p">您的联系信息</p>
+		<p class="sourse_p name"><span>称呼</span><input type="text" v-model="names"></p>
+		<p class="sourse_p phone"><span>手机号</span><input type="text" placeholder="请输入手机号" v-model="phones"></p>
+		<p class="sourse_p name"><span>验证码</span><input type="text"></p>
+		<p class="sourse_p time"><span>期望出售时间</span><span class="select">请选择<img src="./image/go-r.png" alt=""></span></p>
+		<button class="submit" @click="submits">提交</button>
+	</div>
+</div>
+<script>
+var user_id=localStorage.getItem("user_id");
+	var vm=new Vue({
+	el:"#main",
+	data:{
+		// list:{},
+		show:false,
+		shows:false,
+		unit:false,
+		plate:false,
+		message:"",
+		messages:"",
+		info:"",
+		infos:"",
+		sourses:false,
+		moneys:"",
+		names:"",
+		phones:"",
+		// ad:{},
+	},
+	mounted:function(){
+		this.s();
+	},
+	methods:{
+		s:function(){
+			// var area_no=this.area_no;
+			// var area_id=this.area_id;
+			$.ajax({
+				type:"post",
+				dataType:"json",
+				url:"http:118.89.169.233/lianjia/index.php/home/condition/sale",
+				data:{
+					village_name:this.message,
+				    l_num:this.messages,
+				    d_num:this.info,
+				    m_num:this.infos,
+				    price:this.moneys,
+				    name:this.names,             
+				    phone:this.phones,
+				    user_id:user_id,
+				},
+				success:function(res){
+					console.log(res);
+					this.list=res.house;
+					// this.render=true;
+					this.ad=res.ad;
+					// this.area=res.area;
+					// this.child=res.area[this.index].child;
+					// this.kid=res.area.child[this.indexs].kid;
+					// console.log(this.child)
+					/*if(res.status=="ok"){
+						console.log(res)
+					}*/
+				}.bind(this),
+				error:function(){
+					console.log("失败");
+				},
+
+			})
+		},
+		click:function(){
+			this.show=true;
+		},
+		clicks:function(){
+			this.shows=true;
+		},
+		point:function(){
+			this.unit=true;
+		},
+		points:function(){
+			this.plate=true;
+		},
+		returns:function(){
+			this.show=false;
+			this.message=null;
+		},
+		floors:function(){
+			this.shows=false;
+			this.messages=null;
+		},
+		units:function(){
+			this.unit=false;
+			this.info=null;
+		},
+		plates:function(){
+			this.plate=false;
+			this.infos=null;
+		},
+		ok:function(){
+			this.show=false;
+			this.shows=false;
+			this.unit=false;
+			this.plate=false;
+		},
+		nexts:function(){
+			this.sourses=true;
+			// if(this.message!=null&this.messages!=null&this.info!=null&this.infos!=null){
+			// 	alert(111)
+			// }
+			// else{
+			// 	alert("请完善信息")
+			// }
+		},
+		fabu:function(){
+			this.sourses=false;
+		},
+		sell:function(){
+			window.location.href="homepage.html"
+		},
+		submits:function(){
+			window.location.href="homepage.html";
+		},
+	}
+})	
+</script>	
+</body>
+</html>

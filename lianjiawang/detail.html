@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>详情</title>
+	<script src="./js/vue.js"></script>
+	<link rel="stylesheet" href="./css/detail.css">
+	<link rel="stylesheet" href="./css/homepage.css">
+	<link rel="stylesheet" href="./css/rent_house.css">
+	<link rel="stylesheet" href="./css/font-awesome.css">
+	<link rel="stylesheet" href="./css/swiper-3.4.2.min.css">
+	<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,initial-scale=1.0,user-scalable=no">
+	<script type="text/javascript" src="./js/jquery-3.2.0.min.js"></script>
+	<script src="./js/function.js"></script>
+	<script src="./js/swiper-3.4.2.min.js"></script>
+	<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=P7SkkvcLeMBZuMoDHZnAnZYYfguiYKI8"></script>
+</head>
+<body>
+<div id="app">
+	<div class="top">
+		<div class="top_div">
+			<img src="./image/house.png" alt="">
+			<div class="descript">
+				<p>下载链家APP</p>
+				<p>即享个性化房源推荐</p>
+				<button class="point">点击下载</button>
+			</div>
+		</div>
+	</div>
+	<div class="header">
+		<img src="./image/go_right.png" alt="" @click="click">
+		<img src="./image/h_img.png" alt="">
+		<img src="./image/user.png" alt="">
+		<span>北京<i class="fa fa-angle-down"></i></span>
+	</div>
+	<div class="swiper-container">
+	    <div class="swiper-wrapper">
+	        <div class="swiper-slide" v-for="item in images"><img :src="item.image" alt=""></div>
+	    </div>
+	   <p class="number"><span>1</span>/<span>2</span></p>
+	</div>
+	<p class="desc"><strong>{{list.title}}</strong></p>
+	<div class="navs">
+		<ul class="navs_ul clearfix">
+			<li class="navs_li"><p>售价</p><p><strong>{{list.house_sale}}</strong></p></li>
+			<li class="navs_li"><p>房型</p><p><strong>{{list.house_type}}</strong></p></li>
+			<li class="navs_li"><p>建筑面积</p><p><strong>{{list.house_measure}}</strong></p></li>
+		</ul>
+	</div>
+	<div class="list-msg">
+		<ul class="clearfix">
+			<li>单价：<span>{{list.unit_price}}</span></li>
+			<li>挂牌：<span>{{list.listing}}</span></li>
+			<li>朝向：<span>{{list.direction}}</span></li>
+			<li>楼层：<span>{{list.floor}}</span></li>
+			<li>楼型：<span>{{list.floor_type}}</span></li>
+			<li>电梯：<span>{{list.elevator}}</span></li>
+			<li>装修：<span>{{list.renovation}}</span></li>
+			<li>年代：<span>{{list.years}}</span></li>
+			<li>用途：<span>{{list.purpose}}</span></li>
+			<li>权属：<span>{{list.ownership}}</span></li>
+			<li>首付预算：<span>{{list.budget}}</span></li>
+			<li>小区：<span>{{list.quarters}}</span></li>
+		</ul>
+	</div>
+	<div id="allmap">
+		<!-- <a href=""><img src="./image/map.png" alt=""></a> -->
+	</div>
+	<div class="h_msg">
+		<p>房源介绍<img src="./image/go-r.png" alt=""></p>
+		<div class="msg">{{list.housing_introduction}}</div>
+	</div>
+</div>
+<script>
+var house_id=getQueryStr("house_id");
+	var vm=new Vue({
+	el:"#app",
+	data:{
+		list:{},
+		images:{},
+	},
+	mounted:function(){
+		this.s();
+	},
+	methods:{
+		s:function(){
+			$.ajax({
+				type:"post",
+				dataType:"json",
+				url:"http://lianjia.cn/index.php/home/house/detail",
+				data:{
+					house_id:house_id,
+				},
+				success:function(res){
+					this.list=res.info;
+					this.images=res.info.images;
+					console.log(this.list);
+				}.bind(this),
+				error:function(){
+					console.log("失败");
+				},
+
+			})
+		},
+		click:function(){
+			window.location.href="homepage.html"
+		},
+		lunbo:function(){
+			var index=$(".swiper-wrapper>div").index();
+			var mySwiper = new Swiper ('.swiper-container', {
+		    direction: 'horizontal',
+		    loop: true,
+  			})    
+		},
+	},
+	updated:function(){
+		this.lunbo();
+	}
+})
+</script>
+<script>
+	// 百度地图API功能
+	var map = new BMap.Map("allmap");    // 创建Map实例
+	map.centerAndZoom(new BMap.Point(116.404, 39.915), 11);  // 初始化地图,设置中心点坐标和地图级别
+	map.addControl(new BMap.MapTypeControl());   //添加地图类型控件
+	map.setCurrentCity("北京");          // 设置地图显示的城市 此项是必须设置的
+	map.enableScrollWheelZoom(true);     //开启鼠标滚轮缩放
+</script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/jquery.fullpage.css">
+	<script type="text/javascript" src="./js/jquery-3.2.0.min.js"></script>
+	<script src="js/jquery.fullPage.js"></script>
+	<style>
+		.firstpage{
+			background-color: #e0e0e0;
+		}
+		h3{
+			text-align: center;
+		}
+		.section img{
+			display: block;
+			width:100%;
+			height:100%;
+		}
+	</style>
+</head>
+<body>
+	<div id="dowebok">
+		<div class="section firstpage">
+			<img src="./image/1.jpg" alt="">
+		</div>
+		<div class="section">
+			<img src="./image/2.jpg" alt="">
+		</div>
+		<div class="section">
+			<div class="slide"><img src="./image/1.jpg" alt=""></div>
+	        <div class="slide"><img src="./image/2.jpg" alt=""></div>
+	        <div class="slide"><img src="./image/3.jpg" alt=""></div>
+	        <div class="slide"><img src="./image/4.jpg" alt=""></div>
+		</div>
+		<div class="section">
+			<img src="./image/4.jpg" alt="">
+		</div>
+	</div>
+	<script>
+	$(function(){
+		$("#dowebok").fullpage();
+	});
+	</script>
+</body>
+</html>

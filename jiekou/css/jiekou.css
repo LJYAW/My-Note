@@ -1,0 +1,62 @@
+html,body{
+	margin:0;
+	padding:0;
+}
+.top{
+	position: relative;
+	width:400px;
+	height:50px;
+	margin: 0 auto;
+	/*background-color:blue;*/
+}
+.left{
+	background-color: #ddd;
+	outline: none;
+	border:1px solid #333;
+	width:50px;
+	height:20px;
+	position: absolute;
+	z-index: 2;
+	top:0;
+	bottom:0;
+	left:133px;
+	margin:auto 0;
+}
+.right{
+	background-color: #ddd;
+	border:1px solid #333;
+	outline: none;
+	width:50px;
+	height:20px;
+	position: absolute;
+	z-index: 2;
+	top:0;
+	bottom:0;
+	right:94px;
+	margin:auto 0;
+}
+.top a{
+	color:#333;
+	text-decoration: none;
+}
+.main{
+	width:400px;
+	/*height:200px;*/
+	margin:auto;
+}
+.main p{
+	text-align: center;
+}
+span{
+	margin-right: 20px;
+}
+.bk{
+	width:500px;
+}
+#delete{
+	position: relative;
+	z-index: 20;
+}
+.st{
+	display: none;
+}

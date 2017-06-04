@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>列表</title>
+	<link rel="stylesheet" type="text/css" href="css/jiekou.css">
+	<script type="text/javascript" src="./js/jquery-3.2.0.min.js"></script>
+	<style>
+		span{
+			margin-right: 50px;
+			display: inline-block;
+			width:150px;
+		};
+	</style>
+</head>
+<body>
+<p ><span>姓名</span><span>年龄</span><span>电话</span><span>邮箱</span><span>密码</span><span>操作</span></p>
+	<div class="take">
+		
+	</div>
+	<!-- <button class="loadmore">加载更多</button> -->
+	<button class="up">上一页</button><button class="down">下一页</button>
+</body>
+<script>
+$(function(){
+	var offset =0;
+    getList(0);
+    function getList(a){
+        var tpl = "";
+        $.ajax({
+            url:"http://test.zhituteam.com/chat/index.php",
+            type:"get",
+            dataType:"json",
+            data:{
+                c:"demo",
+                a:"getlist",
+                offset:a,
+                limit:10
+            },
+            success:function(res){
+                if(res.status=="ok"){
+                    var result = res.result;
+                    for(var i=0;i<result.length;i++){
+                    	tpl+="<p class='book'><span>"+result[i].name+"</span><span>"+result[i].age+"</span><span>"+result[i].phone+"</span><span>"+result[i].email+"</span><span>"+result[i].password+"</span><input type='button' class='delete' value='删除'/><span class='st'>"+result[i].id+"</span><input type='button' class='upDate' value='修改'/></p>";
+                    };
+                    if(result.length==0){
+                    	offset=offset-10;
+                    	alert("最后一页");
+                    	return false;
+                    }
+                    else{
+                    	$(".take").html(tpl);
+                    }
+                   
+                }
+            }
+        })
+    }
+    $(".take").on("click",".delete",function(){//js动态添加点击事件，原来的页面里没有，用事件委托
+    	var $this=$(this);//把$(this)存到固定变量$this里
+    	var id=$this.siblings(".st").text();//找到他的兄弟的id值
+		$.ajax({
+		type:"get",
+		dataType:"json",
+		url:"http://test.zhituteam.com/chat/index.php?c=demo&a=del&id=726",
+		data:{
+			c:"demo",
+			a:"del",
+			id:id,//id等于上面定义的变量id
+		},
+		success:function(res){
+			if(res.status=="ok"){
+				$this.parent(".book").remove();//如果成功就把他的父元素p标签移除掉
+		}
+	}
+	})
+})
+    $(".take").on("click",".upDate",function(){
+    	var $this=$(this);
+    	var id=$this.siblings(".st").text();
+    	$.ajax({
+    		type:"get",
+			dataType:"json",
+			url:"http://test.zhituteam.com/chat/index.php?c=demo&a=del&id=726",
+			data:{
+				c:"demo",
+				a:"del", 
+				id:id,//id等于上面定义的变量id
+			},
+			success:function(res){
+				// if(res.status=="ok"){
+				// 	var result=res.result;
+				// 	for(var i=0;i<result.length;i++){
+				// 	var tpl="<input type='text' name='name' value=''/>";
+				// 	}
+				// 	$this.parent(".book").html(tpl);
+				// }
+			}
+    	})
+
+    })
+    //分页
+    $(".up").click(function(){
+    	offset=offset-10;
+    	if(offset<0){
+    		offset=0;
+    		alert("第一页");
+    	}
+    	else{
+    		getList(offset);
+    	}
+    	
+    })
+    $(".down").click(function(){
+    	offset=offset+10;
+    	getList(offset);
+    })
+    $(".loadmore").click(function(){
+		offset=offset+10;
+    	getList(offset);
+    })
+})
+</script>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>跳转</title>
+	<script src="./js/vue.js"></script>
+	<link rel="stylesheet" href="./css/comment.css">
+	<link rel="stylesheet" href="./css/s_house.css">
+	<link rel="stylesheet" href="./css/font-awesome.css">
+	<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,initial-scale=1.0,user-scalable=no">
+	<script type="text/javascript" src="./js/jquery-3.2.0.min.js"></script>
+	<script src="./js/function.js"></script>
+</head>
+<body>
+<div id="app">
+	<div class="header">
+		<img src="./image/go_right.png" alt="">
+		<img src="./image/h_img.png" alt="">
+		<img src="./image/user.png" alt="">
+		<span>北京<i class="fa fa-angle-down"></i></span>
+	</div>
+	<div class="center">
+		<img src="./image/head.png" alt="">
+		<button class="login" @click="click">登录</button><button class="register" @click="onClick">注册</button>
+	</div>
+	<p class="app_p">我关注的房源</p>
+	<p class="app_p">我关注的小区</p>
+	<p class="app_p">我关注的新房</p>
+	<p class="app_p">免电话营销</p>
+</div>
+<script>
+	var vm=new Vue({
+		el:"#app",
+		data:{
+
+		},
+		mounted:function(){
+		this.s();
+	},
+	methods:{
+			s:function(res){
+			},
+			click:function(){
+				window.location.href="login.html";
+			},
+			onClick:function(){
+				window.location.href="register.html";
+			},
+		}
+	})
+</script>
+</body>
+</html>

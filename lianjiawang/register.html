@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>注册</title>
+	<script src="./js/vue.js"></script>
+	<link rel="stylesheet" href="./css/register.css">
+	<link rel="stylesheet" href="./css/font-awesome.css">
+	<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,initial-scale=1.0,user-scalable=no">
+	<script type="text/javascript" src="./js/jquery-3.2.0.min.js"></script>
+	<script src="./js/function.js"></script>
+</head>
+<body>
+<div id="app">
+	<div class="top">
+		<div class="top_div"><input type="text" placeholder="请输入手机号码" name="mobile"></div>
+		<!-- <div class="top_div"><input type="text" placeholder="请输入短信中的验证码"></div> -->
+		<div class="top_div"><input type="password" placeholder="请输入密码（最少8位，需含数字、字母）" name="password"></div>
+		<div class="top_div"><input type="text" placeholder="昵称" name="name"></div>
+		<button class="top_button">立即注册</button>
+	</div>
+</div>
+<script>
+$(".top_button").click(function(){
+	var mobile=$("input[name='mobile']").val(); 
+	var password=$("input[name='password']").val(); 
+	var name=$("input[name='name']").val(); 
+	$.ajax({
+		type:'post',
+		dataType:'json',
+		url:'http://lianjia.cn/index.php/home/user/reg',
+		data:{
+				mobile:mobile,
+				password:password,
+				name:name,
+		},
+		success:function(res){
+			if(res.status=="ok"){
+				console.log(res)
+				alert(res.msg);
+			}
+			window.location.href="login.html";
+		}
+	});	
+});		
+</script>
+	
+</body>
+</html>

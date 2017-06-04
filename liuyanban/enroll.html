@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,initial-scale=1.0,user-scalable=no">
+	<link rel="stylesheet" href="./css/comment.css">
+	<script type="text/javascript" src="./js/jquery-3.2.0.min.js"></script>
+	<title>注册</title>
+</head>
+<body>
+	<div class="cafe">
+		<p class="use">欢迎使用留言板</p>
+		<p class="loin"><span>手机号</span><input type="text" placeholder="请输入手机号码" name="phone"></p>
+		<p class="loin"><span>昵称</span><input type="text" placeholder="请设置昵称" name="name"></p>
+		<p class="loin"><span>年龄</span><input type="text" placeholder="请输入您的年龄" name="age"></p>
+		<p class="loin"><span>email</span><input type="email" placeholder="请输入您的邮箱" name="email"></p>
+		<p class="loin"><span>密码</span><input type="password" placeholder="请设置密码" name="password"></p>
+		<p class="enroll"><button>注册</button></p>
+	</div>
+	<script>
+		$(".enroll button").click(function(){
+			$.ajax({
+				type:"post",
+				dataType:"json",
+				url:"http://test.zhituteam.com/zttesttp/index.php?m=home&c=user&a=reg",
+				data:{
+					name:$("input[name='name']").val(),
+					age:$("input[name='age']").val(),
+					email:$("input[name='email']").val(),
+					phone:$("input[name='phone']").val(),
+					password:$("input[name='password']").val(),
+				},
+				success:function(res){
+					if(res.status=="ok"){
+					window.location.href="./login.html";
+					}
+				}
+
+			})
+		})
+	</script>
+</body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
+	<link rel="stylesheet" href="css/new_house.css" type="text/css" />
+	<link rel="stylesheet" href="css/s_house.css" type="text/css" />
+	<link rel="stylesheet" href="css/font-awesome.css" type="text/css">
+	<script src="./js/jquery-3.2.0.min.js"></script>
+	<script src="./js/vue.js"></script>
+	<title>新房</title>
+</head>
+<body>
+<div id="main">
+	<div class="header">
+		<img src="./image/go_right.png" alt="" @click="up">
+		<img src="./image/h_img.png" alt="">
+		<img src="./image/user.png" alt="">
+		<span @click="click">北京<i class="fa fa-angle-down"></i></span>
+	</div>
+	<!--图片-->
+	<!-- <div class="hide" v-show="show">
+		<p class="hide_top"><img src="./image/return1.png"><span>返回</span>选择城市</p>
+		<p class="now">当前城市</p>
+		<p class="beijing">{{name}}</p>
+		<p class="now">所有城市</p>
+		<p class="pop" v-for="items in city" @click="opp(items)" v-if="render">{{items.name}}</p>
+	</div> -->
+	<div class="bg">
+		<img :src="ad.picture">
+		<div class="bg_center">
+			<p>在这里，为你寻觅一个新家</p>
+			<p>在线找新房，就在链家网</p>
+		</div>
+		<div class="search">
+			<img src="./image/search.png">
+			<input type="text" placeholder="输入小区或商圈开始找房咯~">
+		</div>
+	</div>
+	<!--养老度假-->
+	<div class="back">
+		<img :src="ad.advert" alt="">
+	</div>
+	<!--推荐楼盘-->
+	<div class="con">
+		<div class="content">
+			<h2>推荐楼盘</h2>
+			<div class="list clearfix" v-for="item in list">
+				<a href=""><img :src="item.img" alt=""></a>
+				<div class="list_r">
+					<span>{{item.title}}</span>
+					<p class="list_p"><span>{{item.content}}</span></p>
+					<p><span>{{item.price}}</span>{{item.unit_pric}}</p>
+					<p class="last_p">
+						<a href="">在售</a>
+						<a href="">住宅</a>
+					</p>
+				</div>
+			</div>
+		</div>
+		<!--查看更多-->
+		<button>查看更多</button>
+	</div>
+	<!--底部-->
+	<div class="bottom">
+		<p>链家网北京站<span>北京新房</span></p>
+		<div class="footer">
+			<p>北京链家网</p>
+		</div>
+	</div>
+</div>
+<script>
+	var vm=new Vue({
+	el:"#main",
+	data:{
+		list:{},
+		show:false,
+		ad:{},
+	},
+	mounted:function(){
+		this.s();
+	},
+	methods:{
+		s:function(){
+			var area_no=this.area_no;
+			var area_id=this.area_id;
+			$.ajax({
+				type:"post",
+				dataType:"json",
+				url:"http:118.89.169.233/lianjia/index.php/home/condition/new_house",
+				data:{
+					// user_id:user_id,
+					//  area_id:area_id,
+					//  area_no:area_no,
+					// icon_id:icon_id,
+				},
+				success:function(res){
+					console.log(res);
+					this.list=res.house;
+					// this.render=true;
+					this.ad=res.ad;
+					// this.area=res.area;
+					// this.child=res.area[this.index].child;
+					// this.kid=res.area.child[this.indexs].kid;
+					// console.log(this.child)
+					/*if(res.status=="ok"){
+						console.log(res)
+					}*/
+				}.bind(this),
+				error:function(){
+					console.log("失败");
+				},
+
+			})
+		},
+		click:function(){
+			this.show=true;
+		},
+		onClick:function(){
+			this.show=false;
+		},
+		up:function(){
+			window.location.href="homepage.html"
+		}
+	}
+})	
+</script>
+</body>
+</html>

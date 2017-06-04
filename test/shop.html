@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>购物车</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+	<script type="text/javascript" src="./js/jquery-3.2.0.min.js"></script>
+	<script type="text/javascript" src="./js/swiper-3.4.2.min.js"></script>
+	<link rel="stylesheet" href="./css/douban.css">
+	<link rel="stylesheet" href="./css/shop.css">
+	<link rel="stylesheet" href="./css/swiper-3.4.2.min.css">
+</head>
+<body>
+	<div class="top">
+		<div class="top_div">
+			<p><span>豆瓣市集</span><img src="./image/search.png" alt=""></p>
+		</div>
+	</div>
+	<div class="nav">
+		<ul class="nav_ul clearfix">
+			<li><a href="douban.html">首页</a></li>
+			<li><a href="sort.html">分类</a></li>
+			<li><a class="own">购物车0</a></li>
+			<li><a href="mine.html">我的</a></li>
+		</ul>
+	</div>
+	<p class="login">还未登录，请使用豆瓣账号登录</p>
+	<div class="shop_div">
+		<p>登录豆瓣账号后，可以进行订单查询，使用优惠券</p>
+		<button>登录</button>
+		<p class="shop_p">没有豆瓣账号？<span>注册</span></p>
+	</div>
+	<script>
+		$(function(){
+			$(".shop_div button").click(function(){
+				window.location.href="login.html"
+			})
+			$(".shop_p span").click(function(){
+				window.location.href="zhuce.html"
+			})
+		})
+	</script>
+</body>
+</html>

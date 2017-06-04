@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>购物车</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+	<script type="text/javascript" src="./js/jquery-3.2.0.min.js"></script>
+	<script type="text/javascript" src="./js/swiper-3.4.2.min.js"></script>
+	<link rel="stylesheet" href="./css/shop.css">
+
+	<link rel="stylesheet" href="./css/douban.css">
+
+</head>
+<body>
+	<div class="top">
+		<div class="top_div">
+			<p><span>豆瓣市集</span><img src="./image/search.png" alt=""></p>
+		</div>
+	</div>
+	<div class="nav">
+		<ul class="nav_ul clearfix">
+			<li><a id="1">首页</a></li>
+			<li><a id="2">分类</a></li>
+			<li><a id="3" class="own">购物车0</a></li>
+			<li><a id="4">我的</a></li>
+		</ul>
+	</div>
+	<div class="goods_div">
+		<div class="out">
+			<p class="goods"><input type="checkbox"><span>筅笙</span></p>
+			<div class="list">
+				<input type="checkbox"><a href="#"><img src="./image/p.jpg" alt=""></a>
+				<p class="five">先笙原创设计中国风天然亚麻五分裤</p><span class="ku">删除</span>
+				<p class="size">烟灰  xxl</p>
+				<p class="sale"><span class="jian">-</span><span class="number">1</span><span class="add">+</span><span>￥99.00</span></p>
+			</div>
+			<div class="delete">
+				<button>取消</button><button class="delete_button">确定删除</button>
+			</div>
+		</div>
+	</div>
+	
+	<script src="./js/function.js"></script>
+	<script>
+		var num=parseInt($(".number").text());
+		$(".add").click(function(){
+			
+			num=num+1;
+			$(".number").html(num);
+			$(".jian").addClass("color");
+		})
+		$(".jian").click(function(){
+			num=num-1;
+			$(".number").html(num);
+			if(num==1){
+				$(".jian").removeClass("color");
+			}
+		})
+		$(".ku").click(function(){
+			$(".delete").show();
+		})
+		$(".delete button:nth-child(1)").click(function(){
+			$(".delete").hide();
+		})
+		var id  = getParam('id');
+		var tpl="";
+		$.ajax({
+			async:false,
+			type:'get',
+			dataType:'json',
+			url:'http://ztshop.net/index.php/Home/cart/lists',
+			data:{
+				user_id:id,
+						
+			},
+			success:function(data){
+				for(i=0;i<data.length;i++){
+					tpl+="<div class='out'><p class='goods'><input type='checkbox'><span>筅笙</span></p><div class='list'><input type='checkbox'><a><img src='./image/p.jpg'></a><p class='five'>先笙原创设计中国风天然亚麻五分裤</p><span class='ku' id='"+data[i].goods_id+""+i+"'>删除</span><p class='size'>烟灰  xxl</p><p class='sale'><span class='jian'>-</span><span class='number'>1</span><span class='add'>+</span><span>￥99.00</span></p></div></div>"
+				}
+				$(".goods_div").html(tpl);
+			}
+		});
+		$(".delete_button").click(function(){
+			var delete_id=$(".ku").attr('id');
+			$.ajax({
+				type:'get',
+				dataType:'json',
+				url:'http://ztshop.net/index.php/Home/cart/delete',
+				data:{
+					id:delete_id,	
+				},	
+				success:function(data){;
+					$("#"+delete_id).parent().remove();
+				}
+		});
+		})
+	</script>
+</body>
+</html>

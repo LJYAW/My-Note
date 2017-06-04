@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>ajax</title>
+	<link rel="stylesheet" href="css/ajax.css" type="text/css">
+	<script type="text/javascript" src="./js/jquery-3.2.0.min.js"></script>
+</head>
+<body>
+	<thead>
+		<tr>
+			<!-- <th>药品名称</th> -->
+
+		</tr>
+	</thead>
+</body>
+<script text/javascript>
+// $.ajax({
+// 	type:'get',
+// 	dataType:'Json',
+// 	url: ,
+// 	data:{
+// 		keyword:value,
+// 		page:1,
+// 		count_per_page:100000
+// 	},
+// 	success:function(practice){
+// 	},
+// 	error:function(){},
+// });
+var practice = {
+total: 32,
+goods_list: [
+{
+stock: 99,
+price: 40,
+goods_type: "chinese_patent_medicine",
+id: 38,
+name: "除脂生发片 (发茂森)0.3克*90片"
+},
+{
+stock: 99,
+price: 45,
+goods_type: "chinese_patent_medicine",
+id: 39,
+name: "清热暗疮胶囊（百琦）0.25g*36s"
+},
+{
+stock: 99,
+price: 10,
+goods_type: "medicine",
+id: 40,
+name: "乳酸依沙吖啶溶液（恒建）100ml"
+},
+{
+stock: 100,
+price: 16,
+goods_type: "medicine",
+id: 41,
+name: "西咪替丁（云鹏）0.2g*100s"
+},
+{
+stock: 99,
+price: 24,
+goods_type: "medicine",
+id: 43,
+name: "二硫化硒洗剂（希尔生）100g"
+},
+{
+stock: 492,
+price: 88,
+goods_type: "not_medicine",
+id: 44,
+name: "B族维生素片 (世纪青青)0.55克*90粒"
+},
+{
+stock: 1,
+price: 32,
+goods_type: "medicine",
+id: 45,
+name: "阿达帕林凝胶30克:30毫克"
+},
+{
+stock: 15,
+price: 30,
+goods_type: "medicine",
+id: 46,
+name: "阿米卡星洗剂 (奇谷奇)50毫升:125毫克"
+},
+{
+stock: 12,
+price: 26,
+goods_type: "chinese_patent_medicine",
+id: 51,
+name: "薄芝片0.16克*24片"
+},
+{
+stock: 15032,
+price: 11,
+goods_type: "medicine",
+id: 52,
+name: "倍他米松乳膏 (联邦倍松)15克:15毫克"
+},
+{
+stock: 100,
+price: 49,
+goods_type: "medicine",
+id: 53,
+name: "丙酸氟替卡松乳膏15克"
+},
+{
+stock: 321,
+price: 7,
+goods_type: "medicine",
+id: 54,
+name: "丙酸氯倍他索乳膏10克"
+},
+{
+stock: 15074,
+price: 60,
+goods_type: "not_medicine",
+id: 55,
+name: "除疤膏25克"
+},
+{
+stock: 37,
+price: 30,
+goods_type: "medicine",
+id: 56,
+name: "创面消毒喷雾剂(中美天津史克) (百多邦)70毫升"
+},
+{
+stock: 267,
+price: 3,
+goods_type: "medicine",
+id: 57,
+name: "醋酸氟轻松冰片乳膏10克"
+},
+{
+stock: 996,
+price: 3,
+goods_type: "medicine",
+id: 58,
+name: "醋酸氟轻松乳膏10克:2.5毫克"
+},
+{
+stock: 100,
+price: 28,
+goods_type: "medicine",
+id: 59,
+name: "醋酸泼尼松龙乳膏10克"
+},
+{
+stock: 47,
+price: 8,
+goods_type: "medicine",
+id: 60,
+name: "醋酸曲安奈德尿素软膏10克"
+},
+{
+stock: 47086,
+price: 20,
+goods_type: "medicine",
+id: 61,
+name: "丹皮酚软膏 (蓓清)20克"
+},
+{
+stock: 100,
+price: 38,
+goods_type: "medicine",
+id: 62,
+name: "地氯雷他定干混悬剂 (芙必叮)0.5克：2.5毫克*14袋"
+},
+{
+stock: 37,
+price: 18,
+goods_type: "medicine",
+id: 63,
+name: "地氯雷他定片 (地恒赛)5毫克*6片"
+},
+{
+stock: 12,
+price: 18,
+goods_type: "medicine",
+id: 64,
+name: "地氯雷他定片 (信敏汀)5毫克*6片"
+},
+{
+stock: 12,
+price: 35,
+goods_type: "medicine",
+id: 65,
+name: "地奈德乳膏20克"
+},
+{
+stock: 70613,
+price: 18,
+goods_type: "medicine",
+id: 66,
+name: "丁酸氢化可的松乳膏 (舒夫林)20克(10克：10毫克)"
+},
+{
+stock: 11846,
+price: 88,
+goods_type: "not_medicine",
+id: 67,
+name: "多种维生素多种矿物质片 (奥斯莱康)1000毫克*100片"
+},
+{
+stock: 11180,
+price: 88,
+goods_type: "not_medicine",
+id: 68,
+name: "多种维生素钙铁片(女士型) (奥斯莱康)1克*100片"
+},
+{
+stock: 10370,
+price: 88,
+goods_type: "not_medicine",
+id: 69,
+name: "多种维生素矿物质片(成人型) (世纪青青)1克*60粒"
+},
+{
+stock: 10409,
+price: 99,
+goods_type: "not_medicine",
+id: 70,
+name: "多种维生素矿物质片(女士型) (千林)1.3克*60片"
+},
+{
+stock: 12,
+price: 58,
+goods_type: "chinese_patent_medicine",
+id: 71,
+name: "肤舒止痒膏300克"
+},
+{
+stock: 20108,
+price: 12,
+goods_type: "chinese_patent_medicine",
+id: 72,
+name: "肤痒颗粒9克*10袋"
+},
+{
+stock: 21050,
+price: 26,
+goods_type: "medicine",
+id: 73,
+name: "氟轻松维B6乳膏 (维肤膏)40克"
+},
+{
+stock: 32466,
+price: 9,
+goods_type: "medicine",
+id: 74,
+name: "复方倍氯米松樟脑乳膏(无极膏)10克"
+}
+]
+}
+for(var i=0;i<practice.total;i++){
+	var tpl = "<tr><td>"+practice.goods_list[i].name+"</td><td>"+ practice.goods_list[i].price+"</td></tr>"
+	$("body").append(tpl)
+}
+</script>
+</html>

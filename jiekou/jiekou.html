@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>主页面</title>
+	<link rel="stylesheet" type="text/css" href="css/jiekou.css">
+	<script type="text/javascript" src="./js/jquery-3.2.0.min.js"></script>
+</head>
+<body>
+	<div class="top">
+		<button class="left"><a href="zhuce.html">注册</a></button>
+		<button class="right"><a href="denglu.html">登录</a></button>
+	</div>
+</body>
+<script>
+	$(function(){
+		$.ajax({
+			type:"get",
+			dataType:"json",
+			url:"http://test.zhituteam.com/chat/index.php",
+			data:{
+				c:"demo",
+				a:"getlist",
+			},
+			success:function(){
+
+			}
+		})
+	})
+</script>
+</html>

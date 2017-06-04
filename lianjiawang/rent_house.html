@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
+	<link rel="stylesheet" href="css/rent_house.css" type="text/css" />
+	<link rel="stylesheet" href="css/s_house.css" type="text/css" />
+	<link rel="stylesheet" href="css/font-awesome.css" type="text/css">
+	<script src="./js/jquery-3.2.0.min.js"></script>
+	<script src="./js/vue.js"></script>
+	<script src="./js/function.js"></script>
+	<title>租房</title>
+</head>
+<body>
+<div id="main">
+	<div class="header">
+		<img src="./image/go_right.png" alt="" @click="up">
+		<img src="./image/h_img.png" alt="">
+		<img src="./image/user.png" alt="">
+		<span @click="citys">{{name}}<i class="fa fa-angle-down"></i></span>
+	</div>
+	<div class="search-box">
+		<div class="p_img"><img src="./image/search.png" alt=""></div>
+		<input type="text" placeholder="请输入小区或商圈名称">
+	</div>
+	<div class="con">
+		<div class="navs">
+			<ul class="clearfix">
+				<li  @click="click">{{quyu}}<i class="fa fa-caret-down"></i></li>
+				<li><a href="">价格<i class="fa fa-caret-down"></i></a></li>
+				<li><a href="">房型<i class="fa fa-caret-down"></i></a></li>
+				<li><a href="">更多<i class="fa fa-caret-down"></i></a></li>
+			</ul>
+		</div>
+		<div class="list clearfix">
+			<a href=""><img src="./image/h_img.jpg" alt=""></a>
+			<div class="list_r">
+				<span>正规小两居，格局方正，看房方便</span>
+				<span>两室一厅/33m/东/南/苹果sss</span>
+				<p><span>350万</span>2222222元/平</p>
+				<p class="last_p">
+					<a href="">地铁</a>
+					<a href="">满五年</a>
+					<a href="">随时看房</a>
+				</p>
+			</div>
+		</div>
+		<div class="list clearfix">
+			<a href=""><img src="./image/h_img.jpg" alt=""></a>
+			<div class="list_r">
+				<span>正规小两居，格局方正，看房方便</span>
+				<span>两室一厅/33m/东/南/苹果sss</span>
+				<p><span>350万</span>2222222元/平</p>
+				<p class="last_p">
+					<a href="">地铁</a>
+					<a href="">满五年</a>
+					<a href="">随时看房</a>
+				</p>
+			</div>
+		</div>
+		<div class="hide" v-show="show">
+			<p class="hide_top"><img src="./image/return1.png"><span @click="onClick">返回</span>选择城市</p>
+			<p class="now">当前城市</p>
+			<p class="beijing">{{name}}</p>
+			<p class="now">所有城市</p>
+			<p class="pop" v-for="items in city" @click="opp(items)" v-if="render">{{items.name}}</p>
+		</div>
+		<div class="list clearfix">
+			<a href=""><img src="./image/h_img.jpg" alt=""></a>
+			<div class="list_r">
+				<span>正规小两居，格局方正，看房方便</span>
+				<span>两室一厅/33m/东/南/苹果sss</span>
+				<p><span>350万</span>2222222元/平</p>
+				<p class="last_p">
+					<a href="">地铁</a>
+					<a href="">满五年</a>
+					<a href="">随时看房</a>
+				</p>
+			</div>
+		</div>
+		<!--底部-->
+		<div class="footer">
+			<div class="f_nav">北京手机链家网</div>
+			<div class="f_box">
+				<ul class="clearfix">
+					<li class="back1">区域二手房</li>
+					<li>热门推荐</li>
+					<li>周边城市</li>
+				</ul>
+				<div class="tab">
+					<div>
+						<ul class="clearfix">
+							<li><a href="#">北京链家</a></li>
+							<li><a href="#">北京链家</a></li>
+							<li><a href="#">北京链家</a></li>
+							<li><a href="#">北京链家</a></li>
+							<li><a href="#">北京链家</a></li>
+							<li><a href="#">北京链家</a></li>
+						</ul>
+					</div>
+					<div class="hide">
+						<ul class="clearfix">
+							<li><a href="#">北京链家</a></li>
+							<li><a href="#">北京链家</a></li>
+							<li><a href="#">北京链家</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	<div class="position">
+		<img src="./image/logo300x300.png" alt="">
+		<div class="p_con">
+			<p>下载链家APP</p>
+			<p>查看更多北京精选二手房</p>
+		</div>
+		<a href="">点击下载</a>
+	</div>
+</div>
+<div class="quyu" v-show="shows">
+	<div class="nav">
+		<ul class="clearfix">
+			<li id="nav_li">区域<i class="fa fa-caret-up"></i></li>
+			<li><a href="">价格<i class="fa fa-caret-down"></i></a></li>
+			<li><a href="">房型<i class="fa fa-caret-down"></i></a></li>
+			<li><a href="">更多<i class="fa fa-caret-down"></i></a></li>
+		</ul>
+	</div>
+	<div class="lists">
+		<div class="left">
+			<ul class="lists_ul">
+				<li class="lists_li" v-for="(item,index) in area" @click="tab(index)">{{item.name}}</li>
+			</ul>
+		</div>
+		<div class="right">
+			<div class="up" v-for="(item,index) in area">
+				<ul class="right_ul">
+					<li class="right_li">不限</li>
+					<li class="right_li" v-for="(items,indexs) in item.child" @click="fenlei(index,indexs)">{{items.name}}</li>
+				</ul>
+			</div>
+			<!-- <div class="down">
+				<ul class="right_ul">
+					<li class="right_li" >dong</li>
+				</ul>
+			</div> -->
+		</div>
+	</div>
+	<div class="dong clearfix" v-show="hides">
+	<div class="lefts">
+		<ul class="lists_ul">
+			<li class="lists_li" v-for="(item,index) in area" @click="point(index)">{{item.name}}</li>
+		</ul>
+	</div>
+	<div class="centers">
+		<ul class="right_ul" v-for="item in area">
+			<li class="right_li">不限</li>
+			<li class="right_li" v-for="(items,index) in child" @click="big(index)">{{items.name}}</li>
+		</ul>
+	</div>
+	<div class="rights">
+		<ul class="right_ul" v-for="item in child">
+			<li class="right_li">不限</li>
+			<li class="right_li" v-for="items in item.kid" @click="third(items)">{{items.name}}</li>
+		</ul>
+	</div>
+</div>
+</div>
+</div>
+<script src="./js/index.js"></script>
+<script>
+	var user_id=localStorage.getItem("user_id");
+	var icon_id=getQueryStr("icon_id");
+	var vm=new Vue({
+		el:"#main",
+		data:{
+			name:"北京",
+			render:false,
+			shows:false,
+			show:false,
+			list:{},
+			city:{},
+			area:{},
+			hides:false,
+			child:{},
+			kid:{},
+			ioc:"",
+			quyu:"区域",
+			area_id:"1",
+			area_no:"1",
+			index:"",
+			indexs:"",
+		},
+		mounted:function(){
+		this.s();
+	},
+	methods:{
+		s:function(){
+			var area_no=this.area_no;
+			var area_id=this.area_id;
+			$.ajax({
+				type:"post",
+				dataType:"json",
+				url:"http:118.89.169.233/lianjia/index.php/home/condition/sec_rent",
+				data:{
+					user_id:user_id,
+					 area_id:area_id,
+					 area_no:area_no,
+					icon_id:icon_id,
+				},
+				success:function(res){
+					console.log(res);
+					this.list=res.houses;
+					this.render=true;
+					this.city=res.city;
+					this.area=res.area;
+					// this.child=res.area[this.index].child;
+					// this.kid=res.area.child[this.indexs].kid;
+					// console.log(this.child)
+					/*if(res.status=="ok"){
+						console.log(res)
+					}*/
+				}.bind(this),
+				error:function(){
+					console.log("失败");
+				},
+
+			})
+		},
+		click:function(){
+			this.shows=true;
+		},
+		fenlei:function(index,indexs){
+			this.indexs=indexs;
+			console.log(this.indexs)
+			this.hides=true;
+			this.child=this.area[index].child;
+			console.log(this.area[index].child)
+			this.big();
+		},
+		opp:function(items){
+			this.show=false;
+			this.name=items.name;
+			this.area_id=items.id;
+			console.log(this.area_id)
+		},
+		big:function(index){
+			$(".rights>ul").eq(index).show().siblings().hide();
+		},
+		point:function(index){
+			this.hides=false;
+			this.index=index;
+			$(".right>div").eq(index).show().siblings().hide();
+		},
+		third:function(items){
+			this.quyu=items.name;
+			this.area_no=items.id;
+			console.log(this.area_no)
+			console.log(this.quyu)
+			this.show=false;
+			this.shows=false;
+
+		},
+		tab:function(index){
+			this.index=index;
+			// console.log(this.index)
+			// $(".right>div").eq(index).show().siblings().hide();
+			
+		},
+		onClick:function(){
+			this.show=false;
+		},
+		citys:function(){
+			this.show=true;
+		},
+		up:function(){
+			window.location.href="homepage.html"
+		}
+	}
+})
+</script>
+</body>
+</html>

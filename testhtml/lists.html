@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<ul>
+	<li rel="1">第no.1</li>
+	<li rel="2">no.2</li>
+	<li rel="3">no.3</li>
+	<li rel="4">no.4</li>
+</ul>
+<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript" src="function.js"></script>
+<script type="text/javascript">
+	$('li').click(function() {
+		var id = $(this).attr('rel');
+		var name = $(this).html();
+		u({
+			url : 'detail.html',
+			data : {'id':id, 'name':name},
+		});
+	});
+</script>
+</body>
+</html>

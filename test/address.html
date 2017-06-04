@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>地址</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+	<script type="text/javascript" src="./js/jquery-3.2.0.min.js"></script>
+	<link rel="stylesheet" href="./css/address.css">
+</head>
+<body>
+	<div class="top">
+		<p><img src="./image/left.png" alt="">收货地址管理<img src="./image/shouye.png" alt=""></p>
+	</div>
+	<div class="moment">
+		<div class="person">
+		<p class="person_p"><span>收件人：</span><span>123</span><span>13166957551</span></p>
+		<p><span>浙江省</span><span>/</span></p>
+		<p class="update"><span>修改地址</span><span>删除</span><span>设为默认</span></p>
+		</div>
+	</div>
+	<div class="new">
+		<span><img src="./image/add.png" alt=""></span>
+		<p>新建地址</p>
+	</div>
+	<div class="bottom">
+		<p>新建地址<span>X</span></p>
+		<ul>
+			<li class="bottom_li"><span>.</span><input type="text" placeholder="收货人姓名"></li>
+			<li class="bottom_li"><span>.</span><input type="text" placeholder="收货人电话号码"></li>
+			<li class="bottom_li select"><span>.</span><span>选择省</span><span class="border">选择市</span><span class="border">选择地区</span></li>
+			<li class="bottom_li"><span>.</span><input type="text" placeholder="请输入详细地址，例街道号码。楼门号"></li>
+		</ul>
+		<button>保存</button>
+	</div>
+	<!-- <div class="opp">
+		<p></p>
+	</div> -->
+	<div class="back"></div>
+	<script>
+	 	$(".top p img:nth-child(1)").click(function(){
+	 		window.location.href="mine.html"
+	 	})
+	 	$(".top p img:nth-child(2)").click(function(){
+	 		window.location.href="douban.html"
+	 	})
+	 	$(".new span").click(function(){
+	 		
+	 		$(".back").show();
+	 		$(".bottom").show();
+	 	})
+	 	$(".bottom p span").click(function(){
+	 		$(".bottom").hide();
+	 		$(".back").hide();
+	 	})
+	 	$(".update span:nth-child(1)").click(function(){
+	 		$(".back").show();
+	 		$(".bottom").show();
+	 	})
+	 	$(".update span:nth-child(2)").click(function(){
+	 		$(".back").show();
+	 		
+	 	})
+	</script>
+</body>
+</html>

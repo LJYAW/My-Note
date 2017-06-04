@@ -1,0 +1,31 @@
+html,body{
+	margin:0;
+	padding:0;
+	font-size: 62.5%;
+}
+.top input{
+	display:block;
+	height:3rem;
+	width:100%;
+	line-height: 3rem;
+	outline: none;
+	border:none;
+}
+.top_div{
+	border-bottom: 1px solid #e2e2e2;
+	padding-left: 1rem;
+}
+.top_button{
+	display: block;
+	outline: none;
+	border:none;
+	width:90%;
+	margin:0 auto;
+	height:4rem;
+	line-height: 4rem;
+	margin-top: 1rem;
+	border:1px solid #00ae66;
+    background: #00ae66;
+    font-size: 1.5rem;
+    color:#fff;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>我的</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+	<script type="text/javascript" src="./js/jquery-3.2.0.min.js"></script>
+	<script type="text/javascript" src="./js/swiper-3.4.2.min.js"></script>
+	<link rel="stylesheet" href="./css/douban.css">
+	<link rel="stylesheet" href="./css/shop.css">
+	<link rel="stylesheet" href="./css/swiper-3.4.2.min.css">
+</head>
+<body>
+	<div class="top">
+		<div class="top_div">
+			<p><span>豆瓣市集</span><img src="./image/search.png" alt=""></p>
+		</div>
+	</div>
+	<div class="nav">
+		<ul class="nav_ul clearfix">
+			<li><a id="1">首页</a></li>
+			<li><a id="2">分类</a></li>
+			<li><a id="3" >购物车0</a></li>
+			<li><a id="4" class="own">我的</a></li>
+		</ul>
+	</div>
+	<div class="mine_span">
+		<span><img src="./image/person.png" alt=""></span>
+		<p>LJY</p>
+	</div>
+	<p class="see">查看全部订单<span><img src="./image/go.png" alt=""></span></p>
+	<p class="money"><a href="#">待付款</a><span>|</span><a href="#">待发货</a><span>|</span><a href="#">待收货</a><span>|</span><a href="#">退换货</a></p>
+	<p class="see">我的优惠券<span><img src="./image/go.png" alt=""></span></p>
+	<p class="see address">收货地址管理<span><img src="./image/go.png" alt=""></span></p>
+	<p class="tui">退出登录</p>
+</body>
+<script src="./js/function.js"></script>
+<script>
+	$(".mine_span span").click(function(){
+		window.location.href="login.html"
+	})
+	$(".address").click(function(){
+		window.location.href="address.html"
+	})
+</script>
+</html>

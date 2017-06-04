@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>链家首页</title>
+	<script src="./js/vue.js"></script>
+	<link rel="stylesheet" href="./css/homepage.css">
+	<link rel="stylesheet" href="./css/font-awesome.css">
+	<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,initial-scale=1.0,user-scalable=no">
+	<script type="text/javascript" src="./js/jquery-3.2.0.min.js"></script>
+	<script src="./js/function.js"></script>
+</head>
+<body>
+<div id="app">
+	<div class="top">
+		<div class="top_div">
+			<img src="./image/house.png" alt="">
+			<div class="descript">
+				<p>下载链家APP</p>
+				<p>即享个性化房源推荐</p>
+				<button class="point">点击下载</button>
+			</div>
+		</div>
+	</div>
+	<div class="center">
+		<a><img :src="picture.head_img" alt=""></a>
+		<img id="lianjie" src="./image/slogan.png" alt="">
+		<div class="center_top">
+			<span class="center_span" @click="click">{{name}}<i class="fa fa-angle-down down"></i></span><i class="fa fa-user-o person" @click="comment"></i>
+		</div>
+		<div class="center_bottom">
+			<i class="fa fa-search search"></i><input type="text" placeholder="输入小区或商圈开始找房咯~">
+		</div>	
+	</div>
+	<div class="nav">
+		<ul class="nav_ul clearfix">
+			<li class="nav_li" v-for="(item,index) in lists" @click="classify(index)"><a href="#"><span><i class="fa" :class="item.icon"></i></span><p class="house">{{item.name}}</p></a></li>
+		</ul>
+	</div>
+	<div class="image">
+		<a :href="picture.address"><img :src="picture.middle_img" alt=""></a>
+	</div>
+	<div class="housing">
+		<p>推荐房源</p>
+		<ul class="list">
+			<li class="list_li" v-for="item in house" @click="detail(item)"><a href="#"><img :src="item.img" alt=""><p class="list_p">{{item.title}}</p><p class="room">{{item.content}}</p><p class="money"><span>{{item.price}}</span>{{item.unit_pric}}</p><p class="year"><span>地铁</span><span>满五年</span><span>随时看房</span></p></a></li>
+	</div>
+	<div class="bottom">
+		<p>成都手机链家网</p>
+		<ul class="bottom_ul clearfix">
+			<li class="bottom_li back1">链家分站</li>
+			<li class="bottom_li back2">热门城市</li>
+		</ul>
+		<div class="comment">
+			<div class="fen zhan">
+				<ul class="fen_ul clearfix">
+					<li class="fen_li"><a href="#">北京链家</a></li><li class="fen_li"><a href="#">北京链家</a></li><li class="fen_li"><a href="#">北京链家</a></li>
+				</ul>
+				<ul class="fen_ul clearfix">
+					<li class="fen_li"><a href="#">北京链家</a></li><li class="fen_li"><a href="#">北京链家</a></li><li class="fen_li"><a href="#">北京链家</a></li>
+				</ul>
+				<ul class="fen_ul clearfix">
+					<li class="fen_li"><a href="#">北京链家</a></li><li class="fen_li"><a href="#">北京链家</a></li><li class="fen_li"><a href="#">北京链家</a></li>
+				</ul>
+			</div>
+			<div class="fen city">
+				<ul class="fen_ul clearfix">
+					<li class="fen_li"><a href="#">杭州链家</a></li><li class="fen_li"><a href="#">北京链家</a></li><li class="fen_li"><a href="#">北京链家</a></li>
+				</ul>
+				<ul class="fen_ul clearfix">
+					<li class="fen_li"><a href="#">北京链家</a></li><li class="fen_li"><a href="#">北京链家</a></li><li class="fen_li"><a href="#">北京链家</a></li>
+				</ul>
+				<ul class="fen_ul clearfix">
+					<li class="fen_li"><a href="#">北京链家</a></li><li class="fen_li"><a href="#">北京链家</a></li><li class="fen_li"><a href="#">北京链家</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="hide" v-show="show">
+		<p class="hide_top"><img src="./image/return1.png"><span @click="onClick">返回</span>选择城市</p>
+		<p class="now">当前城市</p>
+		<p class="beijing">{{name}}</p>
+		<p class="now">所有城市</p>
+		<p class="pop" v-for="(items,index) in city" @click="opp(index)">{{items.name}}</p>
+	</div>
+</div>
+<script>
+var user_id=localStorage.getItem("user_id");
+console.log(user_id)
+var vm=new Vue({
+	el:"#app",
+	data:{
+		show:false,
+		lists:{},
+		picture:{},
+		city:{},
+		house:{},
+		id:"",
+		name:"北京",
+	},
+	mounted:function(){
+		this.s();
+	},
+	methods:{
+			s:function(res){
+				$.ajax({
+					type:"post",
+					dataType:"json",
+					url:"http:118.89.169.233/lianjia/index.php/home/index/index",
+					data:{
+						user_id:user_id,
+					},
+					success:function(res){
+						if(res.status=="ok"){
+							this.lists=res.icon;
+							this.picture=res.picture;
+							this.city=res.city;
+							this.house=res.houses;
+							console.log(res)
+						}
+					}.bind(this)
+ 
+				})
+			},
+			click:function(){
+				this.show=true;	
+			},
+			onClick:function(){
+				this.show=false;	
+			},
+			comment:function(){
+				window.location.href="comment.html"
+			},
+			classify:function(index){
+				var icon_id=this.lists[index].id;
+				console.log(typeof icon_id);
+				var area_id='1';
+				console.log(typeof area_id)
+				if(index==0){
+					window.location.href="s_house.html?icon_id="+icon_id+"";
+				};
+				if(index==1){
+					window.location.href="new_house.html?icon_id="+icon_id+"";
+				};
+				if(index==2){
+					window.location.href="rent_house.html?icon_id="+icon_id+"";
+				};
+				if(index==3){
+					window.location.href="sell_house.html?icon_id="+icon_id+"";
+				}
+			},
+			opp:function(index){
+				this.id=this.city[index].id;
+				this.name=this.city[index].name;
+				console.log(this.id);
+				console.log(this.name);
+				this.show=false;
+			},
+			detail:function(item){
+				var house_id=item.id;
+				console.log(house_id);
+				window.location.href="detail.html?house_id="+house_id+"";
+			}
+		}
+})
+	$(".bottom_li").click(function(){
+		var index=$(this).index();
+		$(this).addClass("back1").removeClass("back2");
+		$(this).siblings().addClass("back2").removeClass("back1");
+		$(".comment div").eq(index).show().siblings().hide();
+	})
+</script>	
+</body>
+</html>

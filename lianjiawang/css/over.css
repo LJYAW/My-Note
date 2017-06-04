@@ -1,0 +1,346 @@
+html,body,.main,p,ul,li,h2,input{
+	padding: 0;
+	margin: 0;
+}
+html,body{font-size: 62.5%;background: #fafafa;}
+.clearfix::after{
+	content: "";
+	height: 0;
+	display: block;
+	clear: both;
+}
+.header{
+	height: 5rem;
+	line-height: 5rem;
+	background: #fff;
+	padding: 0 1rem;
+	position: relative;
+	border-bottom: 1px solid #e5e5e5;
+}
+.header img:nth-child(3){
+	position: absolute;
+	right: 1rem;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+}
+.header img:nth-child(2){
+	position: absolute;
+	right: 0rem;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+}
+.header img:nth-child(1){
+	position: absolute;
+	width: 2rem;
+	left: 1rem;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+}
+.header span{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 5rem;
+	margin: auto;
+	font-size: 1.2rem;
+}
+
+.bg{
+	width: 100%;
+	height: 20rem;
+	background: url('../image/head.jpg') center no-repeat;
+	position: relative;
+}
+.search{
+	width: 90%;
+	height: 3rem;
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 2rem;
+	margin: auto;
+}
+.search input{
+	width: 90%;
+	padding-left: 3rem;
+	height: 100%;
+	outline: none;
+	border: none;
+}
+
+.search img{
+	top: 0.8rem;
+	width:1.5rem;
+	position: absolute;
+	left: 1rem;
+}
+.back{
+	width: 100%;
+	background: #fff;
+	height: 10rem;
+	margin-top: 1rem;
+}
+.back ul{margin:0 2rem;padding-top: 1rem;}
+.back ul li{
+	width: 25%;
+	color:#394043;
+	font-size: 1.4rem;
+	text-align: center;
+	list-style: none;
+	float: left;
+}
+.con{
+	margin-top: 1rem;
+	background: #fff;
+	width: 100%;
+}
+.content{
+	margin-left: 2rem;
+}
+.content h2{
+	line-height: 4rem;
+	font-size: 1.5rem;
+	color: #333;
+	font-weight: 700;
+	border-bottom: 1px solid #ccc;
+}
+.list{
+	padding: 2rem 0;
+}
+.lb{
+	width: 11rem;
+}
+.list .lb img{
+	height: 8rem;
+}
+.list .lb p{
+	font-size: 1.3rem;
+	color: #333;
+}
+.list a{
+	text-decoration: none;
+	display: inline-block;
+	float: left;
+	margin-right: 1rem;
+}
+.counselor{
+	margin-top: 1rem;
+	background: #fff;
+}
+.c_main{
+	margin: 0 0 0 2rem;
+}
+.c_main h2{
+	padding-right: 2rem;
+	line-height: 4rem;
+	font-size: 1.5rem;
+	font-weight: 700;
+	color: #333;
+	position: relative;
+	border-bottom: 1px solid #ccc;
+}
+.c_main h2 span:nth-child(1){
+	font-size: 1.3rem;
+	color: #ccc;
+	margin-left: 1rem;
+}
+.c_main h2 span:nth-child(2){
+	font-size: 1.4rem;
+	color: #ccc;
+	position: absolute;
+	right: 4rem;
+}
+.c_main h2 img{
+	position: absolute;
+	right: 2rem;
+	width: 2rem;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+}
+.c_per{
+	margin-top: 1rem;
+}
+.h_img{
+	float: left;
+	width: 30%;
+	height: 8rem;
+}
+.h_img img{
+	width: 7rem;
+	height: 7rem;
+	border-radius: 100%;
+}
+ .c_right{
+ 	width: 70%;
+ 	padding-bottom: 3rem;
+ 	float: left;
+ 	height: 100%;
+	border-bottom: 1px solid #ccc;
+} 
+ .c_right p:nth-child(1){
+ 	color: #394043;
+ 	font-size: 1.5rem;
+ 	line-height: 3rem;
+ }
+.c_right p{
+	color: #8b8b8b;
+	font-size: 1.3rem;
+
+}
+.c_right .last_p{
+	margin-right: 2rem;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.house{
+	margin-top: 1rem;
+	background: #fff;
+	width: 100%;
+}
+.house_con{
+	margin-left: 2rem;
+}
+.house_con h2{
+	line-height: 4rem;
+	font-size: 1.5rem;
+	color: #333;
+	font-weight: 700;
+	border-bottom: 1px solid #ccc;
+}
+.list{
+	padding: 2rem 0;
+	border-bottom: 1px solid #dbdbdb;
+}
+.list a{
+	display: inline-block;
+	float: left;
+}
+.list img{
+	width: 8rem;
+}
+.list_r{
+	width: 13rem;
+	float: left;
+	padding-left: 2rem;
+}
+.list_r span:nth-child(1){
+	font-size: 1.5rem;
+	font-weight: 700;
+	color: #333;
+	display: inline-block;
+}
+.list_r span:nth-child(2),.list_r p{
+	font-size: 1.2rem;
+	width: 14rem;
+	color: #999;
+	display: inline-block;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.list .list_r p{color:#8b8b8b;}
+.list .list_r p span{
+	color: red;
+	margin-right: 2rem;
+	display: inline-block;
+	font-weight: 400;
+	font-size: 1.2rem;
+}
+.list_r .last_p>a{
+	font-size: 1.2rem;
+	text-decoration: none;
+	display: inline-block;
+	margin-right: 0.5rem;
+	padding: 0 0.2rem;
+}
+.list_r .last_p>a{
+	color: #849aae;
+	background: #f4f7f9;
+}
+/*美国优选新房*/
+.new_house{
+	width: 100%;
+	height: 100%;
+	margin-top: 1rem;
+	background: #fff;
+}
+.new_head{
+	margin: 0 2rem;
+}
+.new_head h2{
+	line-height: 4rem;
+	height: 4rem;
+	font-size: 1.5rem;
+	color: #394043;
+	font-weight: 700;
+	position: relative;
+	border-bottom: 1px solid #ccc;
+}
+.new_head h2 span{
+	position: absolute;
+	right: 3rem;
+	color: #ccc;
+}
+.new_head h2 img{
+	position: absolute;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	width: 2rem;
+}
+.new_bg{
+	width: 100%;
+	height: 20rem;
+	position: relative;
+}
+.new_bg img{
+	width: 100%;
+	height: 20rem;
+}
+.position{
+	position: absolute;
+	font-size: 1.8rem;
+	color: #fff;
+	width: 20rem;
+	top: 10rem;
+	left: 0;
+	right: 0;
+	margin: auto;
+	font-weight: 800;
+}
+.position1{
+	position: absolute;
+	font-size: 1.4rem;
+	color: #fff;
+	top: 16rem;
+	left: 0;
+	right: 0;
+	margin: auto;
+	font-weight: 800;
+	padding-left: 2rem;
+}
+.bottom{
+	margin: 1rem 0;
+	width: 100%;
+	height: 10rem;
+	background: #2f3130;
+	color: #727373;
+}
+.bottom p{
+	color: #939494;
+	margin:0 2rem;
+	line-height: 3rem;
+	border-bottom: 1px solid #3e403f;
+}
+.bottom p span{color:#727373;margin-left: 1rem;}
+.footer p{
+	text-align: center;
+	border: none;
+}

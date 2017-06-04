@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=no,minimum-scale=1.0">
 	<title>Document</title>
 	<link rel="stylesheet" href="./css/search.css">
+	<script type="text/javascript" src="./js/jquery-3.2.0.min.js"></script>
 </head>
 <body>
 	<div class="top">
@@ -13,10 +14,12 @@
 			<input type="text" value="痘痘"><img src="./image/search.png" alt="">
 		</div>
 	</div>
-	<p class="descript">痘痘一般指的是<span>痤疮</span></p>
-	<p class="sick"><strong>痤疮</strong></p>
-	<p class="sick-des">急性上呼吸道感染简称上感，又称普通感冒。是包括鼻腔、咽或喉部急性炎症的总称。广义的上感不是一个疾病诊断，而是一组疾病，包括普通感...</p>
-	<p class="relevant"><strong>相关咨询记录</strong><span class="more">更多<img src="./image/goes.png" alt=""></span></p>
+	<!-- <p class="descript">痘痘一般指的是<span>痤疮</span></p> -->
+	<div class="sign">
+		<!-- <p class="sick"><strong>痤疮</strong></p>
+		<p class="sick-des">急性上呼吸道感染简称上感，又称普通感冒。是包括鼻腔、咽或喉部急性炎症的总称。广义的上感不是一个疾病诊断，而是一组疾病，包括普通感...</p> -->
+	</div>
+	<!-- <p class="relevant"><strong>相关咨询记录</strong><span class="more">更多<img src="./image/goes.png" alt=""></span></p>
 	<div class="asks">
 		<img src="./image/ask.png" alt="">
 		<p class="asks-p">医生您好，痤疮或者粉刺、痤疮破裂、肤色不好、变色或者色素沉淀，该怎么办？应该吃点什么合适，平时应该注意什么饮食习惯或者生活上应该怎么样？</p>
@@ -24,9 +27,9 @@
 	<div class="asks">
 		<img src="./image/ask.png" alt="">
 		<p class="asks-p">医生您好，痤疮或者粉刺、痤疮破裂、肤色不好、变色或者色素沉淀，该怎么办？应该吃点什么合适，平时应该注意什么饮食习惯或者生活上应该怎么样？</p>
-	</div>
+	</div> -->
 	<div class="content">
-		<p class="relevant"><strong>医生推荐</strong><span class="more">更多<img src="./image/goes.png" alt=""></span></p>
+		<!-- <p class="relevant"><strong>医生推荐</strong><span class="more">更多<img src="./image/goes.png" alt=""></span></p>
 		<div class="right">
 			<img src="./image/logo.jpg">
 			<div class="box">
@@ -44,17 +47,17 @@
 				<p>擅长：眼科常见病，脸裂斑，视网膜静脉阻塞白内障，眼底出血，斜视，视网膜脱落，眼红病等…</p>
 				<p><span id="left-span">¥5起</span><span id="right-span">8974次咨询</span>  </p>
 			</div>
-		</div>
+		</div> -->
 	</div>
-	<div class="healthy">
+	<!-- <div class="healthy">
 		<p class="fine"><strong>健康百科</strong></p>
 		<p class="how clearfix">痤疮如何治疗？<span class="mores"><span>推广</span><img src="./image/goes.png" alt=""></span></p>
 		<p class="how">痤疮该怎么办？<span class="mores"><img src="./image/goes.png" alt=""></span></p>
 		<p class="how">如何给痤疮分类？<span class="mores"><img src="./image/goes.png" alt=""></span></p>
 		<p class="how">重要怎么医治痤疮？<span class="mores"><img src="./image/goes.png" alt=""></span></p>
-	</div>
+	</div> -->
 	<div class="data">
-		<p class="relevant"><strong>相关科普资讯</strong><span class="more">更多<img src="./image/goes.png" alt=""></span></p>
+		<!-- <p class="relevant"><strong>相关科普资讯</strong><span class="more">更多<img src="./image/goes.png" alt=""></span></p>
 		<div class="date">
 			<img src="./image/child.png" alt="">
 			<div class="date-p">
@@ -68,9 +71,9 @@
 				<p>把脸洗干净就不会长痘痘了吗？</p>
 				<p>两性</p>
 			</div>
-		</div>
+		</div> -->
 	</div>
-	<div class="may">
+	<!-- <div class="may">
 		<p class="relevant"><strong>可能的治疗方法</strong></p>
 		<p class="how clearfix">痤疮如何治疗？<span class="mores"><span>推广</span><img src="./image/goes.png" alt=""></span></p>
 		<p class="how">六味地黄丸(药品)<span class="pro">6540个问题提到<img src="./image/goes.png" alt=""></span></p>
@@ -136,6 +139,211 @@
 			</div>
 		</div>
 	</div>
-	<div class="bottom"></div>
+	<div class="bottom"></div> -->
+	<script>
+	// $.ajax({
+	// 	type:'get',
+	// 	dataType:'Json',
+	// 	url: ,
+	// 	data:{
+	// 		keyword:value,
+	// 		page:1,
+	// 		count_per_page:100000
+	// 	},
+	// 	success:function(){},
+	// 	error:function(){},
+	// })
+var object = {
+search_results: [
+{
+desc: "发烧,医学术语又称发热.发烧能支持免疫系统战胜感染剂,并使温度敏感型病毒和细菌不能在人体内顺利进行复制.　　然而,感染并不是发烧的唯一原因.例如,滥用安非他命类药物和戒酒反应都可导致体温上升.环境压力也会引起中暑及相关疾病.　　位于大脑底部的下丘脑相当于人体恒温器.它由称为热原的流动性生化物质激发,热原从免疫系统识别的潜在病灶开始,通过血液流动.人体组织会制造一些热原,许多病原体也会产生一些热原.下丘脑一旦发现热原,便会告诉身体加强代谢,产生更多的热量;并减少周围的血液流动,保持这个热度,从而导致发烧.通常情况下,儿童发烧更厉害,也更容易,这反映了病原体对没有经过考验的免疫系统的影响. 　　有时候,发烧可能会严重到影响身体健康.例如,发烧超过105华氏度,就能威胁重要蛋白质的完整性和功能.细胞应激、梗塞(心脏病发作)、组织坏死、痉挛和神志失常等都是潜在的不良后果.如果发烧的程度超过了人体自身的降温能力,使用“凉毯”和其他方法都是有好处的.",
+type: "DISEASE_DESC",
+name: "发烧",
+query_str: "发烧",
+id: "47356"
+},
+{
+type: "NEWS",
+name: "相关科普资讯",
+result: [
+{
+news_type_txt: "育儿",
+news_id: 5402,
+mini_img: "https://dn-chunyu.qbox.me/@/media/images/2013/08/01/11a4ff0f750f.jpg",
+title: "【春雨特稿】欧茜：“精神状态”比“发烧度数”更重要"
+},
+{
+news_type_txt: "育儿",
+news_id: 6400,
+mini_img: "https://dn-chunyu.qbox.me/@/media/images/2013/09/13/8e27ccbc1dea.png",
+title: "【春雨总结帖】宝宝感冒发烧护理5误区"
+}
+]
+},
+{
+type: "AD_INFO",
+result: { }
+}
+]
+}
+var test={
+search_results: [
+{
+desc: "过敏是属于炎症反应,是指当一些外来物侵入人体时,人体的免疫系统产生的过度反应.",
+type: "DISEASE_DESC",
+name: "过敏",
+query_str: "过敏",
+id: "63126"
+},
+{
+type: "SIMILAR_PRO",
+result: [
+{
+score: "15.091163",
+doctor: {
+name: "李峰",
+title: "主治医师",
+hospital: "北京协和医院",
+good_at: "银屑病、皮炎、湿疹、痤疮、荨麻疹等常见皮肤疾病和性传播疾病的诊治。",
+id: "clinic_pifuke_lifeng",
+image: "https://dn-chunyu.qbox.me/@/media/images/2012/09/14/b9c9491f9a16.jpg"
+},
+ask: "今天去查了过敏原，其中有一项是橙子，那柠檬能吃么。是否过敏原的食物<span class='s-hl'>过敏原，其中有一项是橙子，那柠檬能吃么。是否过敏</span>都不能吃？若无<span class='s-hl'>过敏</span>症状是否可少量食用，谢谢（女，31岁）",
+clinic_no: "4",
+answer: "过敏源是不段变化的，并不代表你对橙子<span class='s-hl'>过敏</span>，就永远<span class='s-hl'>过敏</span>，和抵抗力和自身的体质都有关系。如果这个阶段<span class='s-hl'>过敏</span>，就暂时别吃橙子，等抵抗力强一些时再吃。如果是<span class='s-hl'>过敏</span>体质尽量不吃海鲜等刺激食物，吃一些比较温和的辅食，慢慢会调整好的。 只要是经常、反复出现过敏症状，并且较周围同样环境的人更容易<span class='s-hl'>过敏源是不段变化的，并不代表你对橙子过敏，就永远过敏，和抵抗力和自身的体质都有关系。如果这个阶段过敏，就暂时别吃橙子，等抵抗力强一些时再吃。如果是过敏体质尽量不吃海鲜等刺激食物，吃一些比较温和的辅食，慢慢会调整好的。 只要是经常、反复出现过敏症状，并且较周围同样环境的人更容易发生过敏</span>者，就一定与体质因素有直接关系，就属于<span class='s-hl'>过敏</span>体质。",
+id: "690725"
+},
+{
+score: "14.155928",
+doctor: {
+name: "徐晓光",
+title: "主治医师",
+hospital: "上海市第二军医大学附属长征医院",
+good_at: "常见皮肤病、银屑病、感染性皮肤病、性病、真菌病的诊断和治疗。",
+id: "clinic_web_a4d6e3f38dbafb3b",
+image: "https://dn-chunyu.qbox.me/@/media/images/2013/08/15/11052342357c.jpg"
+},
+ask: "我二十五年前对什么都不<span class='s-hl'>过敏</span>'可生完孩子后开始对海鲜鸡蛋<span class='s-hl'>过敏</span>了'怎么回事'可以彻底治愈吗（女，27岁）",
+clinic_no: "4",
+answer: "人体对一些物质发生<span class='s-hl'>过敏</span>情况绝大部分是不确定的，可随着身体状态的变化而出现或消失。所以会出现你这种情况 有时这些<span class='s-hl'>过敏</span>只是暂时的，发生<span class='s-hl'>过敏</span>期间要避免接触这些过敏源，也可以适当服用一阵抗过敏<span class='s-hl'>过敏源，也可以适当服用一阵抗过敏</span>药，有时过阵子就自然不<span class='s-hl'>过敏</span>了，当然，也有惨些的人就是一辈子都会<span class='s-hl'>过敏</span>了。",
+id: "11112290"
+}
+],
+query_str: "过敏",
+name: "相关咨询记录"
+},
+{
+type: "PEDIA_INFO",
+result: [
+{
+url: "http://www.chunyuyisheng.com/webapp/pedia_answer/15302/detail/",
+id: 15302,
+title: "牙齿为何会过敏"
+},
+{
+url: "http://www.chunyuyisheng.com/webapp/pedia_answer/17914/detail/",
+id: 17914,
+title: "毛毛虫过敏怎么办？"
+},
+{
+url: "http://www.chunyuyisheng.com/webapp/pedia_answer/18024/detail/",
+id: 18024,
+title: "怎样查找过敏食物"
+},
+{
+url: "http://www.chunyuyisheng.com/webapp/pedia_answer/16660/detail/",
+id: 16660,
+title: "牙本质过敏怎么办？"
+}
+],
+query_str: "过敏",
+name: "健康百科"
+},
+{
+type: "NEWS",
+name: "相关科普资讯",
+result: [
+{
+news_type_txt: "育儿",
+news_id: 4111,
+mini_img: "https://dn-chunyu.qbox.me/@/media/images/2013/05/07/c3dc78153ec7.jpg",
+title: "看图:过敏妈妈和粗线条爸爸"
+},
+{
+news_type_txt: "育儿",
+news_id: 4423,
+mini_img: "https://dn-chunyu.qbox.me/@/media/images/2013/05/30/e24b99b45b51.jpg",
+title: "儿童夏季过敏性疾病高发"
+}
+]
+},
+{
+type: "TREAT_INFO",
+result: [
+{
+count: 1456,
+info: "1456个问题提到",
+type: "drug",
+name: "炉甘石洗剂(药品)",
+id: "695313283"
+},
+{
+count: 845,
+info: "845个问题提到",
+type: "drug",
+name: "开瑞坦(药品)",
+id: "2659203929"
+},
+{
+count: 753,
+info: "753个问题提到",
+type: "checkup",
+name: "皮疹(检查)",
+id: "2565638009"
+},
+{
+count: 466,
+info: "466个问题提到",
+type: "checkup",
+name: "皮损(检查)",
+id: "895543864"
+}
+],
+query_str: "过敏",
+name: "可能的治疗方法"
+},
+{
+type: "AD_INFO",
+result: { }
+}
+]
+}
+
+for(var i=0;i<object.search_results.length;i++){
+	if(object.search_results[i].type=="DISEASE_DESC"){
+		var obj="<p class='sick'><strong>"+object.search_results[i].name+"</strong></p><p class='sick-des'>"+object.search_results[i].desc+"</p>";
+		$(".sign").html(obj)
+	}
+	if(object.search_results[i].type=="NEWS"){
+		var tape="<p class='relevant'><strong>"+object.search_results[i].name+"</strong></p>";
+		$(".data").html(tape)
+		for( var j=0;j<object.search_results[i].result.length;j++){
+			// if(object.search_results[i].result[j].news_id=="5402")
+				var tpl="<div class='date'><img src='"+object.search_results[i].result[j].mini_img+"'><div class='date-p'><p>"+object.search_results[i].result[j].title+"</p></div></div>";
+			$(".data").append(tpl)
+		}
+	}
+}
+for(var n=0;n<test.search_results.length;n++){
+	if(test.search_results[n].type=="SIMILAR_PRO"){
+		for( var m=0;m<test.search_results[n].result.length;m++){
+			console.log(test.search_results[n].result[m])
+			var infor="<div class='right'><img src='"+test.search_results[n].result[m].doctor.image+"'><div class='box'><p class='name'><strong><span>"+test.search_results[n].result[m].doctor.name+"</span></strong></p><p>"+test.search_results[n].result[m].doctor.hospital+"</p><p>"+test.search_results[n].result[m].doctor.good_at+"</p></div></div>";
+			$(".content").append(infor)
+		}
+	}
+
+}
+</script>
 </body>
 </html>

@@ -1,0 +1,46 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>注册</title>
+	<link rel="stylesheet" type="text/css" href="css/jiekou.css">
+	<script type="text/javascript" src="./js/jquery-3.2.0.min.js"></script>
+</head>
+<body>
+	<div class="main">
+		<p>姓名: <input type="text" name="name" value="刘"></p>
+		<p>年龄: <input type="text" name="age" value="13"></p>
+		<p>邮箱: <input type="text" name="email" value="2872323@qq.com"></p>
+		<p>电话: <input type="text" name="phone" value="1221212"></p>
+		<p>密码: <input type="password" name="password" value="123"></p>
+		
+	</div>
+	<div class="top">
+		<button class="left">注册</button>
+	</div>
+</body>
+<script>
+	$(".left").click(function(){
+		var tpl="";
+		$.ajax({
+		type:"post",
+		dataType:"json",
+		url:"http://test.zhituteam.com/chat/index.php?c=demo&a=reg",
+		data:{
+			name:$("input[name='name']").val(),
+			age:$("input[name='age']").val(),
+			email:$("input[name='email']").val(),
+			phone:$("input[name='phone']").val(),
+			password:$("input[name='password']").val()
+
+		},
+		success:function(res){
+			if(res.status=="ok"){
+			window.location.href="./list.html";
+			}
+			
+		}
+})
+})
+</script>
+</html>

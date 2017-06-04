@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>分类</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+	<script type="text/javascript" src="./js/jquery-3.2.0.min.js"></script>
+	<script type="text/javascript" src="./js/swiper-3.4.2.min.js"></script>
+	
+	<link rel="stylesheet" href="./css/douban.css">
+	<link rel="stylesheet" href="./css/swiper-3.4.2.min.css">
+</head>
+<body>
+	<div class="top">
+		<div class="top_div">
+			<p><span>豆瓣市集</span><img src="./image/search.png" alt=""></p>
+		</div>
+	</div>
+	<div class="nav">
+		<ul class="nav_ul clearfix">
+			<li><a id="1">首页</a></li>
+			<li><a id="2"  class="own">分类</a></li>
+			<li><a id="3">购物车0</a></li>
+			<li><a id="4">我的</a></li>
+		</ul>
+	</div>
+	<div class="main">
+		<a class="red" >饮食</a>
+		<a class="blue" >服装</a>
+		<a class="pack" >配饰</a>
+		<a class="bag" >包袋</a>
+		<a class="shot" >鞋靴</a>
+		<a class="spa" >美容护肤</a>
+		<a class="house" >家居</a>
+		<a class="time" >时间</a>
+		<a class="c" >3c数码</a>
+	</div>
+<script type="text/javascript" src="./js/function.js"></script>
+<script>
+
+	$(function(){
+		var tpl="";
+			$.ajax({
+			type:"get",
+			dataType:"json",
+			url:"http://ztshop.net/index.php/home/category/lists",
+			success:function(res){
+				for(var i=0;i<res.length;i++){
+					 tpl+="<a id='"+res[i].id+"'>"+res[i].name+"</a>";
+				}
+				$(".main").html(tpl);
+		}
+		})
+	})
+	$(".main").on("click","a",function(){
+		var id=$(this).attr('id');
+		var name=$(this).text();
+		u({
+			url : 'diet.html',
+			data : {'id':id, 'name':name},
+		});
+	})
+</script>
+</body>
+</html>

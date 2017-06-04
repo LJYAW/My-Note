@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>登录</title>
+	<script src="./js/vue.js"></script>
+	<link rel="stylesheet" href="./css/login.css">
+	<link rel="stylesheet" href="./css/register.css">
+	<link rel="stylesheet" href="./css/font-awesome.css">
+	<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,initial-scale=1.0,user-scalable=no">
+	<script type="text/javascript" src="./js/jquery-3.2.0.min.js"></script>
+	<script src="./js/function.js"></script>
+</head>
+<body>
+<div id="app">
+	<div class="top">
+		<ul class="top_ul clearfix">
+			<li class="top_li">普通登录</li>
+			<li class="top_li">验证码登录</li>
+		</ul>
+		<div class="top_div"><input type="text" placeholder="请输入手机号码" name="mobile"></div>
+		<div class="top_div"><input type="password" placeholder="请输入密码" name="password"></div>
+		<button class="top_button">立即登录</button>
+		<p class="top_p"><span>立即注册</span><span>忘记密码</span></p>
+	</div>
+</div>
+<script>
+	$(".top_button").click(function(){
+		var mobile=$("input[name='mobile']").val(); 
+		var password=$("input[name='password']").val(); 
+		$.ajax({
+			type:'post',
+			dataType:'json',
+			url:'http://lianjia.cn/index.php/home/user/login',
+			data:{
+				mobile:mobile,
+				password:password,
+			},
+			success:function(res){
+				if(res.status=="ok"){
+					alert(res.msg);
+					var user_id=res.info.user_id;
+					localStorage.setItem("user_id",user_id);
+					console.log(user_id)
+					// location.href="homepage.html";
+				}
+			}
+		});
+	});
+</script>
+
+</body>
+</html>

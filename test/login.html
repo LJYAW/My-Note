@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>登录</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+	<script type="text/javascript" src="./js/jquery-3.2.0.min.js"></script>
+	<link rel="stylesheet" href="./css/zhuce.css">
+</head>
+<body>
+	<p class="logins"><span>取消</span>登录豆瓣</p>
+	<div class="login_div">
+		<input type="text" placeholder="邮箱 / 手机号 / 用户名" name="email">
+		<input type="password" placeholder="密码" name="password">
+		<button>登录</button>
+		<p>使用其他方式登录 & 找回密码</p>
+		<p><span class="button_o">注册豆瓣账户</span><span>下载豆瓣app</span></p>
+	</div>
+	<script>
+		$(".button_o").click(function(){
+			window.location.href="zhuce.html"
+		})
+		$(".logins span").click(function(){
+			window.location.href="shop.html"
+		})
+		$(".login_div button").click(function(){
+			$.ajax({
+				type:'post',
+				dataType:'json',
+				url:'http://ztshop.net/index.php/Home/user/login',
+				data:{
+					email:$("input[name='email']").val(),
+					password:$("input[name='password']").val(),
+				},
+				success:function(data){
+					console.log(data);
+					var id=data.id;
+					if(data.status=="ok"){
+						window.location.href="shopcar.html?id="+id+"";
+					}
+				}
+			});
+			// window.location.href="shopcar.html?id=1";
+		})
+	</script>
+</body>
+</html>

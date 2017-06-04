@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>豆瓣</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+	<script type="text/javascript" src="./js/jquery-3.2.0.min.js"></script>
+	<script type="text/javascript" src="./js/swiper-3.4.2.min.js"></script>
+	<link rel="stylesheet" href="./css/douban.css">
+	
+	<link rel="stylesheet" href="./css/swiper-3.4.2.min.css">
+</head>
+<body>
+	<div class="top">
+		<div class="top_div">
+			<p><span>豆瓣市集</span><img src="./image/search.png" alt=""></p>
+		</div>
+	</div>
+	<div class="nav">
+		<ul class="nav_ul clearfix">
+			<li><a id="1"  class="own">首页</a></li>
+			<li><a id="2">分类</a></li>
+			<li><a id="3">购物车0</a></li>
+			<li><a id="4">我的</a></li>
+		</ul>
+	</div>
+	<div class="swiper-container">
+	    <div class="swiper-wrapper">
+	        <div class="swiper-slide"><img src="./image/file-1.jpg" alt=""></div>
+	        <div class="swiper-slide"><img src="./image/file-2.jpg" alt=""></div>
+	        <div class="swiper-slide"><img src="./image/file-3.jpg" alt=""></div>
+	        <div class="swiper-slide"><img src="./image/file-4.jpg" alt=""></div>
+	    </div>
+	    <!-- 如果需要分页器 -->
+	    <div class="swiper-pagination"></div>
+	</div>
+	<div class="comment">
+		<div class="carousel">
+			<ul class="carousel_ul clearfix">
+				<li class="carousel_li"><img src="./image/file-3.jpg" alt=""></li>
+				<li class="carousel_li"><img src="./image/file-1.jpg" alt=""></li>
+				<li class="carousel_li"><img src="./image/file-2.jpg" alt=""></li>
+				<li class="carousel_li"><img src="./image/file-4.jpg" alt=""></li>
+			</ul>
+		</div>
+		<div class="pointer">
+			<p><!-- <span class="owner"></span><span></span><span></span> --></p>
+		</div>
+		<div class="adv">
+			<span>广告</span>
+		</div>
+	</div>
+	<div class="center clearfix">
+		<div class="center_div">
+			<img src="./image/logo.jpg" alt="">
+			<p><a href="#">韩国直邮 绿吕-洗发450ml +180ml</a></p>
+			<p><span>￥69.9</span><s>￥99</s></p>
+		</div>
+		<div class="center_div">
+			<img src="./image/p1.jpg" alt="">
+			<p><a href="#">现货PISN休闲百搭学院风2017夏季衬衫女天丝衬衫女宽松牛仔衬衣外套</a></p>
+			<p><span>￥169</span><s>￥199</s></p>
+		</div>
+		<div class="center_div">
+			<img src="./image/p6.jpg" alt="">
+			<p><a href="#">韩国直邮 绿吕-洗发450ml +180ml</a></p>
+			<p><span>￥69.9</span><s>￥99</s></p>
+		</div>
+		<div class="center_div">
+			<img src="./image/p2.jpg" alt="">
+			<p><a href="#">现货PISN休闲百搭学院风2017夏季衬衫女天丝衬衫女宽松牛仔衬衣外套</a></p>
+			<p><span>￥169</span><s>￥199</s></p>
+		</div>
+		<div class="center_div">
+			<img src="./image/p5.jpg" alt="">
+			<p><a href="#">韩国直邮 绿吕-洗发450ml +180ml</a></p>
+			<p><span>￥69.9</span><s>￥99</s></p>
+		</div>
+		<div class="center_div">
+			<img src="./image/p4.jpg" alt="">
+			<p><a href="#">现货PISN休闲百搭学院风2017夏季衬衫女天丝衬衫女宽松牛仔衬衣外套</a></p>
+			<p><span>￥169</span><s>￥199</s></p>
+		</div>
+	</div>
+	<script src="./js/function.js"></script>
+<script>
+$(function(){
+	function dyt(){
+		var comment=$(".comment"), //获取最外层框架的名称
+	 ul=comment.find("ul"), 
+	 showNumber=comment.find(".pointer span"),//获取按钮
+	 oneWidth=comment.find("ul li").eq(0).width(); //获取每个图片的宽度
+	 var timer=null; //定时器返回值，主要用于关闭定时器
+	 var iNow=0; //iNow为正在展示的图片索引值，当用户打开网页时首先显示第一张图，即索引值为0
+	 showNumber.on("click",function(){  //为每个按钮绑定一个点击事件 
+	  $(this).addClass("owner").siblings().removeClass("owner");
+	  var index=$(this).index(); //获取哪个按钮被点击，也就是找到被点击按钮的索引值
+	  iNow=index;
+	  ul.animate({
+	  "left":-oneWidth*iNow, //注意此处用到left属性，所以ul的样式里面需要设置position: relative; 让ul左移N个图片大小的宽度，N根据被点击的按钮索引值iNOWx确定
+	  })
+	 });
+	 timer=setInterval(function(){ //打开定时器
+	  iNow++;    //让图片的索引值次序加1，这样就可以实现顺序轮播图片
+	  if(iNow>showNumber.length-1){ //当到达最后一张图的时候，让iNow赋值为第一张图的索引值，轮播效果跳转到第一张图重新开始
+	  iNow=0;
+	  }
+	  showNumber.eq(iNow).trigger("click"); //模拟触发数字按钮的click
+	 },3000); //2000为轮播的时间
+	 $(document).scroll(function(){
+     	 var scrTop = $(document).scrollTop();
+      	 if(scrTop>5){
+         	$(".nav").addClass("fixed");
+      	 }
+      	 else if(scrTop<=5){
+          	$(".nav").removeClass("fixed");
+         } 
+        });
+	}
+	var tpl="";
+	 var ver="";
+	 var op="";
+	$.ajax({
+		type:"get",
+		dataType:"json",
+		url:"http://ztshop.net/index.php/home/index/index",
+		success:function(res){
+			for(var i=0;i<res.goods.length;i++){
+				 tpl+="<div class='center_div'><img src='"+res.goods[i].img+"' class='img'><p><a href='#'>"+res.goods[i].name+"</a></p><p><span>"+res.goods[i].price+"</span><s>"+res.goods[i].market_price+"</s></p><p class='oppo'>"+res.goods[i].id+"</p></div>";
+			}
+			$(".center").html(tpl);
+			for(var j=0;j<res.ad.length;j++){
+				ver+="<li class='carousel_li'><img src='"+res.ad[j].img+"'></li>";
+				if(j==0){
+					op+="<span class='owner'></span>";
+				}else{
+					op+="<span></span>";
+				}
+			}
+			console.log(op);
+			$(".carousel_ul").html(ver);
+			$(".pointer p").html(op);
+			dyt();
+		}
+	})
+	$(".center").on("click",".img",function(){
+		var id=$(this).siblings(".oppo").text();
+		$.ajax({
+			type:"get",
+			dataType:"json",
+			url:"http://ztshop.net/index.php/Home/goods/detail/?id=id",
+			data:{
+				id:id,
+			},
+			success:function(res){
+				console.log(id);
+				window.location.href="detail.html?id="+id+"";
+			}
+		})
+	})
+	 
+})   
+</script>
+</body>
+</html>

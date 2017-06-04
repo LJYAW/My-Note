@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	.fixed{
+		width:200px;
+		height:300px;
+		border:1px solid red;
+		float:left;
+		position:fixed;
+		top:50px;
+		left:300px;
+		background-color:pink;
+    }
+	/*.relative{
+		width:100px;
+		height:100px;
+		border:1px solid red;
+		float:left;
+		position:relative;
+		left:50px;
+		top:30px;
+
+	}
+	.absolution{
+		width:100px;
+		height:100px;
+		border:1px solid red;
+		float:left;
+		position:absolute;
+		left:50px;
+		top:50px;
+		
+	}*/
+	.index{
+		width:100px;
+		height:100px;
+		position:relative;
+		
+		background-color: red;
+		z-index: 10;
+	}
+	.indexs{
+		width:100px;
+		height:100px;
+		position:relative;
+		
+		background-color: blue;
+		z-index:12;
+	}
+	.box-out{
+		width:100px;
+		height:100px;
+		background-color:blue;
+		position:fixed;
+		top:200px;
+		right:200px;
+
+	}
+	.box-in{
+		width:20px;
+		height:20px;
+		border-radius:100%;
+		background-color:pink;
+		position:absolute;
+		right:10px;
+		bottom:10px;
+	}
+	</style>
+</head>
+<body>
+	<div class="fixed"></div>
+	<div class="relative"><div class="absolution"></div>
+	<div class="index"></div>
+	<div class="indexs"></div>
+	<div class="box-out"><div class="box-in"></div></div>
+	
+	</div>
+	
+</body>
+</html>

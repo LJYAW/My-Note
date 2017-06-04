@@ -1,0 +1,92 @@
+html,body{
+	margin:0;
+	padding:0;
+	font-size: 62.5%;
+}
+.swiper-slide img{
+	width:100%;
+}
+.swiper-wrapper{
+	position: relative;
+}
+.number{
+	position: absolute;
+	right:2rem;
+	bottom:2rem;
+	z-index: 99;
+	padding:0.2rem 0.5rem;
+	background-color: rgba(0,0,0,0.4);
+	border-radius: 1rem;
+}
+.number span{
+	color:#fff;
+}
+.desc{
+	font-size: 2.5rem;
+	padding:1rem 1rem;
+}
+.navs_ul{
+	list-style: none;
+}
+.navs_li{
+	float: left;
+	width:33%;
+	text-align: center;
+}
+.navs_li p:nth-child(1){
+	color:#9c9fa1;
+}
+.navs_li p:nth-child(2){
+	color: #fa5741;
+	font-size: 1.7rem;
+}
+.list-msg{
+	margin: 2rem;
+}
+.list-msg ul li{
+	width: 50%;
+	float: left;
+	list-style: none;
+	font-size: 1.5rem;
+	color: #999;
+	margin-bottom: 1rem;
+}
+.list-msg ul li:last-child{
+	width:100%;
+}
+.list-msg ul li:nth-child(11){
+	width:100%;
+}
+.list-msg ul li span{color:#333;font-size: 1.55rem;}
+.map{
+	margin-top: 2rem;
+}
+.map img{
+	width:100%;
+	height: 20rem;
+}
+.h_msg {width:100%;height: 100%;}
+.h_msg p{
+	position: relative;
+	line-height: 4rem;
+	height: 4rem;
+	margin: 0 2rem;
+	font-size: 1.6rem;
+	font-weight: 700;
+}
+.h_msg p img{
+	width: 2rem;
+	position: absolute;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+}
+.msg{
+	padding:0 2rem;
+	font-size: 1.5rem;
+}
+.swiper-container{
+	height:16rem;
+}
+#allmap {width: 100%;height:15rem;overflow: hidden;margin:0;font-family:"微软雅黑";}

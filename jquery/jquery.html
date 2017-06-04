@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet"  type="text/css" href="css/jquery.css">
+	<script type="text/javascript" src="./js/jquery-3.2.0.min.js"></script>
+</head>
+<body>
+	
+	<p>用户名: <input type="text"></p>
+	<p>用户密码: <input type="password"></p>
+	<p><input type="submit"></p>
+	<div class="tab">
+		<button class="left"><</button>
+		<ul class="nav clearfix">
+			<li><img src="./image/miss.jpg" alt=""></li>
+			<li><img src="./image/xiang.jpg" alt=""></li>
+			<li><img src="./image/ni.jpg" alt=""></li>
+			<li><img src="./image/suo.jpg" alt=""></li>
+		</ul>
+		<button class="right">></button>
+	</div>
+	<div class="box clearfix">
+		<div class="left-div">
+			<ul class="left-ul">
+				<li><img src="./image/jingdongo.JPG" alt=""></li>
+				<li><img src="./image/dreamo.JPG" alt=""></li>
+				<li><img src="./image/zhineng.PNG" alt=""></li>
+			</ul>
+		</div>
+		<div class="right-div">
+			<ul class="right-ul">
+				<li><img src="./image/jingdong.JPG" alt=""></li>
+				<li><img src="./image/dream.JPG" alt=""></li>
+				<li><img src="./image/company.PNG" alt=""></li>
+			</ul>
+		</div>
+	</div>
+	<div class="scala">
+		<ul class="top">
+			<li>
+				<a href="#">1</a>
+				<ul class="content hide">
+					<li>1</li>
+					<li>1</li>
+					<li>1</li>
+					<li>1</li>
+				</ul>
+			</li>
+			<li>
+				<a href="#">2</a>
+				<ul class="content hide">
+					<li>2</li>
+					<li>2</li>
+					<li>2</li>
+					<li>2</li>
+				</ul>
+			</li>
+			<li>
+				<a href="#">3</a>
+				<ul class="content hide">
+					<li>3</li>
+					<li>3</li>
+					<li>3</li>
+					<li>3</li>
+				</ul>
+			</li>
+
+		</ul>
+	</div>
+	
+	
+	<div class="tab">
+		<ul class="tabbox clearfix">
+			<li>1</li>
+			<li>2</li>
+			<li>3</li>
+		</ul>
+		<div class="content">
+			<div>11111</div>
+			<div class="hide">22222</div>
+			<div class="hide">33333</div>
+		</div>
+	</div>
+	<!-- <div class="box background"></div>
+	<ul class="nav clearfix">
+		<li>热门</li>
+		<li>24小时</li>
+		<li>糗百</li>
+		<li>热门</li>
+		<li>热门</li>
+		<li>热门</li>
+	</ul> -->
+	<!-- <p><button class="show">显示</button><button class="hide">隐藏</button><button class="point">点击</button></p> -->
+	<script type="text/javascript">
+		$(function(){
+			$(".top li a").click(function(){
+
+				$(".content").addClass("hide");
+				$(this).siblings(".content").removeClass("hide");
+			})
+			var inputName="liujunyu";
+			var passWord="wei040728";
+			$("input[type='submit']").click(function(){
+				var inputName=$("input[type='text']").val();
+				var passWord=$("input[type='password']").val();
+				if(inputName==""&&passWord==""){
+					alert("用户名和密码不能为空");
+					return false;
+				};
+				if(inputName==""){
+					alert("用户名不能为空");
+					return false;
+				};
+				if(passWord==""){
+					alert("密码不能为空");
+					return false;
+					
+				};
+				if(inputName !="liujunyu"){
+					alert("用户名不存在");
+					return false;
+					
+				};
+				if(passWord !="wei040728"){
+					alert("密码错误");
+					return false;
+				};
+				
+				if(inputName=="liujunyu"&&passWord=="wei040728"){
+					alert("登录成功");
+				};
+
+
+		    });
+			//左侧轮播
+			 $(".left").click(function(){
+			 	$(".nav").animate({right:"+=200px"},1000,function(){
+			 		var firstLi=$(".nav li:first");
+					var lastLi=$(".nav li:last");
+					firstLi.insertAfter(lastLi);
+					$(".nav").css("right","200px");
+				});
+			});
+			//右侧轮播
+			$(".right").click(function(){
+			 	$(".nav").animate({right:"-=200px"},1000,function(){
+			 		var firstLi=$(".nav li:first");
+			 		var lastLi=$(".nav li:last");
+			 		lastLi.insertBefore(firstLi);
+			 		$(".nav").css("right","200px");
+			 	});
+			});
+			//右侧导航
+			$(".right-ul li").mouseover(function(){
+				var index=$(this).index();
+				if(index==0){
+					$(".left-ul").stop().animate({marginTop:"0"},1000);
+				};
+				if(index==1){
+					$(".left-ul ").stop().animate({marginTop:"-160px"},1000);
+				};
+				if(index==2){
+					$(".left-ul ").stop().animate({marginTop:"-320px"},1000);
+				};
+			});
+
+		});
+			$(".tabbox li").click(function(){
+				$(this).addClass("background").siblings().removeClass("background");
+			});
+			$(".tabbox li").click(function(){
+				var index=$(this).index();
+				$(".content div").eq(index).removeClass("hide").siblings().addClass("hide");
+			});
+
+		
+		// var tabLi=$(".tabbox li")
+		// tabLi.click(function(){
+		// 	$(this).addClass("background")
+		// })
+		// $(function(){
+		// 	$(".show").click(function(){
+		//  	$(".box").show("speed");
+		//  	 alert(111);
+		//  	 console.log(222);
+		//  });
+		// 	$(".hide").click(function(){
+		//  	$(".box").hide("speed");
+		//  	alert(111);
+		//  	console.log(222);
+		//  });
+		// 	$(".point").click(function(){
+		// 	$(".box").css("background","blue");
+		//  });
+			// $(".box").addClass("background")
+			 
+			//  if($(".box").hasClass("background")){
+			//  	alert(111);
+			//  }else{
+			//  	alert(222);
+			// }
+			// var nav_li=$(".nav li")
+			// nav_li.click(function(){
+			// 	 $(this).css("background","red");
+			// 	$(this).addClass("background").siblings().removeClass("background");
+			// })//
+	
+	</script>
+</body>
+</html>

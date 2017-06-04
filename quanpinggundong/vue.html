@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>vue</title>
+	
+	<script src="./js/vue.js"></script>
+</head>
+<style>
+	#app th,td{
+		width:100px;
+		text-align: center;
+		/*border:1px solid #aaa;*/
+	}
+	.oppo ul{
+		list-style: none;
+	}
+	.oppo ul li p{
+		width:100px;
+		height:50px;
+		line-height: 50px;
+		text-align: center;
+		border:1px solid #333;
+	}
+	.background{
+		background-color: red ;
+	}
+	.wrapDiv{
+		border:1px solid red;
+	}
+	.wrap{
+		padding-top: 10px;
+	}
+	.wrapDiv {
+		width:100px;
+		height:100px;
+	}
+	.wrapDiv p{
+		text-align: center;
+		line-height: 70px;
+	}
+</style>
+<body>
+	<div id="app">
+		<table>
+			<thead>
+				<th v-for="todo in obj">{{todo}}</th>
+			</thead>
+			<tbody>
+				<tr v-for="item in arr">
+					<td v-for="items in item">{{items}}</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<div id="add">
+		<input type="text" v-model="push">
+		<p>{{push}}</p>
+		<hr>
+		<input id="box" type="checkbox" v-model="checklist" value="选项一">
+		<label for="box">选项一</label>
+		<input id="box1" type="checkbox" v-model="checklist" value="选项二">
+		<label for="box1">选项二</label>
+		<input id="box2" type="checkbox" v-model="checklist" value="选项三">
+		<label for="box2">选项三</label>
+		<p>选中的是:{{checklist}}</p>
+		<hr>
+		<input id="box3" type="radio" name="a" v-model="check" value="male">
+		<label for="box3">男</label>
+		<input id="box4" type="radio" name="a" v-model="check" value="famale">
+		<label for="box4">女</label>
+		<p>性别:{{check}}</p>
+		<hr>
+		<select v-model="selected">
+			<option value="A">A</option>
+			<option value="B">B</option>
+			<option value="C">C</option>
+		</select>
+		<p>选择的是:{{selected}}</p>
+	</div>
+	<div class="oppo">
+		<ul>
+			<li v-for="item in content" @click="onClick(item)"><p :class="item.bgcolor?'background':''">{{item.number}} </p></li>
+		</ul>
+	</div>
+	<hr>
+	<div class="wrap">
+		<input type="button" @click="onClick" value="按钮">
+		<div class="wrapDiv" v-show="show"><p v-for="item in obj">{{item}}</p></div>
+	</div>
+	<script>
+		var app = new Vue({
+		  el: '#app',
+		  data: {
+		  	
+		    obj:
+		      { name:'姓名',
+		      	age:'年龄' ,
+		        sex: '性别' ,
+		    	grade:'班级'},
+		    arr:[
+		    		{
+		    		name:"刘君瑜",
+		    		age:"18",
+		    		sex:"女",
+		    		grade:"计14-2",
+		    	},
+		    	{
+		    		name:"何计珍",
+		    		age:"19",
+		    		sex:"女",
+		    		grade:"计14-2",
+		    	},
+		    	{
+		    		name:"宋莹莹",
+		    		age:"15",
+		    		sex:"女",
+		    		grade:"计14-2",
+		    	},
+		    ],
+
+		    
+		  },
+		  // methods: {
+		  //   reverseMessage: function () {
+		  //     this.message = this.message.split('').reverse().join('')
+		  //   }
+		  // }
+		})
+		var add= new Vue({
+			 el: '#add',
+			 data:{
+			 	 push:"hello",
+			 	 checklist:[],
+			 	 check:"",
+			 	 selected:"",
+			 },
+		})
+		var oppo=new Vue({
+			el:".oppo",
+			data:{
+				content:[
+					{
+						number:1,
+						bgcolor:false
+					},
+					{
+						number:2,
+						bgcolor:false
+					},
+					{
+						number:3,
+						bgcolor:false
+					},
+					{
+						number:4,
+						bgcolor:false
+					}
+				]
+			},
+			methods:{
+				onClick:function(item){
+
+					var back=this.content;
+					for( var i=0;i<back.length;i++){
+						back[i].bgcolor=false;
+					}
+					item.bgcolor=true;
+					
+				}
+			}
+		})
+		var wrap=new Vue({
+			el:".wrap",
+			data:{
+				show:true,
+				obj:{content:'hidden'},
+			},
+			methods:{
+				onClick:function(){
+					this.show=!this.show;
+				}
+			}
+		})
+	</script>
+	
+</body>
+</html>
