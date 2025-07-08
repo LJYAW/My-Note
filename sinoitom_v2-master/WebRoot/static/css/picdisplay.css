@@ -1,0 +1,210 @@
+/* 
+* @Author: Marte
+* @Date:   2016-11-30 11:39:59
+* @Last Modified by:   Marte
+* @Last Modified time: 2016-11-30 11:40:47
+*/
+
+.con_left, .con_right {
+    border: 1px solid #d9f3bd;
+    float: left;
+    margin-bottom: 10px;
+    margin-top: 6px;
+}
+.con_left {
+    margin-right: 2%;
+    width: 48%;
+}
+.con_right {
+    width: 48%;
+}
+.con_left1, .con_right1 {
+    border: 1px solid #d9f3bd;
+    float: left;
+    margin-bottom: 10px;
+}
+.con_left1 {
+    margin-right: 2%;
+    width: 48%;
+}
+.con_right1 {
+    width: 48%;
+}
+.con_center {
+    border: 1px solid #d9f3bd;
+    float: left;
+    margin: 10px 0;
+}
+.con_center {
+    margin-right: 2%;
+    width: 98%;
+}
+.con_left_cont, .con_right_cont {
+    margin: 10px;
+}
+.con_center_cont {
+    margin: 10px;
+}
+.con_left_cont h2, .con_right_cont h2, .con_center_cont h2 {
+    border-bottom: 1px dashed #ccc;
+    font-size: 12px;
+    height: 25px;
+    line-height: 25px;
+}
+.con_drawing {
+    text-align: center;
+}
+.con_center_drawing {
+    text-align: center;
+}
+.con_center_title {
+    border-bottom: 1px dashed #ccc;
+    font-size: 12px;
+    height: 25px;
+    line-height: 25px;
+    margin: 5px 5px 0;
+    width: 98%;
+}
+.top_left {
+    border-left: 1px solid #d9f3bd;
+    border-right: 1px solid #fff;
+    border-top: 1px solid #d9f3bd;
+    float: left;
+    height: 26px;
+    line-height: 26px;
+    margin-top: 6px;
+    width: 98%;
+}
+.top_right {
+    border-left: 1px solid #fff;
+    border-right: 1px solid #d9f3bd;
+    border-top: 1px solid #d9f3bd;
+    float: left;
+    height: 26px;
+    line-height: 26px;
+    margin-top: 6px;
+    width: 0;
+}
+.con_left_cont1, .con_right_cont1 {
+    margin: 0;
+}
+.con_center_cont1 {
+    margin: 10px;
+}
+.con_left_cont1 h2, .con_right_cont1 h2, .con_center_cont1 h2 {
+    font-size: 12px;
+    height: 25px;
+    line-height: 25px;
+}
+.time_period {
+    position: relative;
+    text-align: center;
+}
+.time_period dl {
+    display: none;
+    left: 0;
+    position: absolute;
+    top: 26px;
+}
+.time_period dl dd {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background: #fff none repeat scroll 0 0;
+    border-color: -moz-use-text-color #0066cc #0066cc;
+    border-image: none;
+    border-style: none solid solid;
+    border-width: medium 1px 1px;
+    height: 22px;
+    overflow: hidden;
+    width: 55px;
+}
+.time_period dl dd a {
+    display: block;
+    height: 22px;
+    line-height: 22px;
+    width: 55px;
+}
+.time_period dl dd a:hover {
+    background-image: url("../images/skin_bg.png");
+    color: #fff;
+}
+.tabHeader {
+    background-color: rgb(226, 240, 255);
+    border-left: 1px solid #84a0c4;
+    border-right: 1px solid #84a0c4;
+    border-top: 1px solid #84a0c4;
+    float: left;
+    height: 26px;
+    line-height: 26px;
+    margin-top: 6px;
+    width: 98%;
+}
+.expandHeader {
+    background-color: rgb(226, 240, 255);
+    border-left: 1px solid #84a0c4;
+    border-right: 1px solid #84a0c4;
+    border-top: 1px solid #84a0c4;
+    float: left;
+    height: 26px;
+    line-height: 26px;
+    margin: 0;
+    width: 100%;
+}
+#chart_swap {
+    cursor: pointer;
+}
+.chart_open {
+    background: rgba(0, 0, 0, 0) url("../images/chart_open.png") no-repeat scroll 0 0;
+}
+.chart_close {
+    background: rgba(0, 0, 0, 0) url("../images/chart_close.png") no-repeat scroll 0 0;
+}
+#query_swap {
+    cursor: pointer;
+}
+.query_open {
+    background: rgba(0, 0, 0, 0) url("../images/query_open.gif") no-repeat scroll 0 0;
+}
+.query_close {
+    background: rgba(0, 0, 0, 0) url("../images/query_close.gif") no-repeat scroll 0 0;
+}
+.expandHeader {
+    background-color: rgb(226, 240, 255);
+    border: 1px solid #84a0c4;
+    height: 26px;
+    line-height: 26px;
+    margin: 0;
+    width: 100%;
+}
+.expandHeader a {
+    cursor: pointer;
+}
+.headerTitle {
+    cursor: pointer;
+    float: left;
+    font-weight: bold;
+    height: 18px;
+    margin-left: 16px;
+    margin-top: 2px;
+    text-align: left;
+    text-decoration: none;
+    width: 230px;
+}
+.headerUp {
+    background: rgba(0, 0, 0, 0) url("../images/open.png") no-repeat scroll 0 0;
+    float: right;
+    height: 14px;
+    margin-right: 10px;
+    margin-top: 8px;
+    width: 18px;
+}
+.headerDown {
+    background: rgba(0, 0, 0, 0) url("../images/close.png") no-repeat scroll 0 0;
+    float: right;
+    height: 14px;
+    margin-right: 12px;
+    margin-top: 8px;
+    width: 18px;
+}

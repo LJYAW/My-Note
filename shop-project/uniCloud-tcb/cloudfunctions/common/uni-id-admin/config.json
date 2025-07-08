@@ -1,0 +1,7 @@
+{
+	"passwordSecret": "passwordSecret-demo",
+	"tokenSecret": "tokenSecret-demo",
+	"tokenExpiresIn": 7200,
+	"passwordErrorLimit": 6,
+	"passwordErrorRetryTime": 3600
+}

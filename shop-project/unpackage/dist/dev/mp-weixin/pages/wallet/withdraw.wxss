@@ -1,0 +1,8 @@
+@charset "UTF-8";
+/* 配色 */
+.center.data-v-04550e12 {
+  padding-top: 30vh;
+  font-size: 32rpx;
+  color: #333;
+}
+

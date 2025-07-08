@@ -1,0 +1,103 @@
+body,html{width:100%; height:100%; padding:0; margin:0; overflow:hidden;} 
+#index-top{ height:60px; background:#152A49; color:White; margin-bottom:3px;}
+#topmenu{width:100%; height:30px;}
+#layout-index{width:100%; height:100%;}
+#home{width:100%; height:100%;}
+#index-bottom{width:100%; height:100%; background:url(../../img/bottom.png) right top;text-align:center;}
+.top{
+	height:65px;
+	width:100%;
+	background:url(../../img/top_bg.png) center repeat-x; 
+	display:block;
+	margin:0px auto;
+	position:relative;
+}
+.hR .user{
+	color:#fcfcfc;
+	padding-top:2px;
+}
+.top_logo{
+	background:url(../../img/newSDNlogo.png) no-repeat 30px 10px;
+	width:15%; 
+	height:65px; 
+	float:left;
+}
+.logo_top{
+	background:url(../../img/SDN1.png) no-repeat 30px;
+	width:15%; 
+	height:25px; 
+	float:left;
+	padding:0;
+	margin:0;
+}
+.top_qbar{height:29px;line-height:29px;padding-right:30px;box-sizing: border-box;position:absolute;right:2px;top:1px;}
+.top_qbar li{ float:left;padding-left:18px;height:29px;list-style:none;color:#fcfcfc;margin-right:5px;line-height:29px;}
+.top_qbar li a{color:#fcfcfc;margin-right:4px;font-size:14px;text-decoration: none;}
+.top_qba{height:25px;line-height:25px;padding-right:30px;box-sizing: border-box;position:absolute;right:2px;top:1px;}
+.top_qba li{ float:left;padding-left:18px;height:25px;list-style:none;color:#fcfcfc;margin-right:5px;}
+.top_qba li a{color:#fcfcfc;margin-right:4px;font-size:14px;text-decoration: none;}
+.home{background: url(../../img/home.gif) no-repeat  center left;}
+.configure{background: url(../../img/configure.png) no-repeat  center left;}
+.help_topic{background: url(../../img/help_topic.gif) no-repeat  center left;}
+.help_view{background: url(../../img/help_view.gif) no-repeat  center left;}
+.goback{background: url(../../img/goback.gif) no-repeat  center left;}
+
+#menu_bar{
+	/*background:url(../../img/menu-bg.png) right top;*/
+	/*width:100%;*/
+	/*height:65px;*/
+	z-index: 100;
+    float:left;
+    width:65%;
+	/*position: absolute;*/
+	/*left:135px;*/
+	/*top:-15px;*/
+}
+#menu_bar a{
+	font-family: Arial,sans-serif;
+	text-align: center;
+}
+
+#open_show {
+    cursor: pointer;
+    width: 12px;
+	height: 12px;
+    margin: 12px 50px 0 0;
+    position: absolute;
+    right:-40px;
+    z-index:8999;
+}
+.hideUser{
+    text-align: right;
+    display:none;
+    padding:0 40px;
+    overflow:hidden;
+}
+.hideUser .hideUser-l{
+    float:left;
+}
+.hideUser .hideUser-r{
+    float:right;
+}
+.open{background: url(../../img/open2.png) no-repeat;top:40px;}
+.close{background: url(../../img/close.png) no-repeat;top:2px;}
+
+
+ul{ margin:0; padding:0; list-style:none;}
+li{ margin:0; padding:0;}
+.menu_navcc{width:65%;height:25px; margin:0 auto;}
+.menu_nav{width:100%;height:32px;background:url(../img/nav_bg.gif) repeat-x;float:left;margin-top:-3px;}
+/* .menu_nav .nav_content{padding-left:250px;} */
+.menu_nav .nav_content li{height:36px;padding-left:12px;padding-right:12px;background:url(../img/nav_li_right.gif) no-repeat right center;float:left;line-height:36px;text-align:center;font-size:14px;font-weight:bold;}
+.menu_nav .nav_content li a{color:#FFFFFF;height:34px;display:block;text-decoration:none;}
+.menu_nav .nav_content li span.sty2{ float:left; display:block; padding-left:9px;padding-right:8px;}
+.menu_nav .nav_content li span.sty1{ float:left; display:block; width:6px; height:34px;}
+.menu_nav .nav_content li span.sty3{ float:left; display:block; width:8px; height:34px;}
+/* .menu_nav .nav_content li.current{line-height:32px;} */
+.menu_nav .nav_content li.current a span.sty2,.menu_nav .nav_content li a:hover span.sty2{height:32px;background:url(../img/nav_li_current_1.gif) no-repeat center top;display:block;color:#FFFFFF;}
+.menu_nav .nav_content li.current a span.sty1,.menu_nav .nav_content li a:hover span.sty1{background:url(../img/nav_li_current_1l.gif) no-repeat}
+.menu_nav .nav_content li.current a span.sty3,.menu_nav .nav_content li a:hover span.sty3{background:url(../img/nav_li_current_1r.gif) no-repeat}
+.menu_nav .nav_content li a:hover span.sty2{background:url(../img/nav_li_hover_1.gif) no-repeat center top;line-height:32px;text-decoration:none;}
+.menu_nav .nav_content li a:hover span.sty1{ background:url(../img/nav_li_hover_1l.gif) no-repeat;}
+.menu_nav .nav_content li a:hover span.sty3{ background:url(../img/nav_li_hover_1r.gif) no-repeat;}
+.menu_nav_right{padding-right:20px;background:url(../img/nav_r_bg.gif) no-repeat right top;float:right;margin-left:50px;padding-top:13px;height:23px;padding-bottom:12px;}

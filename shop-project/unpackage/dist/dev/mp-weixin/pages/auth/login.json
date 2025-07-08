@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "登录",
+  "navigationStyle": "custom",
+  "usingComponents": {
+    "mix-code": "/components/mix-code/mix-code",
+    "mix-button": "/components/mix-button/mix-button",
+    "mix-loading": "/components/mix-loading/mix-loading"
+  }
+}

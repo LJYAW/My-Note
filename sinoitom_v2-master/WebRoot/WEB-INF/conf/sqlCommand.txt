@@ -1,0 +1,26 @@
+show global status like 'threads_%';#线程状态
+show global status like 'max_used_connections';#连接状态
+show global status LIKE 'question%';#每秒查询数量
+show global status LIKE 'com_commit';#提交事务数量
+show global status like 'com_rollback';#回滚事务数量
+show global status like '%lock%';#锁情况
+show global status like '%slow%';#慢查询记录
+show global status like 'key_read%';#索引命中情况
+show global status like 'key_blocks_u%';#缓存簇(blocks)数
+show global status like 'created_tmp%';#临时表
+show global status like 'open%tables%';#opentable情况
+show global status like 'sort%';#排序情况
+show global status like 'open_files';#openfile情况
+show global status like 'table_locks%';#表锁情况
+show global status like 'handler_read%';#表扫描
+show global status like 'com_select';#查询情况
+show status like 'qcache%';#查询缓存命中
+show status like 'Aborted_clients';#客户端被异常中断的数值
+show status like 'Select_full_join';#主键联合执行次数
+show status like 'Select_scan';#执行全表搜索查询的数量
+show status like 'Key%';#keyBuffer命中率
+show status like '%binlog%';#二进志日志缓存
+show status like 'innodb_buffer_pool_read%';#InnoDBBuffer命中率
+show variables like 'query_cache%';#查询缓存
+show variables like 'max_connections';#设置的最大连接数
+show variables like 'open_files_limit';#openfile情况

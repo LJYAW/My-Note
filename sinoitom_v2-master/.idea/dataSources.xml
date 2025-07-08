@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+    <data-source source="LOCAL" name="application" uuid="48c1ee25-41ea-4124-8fe0-3573ca438e52">
+      <driver-ref>cassandra</driver-ref>
+      <synchronize>true</synchronize>
+      <imported>true</imported>
+      <remarks>jdbc.properties
+
+D:/sino-projects/Sino-ACS/sinoitom_v2-master/sinoitom_v2-master/WebRoot/WEB-INF/lib/SnmpService.jar!/application.properties</remarks>
+      <jdbc-driver>com.dbschema.CassandraJdbcDriver</jdbc-driver>
+      <jdbc-url>jdbc\:mysql\://192.168.99.160\:13306/itomdbv2?useUnicode\=true&amp;characterEncoding\=utf-8&amp;zeroDateTimeBehavior\=convertToNull</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="WebRoot:WEB-INF:conf:hibernate.cfg.xml/Hibernate" uuid="9bf01f04-dfb8-4e34-8196-ae50b466d753">
+      <driver-ref>mysql</driver-ref>
+      <synchronize>true</synchronize>
+      <imported>true</imported>
+      <remarks>Hibernate
+
+D:/sino-projects/Sino-ACS/sinoitom_v2-master/sinoitom_v2-master/WebRoot/WEB-INF/conf/hibernate.cfg.xml</remarks>
+      <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://10.1.2.98:3306/mspdb</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="sessionFactory/Hibernate" uuid="627970fe-7db0-4c8d-87f2-aca289fd1652">
+      <driver-ref>mysql</driver-ref>
+      <synchronize>true</synchronize>
+      <imported>true</imported>
+      <remarks>Hibernate
+
+D:/sino-projects/Sino-ACS/sinoitom_v2-master/sinoitom_v2-master/WebRoot/WEB-INF/conf/applicationContext.xml</remarks>
+      <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://10.1.2.98:3306/mspdb</jdbc-url>
+    </data-source>
+  </component>
+</project>

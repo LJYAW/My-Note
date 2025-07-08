@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="图层_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="160px" height="120px" viewBox="0 0 160 120" enable-background="new 0 0 160 120" xml:space="preserve">
+<g>
+	
+		<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="383.0615" y1="-121.4619" x2="412.3041" y2="-172.1115" gradientTransform="matrix(1 0 0 -1 -340.96 -115.6602)">
+		<stop  offset="0" style="stop-color:#FF5C00"/>
+		<stop  offset="0.5" style="stop-color:#F8AD2D"/>
+		<stop  offset="0.9892" style="stop-color:#F7F8F8"/>
+	</linearGradient>
+	<path fill="url(#SVGID_1_)" d="M38.438,7.917c0,0,29.278-13.74,49.177,2.937l-12.91,43.657c0,0-18.121-17.126-48.68-2.771
+		L38.438,7.917z"/>
+	
+		<linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="352.3926" y1="-195.3794" x2="413.9834" y2="-195.3794" gradientTransform="matrix(1 0 0 -1 -340.96 -115.6602)">
+		<stop  offset="0" style="stop-color:#0E00A9"/>
+		<stop  offset="0.5" style="stop-color:#0091E9"/>
+		<stop  offset="0.9892" style="stop-color:#F7F8F8"/>
+	</linearGradient>
+	<path fill="url(#SVGID_2_)" d="M23.846,59.083c0,0,29.279-13.74,49.178,2.937l-12.911,43.657c0,0-18.122-17.125-48.68-2.771
+		L23.846,59.083z"/>
+	
+		<linearGradient id="SVGID_3_" gradientUnits="userSpaceOnUse" x1="453.2461" y1="-231.2056" x2="424.0038" y2="-180.5564" gradientTransform="matrix(1 0 0 -1 -340.96 -115.6602)">
+		<stop  offset="0" style="stop-color:#FDD50A"/>
+		<stop  offset="0.5" style="stop-color:#F9CC4C"/>
+		<stop  offset="0.9892" style="stop-color:#F7F8F8"/>
+	</linearGradient>
+	<path fill="url(#SVGID_3_)" d="M115.947,113.432c0,0-29.279,13.739-49.177-2.937l12.912-43.658c0,0,18.122,17.127,48.68,2.771
+		L115.947,113.432z"/>
+	
+		<linearGradient id="SVGID_4_" gradientUnits="userSpaceOnUse" x1="483.9121" y1="-157.2876" x2="422.3223" y2="-157.2876" gradientTransform="matrix(1 0 0 -1 -340.96 -115.6602)">
+		<stop  offset="0" style="stop-color:#008819"/>
+		<stop  offset="0.5" style="stop-color:#61D200"/>
+		<stop  offset="0.9892" style="stop-color:#F7F8F8"/>
+	</linearGradient>
+	<path fill="url(#SVGID_4_)" d="M130.541,62.265c0,0-29.279,13.74-49.178-2.936l12.91-43.659c0,0,18.122,17.126,48.68,2.771
+		L130.541,62.265z"/>
+</g>
+<path opacity="0.5" fill="#FFFFFF" enable-background="new    " d="M105.884,76.366c0,4.526-3.669,8.194-8.194,8.194H60.812
+	c-4.526,0-8.195-3.668-8.195-8.194V47.685c0-4.525,3.669-8.195,8.195-8.195h36.877c4.525,0,8.194,3.668,8.194,8.195V76.366z"/>
+<text transform="matrix(1 0 0 1 56.5547 78.292)" font-family="'SimHei'" font-size="49.1692">MQ</text>
+</svg>

@@ -1,0 +1,3048 @@
+.sh_acid .sh_sourceCode {
+	color: rgb(0, 0, 0); font-style: normal; font-weight: 400; background-color: rgb(238, 238, 238);
+}
+.sh_acid .sh_sourceCode .sh_type {
+	color: rgb(128, 128, 192); font-style: normal; font-weight: 700;
+}
+.sh_acid .sh_sourceCode .sh_comment {
+	color: rgb(255, 128, 0); font-style: normal; font-weight: 400;
+}
+.sh_acid .sh_sourceCode .sh_number {
+	color: purple; font-style: normal; font-weight: 700;
+}
+.sh_acid .sh_sourceCode .sh_preproc {
+	color: rgb(0, 128, 192); font-style: normal; font-weight: 700;
+}
+.sh_acid .sh_sourceCode .sh_function {
+	color: rgb(0, 68, 102); font-style: normal; font-weight: 400;
+}
+.sh_berries-dark .sh_sourceCode {
+	color: rgb(64, 0, 128); font-style: normal; font-weight: 400; background-color: rgb(128, 191, 255);
+}
+.sh_berries-dark .sh_sourceCode .sh_type {
+	color: rgb(63, 43, 240); font-style: normal; font-weight: 400;
+}
+.sh_berries-dark .sh_sourceCode .sh_comment {
+	color: rgb(223, 9, 89); font-style: italic; font-weight: 400;
+}
+.sh_berries-light .sh_sourceCode {
+	color: rgb(71, 64, 109); font-style: normal; font-weight: 400; background-color: rgb(215, 255, 255);
+}
+.sh_berries-light .sh_sourceCode .sh_type {
+	color: rgb(139, 81, 192); font-style: normal; font-weight: 400;
+}
+.sh_berries-light .sh_sourceCode .sh_comment {
+	color: rgb(156, 60, 175); font-style: italic; font-weight: 400;
+}
+.sh_bipolar .sh_sourceCode {
+	color: rgb(209, 73, 166); font-style: normal; font-weight: 400; background-color: rgb(0, 0, 0);
+}
+.sh_bipolar .sh_sourceCode .sh_type {
+	color: rgb(170, 221, 139); font-style: normal; font-weight: 700;
+}
+.sh_bipolar .sh_sourceCode .sh_comment {
+	color: rgb(53, 214, 229); font-style: italic; font-weight: 400;
+}
+.sh_bipolar .sh_sourceCode .sh_preproc {
+	color: rgb(7, 246, 191); font-style: normal; font-weight: 400;
+}
+.sh_bipolar .sh_sourceCode .sh_function {
+	color: rgb(213, 25, 147); font-style: normal; font-weight: 700;
+}
+.sh_blacknblue .sh_sourceCode {
+	color: rgb(35, 70, 213); font-style: normal; font-weight: 400; background-color: rgb(0, 0, 0);
+}
+.sh_blacknblue .sh_sourceCode .sh_type {
+	color: rgb(192, 108, 248); font-style: normal; font-weight: 700;
+}
+.sh_blacknblue .sh_sourceCode .sh_comment {
+	color: rgb(111, 178, 196); font-style: italic; font-weight: 400;
+}
+.sh_blacknblue .sh_sourceCode .sh_number {
+	color: rgb(196, 172, 96); font-style: normal; font-weight: 400;
+}
+.sh_blacknblue .sh_sourceCode .sh_preproc {
+	color: rgb(128, 128, 255); font-style: normal; font-weight: 400;
+}
+.sh_blacknblue .sh_sourceCode .sh_function {
+	color: rgb(28, 150, 237); font-style: normal; font-weight: 400;
+}
+.sh_bright .sh_sourceCode {
+	color: rgb(64, 30, 122); font-style: normal; font-weight: 400; background-color: rgb(255, 255, 255);
+}
+.sh_bright .sh_sourceCode .sh_type {
+	color: rgb(247, 185, 44); font-style: normal; font-weight: 400;
+}
+.sh_bright .sh_sourceCode .sh_comment {
+	color: rgb(56, 173, 36); font-style: normal; font-weight: 400;
+}
+.sh_bright .sh_sourceCode .sh_number {
+	color: rgb(50, 186, 6); font-style: normal; font-weight: 400;
+}
+.sh_bright .sh_sourceCode .sh_preproc {
+	color: rgb(83, 116, 176); font-style: normal; font-weight: 400;
+}
+.sh_bright .sh_sourceCode .sh_function {
+	color: rgb(209, 28, 237); font-style: normal; font-weight: 400;
+}
+.sh_contrast .sh_sourceCode {
+	color: rgb(0, 0, 255); font-style: normal; font-weight: 400; background-color: rgb(237, 97, 4);
+}
+.sh_contrast .sh_sourceCode .sh_number {
+	color: rgb(151, 26, 216); font-style: normal; font-weight: 400;
+}
+.sh_contrast .sh_sourceCode .sh_preproc {
+	color: rgb(123, 68, 224); font-style: normal; font-weight: 400;
+}
+.sh_contrast .sh_sourceCode .sh_function {
+	color: rgb(255, 247, 0); font-style: normal; font-weight: 700;
+}
+.sh_darkblue .sh_sourceCode {
+	color: rgb(199, 199, 199); font-style: normal; font-weight: 400; background-color: rgb(0, 0, 64);
+}
+.sh_darkblue .sh_sourceCode .sh_type {
+	color: rgb(96, 255, 96); font-style: normal; font-weight: 400;
+}
+.sh_darkblue .sh_sourceCode .sh_comment {
+	color: rgb(128, 160, 255); font-style: normal; font-weight: 400;
+}
+.sh_darkblue .sh_sourceCode .sh_number {
+	color: rgb(66, 202, 217); font-style: normal; font-weight: 400;
+}
+.sh_darkblue .sh_sourceCode .sh_preproc {
+	color: rgb(255, 128, 255); font-style: normal; font-weight: 400;
+}
+.sh_darkness .sh_sourceCode .sh_number {
+	color: rgb(97, 157, 231); font-style: normal; font-weight: 400;
+}
+.sh_darkness .sh_sourceCode .sh_preproc {
+	color: rgb(29, 163, 207); font-style: normal; font-weight: 400;
+}
+.sh_darkness .sh_sourceCode .sh_function {
+	color: rgb(243, 70, 39); font-style: normal; font-weight: 400;
+}
+.sh_desert .sh_sourceCode {
+	color: rgb(255, 253, 236); font-style: normal; font-weight: 400; background-color: rgb(175, 148, 126);
+}
+.sh_desert .sh_sourceCode .sh_type {
+	color: rgb(254, 248, 188); font-style: normal; font-weight: 400;
+}
+.sh_desert .sh_sourceCode .sh_comment {
+	color: rgb(160, 0, 0); font-style: italic; font-weight: 400;
+}
+.sh_desert .sh_sourceCode .sh_number {
+	color: rgb(62, 63, 37); font-style: normal; font-weight: 400;
+}
+.sh_desert .sh_sourceCode .sh_preproc {
+	color: rgb(131, 57, 20); font-style: normal; font-weight: 400;
+}
+.sh_desert .sh_sourceCode .sh_function {
+	color: rgb(243, 210, 102); font-style: normal; font-weight: 700;
+}
+.sh_dull .sh_sourceCode {
+	color: rgb(101, 101, 101); font-style: normal; font-weight: 400; background-color: rgb(191, 191, 191);
+}
+.sh_dull .sh_sourceCode .sh_type {
+	color: rgb(50, 65, 198); font-style: normal; font-weight: 400;
+}
+.sh_dull .sh_sourceCode .sh_comment {
+	color: rgb(209, 29, 32); font-style: italic; font-weight: 400;
+}
+.sh_dull .sh_sourceCode .sh_number {
+	color: rgb(22, 147, 13); font-style: normal; font-weight: 400;
+}
+.sh_dull .sh_sourceCode .sh_preproc {
+	color: rgb(0, 0, 51); font-style: normal; font-weight: 400;
+}
+.sh_dull .sh_sourceCode .sh_function {
+	color: rgb(56, 37, 92); font-style: normal; font-weight: 400;
+}
+.sh_easter .sh_sourceCode {
+	color: rgb(44, 123, 52); font-style: normal; font-weight: 400; background-color: rgb(255, 255, 128);
+}
+.sh_easter .sh_sourceCode .sh_type {
+	color: rgb(237, 15, 85); font-style: normal; font-weight: 700;
+}
+.sh_easter .sh_sourceCode .sh_comment {
+	color: rgb(36, 200, 21); font-style: italic; font-weight: 400;
+}
+.sh_easter .sh_sourceCode .sh_number {
+	color: rgb(225, 26, 112); font-style: normal; font-weight: 400;
+}
+.sh_easter .sh_sourceCode .sh_preproc {
+	color: rgb(21, 131, 177); font-style: normal; font-weight: 400;
+}
+.sh_easter .sh_sourceCode .sh_function {
+	color: rgb(29, 69, 214); font-style: normal; font-weight: 400;
+}
+.sh_emacs .sh_sourceCode .sh_type {
+	color: rgb(32, 137, 32); font-style: normal; font-weight: 400;
+}
+.sh_emacs .sh_sourceCode .sh_comment {
+	color: rgb(172, 32, 32); font-style: italic; font-weight: 400;
+}
+.sh_golden .sh_sourceCode {
+	color: rgb(221, 187, 0); font-style: normal; font-weight: 400; background-color: rgb(0, 0, 0);
+}
+.sh_golden .sh_sourceCode .sh_type {
+	color: rgb(255, 237, 138); font-style: normal; font-weight: 400;
+}
+.sh_golden .sh_sourceCode .sh_comment {
+	color: rgb(151, 131, 69); font-style: italic; font-weight: 400;
+}
+.sh_golden .sh_sourceCode .sh_preproc {
+	color: rgb(255, 221, 170); font-style: normal; font-weight: 400;
+}
+.sh_golden .sh_sourceCode .sh_function {
+	color: rgb(221, 187, 0); font-style: normal; font-weight: 700;
+}
+.sh_greenlcd .sh_sourceCode {
+	color: rgb(0, 187, 0); font-style: normal; font-weight: 400; background-color: rgb(0, 52, 0);
+}
+.sh_greenlcd .sh_sourceCode .sh_type {
+	color: rgb(0, 237, 0); font-style: normal; font-weight: 400;
+}
+.sh_greenlcd .sh_sourceCode .sh_function {
+	color: rgb(192, 255, 115); font-style: normal; font-weight: 400;
+}
+.sh_ide-anjuta .sh_sourceCode .sh_type {
+	color: navy; font-style: normal; font-weight: 400;
+}
+.sh_ide-anjuta .sh_sourceCode .sh_comment {
+	color: red; font-style: italic; font-weight: 400;
+}
+.sh_ide-anjuta .sh_sourceCode .sh_preproc {
+	color: rgb(103, 128, 0); font-style: normal; font-weight: 400;
+}
+.sh_ide-codewarrior .sh_sourceCode .sh_type {
+	color: rgb(76, 115, 166); font-style: normal; font-weight: 400;
+}
+.sh_ide-codewarrior .sh_sourceCode .sh_comment {
+	color: rgb(179, 0, 0); font-style: normal; font-weight: 400;
+}
+.sh_ide-devcpp .sh_sourceCode .sh_comment {
+	color: navy; font-style: italic; font-weight: 400;
+}
+.sh_ide-eclipse .sh_sourceCode .sh_comment {
+	color: rgb(113, 122, 179); font-style: normal; font-weight: 400;
+}
+.sh_ide-eclipse .sh_sourceCode .sh_preproc {
+	color: rgb(63, 95, 191); font-style: normal; font-weight: 400;
+}
+.sh_ide-kdev .sh_sourceCode .sh_type {
+	color: rgb(96, 0, 0); font-style: normal; font-weight: 400;
+}
+.sh_ide-kdev .sh_sourceCode .sh_comment {
+	color: rgb(191, 191, 191); font-style: italic; font-weight: 400;
+}
+.sh_ide-msvcpp .sh_sourceCode .sh_comment {
+	color: green; font-style: italic; font-weight: 400;
+}
+.sh_kwrite .sh_sourceCode .sh_type {
+	color: rgb(131, 0, 0); font-style: normal; font-weight: 400;
+}
+.sh_kwrite .sh_sourceCode .sh_comment {
+	color: rgb(131, 129, 131); font-style: italic; font-weight: 400;
+}
+.sh_kwrite .sh_sourceCode .sh_number {
+	color: rgb(41, 40, 255); font-style: normal; font-weight: 400;
+}
+.sh_kwrite .sh_sourceCode .sh_preproc {
+	color: rgb(0, 130, 0); font-style: normal; font-weight: 400;
+}
+.sh_kwrite .sh_sourceCode .sh_function {
+	color: rgb(1, 1, 129); font-style: normal; font-weight: 400;
+}
+.sh_navy .sh_sourceCode {
+	color: rgb(0, 139, 255); font-style: normal; font-weight: 400; background-color: rgb(0, 0, 53);
+}
+.sh_navy .sh_sourceCode .sh_type {
+	color: rgb(225, 231, 47); font-style: normal; font-weight: 400;
+}
+.sh_navy .sh_sourceCode .sh_comment {
+	color: rgb(255, 187, 0); font-style: italic; font-weight: 400;
+}
+.sh_navy .sh_sourceCode .sh_number {
+	color: rgb(248, 127, 244); font-style: normal; font-weight: 400;
+}
+.sh_nedit .sh_sourceCode .sh_comment {
+	color: rgb(0, 0, 0); font-style: italic; font-weight: 400;
+}
+.sh_nedit .sh_sourceCode .sh_preproc {
+	color: rgb(39, 64, 139); font-style: normal; font-weight: 400;
+}
+.sh_night .sh_sourceCode {
+	color: rgb(221, 0, 255); font-style: normal; font-weight: 400; background-color: rgb(0, 0, 68);
+}
+.sh_night .sh_sourceCode .sh_type {
+	color: rgb(241, 21, 124); font-style: normal; font-weight: 700;
+}
+.sh_night .sh_sourceCode .sh_number {
+	color: rgb(142, 225, 25); font-style: normal; font-weight: 400;
+}
+.sh_night .sh_sourceCode .sh_preproc {
+	color: rgb(0, 187, 0); font-style: normal; font-weight: 400;
+}
+.sh_night .sh_sourceCode .sh_function {
+	color: rgb(255, 6, 205); font-style: normal; font-weight: 700;
+}
+.sh_pablo .sh_sourceCode .sh_type {
+	color: rgb(0, 192, 0); font-style: normal; font-weight: 700;
+}
+.sh_pablo .sh_sourceCode .sh_comment {
+	color: gray; font-style: normal; font-weight: 400;
+}
+.sh_pablo .sh_sourceCode .sh_function {
+	color: rgb(255, 34, 185); font-style: normal; font-weight: 400;
+}
+.sh_peachpuff .sh_sourceCode {
+	color: rgb(0, 0, 0); font-style: normal; font-weight: 400; background-color: rgb(255, 218, 185);
+}
+.sh_peachpuff .sh_sourceCode .sh_type {
+	color: rgb(46, 139, 87); font-style: normal; font-weight: 700;
+}
+.sh_peachpuff .sh_sourceCode .sh_comment {
+	color: rgb(64, 96, 144); font-style: normal; font-weight: 400;
+}
+.sh_peachpuff .sh_sourceCode .sh_preproc {
+	color: rgb(205, 0, 205); font-style: normal; font-weight: 400;
+}
+.sh_peachpuff .sh_sourceCode .sh_function {
+	color: rgb(82, 28, 199); font-style: normal; font-weight: 400;
+}
+.sh_rand01 .sh_sourceCode {
+	color: rgb(18, 27, 40); font-style: normal; font-weight: 400; background-color: rgb(255, 255, 255);
+}
+.sh_rand01 .sh_sourceCode .sh_type {
+	color: rgb(196, 38, 56); font-style: normal; font-weight: 700;
+}
+.sh_rand01 .sh_sourceCode .sh_number {
+	color: rgb(13, 163, 68); font-style: normal; font-weight: 400;
+}
+.sh_rand01 .sh_sourceCode .sh_preproc {
+	color: rgb(98, 10, 198); font-style: normal; font-weight: 400;
+}
+.sh_the .sh_sourceCode .sh_type {
+	color: rgb(136, 0, 136); font-style: normal; font-weight: 400;
+}
+.sh_typical .sh_sourceCode .sh_number {
+	color: rgb(169, 0, 169); font-style: normal; font-weight: 400;
+}
+.sh_typical .sh_sourceCode .sh_preproc {
+	color: rgb(0, 184, 0); font-style: normal; font-weight: 400;
+}
+.sh_vampire .sh_sourceCode {
+	color: red; font-style: normal; font-weight: 400; background-color: rgb(0, 0, 0);
+}
+.sh_vampire .sh_sourceCode .sh_type {
+	color: rgb(243, 94, 30); font-style: normal; font-weight: 700;
+}
+.sh_vampire .sh_sourceCode .sh_function {
+	color: rgb(123, 199, 16); font-style: normal; font-weight: 400;
+}
+.sh_whatis .sh_sourceCode {
+	color: rgb(0, 255, 0); font-style: normal; font-weight: 400; background-color: rgb(0, 0, 0);
+}
+.sh_whatis .sh_sourceCode .sh_function {
+	color: rgb(231, 33, 211); font-style: normal; font-weight: 400;
+}
+.sh_whitengrey .sh_sourceCode {
+	color: rgb(105, 105, 105); font-style: normal; font-weight: 400; background-color: rgb(255, 255, 255);
+}
+.sh_whitengrey .sh_sourceCode .sh_type {
+	color: rgb(105, 105, 105); font-style: normal; font-weight: 400;
+}
+.sh_whitengrey .sh_sourceCode .sh_comment {
+	color: rgb(19, 38, 162); font-style: italic; font-weight: 400;
+}
+.sh_whitengrey .sh_sourceCode .sh_preproc {
+	color: rgb(71, 0, 0); font-style: normal; font-weight: 400;
+}
+.sh_zellner .sh_sourceCode .sh_preproc {
+	color: rgb(160, 32, 240); font-style: normal; font-weight: 400;
+}
+.sh_acid {
+	background: none; margin: 0px; padding: 0px; border: 0px currentColor;
+}
+.sh_berries-dark {
+	background: none; margin: 0px; padding: 0px; border: 0px currentColor;
+}
+.sh_berries-light {
+	background: none; margin: 0px; padding: 0px; border: 0px currentColor;
+}
+.sh_bipolar {
+	background: none; margin: 0px; padding: 0px; border: 0px currentColor;
+}
+.sh_blacknblue {
+	background: none; margin: 0px; padding: 0px; border: 0px currentColor;
+}
+.sh_bright {
+	background: none; margin: 0px; padding: 0px; border: 0px currentColor;
+}
+.sh_contrast {
+	background: none; margin: 0px; padding: 0px; border: 0px currentColor;
+}
+.sh_darkblue {
+	background: none; margin: 0px; padding: 0px; border: 0px currentColor;
+}
+.sh_darkness {
+	background: none; margin: 0px; padding: 0px; border: 0px currentColor;
+}
+.sh_desert {
+	background: none; margin: 0px; padding: 0px; border: 0px currentColor;
+}
+.sh_dull {
+	background: none; margin: 0px; padding: 0px; border: 0px currentColor;
+}
+.sh_easter {
+	background: none; margin: 0px; padding: 0px; border: 0px currentColor;
+}
+.sh_emacs {
+	background: none; margin: 0px; padding: 0px; border: 0px currentColor;
+}
+.sh_golden {
+	background: none; margin: 0px; padding: 0px; border: 0px currentColor;
+}
+.sh_greenlcd {
+	background: none; margin: 0px; padding: 0px; border: 0px currentColor;
+}
+.sh_ide-anjuta {
+	background: none; margin: 0px; padding: 0px; border: 0px currentColor;
+}
+.sh_ide-codewarrior {
+	background: none; margin: 0px; padding: 0px; border: 0px currentColor;
+}
+.sh_ide-devcpp {
+	background: none; margin: 0px; padding: 0px; border: 0px currentColor;
+}
+.sh_ide-eclipse {
+	background: none; margin: 0px; padding: 0px; border: 0px currentColor;
+}
+.sh_ide-kdev {
+	background: none; margin: 0px; padding: 0px; border: 0px currentColor;
+}
+.sh_ide-msvcpp {
+	background: none; margin: 0px; padding: 0px; border: 0px currentColor;
+}
+.sh_kwrite {
+	background: none; margin: 0px; padding: 0px; border: 0px currentColor;
+}
+.sh_matlab {
+	background: none; margin: 0px; padding: 0px; border: 0px currentColor;
+}
+.sh_navy {
+	background: none; margin: 0px; padding: 0px; border: 0px currentColor;
+}
+.sh_nedit {
+	background: none; margin: 0px; padding: 0px; border: 0px currentColor;
+}
+.sh_neon {
+	background: none; margin: 0px; padding: 0px; border: 0px currentColor;
+}
+.sh_night {
+	background: none; margin: 0px; padding: 0px; border: 0px currentColor;
+}
+.sh_pablo {
+	background: none; margin: 0px; padding: 0px; border: 0px currentColor;
+}
+.sh_peachpuff {
+	background: none; margin: 0px; padding: 0px; border: 0px currentColor;
+}
+.sh_print {
+	background: none; margin: 0px; padding: 0px; border: 0px currentColor;
+}
+.sh_rand01 {
+	background: none; margin: 0px; padding: 0px; border: 0px currentColor;
+}
+.sh_the {
+	background: none; margin: 0px; padding: 0px; border: 0px currentColor;
+}
+.sh_typical {
+	background: none; margin: 0px; padding: 0px; border: 0px currentColor;
+}
+.sh_vampire {
+	background: none; margin: 0px; padding: 0px; border: 0px currentColor;
+}
+.sh_vim-dark {
+	background: none; margin: 0px; padding: 0px; border: 0px currentColor;
+}
+.sh_vim {
+	background: none; margin: 0px; padding: 0px; border: 0px currentColor;
+}
+.sh_whatis {
+	background: none; margin: 0px; padding: 0px; border: 0px currentColor;
+}
+.sh_whitengrey {
+	background: none; margin: 0px; padding: 0px; border: 0px currentColor;
+}
+.sh_zellner {
+	background: none; margin: 0px; padding: 0px; border: 0px currentColor;
+}
+.sh_acid .sh_sourceCode .sh_keyword {
+	color: rgb(187, 121, 119); font-style: normal; font-weight: 700;
+}
+.sh_acid .sh_sourceCode .sh_date {
+	color: rgb(187, 121, 119); font-style: normal; font-weight: 700;
+}
+.sh_acid .sh_sourceCode .sh_time {
+	color: rgb(187, 121, 119); font-style: normal; font-weight: 700;
+}
+.sh_acid .sh_sourceCode .sh_file {
+	color: rgb(187, 121, 119); font-style: normal; font-weight: 700;
+}
+.sh_acid .sh_sourceCode .sh_difflines {
+	color: rgb(187, 121, 119); font-style: normal; font-weight: 700;
+}
+.sh_acid .sh_sourceCode .sh_property {
+	color: rgb(187, 121, 119); font-style: normal; font-weight: 700;
+}
+.sh_acid .sh_sourceCode .sh_string {
+	color: rgb(166, 133, 0); font-style: normal; font-weight: 400;
+}
+.sh_acid .sh_sourceCode .sh_regexp {
+	color: rgb(166, 133, 0); font-style: normal; font-weight: 400;
+}
+.sh_acid .sh_sourceCode .sh_url {
+	color: rgb(166, 133, 0); font-style: normal; font-weight: 400;
+}
+.sh_acid .sh_sourceCode .sh_ip {
+	color: rgb(166, 133, 0); font-style: normal; font-weight: 400;
+}
+.sh_acid .sh_sourceCode .sh_name {
+	color: rgb(166, 133, 0); font-style: normal; font-weight: 400;
+}
+.sh_acid .sh_sourceCode .sh_newfile {
+	color: rgb(166, 133, 0); font-style: normal; font-weight: 400;
+}
+.sh_acid .sh_sourceCode .sh_value {
+	color: rgb(166, 133, 0); font-style: normal; font-weight: 400;
+}
+.sh_acid .sh_sourceCode .sh_specialchar {
+	color: rgb(255, 0, 255); font-style: normal; font-weight: 700;
+}
+.sh_acid .sh_sourceCode .sh_oldfile {
+	color: rgb(255, 0, 255); font-style: normal; font-weight: 700;
+}
+.sh_acid .sh_sourceCode .sh_symbol {
+	color: rgb(255, 0, 128); font-style: normal; font-weight: 700;
+}
+.sh_acid .sh_sourceCode .sh_cbracket {
+	color: rgb(255, 0, 128); font-style: normal; font-weight: 700;
+}
+.sh_acid .sh_sourceCode .sh_variable {
+	color: rgb(0, 128, 192); font-style: normal; font-weight: 400;
+}
+.sh_acid .sh_sourceCode .sh_selector {
+	color: rgb(0, 128, 192); font-style: normal; font-weight: 400;
+}
+.sh_berries-dark .sh_sourceCode .sh_keyword {
+	color: rgb(63, 43, 240); font-style: normal; font-weight: 700;
+}
+.sh_berries-dark .sh_sourceCode .sh_date {
+	color: rgb(63, 43, 240); font-style: normal; font-weight: 700;
+}
+.sh_berries-dark .sh_sourceCode .sh_time {
+	color: rgb(63, 43, 240); font-style: normal; font-weight: 700;
+}
+.sh_berries-dark .sh_sourceCode .sh_file {
+	color: rgb(63, 43, 240); font-style: normal; font-weight: 700;
+}
+.sh_berries-dark .sh_sourceCode .sh_difflines {
+	color: rgb(63, 43, 240); font-style: normal; font-weight: 700;
+}
+.sh_berries-dark .sh_sourceCode .sh_property {
+	color: rgb(63, 43, 240); font-style: normal; font-weight: 700;
+}
+.sh_berries-dark .sh_sourceCode .sh_string {
+	color: rgb(196, 0, 0); font-style: normal; font-weight: 400;
+}
+.sh_berries-dark .sh_sourceCode .sh_regexp {
+	color: rgb(196, 0, 0); font-style: normal; font-weight: 400;
+}
+.sh_berries-dark .sh_sourceCode .sh_url {
+	color: rgb(196, 0, 0); font-style: normal; font-weight: 400;
+}
+.sh_berries-dark .sh_sourceCode .sh_ip {
+	color: rgb(196, 0, 0); font-style: normal; font-weight: 400;
+}
+.sh_berries-dark .sh_sourceCode .sh_name {
+	color: rgb(196, 0, 0); font-style: normal; font-weight: 400;
+}
+.sh_berries-dark .sh_sourceCode .sh_newfile {
+	color: rgb(196, 0, 0); font-style: normal; font-weight: 400;
+}
+.sh_berries-dark .sh_sourceCode .sh_value {
+	color: rgb(196, 0, 0); font-style: normal; font-weight: 400;
+}
+.sh_berries-dark .sh_sourceCode .sh_specialchar {
+	color: rgb(119, 55, 154); font-style: normal; font-weight: 400;
+}
+.sh_berries-dark .sh_sourceCode .sh_oldfile {
+	color: rgb(119, 55, 154); font-style: normal; font-weight: 400;
+}
+.sh_berries-dark .sh_sourceCode .sh_number {
+	color: rgb(32, 117, 90); font-style: normal; font-weight: 400;
+}
+.sh_berries-light .sh_sourceCode .sh_number {
+	color: rgb(32, 117, 90); font-style: normal; font-weight: 400;
+}
+.sh_berries-dark .sh_sourceCode .sh_preproc {
+	color: rgb(6, 40, 203); font-style: normal; font-weight: 400;
+}
+.sh_berries-light .sh_sourceCode .sh_preproc {
+	color: rgb(6, 40, 203); font-style: normal; font-weight: 400;
+}
+.sh_berries-dark .sh_sourceCode .sh_symbol {
+	color: rgb(0, 0, 0); font-style: normal; font-weight: 400;
+}
+.sh_berries-dark .sh_sourceCode .sh_cbracket {
+	color: rgb(0, 0, 0); font-style: normal; font-weight: 400;
+}
+.sh_contrast .sh_sourceCode .sh_comment {
+	color: rgb(0, 0, 0); font-style: normal; font-weight: 400;
+}
+.sh_emacs .sh_sourceCode .sh_number {
+	color: rgb(0, 0, 0); font-style: normal; font-weight: 400;
+}
+.sh_emacs .sh_sourceCode .sh_preproc {
+	color: rgb(0, 0, 0); font-style: normal; font-weight: 400;
+}
+.sh_emacs .sh_sourceCode .sh_function {
+	color: rgb(0, 0, 0); font-style: normal; font-weight: 400;
+}
+.sh_ide-anjuta .sh_sourceCode .sh_function {
+	color: rgb(0, 0, 0); font-style: normal; font-weight: 400;
+}
+.sh_ide-codewarrior .sh_sourceCode .sh_number {
+	color: rgb(0, 0, 0); font-style: normal; font-weight: 400;
+}
+.sh_ide-codewarrior .sh_sourceCode .sh_function {
+	color: rgb(0, 0, 0); font-style: normal; font-weight: 400;
+}
+.sh_ide-devcpp .sh_sourceCode .sh_type {
+	color: rgb(0, 0, 0); font-style: normal; font-weight: 400;
+}
+.sh_ide-devcpp .sh_sourceCode .sh_function {
+	color: rgb(0, 0, 0); font-style: normal; font-weight: 400;
+}
+.sh_ide-eclipse .sh_sourceCode .sh_number {
+	color: rgb(0, 0, 0); font-style: normal; font-weight: 400;
+}
+.sh_ide-eclipse .sh_sourceCode .sh_function {
+	color: rgb(0, 0, 0); font-style: normal; font-weight: 400;
+}
+.sh_ide-kdev .sh_sourceCode .sh_function {
+	color: rgb(0, 0, 0); font-style: normal; font-weight: 400;
+}
+.sh_ide-msvcpp .sh_sourceCode .sh_string {
+	color: rgb(0, 0, 0); font-style: normal; font-weight: 400;
+}
+.sh_ide-msvcpp .sh_sourceCode .sh_regexp {
+	color: rgb(0, 0, 0); font-style: normal; font-weight: 400;
+}
+.sh_ide-msvcpp .sh_sourceCode .sh_specialchar {
+	color: rgb(0, 0, 0); font-style: normal; font-weight: 400;
+}
+.sh_ide-msvcpp .sh_sourceCode .sh_number {
+	color: rgb(0, 0, 0); font-style: normal; font-weight: 400;
+}
+.sh_ide-msvcpp .sh_sourceCode .sh_function {
+	color: rgb(0, 0, 0); font-style: normal; font-weight: 400;
+}
+.sh_ide-msvcpp .sh_sourceCode .sh_url {
+	color: rgb(0, 0, 0); font-style: normal; font-weight: 400;
+}
+.sh_ide-msvcpp .sh_sourceCode .sh_ip {
+	color: rgb(0, 0, 0); font-style: normal; font-weight: 400;
+}
+.sh_ide-msvcpp .sh_sourceCode .sh_name {
+	color: rgb(0, 0, 0); font-style: normal; font-weight: 400;
+}
+.sh_ide-msvcpp .sh_sourceCode .sh_oldfile {
+	color: rgb(0, 0, 0); font-style: normal; font-weight: 400;
+}
+.sh_ide-msvcpp .sh_sourceCode .sh_newfile {
+	color: rgb(0, 0, 0); font-style: normal; font-weight: 400;
+}
+.sh_ide-msvcpp .sh_sourceCode .sh_value {
+	color: rgb(0, 0, 0); font-style: normal; font-weight: 400;
+}
+.sh_matlab .sh_sourceCode .sh_type {
+	color: rgb(0, 0, 0); font-style: normal; font-weight: 400;
+}
+.sh_matlab .sh_sourceCode .sh_specialchar {
+	color: rgb(0, 0, 0); font-style: normal; font-weight: 400;
+}
+.sh_matlab .sh_sourceCode .sh_number {
+	color: rgb(0, 0, 0); font-style: normal; font-weight: 400;
+}
+.sh_matlab .sh_sourceCode .sh_function {
+	color: rgb(0, 0, 0); font-style: normal; font-weight: 400;
+}
+.sh_matlab .sh_sourceCode .sh_oldfile {
+	color: rgb(0, 0, 0); font-style: normal; font-weight: 400;
+}
+.sh_nedit .sh_sourceCode .sh_function {
+	color: rgb(0, 0, 0); font-style: normal; font-weight: 400;
+}
+.sh_print .sh_sourceCode .sh_string {
+	color: rgb(0, 0, 0); font-style: normal; font-weight: 400;
+}
+.sh_print .sh_sourceCode .sh_regexp {
+	color: rgb(0, 0, 0); font-style: normal; font-weight: 400;
+}
+.sh_print .sh_sourceCode .sh_specialchar {
+	color: rgb(0, 0, 0); font-style: normal; font-weight: 400;
+}
+.sh_print .sh_sourceCode .sh_number {
+	color: rgb(0, 0, 0); font-style: normal; font-weight: 400;
+}
+.sh_print .sh_sourceCode .sh_url {
+	color: rgb(0, 0, 0); font-style: normal; font-weight: 400;
+}
+.sh_print .sh_sourceCode .sh_ip {
+	color: rgb(0, 0, 0); font-style: normal; font-weight: 400;
+}
+.sh_print .sh_sourceCode .sh_name {
+	color: rgb(0, 0, 0); font-style: normal; font-weight: 400;
+}
+.sh_print .sh_sourceCode .sh_oldfile {
+	color: rgb(0, 0, 0); font-style: normal; font-weight: 400;
+}
+.sh_print .sh_sourceCode .sh_newfile {
+	color: rgb(0, 0, 0); font-style: normal; font-weight: 400;
+}
+.sh_print .sh_sourceCode .sh_value {
+	color: rgb(0, 0, 0); font-style: normal; font-weight: 400;
+}
+.sh_the .sh_sourceCode .sh_specialchar {
+	color: rgb(0, 0, 0); font-style: normal; font-weight: 400;
+}
+.sh_the .sh_sourceCode .sh_function {
+	color: rgb(0, 0, 0); font-style: normal; font-weight: 400;
+}
+.sh_the .sh_sourceCode .sh_oldfile {
+	color: rgb(0, 0, 0); font-style: normal; font-weight: 400;
+}
+.sh_vim .sh_sourceCode .sh_function {
+	color: rgb(0, 0, 0); font-style: normal; font-weight: 400;
+}
+.sh_whitengrey .sh_sourceCode .sh_function {
+	color: rgb(0, 0, 0); font-style: normal; font-weight: 400;
+}
+.sh_berries-dark .sh_sourceCode .sh_function {
+	color: rgb(144, 17, 100); font-style: normal; font-weight: 700;
+}
+.sh_berries-light .sh_sourceCode .sh_function {
+	color: rgb(144, 17, 100); font-style: normal; font-weight: 700;
+}
+.sh_berries-dark .sh_sourceCode .sh_variable {
+	color: rgb(169, 30, 167); font-style: normal; font-weight: 400;
+}
+.sh_berries-dark .sh_sourceCode .sh_selector {
+	color: rgb(169, 30, 167); font-style: normal; font-weight: 400;
+}
+.sh_berries-light .sh_sourceCode .sh_keyword {
+	color: rgb(44, 174, 30); font-style: normal; font-weight: 700;
+}
+.sh_berries-light .sh_sourceCode .sh_date {
+	color: rgb(44, 174, 30); font-style: normal; font-weight: 700;
+}
+.sh_berries-light .sh_sourceCode .sh_time {
+	color: rgb(44, 174, 30); font-style: normal; font-weight: 700;
+}
+.sh_berries-light .sh_sourceCode .sh_file {
+	color: rgb(44, 174, 30); font-style: normal; font-weight: 700;
+}
+.sh_berries-light .sh_sourceCode .sh_difflines {
+	color: rgb(44, 174, 30); font-style: normal; font-weight: 700;
+}
+.sh_berries-light .sh_sourceCode .sh_property {
+	color: rgb(44, 174, 30); font-style: normal; font-weight: 700;
+}
+.sh_berries-light .sh_sourceCode .sh_string {
+	color: rgb(95, 129, 179); font-style: normal; font-weight: 400;
+}
+.sh_berries-light .sh_sourceCode .sh_regexp {
+	color: rgb(95, 129, 179); font-style: normal; font-weight: 400;
+}
+.sh_berries-light .sh_sourceCode .sh_specialchar {
+	color: rgb(95, 129, 179); font-style: normal; font-weight: 400;
+}
+.sh_berries-light .sh_sourceCode .sh_url {
+	color: rgb(95, 129, 179); font-style: normal; font-weight: 400;
+}
+.sh_berries-light .sh_sourceCode .sh_ip {
+	color: rgb(95, 129, 179); font-style: normal; font-weight: 400;
+}
+.sh_berries-light .sh_sourceCode .sh_name {
+	color: rgb(95, 129, 179); font-style: normal; font-weight: 400;
+}
+.sh_berries-light .sh_sourceCode .sh_oldfile {
+	color: rgb(95, 129, 179); font-style: normal; font-weight: 400;
+}
+.sh_berries-light .sh_sourceCode .sh_newfile {
+	color: rgb(95, 129, 179); font-style: normal; font-weight: 400;
+}
+.sh_berries-light .sh_sourceCode .sh_value {
+	color: rgb(95, 129, 179); font-style: normal; font-weight: 400;
+}
+.sh_berries-light .sh_sourceCode .sh_symbol {
+	color: rgb(210, 7, 59); font-style: normal; font-weight: 400;
+}
+.sh_berries-light .sh_sourceCode .sh_cbracket {
+	color: rgb(210, 7, 59); font-style: normal; font-weight: 400;
+}
+.sh_berries-light .sh_sourceCode .sh_variable {
+	color: rgb(6, 40, 203); font-style: normal; font-weight: 700;
+}
+.sh_berries-light .sh_sourceCode .sh_selector {
+	color: rgb(6, 40, 203); font-style: normal; font-weight: 700;
+}
+.sh_bipolar .sh_sourceCode .sh_keyword {
+	color: rgb(238, 133, 226); font-style: normal; font-weight: 700;
+}
+.sh_bipolar .sh_sourceCode .sh_date {
+	color: rgb(238, 133, 226); font-style: normal; font-weight: 700;
+}
+.sh_bipolar .sh_sourceCode .sh_time {
+	color: rgb(238, 133, 226); font-style: normal; font-weight: 700;
+}
+.sh_bipolar .sh_sourceCode .sh_file {
+	color: rgb(238, 133, 226); font-style: normal; font-weight: 700;
+}
+.sh_bipolar .sh_sourceCode .sh_difflines {
+	color: rgb(238, 133, 226); font-style: normal; font-weight: 700;
+}
+.sh_bipolar .sh_sourceCode .sh_property {
+	color: rgb(238, 133, 226); font-style: normal; font-weight: 700;
+}
+.sh_bipolar .sh_sourceCode .sh_string {
+	color: rgb(158, 244, 87); font-style: normal; font-weight: 400;
+}
+.sh_bipolar .sh_sourceCode .sh_regexp {
+	color: rgb(158, 244, 87); font-style: normal; font-weight: 400;
+}
+.sh_bipolar .sh_sourceCode .sh_specialchar {
+	color: rgb(158, 244, 87); font-style: normal; font-weight: 400;
+}
+.sh_bipolar .sh_sourceCode .sh_url {
+	color: rgb(158, 244, 87); font-style: normal; font-weight: 400;
+}
+.sh_bipolar .sh_sourceCode .sh_ip {
+	color: rgb(158, 244, 87); font-style: normal; font-weight: 400;
+}
+.sh_bipolar .sh_sourceCode .sh_name {
+	color: rgb(158, 244, 87); font-style: normal; font-weight: 400;
+}
+.sh_bipolar .sh_sourceCode .sh_oldfile {
+	color: rgb(158, 244, 87); font-style: normal; font-weight: 400;
+}
+.sh_bipolar .sh_sourceCode .sh_newfile {
+	color: rgb(158, 244, 87); font-style: normal; font-weight: 400;
+}
+.sh_bipolar .sh_sourceCode .sh_value {
+	color: rgb(158, 244, 87); font-style: normal; font-weight: 400;
+}
+.sh_bipolar .sh_sourceCode .sh_number {
+	color: rgb(255, 255, 255); font-style: normal; font-weight: 400;
+}
+.sh_golden .sh_sourceCode .sh_number {
+	color: rgb(255, 255, 255); font-style: normal; font-weight: 400;
+}
+.sh_greenlcd .sh_sourceCode .sh_number {
+	color: rgb(255, 255, 255); font-style: normal; font-weight: 400;
+}
+.sh_navy .sh_sourceCode .sh_string {
+	color: rgb(255, 255, 255); font-style: normal; font-weight: 400;
+}
+.sh_navy .sh_sourceCode .sh_regexp {
+	color: rgb(255, 255, 255); font-style: normal; font-weight: 400;
+}
+.sh_navy .sh_sourceCode .sh_specialchar {
+	color: rgb(255, 255, 255); font-style: normal; font-weight: 400;
+}
+.sh_navy .sh_sourceCode .sh_symbol {
+	color: rgb(255, 255, 255); font-style: normal; font-weight: 400;
+}
+.sh_navy .sh_sourceCode .sh_function {
+	color: rgb(255, 255, 255); font-style: normal; font-weight: 400;
+}
+.sh_navy .sh_sourceCode .sh_cbracket {
+	color: rgb(255, 255, 255); font-style: normal; font-weight: 400;
+}
+.sh_navy .sh_sourceCode .sh_url {
+	color: rgb(255, 255, 255); font-style: normal; font-weight: 400;
+}
+.sh_navy .sh_sourceCode .sh_ip {
+	color: rgb(255, 255, 255); font-style: normal; font-weight: 400;
+}
+.sh_navy .sh_sourceCode .sh_name {
+	color: rgb(255, 255, 255); font-style: normal; font-weight: 400;
+}
+.sh_navy .sh_sourceCode .sh_oldfile {
+	color: rgb(255, 255, 255); font-style: normal; font-weight: 400;
+}
+.sh_navy .sh_sourceCode .sh_newfile {
+	color: rgb(255, 255, 255); font-style: normal; font-weight: 400;
+}
+.sh_navy .sh_sourceCode .sh_value {
+	color: rgb(255, 255, 255); font-style: normal; font-weight: 400;
+}
+.sh_night .sh_sourceCode .sh_string {
+	color: rgb(255, 255, 255); font-style: normal; font-weight: 400;
+}
+.sh_night .sh_sourceCode .sh_regexp {
+	color: rgb(255, 255, 255); font-style: normal; font-weight: 400;
+}
+.sh_night .sh_sourceCode .sh_url {
+	color: rgb(255, 255, 255); font-style: normal; font-weight: 400;
+}
+.sh_night .sh_sourceCode .sh_ip {
+	color: rgb(255, 255, 255); font-style: normal; font-weight: 400;
+}
+.sh_night .sh_sourceCode .sh_name {
+	color: rgb(255, 255, 255); font-style: normal; font-weight: 400;
+}
+.sh_night .sh_sourceCode .sh_newfile {
+	color: rgb(255, 255, 255); font-style: normal; font-weight: 400;
+}
+.sh_night .sh_sourceCode .sh_value {
+	color: rgb(255, 255, 255); font-style: normal; font-weight: 400;
+}
+.sh_vampire .sh_sourceCode .sh_specialchar {
+	color: rgb(255, 255, 255); font-style: normal; font-weight: 400;
+}
+.sh_vampire .sh_sourceCode .sh_variable {
+	color: rgb(255, 255, 255); font-style: normal; font-weight: 400;
+}
+.sh_vampire .sh_sourceCode .sh_oldfile {
+	color: rgb(255, 255, 255); font-style: normal; font-weight: 400;
+}
+.sh_vampire .sh_sourceCode .sh_selector {
+	color: rgb(255, 255, 255); font-style: normal; font-weight: 400;
+}
+.sh_vim-dark .sh_sourceCode .sh_function {
+	color: rgb(255, 255, 255); font-style: normal; font-weight: 400;
+}
+.sh_bipolar .sh_sourceCode .sh_symbol {
+	color: rgb(52, 143, 239); font-style: normal; font-weight: 400;
+}
+.sh_bipolar .sh_sourceCode .sh_cbracket {
+	color: rgb(52, 143, 239); font-style: normal; font-weight: 400;
+}
+.sh_bipolar .sh_sourceCode .sh_variable {
+	color: rgb(114, 212, 44); font-style: normal; font-weight: 700;
+}
+.sh_bipolar .sh_sourceCode .sh_selector {
+	color: rgb(114, 212, 44); font-style: normal; font-weight: 700;
+}
+.sh_blacknblue .sh_sourceCode .sh_keyword {
+	color: rgb(30, 222, 220); font-style: normal; font-weight: 700;
+}
+.sh_blacknblue .sh_sourceCode .sh_date {
+	color: rgb(30, 222, 220); font-style: normal; font-weight: 700;
+}
+.sh_blacknblue .sh_sourceCode .sh_time {
+	color: rgb(30, 222, 220); font-style: normal; font-weight: 700;
+}
+.sh_blacknblue .sh_sourceCode .sh_file {
+	color: rgb(30, 222, 220); font-style: normal; font-weight: 700;
+}
+.sh_blacknblue .sh_sourceCode .sh_difflines {
+	color: rgb(30, 222, 220); font-style: normal; font-weight: 700;
+}
+.sh_blacknblue .sh_sourceCode .sh_property {
+	color: rgb(30, 222, 220); font-style: normal; font-weight: 700;
+}
+.sh_blacknblue .sh_sourceCode .sh_string {
+	color: rgb(207, 198, 49); font-style: normal; font-weight: 400;
+}
+.sh_blacknblue .sh_sourceCode .sh_regexp {
+	color: rgb(207, 198, 49); font-style: normal; font-weight: 400;
+}
+.sh_blacknblue .sh_sourceCode .sh_url {
+	color: rgb(207, 198, 49); font-style: normal; font-weight: 400;
+}
+.sh_blacknblue .sh_sourceCode .sh_ip {
+	color: rgb(207, 198, 49); font-style: normal; font-weight: 400;
+}
+.sh_blacknblue .sh_sourceCode .sh_name {
+	color: rgb(207, 198, 49); font-style: normal; font-weight: 400;
+}
+.sh_blacknblue .sh_sourceCode .sh_newfile {
+	color: rgb(207, 198, 49); font-style: normal; font-weight: 400;
+}
+.sh_blacknblue .sh_sourceCode .sh_value {
+	color: rgb(207, 198, 49); font-style: normal; font-weight: 400;
+}
+.sh_blacknblue .sh_sourceCode .sh_specialchar {
+	color: rgb(204, 198, 198); font-style: normal; font-weight: 400;
+}
+.sh_blacknblue .sh_sourceCode .sh_symbol {
+	color: rgb(204, 198, 198); font-style: normal; font-weight: 400;
+}
+.sh_blacknblue .sh_sourceCode .sh_cbracket {
+	color: rgb(204, 198, 198); font-style: normal; font-weight: 400;
+}
+.sh_blacknblue .sh_sourceCode .sh_oldfile {
+	color: rgb(204, 198, 198); font-style: normal; font-weight: 400;
+}
+.sh_blacknblue .sh_sourceCode .sh_variable {
+	color: rgb(236, 234, 38); font-style: normal; font-weight: 400;
+}
+.sh_blacknblue .sh_sourceCode .sh_selector {
+	color: rgb(236, 234, 38); font-style: normal; font-weight: 400;
+}
+.sh_bright .sh_sourceCode .sh_keyword {
+	color: rgb(255, 48, 48); font-style: normal; font-weight: 700;
+}
+.sh_bright .sh_sourceCode .sh_date {
+	color: rgb(255, 48, 48); font-style: normal; font-weight: 700;
+}
+.sh_bright .sh_sourceCode .sh_time {
+	color: rgb(255, 48, 48); font-style: normal; font-weight: 700;
+}
+.sh_bright .sh_sourceCode .sh_file {
+	color: rgb(255, 48, 48); font-style: normal; font-weight: 700;
+}
+.sh_bright .sh_sourceCode .sh_difflines {
+	color: rgb(255, 48, 48); font-style: normal; font-weight: 700;
+}
+.sh_bright .sh_sourceCode .sh_property {
+	color: rgb(255, 48, 48); font-style: normal; font-weight: 700;
+}
+.sh_bright .sh_sourceCode .sh_string {
+	color: rgb(24, 97, 167); font-style: normal; font-weight: 400;
+}
+.sh_bright .sh_sourceCode .sh_regexp {
+	color: rgb(24, 97, 167); font-style: normal; font-weight: 400;
+}
+.sh_bright .sh_sourceCode .sh_specialchar {
+	color: rgb(24, 97, 167); font-style: normal; font-weight: 400;
+}
+.sh_bright .sh_sourceCode .sh_url {
+	color: rgb(24, 97, 167); font-style: normal; font-weight: 400;
+}
+.sh_bright .sh_sourceCode .sh_ip {
+	color: rgb(24, 97, 167); font-style: normal; font-weight: 400;
+}
+.sh_bright .sh_sourceCode .sh_name {
+	color: rgb(24, 97, 167); font-style: normal; font-weight: 400;
+}
+.sh_bright .sh_sourceCode .sh_oldfile {
+	color: rgb(24, 97, 167); font-style: normal; font-weight: 400;
+}
+.sh_bright .sh_sourceCode .sh_newfile {
+	color: rgb(24, 97, 167); font-style: normal; font-weight: 400;
+}
+.sh_bright .sh_sourceCode .sh_value {
+	color: rgb(24, 97, 167); font-style: normal; font-weight: 400;
+}
+.sh_bright .sh_sourceCode .sh_symbol {
+	color: rgb(48, 48, 238); font-style: normal; font-weight: 400;
+}
+.sh_bright .sh_sourceCode .sh_cbracket {
+	color: rgb(48, 48, 238); font-style: normal; font-weight: 400;
+}
+.sh_bright .sh_sourceCode .sh_variable {
+	color: rgb(0, 0, 255); font-style: normal; font-weight: 400;
+}
+.sh_bright .sh_sourceCode .sh_selector {
+	color: rgb(0, 0, 255); font-style: normal; font-weight: 400;
+}
+.sh_emacs .sh_sourceCode .sh_variable {
+	color: rgb(0, 0, 255); font-style: normal; font-weight: 400;
+}
+.sh_emacs .sh_sourceCode .sh_selector {
+	color: rgb(0, 0, 255); font-style: normal; font-weight: 400;
+}
+.sh_ide-anjuta .sh_sourceCode .sh_variable {
+	color: rgb(0, 0, 255); font-style: normal; font-weight: 400;
+}
+.sh_ide-anjuta .sh_sourceCode .sh_selector {
+	color: rgb(0, 0, 255); font-style: normal; font-weight: 400;
+}
+.sh_ide-devcpp .sh_sourceCode .sh_number {
+	color: rgb(0, 0, 255); font-style: normal; font-weight: 400;
+}
+.sh_ide-eclipse .sh_sourceCode .sh_string {
+	color: rgb(0, 0, 255); font-style: normal; font-weight: 400;
+}
+.sh_ide-eclipse .sh_sourceCode .sh_regexp {
+	color: rgb(0, 0, 255); font-style: normal; font-weight: 400;
+}
+.sh_ide-eclipse .sh_sourceCode .sh_specialchar {
+	color: rgb(0, 0, 255); font-style: normal; font-weight: 400;
+}
+.sh_ide-eclipse .sh_sourceCode .sh_url {
+	color: rgb(0, 0, 255); font-style: normal; font-weight: 400;
+}
+.sh_ide-eclipse .sh_sourceCode .sh_ip {
+	color: rgb(0, 0, 255); font-style: normal; font-weight: 400;
+}
+.sh_ide-eclipse .sh_sourceCode .sh_name {
+	color: rgb(0, 0, 255); font-style: normal; font-weight: 400;
+}
+.sh_ide-eclipse .sh_sourceCode .sh_oldfile {
+	color: rgb(0, 0, 255); font-style: normal; font-weight: 400;
+}
+.sh_ide-eclipse .sh_sourceCode .sh_newfile {
+	color: rgb(0, 0, 255); font-style: normal; font-weight: 400;
+}
+.sh_ide-eclipse .sh_sourceCode .sh_value {
+	color: rgb(0, 0, 255); font-style: normal; font-weight: 400;
+}
+.sh_ide-kdev .sh_sourceCode .sh_number {
+	color: rgb(0, 0, 255); font-style: normal; font-weight: 400;
+}
+.sh_ide-msvcpp .sh_sourceCode .sh_type {
+	color: rgb(0, 0, 255); font-style: normal; font-weight: 400;
+}
+.sh_ide-msvcpp .sh_sourceCode .sh_preproc {
+	color: rgb(0, 0, 255); font-style: normal; font-weight: 400;
+}
+.sh_matlab .sh_sourceCode .sh_keyword {
+	color: rgb(0, 0, 255); font-style: normal; font-weight: 400;
+}
+.sh_matlab .sh_sourceCode .sh_date {
+	color: rgb(0, 0, 255); font-style: normal; font-weight: 400;
+}
+.sh_matlab .sh_sourceCode .sh_time {
+	color: rgb(0, 0, 255); font-style: normal; font-weight: 400;
+}
+.sh_matlab .sh_sourceCode .sh_file {
+	color: rgb(0, 0, 255); font-style: normal; font-weight: 400;
+}
+.sh_matlab .sh_sourceCode .sh_variable {
+	color: rgb(0, 0, 255); font-style: normal; font-weight: 400;
+}
+.sh_matlab .sh_sourceCode .sh_difflines {
+	color: rgb(0, 0, 255); font-style: normal; font-weight: 400;
+}
+.sh_matlab .sh_sourceCode .sh_selector {
+	color: rgb(0, 0, 255); font-style: normal; font-weight: 400;
+}
+.sh_matlab .sh_sourceCode .sh_property {
+	color: rgb(0, 0, 255); font-style: normal; font-weight: 400;
+}
+.sh_pablo .sh_sourceCode .sh_specialchar {
+	color: rgb(0, 0, 255); font-style: normal; font-weight: 400;
+}
+.sh_pablo .sh_sourceCode .sh_oldfile {
+	color: rgb(0, 0, 255); font-style: normal; font-weight: 400;
+}
+.sh_the .sh_sourceCode .sh_keyword {
+	color: rgb(0, 0, 255); font-style: normal; font-weight: 400;
+}
+.sh_the .sh_sourceCode .sh_date {
+	color: rgb(0, 0, 255); font-style: normal; font-weight: 400;
+}
+.sh_the .sh_sourceCode .sh_time {
+	color: rgb(0, 0, 255); font-style: normal; font-weight: 400;
+}
+.sh_the .sh_sourceCode .sh_file {
+	color: rgb(0, 0, 255); font-style: normal; font-weight: 400;
+}
+.sh_the .sh_sourceCode .sh_variable {
+	color: rgb(0, 0, 255); font-style: normal; font-weight: 400;
+}
+.sh_the .sh_sourceCode .sh_difflines {
+	color: rgb(0, 0, 255); font-style: normal; font-weight: 400;
+}
+.sh_the .sh_sourceCode .sh_selector {
+	color: rgb(0, 0, 255); font-style: normal; font-weight: 400;
+}
+.sh_the .sh_sourceCode .sh_property {
+	color: rgb(0, 0, 255); font-style: normal; font-weight: 400;
+}
+.sh_typical .sh_sourceCode .sh_type {
+	color: rgb(0, 0, 255); font-style: normal; font-weight: 400;
+}
+.sh_vim-dark .sh_sourceCode .sh_comment {
+	color: rgb(0, 0, 255); font-style: normal; font-weight: 400;
+}
+.sh_vim .sh_sourceCode .sh_comment {
+	color: rgb(0, 0, 255); font-style: normal; font-weight: 400;
+}
+.sh_zellner .sh_sourceCode .sh_type {
+	color: rgb(0, 0, 255); font-style: normal; font-weight: 400;
+}
+.sh_contrast .sh_sourceCode .sh_keyword {
+	color: rgb(255, 255, 255); font-style: normal; font-weight: 700;
+}
+.sh_contrast .sh_sourceCode .sh_type {
+	color: rgb(255, 255, 255); font-style: normal; font-weight: 700;
+}
+.sh_contrast .sh_sourceCode .sh_date {
+	color: rgb(255, 255, 255); font-style: normal; font-weight: 700;
+}
+.sh_contrast .sh_sourceCode .sh_time {
+	color: rgb(255, 255, 255); font-style: normal; font-weight: 700;
+}
+.sh_contrast .sh_sourceCode .sh_file {
+	color: rgb(255, 255, 255); font-style: normal; font-weight: 700;
+}
+.sh_contrast .sh_sourceCode .sh_difflines {
+	color: rgb(255, 255, 255); font-style: normal; font-weight: 700;
+}
+.sh_contrast .sh_sourceCode .sh_property {
+	color: rgb(255, 255, 255); font-style: normal; font-weight: 700;
+}
+.sh_darkblue .sh_sourceCode .sh_function {
+	color: rgb(255, 255, 255); font-style: normal; font-weight: 700;
+}
+.sh_neon .sh_sourceCode .sh_function {
+	color: rgb(255, 255, 255); font-style: normal; font-weight: 700;
+}
+.sh_night .sh_sourceCode .sh_keyword {
+	color: rgb(255, 255, 255); font-style: normal; font-weight: 700;
+}
+.sh_night .sh_sourceCode .sh_date {
+	color: rgb(255, 255, 255); font-style: normal; font-weight: 700;
+}
+.sh_night .sh_sourceCode .sh_time {
+	color: rgb(255, 255, 255); font-style: normal; font-weight: 700;
+}
+.sh_night .sh_sourceCode .sh_file {
+	color: rgb(255, 255, 255); font-style: normal; font-weight: 700;
+}
+.sh_night .sh_sourceCode .sh_difflines {
+	color: rgb(255, 255, 255); font-style: normal; font-weight: 700;
+}
+.sh_night .sh_sourceCode .sh_property {
+	color: rgb(255, 255, 255); font-style: normal; font-weight: 700;
+}
+.sh_vampire .sh_sourceCode .sh_keyword {
+	color: rgb(255, 255, 255); font-style: normal; font-weight: 700;
+}
+.sh_vampire .sh_sourceCode .sh_date {
+	color: rgb(255, 255, 255); font-style: normal; font-weight: 700;
+}
+.sh_vampire .sh_sourceCode .sh_time {
+	color: rgb(255, 255, 255); font-style: normal; font-weight: 700;
+}
+.sh_vampire .sh_sourceCode .sh_file {
+	color: rgb(255, 255, 255); font-style: normal; font-weight: 700;
+}
+.sh_vampire .sh_sourceCode .sh_difflines {
+	color: rgb(255, 255, 255); font-style: normal; font-weight: 700;
+}
+.sh_vampire .sh_sourceCode .sh_property {
+	color: rgb(255, 255, 255); font-style: normal; font-weight: 700;
+}
+.sh_whatis .sh_sourceCode .sh_type {
+	color: rgb(255, 255, 255); font-style: normal; font-weight: 700;
+}
+.sh_contrast .sh_sourceCode .sh_string {
+	color: rgb(17, 248, 12); font-style: normal; font-weight: 400;
+}
+.sh_contrast .sh_sourceCode .sh_regexp {
+	color: rgb(17, 248, 12); font-style: normal; font-weight: 400;
+}
+.sh_contrast .sh_sourceCode .sh_specialchar {
+	color: rgb(17, 248, 12); font-style: normal; font-weight: 400;
+}
+.sh_contrast .sh_sourceCode .sh_url {
+	color: rgb(17, 248, 12); font-style: normal; font-weight: 400;
+}
+.sh_contrast .sh_sourceCode .sh_ip {
+	color: rgb(17, 248, 12); font-style: normal; font-weight: 400;
+}
+.sh_contrast .sh_sourceCode .sh_name {
+	color: rgb(17, 248, 12); font-style: normal; font-weight: 400;
+}
+.sh_contrast .sh_sourceCode .sh_oldfile {
+	color: rgb(17, 248, 12); font-style: normal; font-weight: 400;
+}
+.sh_contrast .sh_sourceCode .sh_newfile {
+	color: rgb(17, 248, 12); font-style: normal; font-weight: 400;
+}
+.sh_contrast .sh_sourceCode .sh_value {
+	color: rgb(17, 248, 12); font-style: normal; font-weight: 400;
+}
+.sh_contrast .sh_sourceCode .sh_symbol {
+	color: rgb(222, 222, 222); font-style: normal; font-weight: 700;
+}
+.sh_contrast .sh_sourceCode .sh_cbracket {
+	color: rgb(222, 222, 222); font-style: normal; font-weight: 700;
+}
+.sh_golden .sh_sourceCode .sh_variable {
+	color: rgb(222, 222, 222); font-style: normal; font-weight: 700;
+}
+.sh_golden .sh_sourceCode .sh_selector {
+	color: rgb(222, 222, 222); font-style: normal; font-weight: 700;
+}
+.sh_contrast .sh_sourceCode .sh_variable {
+	color: rgb(17, 248, 12); font-style: normal; font-weight: 700;
+}
+.sh_contrast .sh_sourceCode .sh_selector {
+	color: rgb(17, 248, 12); font-style: normal; font-weight: 700;
+}
+.sh_darkblue .sh_sourceCode .sh_keyword {
+	color: rgb(255, 255, 96); font-style: normal; font-weight: 400;
+}
+.sh_darkblue .sh_sourceCode .sh_date {
+	color: rgb(255, 255, 96); font-style: normal; font-weight: 400;
+}
+.sh_darkblue .sh_sourceCode .sh_time {
+	color: rgb(255, 255, 96); font-style: normal; font-weight: 400;
+}
+.sh_darkblue .sh_sourceCode .sh_file {
+	color: rgb(255, 255, 96); font-style: normal; font-weight: 400;
+}
+.sh_darkblue .sh_sourceCode .sh_difflines {
+	color: rgb(255, 255, 96); font-style: normal; font-weight: 400;
+}
+.sh_darkblue .sh_sourceCode .sh_property {
+	color: rgb(255, 255, 96); font-style: normal; font-weight: 400;
+}
+.sh_darkblue .sh_sourceCode .sh_string {
+	color: rgb(255, 160, 160); font-style: normal; font-weight: 400;
+}
+.sh_darkblue .sh_sourceCode .sh_regexp {
+	color: rgb(255, 160, 160); font-style: normal; font-weight: 400;
+}
+.sh_darkblue .sh_sourceCode .sh_url {
+	color: rgb(255, 160, 160); font-style: normal; font-weight: 400;
+}
+.sh_darkblue .sh_sourceCode .sh_ip {
+	color: rgb(255, 160, 160); font-style: normal; font-weight: 400;
+}
+.sh_darkblue .sh_sourceCode .sh_name {
+	color: rgb(255, 160, 160); font-style: normal; font-weight: 400;
+}
+.sh_darkblue .sh_sourceCode .sh_newfile {
+	color: rgb(255, 160, 160); font-style: normal; font-weight: 400;
+}
+.sh_darkblue .sh_sourceCode .sh_value {
+	color: rgb(255, 160, 160); font-style: normal; font-weight: 400;
+}
+.sh_darkblue .sh_sourceCode .sh_specialchar {
+	color: orange; font-style: normal; font-weight: 400;
+}
+.sh_darkblue .sh_sourceCode .sh_oldfile {
+	color: orange; font-style: normal; font-weight: 400;
+}
+.sh_darkblue .sh_sourceCode .sh_symbol {
+	color: rgb(216, 233, 27); font-style: normal; font-weight: 700;
+}
+.sh_darkblue .sh_sourceCode .sh_cbracket {
+	color: rgb(216, 233, 27); font-style: normal; font-weight: 700;
+}
+.sh_darkblue .sh_sourceCode .sh_variable {
+	color: rgb(38, 224, 231); font-style: normal; font-weight: 400;
+}
+.sh_darkblue .sh_sourceCode .sh_selector {
+	color: rgb(38, 224, 231); font-style: normal; font-weight: 400;
+}
+.sh_darkness .sh_sourceCode .sh_variable {
+	color: rgb(38, 224, 231); font-style: normal; font-weight: 400;
+}
+.sh_darkness .sh_sourceCode .sh_selector {
+	color: rgb(38, 224, 231); font-style: normal; font-weight: 400;
+}
+.sh_darkness .sh_sourceCode {
+	color: rgb(255, 255, 255); font-style: normal; font-weight: 400; background-color: rgb(0, 0, 0);
+}
+.sh_neon .sh_sourceCode {
+	color: rgb(255, 255, 255); font-style: normal; font-weight: 400; background-color: rgb(0, 0, 0);
+}
+.sh_pablo .sh_sourceCode {
+	color: rgb(255, 255, 255); font-style: normal; font-weight: 400; background-color: rgb(0, 0, 0);
+}
+.sh_vim-dark .sh_sourceCode {
+	color: rgb(255, 255, 255); font-style: normal; font-weight: 400; background-color: rgb(0, 0, 0);
+}
+.sh_darkness .sh_sourceCode .sh_keyword {
+	color: rgb(255, 255, 0); font-style: normal; font-weight: 700;
+}
+.sh_darkness .sh_sourceCode .sh_date {
+	color: rgb(255, 255, 0); font-style: normal; font-weight: 700;
+}
+.sh_darkness .sh_sourceCode .sh_time {
+	color: rgb(255, 255, 0); font-style: normal; font-weight: 700;
+}
+.sh_darkness .sh_sourceCode .sh_file {
+	color: rgb(255, 255, 0); font-style: normal; font-weight: 700;
+}
+.sh_darkness .sh_sourceCode .sh_difflines {
+	color: rgb(255, 255, 0); font-style: normal; font-weight: 700;
+}
+.sh_darkness .sh_sourceCode .sh_property {
+	color: rgb(255, 255, 0); font-style: normal; font-weight: 700;
+}
+.sh_darkness .sh_sourceCode .sh_type {
+	color: rgb(0, 255, 0); font-style: normal; font-weight: 400;
+}
+.sh_pablo .sh_sourceCode .sh_preproc {
+	color: rgb(0, 255, 0); font-style: normal; font-weight: 400;
+}
+.sh_vim-dark .sh_sourceCode .sh_type {
+	color: rgb(0, 255, 0); font-style: normal; font-weight: 400;
+}
+.sh_vim .sh_sourceCode .sh_type {
+	color: rgb(0, 255, 0); font-style: normal; font-weight: 400;
+}
+.sh_darkness .sh_sourceCode .sh_string {
+	color: rgb(171, 171, 0); font-style: normal; font-weight: 700;
+}
+.sh_darkness .sh_sourceCode .sh_regexp {
+	color: rgb(171, 171, 0); font-style: normal; font-weight: 700;
+}
+.sh_darkness .sh_sourceCode .sh_url {
+	color: rgb(171, 171, 0); font-style: normal; font-weight: 700;
+}
+.sh_darkness .sh_sourceCode .sh_ip {
+	color: rgb(171, 171, 0); font-style: normal; font-weight: 700;
+}
+.sh_darkness .sh_sourceCode .sh_name {
+	color: rgb(171, 171, 0); font-style: normal; font-weight: 700;
+}
+.sh_darkness .sh_sourceCode .sh_newfile {
+	color: rgb(171, 171, 0); font-style: normal; font-weight: 700;
+}
+.sh_darkness .sh_sourceCode .sh_value {
+	color: rgb(171, 171, 0); font-style: normal; font-weight: 700;
+}
+.sh_darkness .sh_sourceCode .sh_specialchar {
+	color: rgb(191, 191, 191); font-style: normal; font-weight: 400;
+}
+.sh_darkness .sh_sourceCode .sh_oldfile {
+	color: rgb(191, 191, 191); font-style: normal; font-weight: 400;
+}
+.sh_greenlcd .sh_sourceCode .sh_preproc {
+	color: rgb(191, 191, 191); font-style: normal; font-weight: 400;
+}
+.sh_night .sh_sourceCode .sh_comment {
+	color: rgb(191, 191, 191); font-style: normal; font-weight: 400;
+}
+.sh_whatis .sh_sourceCode .sh_preproc {
+	color: rgb(191, 191, 191); font-style: normal; font-weight: 400;
+}
+.sh_darkness .sh_sourceCode .sh_comment {
+	color: rgb(136, 136, 136); font-style: italic; font-weight: 400;
+}
+.sh_greenlcd .sh_sourceCode .sh_comment {
+	color: rgb(136, 136, 136); font-style: italic; font-weight: 400;
+}
+.sh_darkness .sh_sourceCode .sh_symbol {
+	color: rgb(255, 0, 255); font-style: normal; font-weight: 400;
+}
+.sh_darkness .sh_sourceCode .sh_cbracket {
+	color: rgb(255, 0, 255); font-style: normal; font-weight: 400;
+}
+.sh_kwrite .sh_sourceCode .sh_specialchar {
+	color: rgb(255, 0, 255); font-style: normal; font-weight: 400;
+}
+.sh_kwrite .sh_sourceCode .sh_oldfile {
+	color: rgb(255, 0, 255); font-style: normal; font-weight: 400;
+}
+.sh_neon .sh_sourceCode .sh_number {
+	color: rgb(255, 0, 255); font-style: normal; font-weight: 400;
+}
+.sh_zellner .sh_sourceCode .sh_string {
+	color: rgb(255, 0, 255); font-style: normal; font-weight: 400;
+}
+.sh_zellner .sh_sourceCode .sh_regexp {
+	color: rgb(255, 0, 255); font-style: normal; font-weight: 400;
+}
+.sh_zellner .sh_sourceCode .sh_specialchar {
+	color: rgb(255, 0, 255); font-style: normal; font-weight: 400;
+}
+.sh_zellner .sh_sourceCode .sh_number {
+	color: rgb(255, 0, 255); font-style: normal; font-weight: 400;
+}
+.sh_zellner .sh_sourceCode .sh_url {
+	color: rgb(255, 0, 255); font-style: normal; font-weight: 400;
+}
+.sh_zellner .sh_sourceCode .sh_ip {
+	color: rgb(255, 0, 255); font-style: normal; font-weight: 400;
+}
+.sh_zellner .sh_sourceCode .sh_name {
+	color: rgb(255, 0, 255); font-style: normal; font-weight: 400;
+}
+.sh_zellner .sh_sourceCode .sh_oldfile {
+	color: rgb(255, 0, 255); font-style: normal; font-weight: 400;
+}
+.sh_zellner .sh_sourceCode .sh_newfile {
+	color: rgb(255, 0, 255); font-style: normal; font-weight: 400;
+}
+.sh_zellner .sh_sourceCode .sh_value {
+	color: rgb(255, 0, 255); font-style: normal; font-weight: 400;
+}
+.sh_desert .sh_sourceCode .sh_keyword {
+	color: rgb(254, 248, 188); font-style: normal; font-weight: 700;
+}
+.sh_desert .sh_sourceCode .sh_date {
+	color: rgb(254, 248, 188); font-style: normal; font-weight: 700;
+}
+.sh_desert .sh_sourceCode .sh_time {
+	color: rgb(254, 248, 188); font-style: normal; font-weight: 700;
+}
+.sh_desert .sh_sourceCode .sh_file {
+	color: rgb(254, 248, 188); font-style: normal; font-weight: 700;
+}
+.sh_desert .sh_sourceCode .sh_difflines {
+	color: rgb(254, 248, 188); font-style: normal; font-weight: 700;
+}
+.sh_desert .sh_sourceCode .sh_property {
+	color: rgb(254, 248, 188); font-style: normal; font-weight: 700;
+}
+.sh_desert .sh_sourceCode .sh_string {
+	color: rgb(246, 246, 71); font-style: normal; font-weight: 400;
+}
+.sh_desert .sh_sourceCode .sh_regexp {
+	color: rgb(246, 246, 71); font-style: normal; font-weight: 400;
+}
+.sh_desert .sh_sourceCode .sh_specialchar {
+	color: rgb(246, 246, 71); font-style: normal; font-weight: 400;
+}
+.sh_desert .sh_sourceCode .sh_url {
+	color: rgb(246, 246, 71); font-style: normal; font-weight: 400;
+}
+.sh_desert .sh_sourceCode .sh_ip {
+	color: rgb(246, 246, 71); font-style: normal; font-weight: 400;
+}
+.sh_desert .sh_sourceCode .sh_name {
+	color: rgb(246, 246, 71); font-style: normal; font-weight: 400;
+}
+.sh_desert .sh_sourceCode .sh_oldfile {
+	color: rgb(246, 246, 71); font-style: normal; font-weight: 400;
+}
+.sh_desert .sh_sourceCode .sh_newfile {
+	color: rgb(246, 246, 71); font-style: normal; font-weight: 400;
+}
+.sh_desert .sh_sourceCode .sh_value {
+	color: rgb(246, 246, 71); font-style: normal; font-weight: 400;
+}
+.sh_desert .sh_sourceCode .sh_symbol {
+	color: rgb(102, 87, 79); font-style: normal; font-weight: 400;
+}
+.sh_desert .sh_sourceCode .sh_cbracket {
+	color: rgb(102, 87, 79); font-style: normal; font-weight: 400;
+}
+.sh_desert .sh_sourceCode .sh_variable {
+	color: rgb(0, 0, 0); font-style: normal; font-weight: 700;
+}
+.sh_desert .sh_sourceCode .sh_selector {
+	color: rgb(0, 0, 0); font-style: normal; font-weight: 700;
+}
+.sh_ide-devcpp .sh_sourceCode .sh_keyword {
+	color: rgb(0, 0, 0); font-style: normal; font-weight: 700;
+}
+.sh_ide-devcpp .sh_sourceCode .sh_date {
+	color: rgb(0, 0, 0); font-style: normal; font-weight: 700;
+}
+.sh_ide-devcpp .sh_sourceCode .sh_time {
+	color: rgb(0, 0, 0); font-style: normal; font-weight: 700;
+}
+.sh_ide-devcpp .sh_sourceCode .sh_file {
+	color: rgb(0, 0, 0); font-style: normal; font-weight: 700;
+}
+.sh_ide-devcpp .sh_sourceCode .sh_variable {
+	color: rgb(0, 0, 0); font-style: normal; font-weight: 700;
+}
+.sh_ide-devcpp .sh_sourceCode .sh_difflines {
+	color: rgb(0, 0, 0); font-style: normal; font-weight: 700;
+}
+.sh_ide-devcpp .sh_sourceCode .sh_selector {
+	color: rgb(0, 0, 0); font-style: normal; font-weight: 700;
+}
+.sh_ide-devcpp .sh_sourceCode .sh_property {
+	color: rgb(0, 0, 0); font-style: normal; font-weight: 700;
+}
+.sh_kwrite .sh_sourceCode .sh_keyword {
+	color: rgb(0, 0, 0); font-style: normal; font-weight: 700;
+}
+.sh_kwrite .sh_sourceCode .sh_date {
+	color: rgb(0, 0, 0); font-style: normal; font-weight: 700;
+}
+.sh_kwrite .sh_sourceCode .sh_time {
+	color: rgb(0, 0, 0); font-style: normal; font-weight: 700;
+}
+.sh_kwrite .sh_sourceCode .sh_file {
+	color: rgb(0, 0, 0); font-style: normal; font-weight: 700;
+}
+.sh_kwrite .sh_sourceCode .sh_variable {
+	color: rgb(0, 0, 0); font-style: normal; font-weight: 700;
+}
+.sh_kwrite .sh_sourceCode .sh_difflines {
+	color: rgb(0, 0, 0); font-style: normal; font-weight: 700;
+}
+.sh_kwrite .sh_sourceCode .sh_selector {
+	color: rgb(0, 0, 0); font-style: normal; font-weight: 700;
+}
+.sh_kwrite .sh_sourceCode .sh_property {
+	color: rgb(0, 0, 0); font-style: normal; font-weight: 700;
+}
+.sh_nedit .sh_sourceCode .sh_keyword {
+	color: rgb(0, 0, 0); font-style: normal; font-weight: 700;
+}
+.sh_nedit .sh_sourceCode .sh_symbol {
+	color: rgb(0, 0, 0); font-style: normal; font-weight: 700;
+}
+.sh_nedit .sh_sourceCode .sh_cbracket {
+	color: rgb(0, 0, 0); font-style: normal; font-weight: 700;
+}
+.sh_nedit .sh_sourceCode .sh_date {
+	color: rgb(0, 0, 0); font-style: normal; font-weight: 700;
+}
+.sh_nedit .sh_sourceCode .sh_time {
+	color: rgb(0, 0, 0); font-style: normal; font-weight: 700;
+}
+.sh_nedit .sh_sourceCode .sh_file {
+	color: rgb(0, 0, 0); font-style: normal; font-weight: 700;
+}
+.sh_nedit .sh_sourceCode .sh_difflines {
+	color: rgb(0, 0, 0); font-style: normal; font-weight: 700;
+}
+.sh_nedit .sh_sourceCode .sh_property {
+	color: rgb(0, 0, 0); font-style: normal; font-weight: 700;
+}
+.sh_print .sh_sourceCode .sh_keyword {
+	color: rgb(0, 0, 0); font-style: normal; font-weight: 700;
+}
+.sh_print .sh_sourceCode .sh_type {
+	color: rgb(0, 0, 0); font-style: normal; font-weight: 700;
+}
+.sh_print .sh_sourceCode .sh_preproc {
+	color: rgb(0, 0, 0); font-style: normal; font-weight: 700;
+}
+.sh_print .sh_sourceCode .sh_symbol {
+	color: rgb(0, 0, 0); font-style: normal; font-weight: 700;
+}
+.sh_print .sh_sourceCode .sh_cbracket {
+	color: rgb(0, 0, 0); font-style: normal; font-weight: 700;
+}
+.sh_print .sh_sourceCode .sh_date {
+	color: rgb(0, 0, 0); font-style: normal; font-weight: 700;
+}
+.sh_print .sh_sourceCode .sh_time {
+	color: rgb(0, 0, 0); font-style: normal; font-weight: 700;
+}
+.sh_print .sh_sourceCode .sh_file {
+	color: rgb(0, 0, 0); font-style: normal; font-weight: 700;
+}
+.sh_print .sh_sourceCode .sh_variable {
+	color: rgb(0, 0, 0); font-style: normal; font-weight: 700;
+}
+.sh_print .sh_sourceCode .sh_difflines {
+	color: rgb(0, 0, 0); font-style: normal; font-weight: 700;
+}
+.sh_print .sh_sourceCode .sh_selector {
+	color: rgb(0, 0, 0); font-style: normal; font-weight: 700;
+}
+.sh_print .sh_sourceCode .sh_property {
+	color: rgb(0, 0, 0); font-style: normal; font-weight: 700;
+}
+.sh_rand01 .sh_sourceCode .sh_function {
+	color: rgb(0, 0, 0); font-style: normal; font-weight: 700;
+}
+.sh_typical .sh_sourceCode .sh_function {
+	color: rgb(0, 0, 0); font-style: normal; font-weight: 700;
+}
+.sh_zellner .sh_sourceCode .sh_function {
+	color: rgb(0, 0, 0); font-style: normal; font-weight: 700;
+}
+.sh_dull .sh_sourceCode .sh_keyword {
+	color: rgb(53, 53, 53); font-style: normal; font-weight: 700;
+}
+.sh_dull .sh_sourceCode .sh_date {
+	color: rgb(53, 53, 53); font-style: normal; font-weight: 700;
+}
+.sh_dull .sh_sourceCode .sh_time {
+	color: rgb(53, 53, 53); font-style: normal; font-weight: 700;
+}
+.sh_dull .sh_sourceCode .sh_file {
+	color: rgb(53, 53, 53); font-style: normal; font-weight: 700;
+}
+.sh_dull .sh_sourceCode .sh_difflines {
+	color: rgb(53, 53, 53); font-style: normal; font-weight: 700;
+}
+.sh_dull .sh_sourceCode .sh_property {
+	color: rgb(53, 53, 53); font-style: normal; font-weight: 700;
+}
+.sh_dull .sh_sourceCode .sh_string {
+	color: rgb(0, 85, 153); font-style: normal; font-weight: 400;
+}
+.sh_dull .sh_sourceCode .sh_regexp {
+	color: rgb(0, 85, 153); font-style: normal; font-weight: 400;
+}
+.sh_dull .sh_sourceCode .sh_specialchar {
+	color: rgb(0, 85, 153); font-style: normal; font-weight: 400;
+}
+.sh_dull .sh_sourceCode .sh_url {
+	color: rgb(0, 85, 153); font-style: normal; font-weight: 400;
+}
+.sh_dull .sh_sourceCode .sh_ip {
+	color: rgb(0, 85, 153); font-style: normal; font-weight: 400;
+}
+.sh_dull .sh_sourceCode .sh_name {
+	color: rgb(0, 85, 153); font-style: normal; font-weight: 400;
+}
+.sh_dull .sh_sourceCode .sh_oldfile {
+	color: rgb(0, 85, 153); font-style: normal; font-weight: 400;
+}
+.sh_dull .sh_sourceCode .sh_newfile {
+	color: rgb(0, 85, 153); font-style: normal; font-weight: 400;
+}
+.sh_dull .sh_sourceCode .sh_value {
+	color: rgb(0, 85, 153); font-style: normal; font-weight: 400;
+}
+.sh_dull .sh_sourceCode .sh_symbol {
+	color: rgb(34, 34, 34); font-style: normal; font-weight: 400;
+}
+.sh_dull .sh_sourceCode .sh_cbracket {
+	color: rgb(34, 34, 34); font-style: normal; font-weight: 400;
+}
+.sh_dull .sh_sourceCode .sh_variable {
+	color: rgb(174, 90, 22); font-style: normal; font-weight: 400;
+}
+.sh_dull .sh_sourceCode .sh_selector {
+	color: rgb(174, 90, 22); font-style: normal; font-weight: 400;
+}
+.sh_easter .sh_sourceCode .sh_keyword {
+	color: rgb(29, 69, 214); font-style: normal; font-weight: 700;
+}
+.sh_easter .sh_sourceCode .sh_date {
+	color: rgb(29, 69, 214); font-style: normal; font-weight: 700;
+}
+.sh_easter .sh_sourceCode .sh_time {
+	color: rgb(29, 69, 214); font-style: normal; font-weight: 700;
+}
+.sh_easter .sh_sourceCode .sh_file {
+	color: rgb(29, 69, 214); font-style: normal; font-weight: 700;
+}
+.sh_easter .sh_sourceCode .sh_difflines {
+	color: rgb(29, 69, 214); font-style: normal; font-weight: 700;
+}
+.sh_easter .sh_sourceCode .sh_property {
+	color: rgb(29, 69, 214); font-style: normal; font-weight: 700;
+}
+.sh_easter .sh_sourceCode .sh_string {
+	color: rgb(202, 75, 227); font-style: normal; font-weight: 400;
+}
+.sh_easter .sh_sourceCode .sh_regexp {
+	color: rgb(202, 75, 227); font-style: normal; font-weight: 400;
+}
+.sh_easter .sh_sourceCode .sh_specialchar {
+	color: rgb(202, 75, 227); font-style: normal; font-weight: 400;
+}
+.sh_easter .sh_sourceCode .sh_url {
+	color: rgb(202, 75, 227); font-style: normal; font-weight: 400;
+}
+.sh_easter .sh_sourceCode .sh_ip {
+	color: rgb(202, 75, 227); font-style: normal; font-weight: 400;
+}
+.sh_easter .sh_sourceCode .sh_name {
+	color: rgb(202, 75, 227); font-style: normal; font-weight: 400;
+}
+.sh_easter .sh_sourceCode .sh_oldfile {
+	color: rgb(202, 75, 227); font-style: normal; font-weight: 400;
+}
+.sh_easter .sh_sourceCode .sh_newfile {
+	color: rgb(202, 75, 227); font-style: normal; font-weight: 400;
+}
+.sh_easter .sh_sourceCode .sh_value {
+	color: rgb(202, 75, 227); font-style: normal; font-weight: 400;
+}
+.sh_easter .sh_sourceCode .sh_symbol {
+	color: rgb(250, 71, 0); font-style: normal; font-weight: 400;
+}
+.sh_easter .sh_sourceCode .sh_cbracket {
+	color: rgb(250, 71, 0); font-style: normal; font-weight: 400;
+}
+.sh_easter .sh_sourceCode .sh_variable {
+	color: rgb(38, 170, 231); font-style: normal; font-weight: 700;
+}
+.sh_easter .sh_sourceCode .sh_selector {
+	color: rgb(38, 170, 231); font-style: normal; font-weight: 700;
+}
+.sh_emacs .sh_sourceCode {
+	color: rgb(0, 0, 0); font-style: normal; font-weight: 400; background-color: rgb(255, 255, 255);
+}
+.sh_ide-anjuta .sh_sourceCode {
+	color: rgb(0, 0, 0); font-style: normal; font-weight: 400; background-color: rgb(255, 255, 255);
+}
+.sh_ide-codewarrior .sh_sourceCode {
+	color: rgb(0, 0, 0); font-style: normal; font-weight: 400; background-color: rgb(255, 255, 255);
+}
+.sh_ide-devcpp .sh_sourceCode {
+	color: rgb(0, 0, 0); font-style: normal; font-weight: 400; background-color: rgb(255, 255, 255);
+}
+.sh_ide-eclipse .sh_sourceCode {
+	color: rgb(0, 0, 0); font-style: normal; font-weight: 400; background-color: rgb(255, 255, 255);
+}
+.sh_ide-kdev .sh_sourceCode {
+	color: rgb(0, 0, 0); font-style: normal; font-weight: 400; background-color: rgb(255, 255, 255);
+}
+.sh_ide-msvcpp .sh_sourceCode {
+	color: rgb(0, 0, 0); font-style: normal; font-weight: 400; background-color: rgb(255, 255, 255);
+}
+.sh_kwrite .sh_sourceCode {
+	color: rgb(0, 0, 0); font-style: normal; font-weight: 400; background-color: rgb(255, 255, 255);
+}
+.sh_matlab .sh_sourceCode {
+	color: rgb(0, 0, 0); font-style: normal; font-weight: 400; background-color: rgb(255, 255, 255);
+}
+.sh_nedit .sh_sourceCode {
+	color: rgb(0, 0, 0); font-style: normal; font-weight: 400; background-color: rgb(255, 255, 255);
+}
+.sh_print .sh_sourceCode {
+	color: rgb(0, 0, 0); font-style: normal; font-weight: 400; background-color: rgb(255, 255, 255);
+}
+.sh_the .sh_sourceCode {
+	color: rgb(0, 0, 0); font-style: normal; font-weight: 400; background-color: rgb(255, 255, 255);
+}
+.sh_typical .sh_sourceCode {
+	color: rgb(0, 0, 0); font-style: normal; font-weight: 400; background-color: rgb(255, 255, 255);
+}
+.sh_vim .sh_sourceCode {
+	color: rgb(0, 0, 0); font-style: normal; font-weight: 400; background-color: rgb(255, 255, 255);
+}
+.sh_zellner .sh_sourceCode {
+	color: rgb(0, 0, 0); font-style: normal; font-weight: 400; background-color: rgb(255, 255, 255);
+}
+.sh_emacs .sh_sourceCode .sh_keyword {
+	color: rgb(156, 32, 238); font-style: normal; font-weight: 700;
+}
+.sh_emacs .sh_sourceCode .sh_date {
+	color: rgb(156, 32, 238); font-style: normal; font-weight: 700;
+}
+.sh_emacs .sh_sourceCode .sh_time {
+	color: rgb(156, 32, 238); font-style: normal; font-weight: 700;
+}
+.sh_emacs .sh_sourceCode .sh_file {
+	color: rgb(156, 32, 238); font-style: normal; font-weight: 700;
+}
+.sh_emacs .sh_sourceCode .sh_difflines {
+	color: rgb(156, 32, 238); font-style: normal; font-weight: 700;
+}
+.sh_emacs .sh_sourceCode .sh_property {
+	color: rgb(156, 32, 238); font-style: normal; font-weight: 700;
+}
+.sh_emacs .sh_sourceCode .sh_string {
+	color: rgb(189, 141, 139); font-style: normal; font-weight: 400;
+}
+.sh_emacs .sh_sourceCode .sh_regexp {
+	color: rgb(189, 141, 139); font-style: normal; font-weight: 400;
+}
+.sh_emacs .sh_sourceCode .sh_specialchar {
+	color: rgb(189, 141, 139); font-style: normal; font-weight: 400;
+}
+.sh_emacs .sh_sourceCode .sh_url {
+	color: rgb(189, 141, 139); font-style: normal; font-weight: 400;
+}
+.sh_emacs .sh_sourceCode .sh_ip {
+	color: rgb(189, 141, 139); font-style: normal; font-weight: 400;
+}
+.sh_emacs .sh_sourceCode .sh_name {
+	color: rgb(189, 141, 139); font-style: normal; font-weight: 400;
+}
+.sh_emacs .sh_sourceCode .sh_oldfile {
+	color: rgb(189, 141, 139); font-style: normal; font-weight: 400;
+}
+.sh_emacs .sh_sourceCode .sh_newfile {
+	color: rgb(189, 141, 139); font-style: normal; font-weight: 400;
+}
+.sh_emacs .sh_sourceCode .sh_value {
+	color: rgb(189, 141, 139); font-style: normal; font-weight: 400;
+}
+.sh_golden .sh_sourceCode .sh_keyword {
+	color: rgb(255, 237, 138); font-style: normal; font-weight: 700;
+}
+.sh_golden .sh_sourceCode .sh_date {
+	color: rgb(255, 237, 138); font-style: normal; font-weight: 700;
+}
+.sh_golden .sh_sourceCode .sh_time {
+	color: rgb(255, 237, 138); font-style: normal; font-weight: 700;
+}
+.sh_golden .sh_sourceCode .sh_file {
+	color: rgb(255, 237, 138); font-style: normal; font-weight: 700;
+}
+.sh_golden .sh_sourceCode .sh_difflines {
+	color: rgb(255, 237, 138); font-style: normal; font-weight: 700;
+}
+.sh_golden .sh_sourceCode .sh_property {
+	color: rgb(255, 237, 138); font-style: normal; font-weight: 700;
+}
+.sh_golden .sh_sourceCode .sh_string {
+	color: red; font-style: normal; font-weight: 400;
+}
+.sh_golden .sh_sourceCode .sh_regexp {
+	color: red; font-style: normal; font-weight: 400;
+}
+.sh_golden .sh_sourceCode .sh_specialchar {
+	color: red; font-style: normal; font-weight: 400;
+}
+.sh_golden .sh_sourceCode .sh_url {
+	color: red; font-style: normal; font-weight: 400;
+}
+.sh_golden .sh_sourceCode .sh_ip {
+	color: red; font-style: normal; font-weight: 400;
+}
+.sh_golden .sh_sourceCode .sh_name {
+	color: red; font-style: normal; font-weight: 400;
+}
+.sh_golden .sh_sourceCode .sh_oldfile {
+	color: red; font-style: normal; font-weight: 400;
+}
+.sh_golden .sh_sourceCode .sh_newfile {
+	color: red; font-style: normal; font-weight: 400;
+}
+.sh_golden .sh_sourceCode .sh_value {
+	color: red; font-style: normal; font-weight: 400;
+}
+.sh_ide-devcpp .sh_sourceCode .sh_string {
+	color: red; font-style: normal; font-weight: 400;
+}
+.sh_ide-devcpp .sh_sourceCode .sh_regexp {
+	color: red; font-style: normal; font-weight: 400;
+}
+.sh_ide-devcpp .sh_sourceCode .sh_specialchar {
+	color: red; font-style: normal; font-weight: 400;
+}
+.sh_ide-devcpp .sh_sourceCode .sh_url {
+	color: red; font-style: normal; font-weight: 400;
+}
+.sh_ide-devcpp .sh_sourceCode .sh_ip {
+	color: red; font-style: normal; font-weight: 400;
+}
+.sh_ide-devcpp .sh_sourceCode .sh_name {
+	color: red; font-style: normal; font-weight: 400;
+}
+.sh_ide-devcpp .sh_sourceCode .sh_oldfile {
+	color: red; font-style: normal; font-weight: 400;
+}
+.sh_ide-devcpp .sh_sourceCode .sh_newfile {
+	color: red; font-style: normal; font-weight: 400;
+}
+.sh_ide-devcpp .sh_sourceCode .sh_value {
+	color: red; font-style: normal; font-weight: 400;
+}
+.sh_ide-kdev .sh_sourceCode .sh_string {
+	color: red; font-style: normal; font-weight: 400;
+}
+.sh_ide-kdev .sh_sourceCode .sh_regexp {
+	color: red; font-style: normal; font-weight: 400;
+}
+.sh_ide-kdev .sh_sourceCode .sh_specialchar {
+	color: red; font-style: normal; font-weight: 400;
+}
+.sh_ide-kdev .sh_sourceCode .sh_url {
+	color: red; font-style: normal; font-weight: 400;
+}
+.sh_ide-kdev .sh_sourceCode .sh_ip {
+	color: red; font-style: normal; font-weight: 400;
+}
+.sh_ide-kdev .sh_sourceCode .sh_name {
+	color: red; font-style: normal; font-weight: 400;
+}
+.sh_ide-kdev .sh_sourceCode .sh_oldfile {
+	color: red; font-style: normal; font-weight: 400;
+}
+.sh_ide-kdev .sh_sourceCode .sh_newfile {
+	color: red; font-style: normal; font-weight: 400;
+}
+.sh_ide-kdev .sh_sourceCode .sh_value {
+	color: red; font-style: normal; font-weight: 400;
+}
+.sh_kwrite .sh_sourceCode .sh_string {
+	color: red; font-style: normal; font-weight: 400;
+}
+.sh_kwrite .sh_sourceCode .sh_regexp {
+	color: red; font-style: normal; font-weight: 400;
+}
+.sh_kwrite .sh_sourceCode .sh_url {
+	color: red; font-style: normal; font-weight: 400;
+}
+.sh_kwrite .sh_sourceCode .sh_ip {
+	color: red; font-style: normal; font-weight: 400;
+}
+.sh_kwrite .sh_sourceCode .sh_name {
+	color: red; font-style: normal; font-weight: 400;
+}
+.sh_kwrite .sh_sourceCode .sh_newfile {
+	color: red; font-style: normal; font-weight: 400;
+}
+.sh_kwrite .sh_sourceCode .sh_value {
+	color: red; font-style: normal; font-weight: 400;
+}
+.sh_pablo .sh_sourceCode .sh_symbol {
+	color: red; font-style: normal; font-weight: 400;
+}
+.sh_pablo .sh_sourceCode .sh_cbracket {
+	color: red; font-style: normal; font-weight: 400;
+}
+.sh_the .sh_sourceCode .sh_number {
+	color: red; font-style: normal; font-weight: 400;
+}
+.sh_the .sh_sourceCode .sh_preproc {
+	color: red; font-style: normal; font-weight: 400;
+}
+.sh_typical .sh_sourceCode .sh_string {
+	color: red; font-style: normal; font-weight: 400;
+}
+.sh_typical .sh_sourceCode .sh_regexp {
+	color: red; font-style: normal; font-weight: 400;
+}
+.sh_typical .sh_sourceCode .sh_symbol {
+	color: red; font-style: normal; font-weight: 400;
+}
+.sh_typical .sh_sourceCode .sh_cbracket {
+	color: red; font-style: normal; font-weight: 400;
+}
+.sh_typical .sh_sourceCode .sh_url {
+	color: red; font-style: normal; font-weight: 400;
+}
+.sh_typical .sh_sourceCode .sh_ip {
+	color: red; font-style: normal; font-weight: 400;
+}
+.sh_typical .sh_sourceCode .sh_name {
+	color: red; font-style: normal; font-weight: 400;
+}
+.sh_typical .sh_sourceCode .sh_newfile {
+	color: red; font-style: normal; font-weight: 400;
+}
+.sh_typical .sh_sourceCode .sh_value {
+	color: red; font-style: normal; font-weight: 400;
+}
+.sh_vim-dark .sh_sourceCode .sh_string {
+	color: red; font-style: normal; font-weight: 400;
+}
+.sh_vim-dark .sh_sourceCode .sh_regexp {
+	color: red; font-style: normal; font-weight: 400;
+}
+.sh_vim-dark .sh_sourceCode .sh_number {
+	color: red; font-style: normal; font-weight: 400;
+}
+.sh_vim-dark .sh_sourceCode .sh_url {
+	color: red; font-style: normal; font-weight: 400;
+}
+.sh_vim-dark .sh_sourceCode .sh_ip {
+	color: red; font-style: normal; font-weight: 400;
+}
+.sh_vim-dark .sh_sourceCode .sh_name {
+	color: red; font-style: normal; font-weight: 400;
+}
+.sh_vim-dark .sh_sourceCode .sh_newfile {
+	color: red; font-style: normal; font-weight: 400;
+}
+.sh_vim-dark .sh_sourceCode .sh_value {
+	color: red; font-style: normal; font-weight: 400;
+}
+.sh_vim .sh_sourceCode .sh_string {
+	color: red; font-style: normal; font-weight: 400;
+}
+.sh_vim .sh_sourceCode .sh_regexp {
+	color: red; font-style: normal; font-weight: 400;
+}
+.sh_vim .sh_sourceCode .sh_number {
+	color: red; font-style: normal; font-weight: 400;
+}
+.sh_vim .sh_sourceCode .sh_url {
+	color: red; font-style: normal; font-weight: 400;
+}
+.sh_vim .sh_sourceCode .sh_ip {
+	color: red; font-style: normal; font-weight: 400;
+}
+.sh_vim .sh_sourceCode .sh_name {
+	color: red; font-style: normal; font-weight: 400;
+}
+.sh_vim .sh_sourceCode .sh_newfile {
+	color: red; font-style: normal; font-weight: 400;
+}
+.sh_vim .sh_sourceCode .sh_value {
+	color: red; font-style: normal; font-weight: 400;
+}
+.sh_whatis .sh_sourceCode .sh_comment {
+	color: red; font-style: normal; font-weight: 400;
+}
+.sh_zellner .sh_sourceCode .sh_comment {
+	color: red; font-style: normal; font-weight: 400;
+}
+.sh_golden .sh_sourceCode .sh_symbol {
+	color: rgb(171, 171, 171); font-style: normal; font-weight: 400;
+}
+.sh_golden .sh_sourceCode .sh_cbracket {
+	color: rgb(171, 171, 171); font-style: normal; font-weight: 400;
+}
+.sh_vampire .sh_sourceCode .sh_preproc {
+	color: rgb(171, 171, 171); font-style: normal; font-weight: 400;
+}
+.sh_greenlcd .sh_sourceCode .sh_keyword {
+	color: rgb(0, 237, 0); font-style: normal; font-weight: 700;
+}
+.sh_greenlcd .sh_sourceCode .sh_date {
+	color: rgb(0, 237, 0); font-style: normal; font-weight: 700;
+}
+.sh_greenlcd .sh_sourceCode .sh_time {
+	color: rgb(0, 237, 0); font-style: normal; font-weight: 700;
+}
+.sh_greenlcd .sh_sourceCode .sh_file {
+	color: rgb(0, 237, 0); font-style: normal; font-weight: 700;
+}
+.sh_greenlcd .sh_sourceCode .sh_difflines {
+	color: rgb(0, 237, 0); font-style: normal; font-weight: 700;
+}
+.sh_greenlcd .sh_sourceCode .sh_property {
+	color: rgb(0, 237, 0); font-style: normal; font-weight: 700;
+}
+.sh_greenlcd .sh_sourceCode .sh_string {
+	color: rgb(223, 223, 223); font-style: normal; font-weight: 400;
+}
+.sh_greenlcd .sh_sourceCode .sh_regexp {
+	color: rgb(223, 223, 223); font-style: normal; font-weight: 400;
+}
+.sh_greenlcd .sh_sourceCode .sh_specialchar {
+	color: rgb(223, 223, 223); font-style: normal; font-weight: 400;
+}
+.sh_greenlcd .sh_sourceCode .sh_url {
+	color: rgb(223, 223, 223); font-style: normal; font-weight: 400;
+}
+.sh_greenlcd .sh_sourceCode .sh_ip {
+	color: rgb(223, 223, 223); font-style: normal; font-weight: 400;
+}
+.sh_greenlcd .sh_sourceCode .sh_name {
+	color: rgb(223, 223, 223); font-style: normal; font-weight: 400;
+}
+.sh_greenlcd .sh_sourceCode .sh_oldfile {
+	color: rgb(223, 223, 223); font-style: normal; font-weight: 400;
+}
+.sh_greenlcd .sh_sourceCode .sh_newfile {
+	color: rgb(223, 223, 223); font-style: normal; font-weight: 400;
+}
+.sh_greenlcd .sh_sourceCode .sh_value {
+	color: rgb(223, 223, 223); font-style: normal; font-weight: 400;
+}
+.sh_greenlcd .sh_sourceCode .sh_symbol {
+	color: rgb(47, 231, 169); font-style: normal; font-weight: 400;
+}
+.sh_greenlcd .sh_sourceCode .sh_cbracket {
+	color: rgb(47, 231, 169); font-style: normal; font-weight: 400;
+}
+.sh_greenlcd .sh_sourceCode .sh_variable {
+	color: rgb(190, 239, 19); font-style: normal; font-weight: 400;
+}
+.sh_greenlcd .sh_sourceCode .sh_selector {
+	color: rgb(190, 239, 19); font-style: normal; font-weight: 400;
+}
+.sh_ide-anjuta .sh_sourceCode .sh_keyword {
+	color: navy; font-style: normal; font-weight: 700;
+}
+.sh_ide-anjuta .sh_sourceCode .sh_date {
+	color: navy; font-style: normal; font-weight: 700;
+}
+.sh_ide-anjuta .sh_sourceCode .sh_time {
+	color: navy; font-style: normal; font-weight: 700;
+}
+.sh_ide-anjuta .sh_sourceCode .sh_file {
+	color: navy; font-style: normal; font-weight: 700;
+}
+.sh_ide-anjuta .sh_sourceCode .sh_difflines {
+	color: navy; font-style: normal; font-weight: 700;
+}
+.sh_ide-anjuta .sh_sourceCode .sh_property {
+	color: navy; font-style: normal; font-weight: 700;
+}
+.sh_ide-anjuta .sh_sourceCode .sh_string {
+	color: rgb(221, 187, 0); font-style: normal; font-weight: 400;
+}
+.sh_ide-anjuta .sh_sourceCode .sh_regexp {
+	color: rgb(221, 187, 0); font-style: normal; font-weight: 400;
+}
+.sh_ide-anjuta .sh_sourceCode .sh_specialchar {
+	color: rgb(221, 187, 0); font-style: normal; font-weight: 400;
+}
+.sh_ide-anjuta .sh_sourceCode .sh_url {
+	color: rgb(221, 187, 0); font-style: normal; font-weight: 400;
+}
+.sh_ide-anjuta .sh_sourceCode .sh_ip {
+	color: rgb(221, 187, 0); font-style: normal; font-weight: 400;
+}
+.sh_ide-anjuta .sh_sourceCode .sh_name {
+	color: rgb(221, 187, 0); font-style: normal; font-weight: 400;
+}
+.sh_ide-anjuta .sh_sourceCode .sh_oldfile {
+	color: rgb(221, 187, 0); font-style: normal; font-weight: 400;
+}
+.sh_ide-anjuta .sh_sourceCode .sh_newfile {
+	color: rgb(221, 187, 0); font-style: normal; font-weight: 400;
+}
+.sh_ide-anjuta .sh_sourceCode .sh_value {
+	color: rgb(221, 187, 0); font-style: normal; font-weight: 400;
+}
+.sh_ide-anjuta .sh_sourceCode .sh_number {
+	color: rgb(0, 136, 0); font-style: normal; font-weight: 400;
+}
+.sh_whitengrey .sh_sourceCode .sh_string {
+	color: rgb(0, 136, 0); font-style: normal; font-weight: 400;
+}
+.sh_whitengrey .sh_sourceCode .sh_regexp {
+	color: rgb(0, 136, 0); font-style: normal; font-weight: 400;
+}
+.sh_whitengrey .sh_sourceCode .sh_specialchar {
+	color: rgb(0, 136, 0); font-style: normal; font-weight: 400;
+}
+.sh_whitengrey .sh_sourceCode .sh_url {
+	color: rgb(0, 136, 0); font-style: normal; font-weight: 400;
+}
+.sh_whitengrey .sh_sourceCode .sh_ip {
+	color: rgb(0, 136, 0); font-style: normal; font-weight: 400;
+}
+.sh_whitengrey .sh_sourceCode .sh_name {
+	color: rgb(0, 136, 0); font-style: normal; font-weight: 400;
+}
+.sh_whitengrey .sh_sourceCode .sh_oldfile {
+	color: rgb(0, 136, 0); font-style: normal; font-weight: 400;
+}
+.sh_whitengrey .sh_sourceCode .sh_newfile {
+	color: rgb(0, 136, 0); font-style: normal; font-weight: 400;
+}
+.sh_whitengrey .sh_sourceCode .sh_value {
+	color: rgb(0, 136, 0); font-style: normal; font-weight: 400;
+}
+.sh_ide-codewarrior .sh_sourceCode .sh_keyword {
+	color: rgb(0, 0, 179); font-style: normal; font-weight: 400;
+}
+.sh_ide-codewarrior .sh_sourceCode .sh_preproc {
+	color: rgb(0, 0, 179); font-style: normal; font-weight: 400;
+}
+.sh_ide-codewarrior .sh_sourceCode .sh_date {
+	color: rgb(0, 0, 179); font-style: normal; font-weight: 400;
+}
+.sh_ide-codewarrior .sh_sourceCode .sh_time {
+	color: rgb(0, 0, 179); font-style: normal; font-weight: 400;
+}
+.sh_ide-codewarrior .sh_sourceCode .sh_file {
+	color: rgb(0, 0, 179); font-style: normal; font-weight: 400;
+}
+.sh_ide-codewarrior .sh_sourceCode .sh_variable {
+	color: rgb(0, 0, 179); font-style: normal; font-weight: 400;
+}
+.sh_ide-codewarrior .sh_sourceCode .sh_difflines {
+	color: rgb(0, 0, 179); font-style: normal; font-weight: 400;
+}
+.sh_ide-codewarrior .sh_sourceCode .sh_selector {
+	color: rgb(0, 0, 179); font-style: normal; font-weight: 400;
+}
+.sh_ide-codewarrior .sh_sourceCode .sh_property {
+	color: rgb(0, 0, 179); font-style: normal; font-weight: 400;
+}
+.sh_ide-codewarrior .sh_sourceCode .sh_string {
+	color: rgb(102, 102, 102); font-style: normal; font-weight: 400;
+}
+.sh_ide-codewarrior .sh_sourceCode .sh_regexp {
+	color: rgb(102, 102, 102); font-style: normal; font-weight: 400;
+}
+.sh_ide-codewarrior .sh_sourceCode .sh_specialchar {
+	color: rgb(102, 102, 102); font-style: normal; font-weight: 400;
+}
+.sh_ide-codewarrior .sh_sourceCode .sh_url {
+	color: rgb(102, 102, 102); font-style: normal; font-weight: 400;
+}
+.sh_ide-codewarrior .sh_sourceCode .sh_ip {
+	color: rgb(102, 102, 102); font-style: normal; font-weight: 400;
+}
+.sh_ide-codewarrior .sh_sourceCode .sh_name {
+	color: rgb(102, 102, 102); font-style: normal; font-weight: 400;
+}
+.sh_ide-codewarrior .sh_sourceCode .sh_oldfile {
+	color: rgb(102, 102, 102); font-style: normal; font-weight: 400;
+}
+.sh_ide-codewarrior .sh_sourceCode .sh_newfile {
+	color: rgb(102, 102, 102); font-style: normal; font-weight: 400;
+}
+.sh_ide-codewarrior .sh_sourceCode .sh_value {
+	color: rgb(102, 102, 102); font-style: normal; font-weight: 400;
+}
+.sh_ide-devcpp .sh_sourceCode .sh_preproc {
+	color: green; font-style: normal; font-weight: 400;
+}
+.sh_ide-kdev .sh_sourceCode .sh_preproc {
+	color: green; font-style: normal; font-weight: 400;
+}
+.sh_ide-eclipse .sh_sourceCode .sh_keyword {
+	color: rgb(127, 0, 85); font-style: normal; font-weight: 700;
+}
+.sh_ide-eclipse .sh_sourceCode .sh_type {
+	color: rgb(127, 0, 85); font-style: normal; font-weight: 700;
+}
+.sh_ide-eclipse .sh_sourceCode .sh_date {
+	color: rgb(127, 0, 85); font-style: normal; font-weight: 700;
+}
+.sh_ide-eclipse .sh_sourceCode .sh_time {
+	color: rgb(127, 0, 85); font-style: normal; font-weight: 700;
+}
+.sh_ide-eclipse .sh_sourceCode .sh_file {
+	color: rgb(127, 0, 85); font-style: normal; font-weight: 700;
+}
+.sh_ide-eclipse .sh_sourceCode .sh_variable {
+	color: rgb(127, 0, 85); font-style: normal; font-weight: 700;
+}
+.sh_ide-eclipse .sh_sourceCode .sh_difflines {
+	color: rgb(127, 0, 85); font-style: normal; font-weight: 700;
+}
+.sh_ide-eclipse .sh_sourceCode .sh_selector {
+	color: rgb(127, 0, 85); font-style: normal; font-weight: 700;
+}
+.sh_ide-eclipse .sh_sourceCode .sh_property {
+	color: rgb(127, 0, 85); font-style: normal; font-weight: 700;
+}
+.sh_ide-kdev .sh_sourceCode .sh_keyword {
+	color: rgb(96, 0, 0); font-style: normal; font-weight: 700;
+}
+.sh_ide-kdev .sh_sourceCode .sh_date {
+	color: rgb(96, 0, 0); font-style: normal; font-weight: 700;
+}
+.sh_ide-kdev .sh_sourceCode .sh_time {
+	color: rgb(96, 0, 0); font-style: normal; font-weight: 700;
+}
+.sh_ide-kdev .sh_sourceCode .sh_file {
+	color: rgb(96, 0, 0); font-style: normal; font-weight: 700;
+}
+.sh_ide-kdev .sh_sourceCode .sh_variable {
+	color: rgb(96, 0, 0); font-style: normal; font-weight: 700;
+}
+.sh_ide-kdev .sh_sourceCode .sh_difflines {
+	color: rgb(96, 0, 0); font-style: normal; font-weight: 700;
+}
+.sh_ide-kdev .sh_sourceCode .sh_selector {
+	color: rgb(96, 0, 0); font-style: normal; font-weight: 700;
+}
+.sh_ide-kdev .sh_sourceCode .sh_property {
+	color: rgb(96, 0, 0); font-style: normal; font-weight: 700;
+}
+.sh_ide-msvcpp .sh_sourceCode .sh_keyword {
+	color: rgb(0, 0, 255); font-style: normal; font-weight: 700;
+}
+.sh_ide-msvcpp .sh_sourceCode .sh_date {
+	color: rgb(0, 0, 255); font-style: normal; font-weight: 700;
+}
+.sh_ide-msvcpp .sh_sourceCode .sh_time {
+	color: rgb(0, 0, 255); font-style: normal; font-weight: 700;
+}
+.sh_ide-msvcpp .sh_sourceCode .sh_file {
+	color: rgb(0, 0, 255); font-style: normal; font-weight: 700;
+}
+.sh_ide-msvcpp .sh_sourceCode .sh_variable {
+	color: rgb(0, 0, 255); font-style: normal; font-weight: 700;
+}
+.sh_ide-msvcpp .sh_sourceCode .sh_difflines {
+	color: rgb(0, 0, 255); font-style: normal; font-weight: 700;
+}
+.sh_ide-msvcpp .sh_sourceCode .sh_selector {
+	color: rgb(0, 0, 255); font-style: normal; font-weight: 700;
+}
+.sh_ide-msvcpp .sh_sourceCode .sh_property {
+	color: rgb(0, 0, 255); font-style: normal; font-weight: 700;
+}
+.sh_typical .sh_sourceCode .sh_keyword {
+	color: rgb(0, 0, 255); font-style: normal; font-weight: 700;
+}
+.sh_typical .sh_sourceCode .sh_date {
+	color: rgb(0, 0, 255); font-style: normal; font-weight: 700;
+}
+.sh_typical .sh_sourceCode .sh_time {
+	color: rgb(0, 0, 255); font-style: normal; font-weight: 700;
+}
+.sh_typical .sh_sourceCode .sh_file {
+	color: rgb(0, 0, 255); font-style: normal; font-weight: 700;
+}
+.sh_typical .sh_sourceCode .sh_difflines {
+	color: rgb(0, 0, 255); font-style: normal; font-weight: 700;
+}
+.sh_typical .sh_sourceCode .sh_property {
+	color: rgb(0, 0, 255); font-style: normal; font-weight: 700;
+}
+.sh_matlab .sh_sourceCode .sh_string {
+	color: maroon; font-style: normal; font-weight: 400;
+}
+.sh_matlab .sh_sourceCode .sh_regexp {
+	color: maroon; font-style: normal; font-weight: 400;
+}
+.sh_matlab .sh_sourceCode .sh_url {
+	color: maroon; font-style: normal; font-weight: 400;
+}
+.sh_matlab .sh_sourceCode .sh_ip {
+	color: maroon; font-style: normal; font-weight: 400;
+}
+.sh_matlab .sh_sourceCode .sh_name {
+	color: maroon; font-style: normal; font-weight: 400;
+}
+.sh_matlab .sh_sourceCode .sh_newfile {
+	color: maroon; font-style: normal; font-weight: 400;
+}
+.sh_matlab .sh_sourceCode .sh_value {
+	color: maroon; font-style: normal; font-weight: 400;
+}
+.sh_navy .sh_sourceCode .sh_keyword {
+	color: rgb(248, 197, 11); font-style: normal; font-weight: 700;
+}
+.sh_navy .sh_sourceCode .sh_date {
+	color: rgb(248, 197, 11); font-style: normal; font-weight: 700;
+}
+.sh_navy .sh_sourceCode .sh_time {
+	color: rgb(248, 197, 11); font-style: normal; font-weight: 700;
+}
+.sh_navy .sh_sourceCode .sh_file {
+	color: rgb(248, 197, 11); font-style: normal; font-weight: 700;
+}
+.sh_navy .sh_sourceCode .sh_difflines {
+	color: rgb(248, 197, 11); font-style: normal; font-weight: 700;
+}
+.sh_navy .sh_sourceCode .sh_property {
+	color: rgb(248, 197, 11); font-style: normal; font-weight: 700;
+}
+.sh_navy .sh_sourceCode .sh_preproc {
+	color: rgb(187, 0, 255); font-style: normal; font-weight: 400;
+}
+.sh_vampire .sh_sourceCode .sh_string {
+	color: rgb(187, 0, 255); font-style: normal; font-weight: 400;
+}
+.sh_vampire .sh_sourceCode .sh_regexp {
+	color: rgb(187, 0, 255); font-style: normal; font-weight: 400;
+}
+.sh_vampire .sh_sourceCode .sh_number {
+	color: rgb(187, 0, 255); font-style: normal; font-weight: 400;
+}
+.sh_vampire .sh_sourceCode .sh_url {
+	color: rgb(187, 0, 255); font-style: normal; font-weight: 400;
+}
+.sh_vampire .sh_sourceCode .sh_ip {
+	color: rgb(187, 0, 255); font-style: normal; font-weight: 400;
+}
+.sh_vampire .sh_sourceCode .sh_name {
+	color: rgb(187, 0, 255); font-style: normal; font-weight: 400;
+}
+.sh_vampire .sh_sourceCode .sh_newfile {
+	color: rgb(187, 0, 255); font-style: normal; font-weight: 400;
+}
+.sh_vampire .sh_sourceCode .sh_value {
+	color: rgb(187, 0, 255); font-style: normal; font-weight: 400;
+}
+.sh_whitengrey .sh_sourceCode .sh_number {
+	color: rgb(187, 0, 255); font-style: normal; font-weight: 400;
+}
+.sh_navy .sh_sourceCode .sh_variable {
+	color: rgb(19, 216, 239); font-style: normal; font-weight: 400;
+}
+.sh_navy .sh_sourceCode .sh_selector {
+	color: rgb(19, 216, 239); font-style: normal; font-weight: 400;
+}
+.sh_nedit .sh_sourceCode .sh_type {
+	color: rgb(165, 42, 42); font-style: normal; font-weight: 700;
+}
+.sh_peachpuff .sh_sourceCode .sh_keyword {
+	color: rgb(165, 42, 42); font-style: normal; font-weight: 700;
+}
+.sh_peachpuff .sh_sourceCode .sh_date {
+	color: rgb(165, 42, 42); font-style: normal; font-weight: 700;
+}
+.sh_peachpuff .sh_sourceCode .sh_time {
+	color: rgb(165, 42, 42); font-style: normal; font-weight: 700;
+}
+.sh_peachpuff .sh_sourceCode .sh_file {
+	color: rgb(165, 42, 42); font-style: normal; font-weight: 700;
+}
+.sh_peachpuff .sh_sourceCode .sh_difflines {
+	color: rgb(165, 42, 42); font-style: normal; font-weight: 700;
+}
+.sh_peachpuff .sh_sourceCode .sh_property {
+	color: rgb(165, 42, 42); font-style: normal; font-weight: 700;
+}
+.sh_nedit .sh_sourceCode .sh_string {
+	color: rgb(0, 100, 0); font-style: normal; font-weight: 400;
+}
+.sh_nedit .sh_sourceCode .sh_regexp {
+	color: rgb(0, 100, 0); font-style: normal; font-weight: 400;
+}
+.sh_nedit .sh_sourceCode .sh_number {
+	color: rgb(0, 100, 0); font-style: normal; font-weight: 400;
+}
+.sh_nedit .sh_sourceCode .sh_url {
+	color: rgb(0, 100, 0); font-style: normal; font-weight: 400;
+}
+.sh_nedit .sh_sourceCode .sh_ip {
+	color: rgb(0, 100, 0); font-style: normal; font-weight: 400;
+}
+.sh_nedit .sh_sourceCode .sh_name {
+	color: rgb(0, 100, 0); font-style: normal; font-weight: 400;
+}
+.sh_nedit .sh_sourceCode .sh_newfile {
+	color: rgb(0, 100, 0); font-style: normal; font-weight: 400;
+}
+.sh_nedit .sh_sourceCode .sh_value {
+	color: rgb(0, 100, 0); font-style: normal; font-weight: 400;
+}
+.sh_nedit .sh_sourceCode .sh_specialchar {
+	color: rgb(46, 139, 87); font-style: normal; font-weight: 400;
+}
+.sh_nedit .sh_sourceCode .sh_oldfile {
+	color: rgb(46, 139, 87); font-style: normal; font-weight: 400;
+}
+.sh_nedit .sh_sourceCode .sh_variable {
+	color: rgb(221, 160, 221); font-style: normal; font-weight: 700;
+}
+.sh_nedit .sh_sourceCode .sh_selector {
+	color: rgb(221, 160, 221); font-style: normal; font-weight: 700;
+}
+.sh_neon .sh_sourceCode .sh_keyword {
+	color: rgb(0, 255, 255); font-style: normal; font-weight: 700;
+}
+.sh_neon .sh_sourceCode .sh_date {
+	color: rgb(0, 255, 255); font-style: normal; font-weight: 700;
+}
+.sh_neon .sh_sourceCode .sh_time {
+	color: rgb(0, 255, 255); font-style: normal; font-weight: 700;
+}
+.sh_neon .sh_sourceCode .sh_file {
+	color: rgb(0, 255, 255); font-style: normal; font-weight: 700;
+}
+.sh_neon .sh_sourceCode .sh_difflines {
+	color: rgb(0, 255, 255); font-style: normal; font-weight: 700;
+}
+.sh_neon .sh_sourceCode .sh_property {
+	color: rgb(0, 255, 255); font-style: normal; font-weight: 700;
+}
+.sh_neon .sh_sourceCode .sh_type {
+	color: rgb(255, 255, 0); font-style: normal; font-weight: 400;
+}
+.sh_whatis .sh_sourceCode .sh_number {
+	color: rgb(255, 255, 0); font-style: normal; font-weight: 400;
+}
+.sh_neon .sh_sourceCode .sh_string {
+	color: rgb(205, 0, 255); font-style: normal; font-weight: 400;
+}
+.sh_neon .sh_sourceCode .sh_regexp {
+	color: rgb(205, 0, 255); font-style: normal; font-weight: 400;
+}
+.sh_neon .sh_sourceCode .sh_specialchar {
+	color: rgb(205, 0, 255); font-style: normal; font-weight: 400;
+}
+.sh_neon .sh_sourceCode .sh_url {
+	color: rgb(205, 0, 255); font-style: normal; font-weight: 400;
+}
+.sh_neon .sh_sourceCode .sh_ip {
+	color: rgb(205, 0, 255); font-style: normal; font-weight: 400;
+}
+.sh_neon .sh_sourceCode .sh_name {
+	color: rgb(205, 0, 255); font-style: normal; font-weight: 400;
+}
+.sh_neon .sh_sourceCode .sh_oldfile {
+	color: rgb(205, 0, 255); font-style: normal; font-weight: 400;
+}
+.sh_neon .sh_sourceCode .sh_newfile {
+	color: rgb(205, 0, 255); font-style: normal; font-weight: 400;
+}
+.sh_neon .sh_sourceCode .sh_value {
+	color: rgb(205, 0, 255); font-style: normal; font-weight: 400;
+}
+.sh_neon .sh_sourceCode .sh_comment {
+	color: rgb(0, 255, 0); font-style: italic; font-weight: 400;
+}
+.sh_the .sh_sourceCode .sh_comment {
+	color: rgb(0, 255, 0); font-style: italic; font-weight: 400;
+}
+.sh_neon .sh_sourceCode .sh_preproc {
+	color: rgb(255, 187, 0); font-style: normal; font-weight: 400;
+}
+.sh_whatis .sh_sourceCode .sh_string {
+	color: rgb(255, 187, 0); font-style: normal; font-weight: 400;
+}
+.sh_whatis .sh_sourceCode .sh_regexp {
+	color: rgb(255, 187, 0); font-style: normal; font-weight: 400;
+}
+.sh_whatis .sh_sourceCode .sh_specialchar {
+	color: rgb(255, 187, 0); font-style: normal; font-weight: 400;
+}
+.sh_whatis .sh_sourceCode .sh_url {
+	color: rgb(255, 187, 0); font-style: normal; font-weight: 400;
+}
+.sh_whatis .sh_sourceCode .sh_ip {
+	color: rgb(255, 187, 0); font-style: normal; font-weight: 400;
+}
+.sh_whatis .sh_sourceCode .sh_name {
+	color: rgb(255, 187, 0); font-style: normal; font-weight: 400;
+}
+.sh_whatis .sh_sourceCode .sh_oldfile {
+	color: rgb(255, 187, 0); font-style: normal; font-weight: 400;
+}
+.sh_whatis .sh_sourceCode .sh_newfile {
+	color: rgb(255, 187, 0); font-style: normal; font-weight: 400;
+}
+.sh_whatis .sh_sourceCode .sh_value {
+	color: rgb(255, 187, 0); font-style: normal; font-weight: 400;
+}
+.sh_neon .sh_sourceCode .sh_symbol {
+	color: rgb(238, 88, 150); font-style: normal; font-weight: 700;
+}
+.sh_neon .sh_sourceCode .sh_cbracket {
+	color: rgb(238, 88, 150); font-style: normal; font-weight: 700;
+}
+.sh_neon .sh_sourceCode .sh_variable {
+	color: rgb(239, 19, 71); font-style: normal; font-weight: 700;
+}
+.sh_neon .sh_sourceCode .sh_selector {
+	color: rgb(239, 19, 71); font-style: normal; font-weight: 700;
+}
+.sh_night .sh_sourceCode .sh_specialchar {
+	color: rgb(130, 214, 109); font-style: normal; font-weight: 400;
+}
+.sh_night .sh_sourceCode .sh_oldfile {
+	color: rgb(130, 214, 109); font-style: normal; font-weight: 400;
+}
+.sh_night .sh_sourceCode .sh_symbol {
+	color: rgb(231, 238, 92); font-style: normal; font-weight: 700;
+}
+.sh_night .sh_sourceCode .sh_cbracket {
+	color: rgb(231, 238, 92); font-style: normal; font-weight: 700;
+}
+.sh_night .sh_sourceCode .sh_variable {
+	color: rgb(122, 236, 39); font-style: normal; font-weight: 700;
+}
+.sh_night .sh_sourceCode .sh_selector {
+	color: rgb(122, 236, 39); font-style: normal; font-weight: 700;
+}
+.sh_pablo .sh_sourceCode .sh_keyword {
+	color: rgb(192, 192, 0); font-style: normal; font-weight: 700;
+}
+.sh_pablo .sh_sourceCode .sh_date {
+	color: rgb(192, 192, 0); font-style: normal; font-weight: 700;
+}
+.sh_pablo .sh_sourceCode .sh_time {
+	color: rgb(192, 192, 0); font-style: normal; font-weight: 700;
+}
+.sh_pablo .sh_sourceCode .sh_file {
+	color: rgb(192, 192, 0); font-style: normal; font-weight: 700;
+}
+.sh_pablo .sh_sourceCode .sh_difflines {
+	color: rgb(192, 192, 0); font-style: normal; font-weight: 700;
+}
+.sh_pablo .sh_sourceCode .sh_property {
+	color: rgb(192, 192, 0); font-style: normal; font-weight: 700;
+}
+.sh_pablo .sh_sourceCode .sh_string {
+	color: rgb(0, 255, 255); font-style: normal; font-weight: 400;
+}
+.sh_pablo .sh_sourceCode .sh_regexp {
+	color: rgb(0, 255, 255); font-style: normal; font-weight: 400;
+}
+.sh_pablo .sh_sourceCode .sh_number {
+	color: rgb(0, 255, 255); font-style: normal; font-weight: 400;
+}
+.sh_pablo .sh_sourceCode .sh_url {
+	color: rgb(0, 255, 255); font-style: normal; font-weight: 400;
+}
+.sh_pablo .sh_sourceCode .sh_ip {
+	color: rgb(0, 255, 255); font-style: normal; font-weight: 400;
+}
+.sh_pablo .sh_sourceCode .sh_name {
+	color: rgb(0, 255, 255); font-style: normal; font-weight: 400;
+}
+.sh_pablo .sh_sourceCode .sh_newfile {
+	color: rgb(0, 255, 255); font-style: normal; font-weight: 400;
+}
+.sh_pablo .sh_sourceCode .sh_value {
+	color: rgb(0, 255, 255); font-style: normal; font-weight: 400;
+}
+.sh_whatis .sh_sourceCode .sh_symbol {
+	color: rgb(0, 255, 255); font-style: normal; font-weight: 400;
+}
+.sh_whatis .sh_sourceCode .sh_cbracket {
+	color: rgb(0, 255, 255); font-style: normal; font-weight: 400;
+}
+.sh_pablo .sh_sourceCode .sh_variable {
+	color: rgb(0, 0, 192); font-style: normal; font-weight: 700;
+}
+.sh_pablo .sh_sourceCode .sh_selector {
+	color: rgb(0, 0, 192); font-style: normal; font-weight: 700;
+}
+.sh_peachpuff .sh_sourceCode .sh_string {
+	color: rgb(192, 0, 88); font-style: normal; font-weight: 400;
+}
+.sh_peachpuff .sh_sourceCode .sh_regexp {
+	color: rgb(192, 0, 88); font-style: normal; font-weight: 400;
+}
+.sh_peachpuff .sh_sourceCode .sh_number {
+	color: rgb(192, 0, 88); font-style: normal; font-weight: 400;
+}
+.sh_peachpuff .sh_sourceCode .sh_url {
+	color: rgb(192, 0, 88); font-style: normal; font-weight: 400;
+}
+.sh_peachpuff .sh_sourceCode .sh_ip {
+	color: rgb(192, 0, 88); font-style: normal; font-weight: 400;
+}
+.sh_peachpuff .sh_sourceCode .sh_name {
+	color: rgb(192, 0, 88); font-style: normal; font-weight: 400;
+}
+.sh_peachpuff .sh_sourceCode .sh_newfile {
+	color: rgb(192, 0, 88); font-style: normal; font-weight: 400;
+}
+.sh_peachpuff .sh_sourceCode .sh_value {
+	color: rgb(192, 0, 88); font-style: normal; font-weight: 400;
+}
+.sh_peachpuff .sh_sourceCode .sh_specialchar {
+	color: rgb(106, 90, 205); font-style: normal; font-weight: 400;
+}
+.sh_peachpuff .sh_sourceCode .sh_oldfile {
+	color: rgb(106, 90, 205); font-style: normal; font-weight: 400;
+}
+.sh_peachpuff .sh_sourceCode .sh_variable {
+	color: rgb(39, 95, 236); font-style: normal; font-weight: 700;
+}
+.sh_peachpuff .sh_sourceCode .sh_selector {
+	color: rgb(39, 95, 236); font-style: normal; font-weight: 700;
+}
+.sh_print .sh_sourceCode .sh_comment {
+	color: rgb(102, 102, 102); font-style: italic; font-weight: 400;
+}
+.sh_typical .sh_sourceCode .sh_comment {
+	color: rgb(102, 102, 102); font-style: italic; font-weight: 400;
+}
+.sh_rand01 .sh_sourceCode .sh_keyword {
+	color: rgb(10, 127, 109); font-style: normal; font-weight: 700;
+}
+.sh_rand01 .sh_sourceCode .sh_date {
+	color: rgb(10, 127, 109); font-style: normal; font-weight: 700;
+}
+.sh_rand01 .sh_sourceCode .sh_time {
+	color: rgb(10, 127, 109); font-style: normal; font-weight: 700;
+}
+.sh_rand01 .sh_sourceCode .sh_file {
+	color: rgb(10, 127, 109); font-style: normal; font-weight: 700;
+}
+.sh_rand01 .sh_sourceCode .sh_difflines {
+	color: rgb(10, 127, 109); font-style: normal; font-weight: 700;
+}
+.sh_rand01 .sh_sourceCode .sh_property {
+	color: rgb(10, 127, 109); font-style: normal; font-weight: 700;
+}
+.sh_rand01 .sh_sourceCode .sh_string {
+	color: rgb(43, 131, 186); font-style: normal; font-weight: 400;
+}
+.sh_rand01 .sh_sourceCode .sh_regexp {
+	color: rgb(43, 131, 186); font-style: normal; font-weight: 400;
+}
+.sh_rand01 .sh_sourceCode .sh_url {
+	color: rgb(43, 131, 186); font-style: normal; font-weight: 400;
+}
+.sh_rand01 .sh_sourceCode .sh_ip {
+	color: rgb(43, 131, 186); font-style: normal; font-weight: 400;
+}
+.sh_rand01 .sh_sourceCode .sh_name {
+	color: rgb(43, 131, 186); font-style: normal; font-weight: 400;
+}
+.sh_rand01 .sh_sourceCode .sh_newfile {
+	color: rgb(43, 131, 186); font-style: normal; font-weight: 400;
+}
+.sh_rand01 .sh_sourceCode .sh_value {
+	color: rgb(43, 131, 186); font-style: normal; font-weight: 400;
+}
+.sh_rand01 .sh_sourceCode .sh_specialchar {
+	color: rgb(167, 100, 203); font-style: normal; font-weight: 400;
+}
+.sh_rand01 .sh_sourceCode .sh_oldfile {
+	color: rgb(167, 100, 203); font-style: normal; font-weight: 400;
+}
+.sh_rand01 .sh_sourceCode .sh_comment {
+	color: rgb(171, 171, 171); font-style: italic; font-weight: 400;
+}
+.sh_vampire .sh_sourceCode .sh_comment {
+	color: rgb(171, 171, 171); font-style: italic; font-weight: 400;
+}
+.sh_rand01 .sh_sourceCode .sh_symbol {
+	color: rgb(0, 0, 222); font-style: normal; font-weight: 400;
+}
+.sh_rand01 .sh_sourceCode .sh_cbracket {
+	color: rgb(0, 0, 222); font-style: normal; font-weight: 400;
+}
+.sh_rand01 .sh_sourceCode .sh_variable {
+	color: rgb(225, 47, 118); font-style: normal; font-weight: 700;
+}
+.sh_rand01 .sh_sourceCode .sh_selector {
+	color: rgb(225, 47, 118); font-style: normal; font-weight: 700;
+}
+.sh_the .sh_sourceCode .sh_string {
+	color: rgb(0, 0, 136); font-style: normal; font-weight: 400;
+}
+.sh_the .sh_sourceCode .sh_regexp {
+	color: rgb(0, 0, 136); font-style: normal; font-weight: 400;
+}
+.sh_the .sh_sourceCode .sh_url {
+	color: rgb(0, 0, 136); font-style: normal; font-weight: 400;
+}
+.sh_the .sh_sourceCode .sh_ip {
+	color: rgb(0, 0, 136); font-style: normal; font-weight: 400;
+}
+.sh_the .sh_sourceCode .sh_name {
+	color: rgb(0, 0, 136); font-style: normal; font-weight: 400;
+}
+.sh_the .sh_sourceCode .sh_newfile {
+	color: rgb(0, 0, 136); font-style: normal; font-weight: 400;
+}
+.sh_the .sh_sourceCode .sh_value {
+	color: rgb(0, 0, 136); font-style: normal; font-weight: 400;
+}
+.sh_typical .sh_sourceCode .sh_specialchar {
+	color: rgb(196, 45, 168); font-style: normal; font-weight: 400;
+}
+.sh_typical .sh_sourceCode .sh_oldfile {
+	color: rgb(196, 45, 168); font-style: normal; font-weight: 400;
+}
+.sh_typical .sh_sourceCode .sh_variable {
+	color: rgb(236, 127, 21); font-style: normal; font-weight: 400;
+}
+.sh_typical .sh_sourceCode .sh_selector {
+	color: rgb(236, 127, 21); font-style: normal; font-weight: 400;
+}
+.sh_vampire .sh_sourceCode .sh_symbol {
+	color: rgb(243, 230, 81); font-style: normal; font-weight: 400;
+}
+.sh_vampire .sh_sourceCode .sh_cbracket {
+	color: rgb(243, 230, 81); font-style: normal; font-weight: 400;
+}
+.sh_vim-dark .sh_sourceCode .sh_keyword {
+	color: rgb(178, 104, 24); font-style: normal; font-weight: 400;
+}
+.sh_vim-dark .sh_sourceCode .sh_date {
+	color: rgb(178, 104, 24); font-style: normal; font-weight: 400;
+}
+.sh_vim-dark .sh_sourceCode .sh_time {
+	color: rgb(178, 104, 24); font-style: normal; font-weight: 400;
+}
+.sh_vim-dark .sh_sourceCode .sh_file {
+	color: rgb(178, 104, 24); font-style: normal; font-weight: 400;
+}
+.sh_vim-dark .sh_sourceCode .sh_variable {
+	color: rgb(178, 104, 24); font-style: normal; font-weight: 400;
+}
+.sh_vim-dark .sh_sourceCode .sh_difflines {
+	color: rgb(178, 104, 24); font-style: normal; font-weight: 400;
+}
+.sh_vim-dark .sh_sourceCode .sh_selector {
+	color: rgb(178, 104, 24); font-style: normal; font-weight: 400;
+}
+.sh_vim-dark .sh_sourceCode .sh_property {
+	color: rgb(178, 104, 24); font-style: normal; font-weight: 400;
+}
+.sh_vim .sh_sourceCode .sh_keyword {
+	color: rgb(178, 104, 24); font-style: normal; font-weight: 400;
+}
+.sh_vim .sh_sourceCode .sh_date {
+	color: rgb(178, 104, 24); font-style: normal; font-weight: 400;
+}
+.sh_vim .sh_sourceCode .sh_time {
+	color: rgb(178, 104, 24); font-style: normal; font-weight: 400;
+}
+.sh_vim .sh_sourceCode .sh_file {
+	color: rgb(178, 104, 24); font-style: normal; font-weight: 400;
+}
+.sh_vim .sh_sourceCode .sh_variable {
+	color: rgb(178, 104, 24); font-style: normal; font-weight: 400;
+}
+.sh_vim .sh_sourceCode .sh_difflines {
+	color: rgb(178, 104, 24); font-style: normal; font-weight: 400;
+}
+.sh_vim .sh_sourceCode .sh_selector {
+	color: rgb(178, 104, 24); font-style: normal; font-weight: 400;
+}
+.sh_vim .sh_sourceCode .sh_property {
+	color: rgb(178, 104, 24); font-style: normal; font-weight: 400;
+}
+.sh_vim-dark .sh_sourceCode .sh_specialchar {
+	color: rgb(255, 34, 255); font-style: normal; font-weight: 400;
+}
+.sh_vim-dark .sh_sourceCode .sh_preproc {
+	color: rgb(255, 34, 255); font-style: normal; font-weight: 400;
+}
+.sh_vim-dark .sh_sourceCode .sh_oldfile {
+	color: rgb(255, 34, 255); font-style: normal; font-weight: 400;
+}
+.sh_vim .sh_sourceCode .sh_specialchar {
+	color: rgb(255, 34, 255); font-style: normal; font-weight: 400;
+}
+.sh_vim .sh_sourceCode .sh_preproc {
+	color: rgb(255, 34, 255); font-style: normal; font-weight: 400;
+}
+.sh_vim .sh_sourceCode .sh_oldfile {
+	color: rgb(255, 34, 255); font-style: normal; font-weight: 400;
+}
+.sh_whatis .sh_sourceCode .sh_keyword {
+	color: rgb(250, 90, 3); font-style: normal; font-weight: 700;
+}
+.sh_whatis .sh_sourceCode .sh_date {
+	color: rgb(250, 90, 3); font-style: normal; font-weight: 700;
+}
+.sh_whatis .sh_sourceCode .sh_time {
+	color: rgb(250, 90, 3); font-style: normal; font-weight: 700;
+}
+.sh_whatis .sh_sourceCode .sh_file {
+	color: rgb(250, 90, 3); font-style: normal; font-weight: 700;
+}
+.sh_whatis .sh_sourceCode .sh_difflines {
+	color: rgb(250, 90, 3); font-style: normal; font-weight: 700;
+}
+.sh_whatis .sh_sourceCode .sh_property {
+	color: rgb(250, 90, 3); font-style: normal; font-weight: 700;
+}
+.sh_whatis .sh_sourceCode .sh_variable {
+	color: rgb(239, 226, 25); font-style: normal; font-weight: 700;
+}
+.sh_whatis .sh_sourceCode .sh_selector {
+	color: rgb(239, 226, 25); font-style: normal; font-weight: 700;
+}
+.sh_whitengrey .sh_sourceCode .sh_keyword {
+	color: rgb(105, 105, 105); font-style: normal; font-weight: 700;
+}
+.sh_whitengrey .sh_sourceCode .sh_date {
+	color: rgb(105, 105, 105); font-style: normal; font-weight: 700;
+}
+.sh_whitengrey .sh_sourceCode .sh_time {
+	color: rgb(105, 105, 105); font-style: normal; font-weight: 700;
+}
+.sh_whitengrey .sh_sourceCode .sh_file {
+	color: rgb(105, 105, 105); font-style: normal; font-weight: 700;
+}
+.sh_whitengrey .sh_sourceCode .sh_variable {
+	color: rgb(105, 105, 105); font-style: normal; font-weight: 700;
+}
+.sh_whitengrey .sh_sourceCode .sh_difflines {
+	color: rgb(105, 105, 105); font-style: normal; font-weight: 700;
+}
+.sh_whitengrey .sh_sourceCode .sh_selector {
+	color: rgb(105, 105, 105); font-style: normal; font-weight: 700;
+}
+.sh_whitengrey .sh_sourceCode .sh_property {
+	color: rgb(105, 105, 105); font-style: normal; font-weight: 700;
+}
+.sh_zellner .sh_sourceCode .sh_keyword {
+	color: rgb(165, 42, 42); font-style: normal; font-weight: 400;
+}
+.sh_zellner .sh_sourceCode .sh_date {
+	color: rgb(165, 42, 42); font-style: normal; font-weight: 400;
+}
+.sh_zellner .sh_sourceCode .sh_time {
+	color: rgb(165, 42, 42); font-style: normal; font-weight: 400;
+}
+.sh_zellner .sh_sourceCode .sh_file {
+	color: rgb(165, 42, 42); font-style: normal; font-weight: 400;
+}
+.sh_zellner .sh_sourceCode .sh_difflines {
+	color: rgb(165, 42, 42); font-style: normal; font-weight: 400;
+}
+.sh_zellner .sh_sourceCode .sh_property {
+	color: rgb(165, 42, 42); font-style: normal; font-weight: 400;
+}
+.sh_zellner .sh_sourceCode .sh_variable {
+	color: rgb(34, 95, 45); font-style: normal; font-weight: 400;
+}
+.sh_zellner .sh_sourceCode .sh_selector {
+	color: rgb(34, 95, 45); font-style: normal; font-weight: 400;
+}
+.snippet-wrap {
+	position: relative;
+}
+*:first-child + html .snippet-wrap {
+	display: inline-block;
+}
+* html .snippet-wrap {
+	display: inline-block;
+}
+.snippet-reveal {
+	text-decoration: underline;
+}
+.snippet-wrap .snippet-menu {
+	top: 10px; right: 15px; font-size: 0.9em; position: absolute; z-index: 1; background-color: transparent;
+}
+.snippet-wrap .snippet-hide {
+	top: 10px; right: 15px; font-size: 0.9em; position: absolute; z-index: 1; background-color: transparent;
+}
+.snippet-wrap .snippet-hide {
+	top: auto; bottom: 10px;
+}
+*:first-child + html .snippet-wrap .snippet-hide {
+	bottom: 25px;
+}
+* html .snippet-wrap .snippet-hide {
+	bottom: 25px;
+}
+.snippet-wrap .snippet-menu pre {
+	margin: 0px; padding: 0px; background-color: transparent;
+}
+.snippet-wrap .snippet-hide pre {
+	margin: 0px; padding: 0px; background-color: transparent;
+}
+.snippet-wrap .snippet-menu a {
+	padding: 0px 5px; text-decoration: underline;
+}
+.snippet-wrap .snippet-hide a {
+	padding: 0px 5px; text-decoration: underline;
+}
+.snippet-wrap pre.sh_sourceCode {
+	padding: 1em; border-radius: 15px; line-height: 1.8em; overflow: auto; position: relative; box-shadow: 2px 2px 5px #000; -webkit-box-shadow: 2px 2px 5px #000; -moz-border-radius: 15px; -webkit-border-radius: 15px; -moz-box-shadow: 2px 2px 5px #000;
+}
+.snippet-wrap pre.snippet-textonly {
+	padding: 2em;
+}
+*:first-child + html .snippet-wrap pre.snippet-formatted {
+	padding: 2em 1em;
+}
+* html .snippet-wrap pre.snippet-formatted {
+	padding: 2em 1em;
+}
+.snippet-reveal pre.sh_sourceCode {
+	padding: 0.5em 1em; text-align: right;
+}
+.snippet-wrap .snippet-num li {
+	padding-left: 1.5em;
+}
+.snippet-wrap .snippet-no-num {
+	list-style: none; margin: 0px; padding: 0.6em 1em;
+}
+.snippet-wrap .snippet-no-num li {
+	list-style: none; padding-left: 0px;
+}
+.snippet-wrap .snippet-num {
+	margin: 1em 0px 1em 1em; padding-left: 3em;
+}
+.snippet-wrap .snippet-num li {
+	list-style: decimal-leading-zero;
+}
+.snippet-wrap .snippet-no-num li.box {
+	padding: 0px 6px; margin-left: -6px;
+}
+.snippet-wrap .snippet-num li.box {
+	border: 1px solid currentColor; padding-left: 6px; margin-left: -3em; list-style-position: inside;
+}
+*:first-child + html .snippet-wrap .snippet-num li.box {
+	margin-left: -2.4em;
+}
+* html .snippet-wrap .snippet-num li.box {
+	margin-left: -2.4em;
+}
+.snippet-wrap li.box-top {
+	border-width: 1px 1px 0px !important;
+}
+.snippet-wrap li.box-bot {
+	border-width: 0px 1px 1px !important;
+}
+.snippet-wrap li.box-mid {
+	border-width: 0px 1px !important;
+}
+.snippet-wrap .snippet-num li .box-sp {
+	width: 18px; display: inline-block;
+}
+*:first-child + html .snippet-wrap .snippet-num li .box-sp {
+	width: 27px;
+}
+* html .snippet-wrap .snippet-num li .box-sp {
+	width: 27px;
+}
+.snippet-wrap .snippet-no-num li.box {
+	border: 1px solid currentColor;
+}
+.snippet-wrap .snippet-no-num li .box-sp {
+	display: none;
+}

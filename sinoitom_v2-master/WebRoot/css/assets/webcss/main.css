@@ -1,0 +1,229 @@
+/* 
+* @Author: Marte
+* @Date:   2017-11-09 10:48:40
+* @Last Modified by:   Marte
+* @Last Modified time: 2017-11-09 17:01:31
+*/
+html,body{
+    margin:0;
+    padding:0;   
+    color:#666;
+    font-size:14px;
+    font-family: "Î¢ÈíÑÅºÚ";
+}
+ul li{    
+    list-style: none;   
+}
+a{
+    text-decoration: none;    
+    cursor: pointer;
+}
+p{
+    margin: 0;
+    padding:0;
+}
+input{
+    padding-left:2px;
+}
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder { 
+color: #ccc; 
+} 
+input:-moz-placeholder, textarea:-moz-placeholder { 
+color: #ccc; 
+} 
+.main{
+    width:100%;
+    height:100%;  
+    overflow:auto; 
+}
+
+.header{
+    width:100%;
+    height:70px;
+    background:#fcfcfc;
+    border-bottom: 1px solid #ffcccc;    
+    margin:0 auto;
+}
+.headerMain{
+    width:1000px;
+    height:100%;
+    margin:0 auto;
+}
+.logo{
+    width:178px;
+    height:60px;
+    float: left;
+    margin-top:5px;
+}
+.headerMain ul{
+    float:right;
+    margin: 0;
+    padding:0;
+    height:100%;
+}
+.headerMain ul li{
+    float:left;
+    margin-left:40px;
+}
+.headerMain ul li a{
+    display: block;
+    height:60px;
+    line-height: 60px;
+}
+.headerMain ul li a:hover{
+    color:#008ed4;
+}
+.center{
+    width:100%;
+    /* height:100%; */
+    overflow: hidden;
+    position:relative;
+}
+ .center .banner{
+    position: absolute;
+    left:50%;
+    top:50%;
+    margin-left:-960px;
+    margin-top: -275px;
+} 
+.footer{
+    width:100%;
+    height:20px;
+    border-top:1px solid #ffcccc;
+    background-color:#fcfcfc;
+}
+.footer p{
+    line-height: 20px;
+    text-align: center;
+}
+.content{
+    /* width:1000px; */
+    margin: 0 auto;
+}
+.rightImg{
+    float:left;
+}
+.loginInCInput{
+    float:right;
+    width:370px;
+    height:350px;
+    margin:100px auto;
+}
+.loginInFields{       
+    border-radius: 10px;
+    background-color:#fefefe;
+    color: #666;
+    font-size:14px;
+    border:1px solid #ffe4e1;
+    text-align: center;
+    position:relative;
+}
+.loginInRegister{
+    width:500px;
+    height:450px;
+    margin:50px auto;
+}
+.usename{
+    padding:70px 0 35px;
+}
+.password{
+    padding-bottom: 35px;
+}
+
+.save button{
+    width:310px;
+    height:40px;
+    border:0;
+    background:#ffb6c1;
+    font-size:20px;
+    color:#fff;
+    cursor: pointer;
+    float:right;
+    margin-right:29px;
+    outline:none;
+}
+.registerF button{
+    width:220px;
+    height:40px;
+    border:0;
+    background:#ffb6c1;
+    font-size:20px;
+    color:#fff;
+    cursor: pointer;
+    float:right;
+    margin-right:85px;
+    outline:none;
+    margin-top:20px;
+}
+.register{
+    clear: both;
+    width:100%;
+    height:40px;
+    position:absolute;
+    bottom:0;
+    background-color:#fcfcfc;
+    border-radius: 10px;
+}
+.register a{
+    display:block;
+    margin-right:29px;
+    line-height:40px;
+    cursor:pointer;
+    color:#ffb6c1;
+    text-align: right;
+}
+.register a:hover{
+    text-decoration:underline;
+}
+.headerMain p{
+    display:block;
+    width:100px;
+    float:left;
+    line-height: 60px;
+    font-size: 20px;
+    margin-left:20px;
+}
+.message{
+    /* width:1000px; */
+    height:30px;
+    background:#f2f2f2;
+    /* margin-bottom:10px; */
+    /* padding-left:20px; */
+    margin:10px 50px;
+}
+.message p{
+    line-height: 30px;
+    font-size: 16px;
+    color:#666;
+    text-align:left;
+    padding-left:10px;
+}
+.form-horizontal{
+    margin-top:10px;
+    color:#000;
+    font-weight: normal;
+    font-family: 'Arial Normal', 'Arial';
+    font-size: 14px;
+}
+.form-group>label[class*="col-"] {
+    padding-top: 4px;
+    margin-bottom: 4px;
+}
+.form-horizontal select,.form-horizontal input{
+    height:30px;
+}
+.form-horizontal select{
+    margin-right:10px;
+}
+.form-actions {
+    display: block;
+    /* margin-bottom: 20px;
+    margin-top: 40px; */
+    padding: 0 20px 0;
+}
+.form-actions .btn{
+    width:100px;
+    height:40px;
+    border-radius: 0;
+    font-size: 16px;
+}

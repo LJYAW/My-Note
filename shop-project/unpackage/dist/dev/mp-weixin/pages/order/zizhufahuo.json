@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "自助发货",
+  "usingComponents": {
+    "mix-button": "/components/mix-button/mix-button"
+  }
+}

@@ -1,0 +1,57 @@
+{
+	"pages": [{
+		"path": "views/index/index",
+		"style": {
+			"navigationBarTitleText": "极简轻奢"
+		}
+	},{
+		"path": "views/goods/index",
+		"style": {
+			"navigationBarTitleText": "极简轻奢"
+		}
+	},
+	{
+		"path": "views/about/index",
+		"style": {
+			"navigationBarTitleText": "关于我们"
+		}
+	},
+	{
+		"path": "views/detail/detail",
+		"style": {
+			"navigationBarTitleText": "商品详情"
+		}
+	}],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "家居家纺",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8",
+		"app-plus": {
+			"background": "#efeff4"
+		}
+	},
+	"tabBar": {
+			"color": "#909399",
+			// "selectedColor": "red",
+			"backgroundColor": "#FFFFFF",
+			"borderStyle": "black",
+			"list": [{
+				"pagePath": "views/index/index",
+				"iconPath": "static/tabbar/home.png",
+				"selectedIconPath": "static/tabbar/homeActive.png",
+				"text": "首页"
+			},{
+				"pagePath": "views/goods/index",
+				"iconPath": "static/tabbar/goods.png",
+				"selectedIconPath": "static/tabbar/goodsActive.png",
+				"text": "全部商品"
+			},
+			{
+				"pagePath": "views/about/index",
+				"iconPath": "static/tabbar/user.png",
+				"selectedIconPath": "static/tabbar/userActive.png",
+				"text": "关于我们"
+			}]
+		}
+}

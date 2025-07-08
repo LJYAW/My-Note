@@ -1,0 +1,773 @@
+HTML {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+BODY {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+DIV {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+SPAN {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+IFRAME {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+H1 {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+H2 {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+H3 {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+H4 {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+H5 {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+H6 {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+P {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+BLOCKQUOTE {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+PRE {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+A {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+ADDRESS {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+BIG {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+CITE {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+CODE {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+DEL {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+EM {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+FONT {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+IMG {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+INS {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+SMALL {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+STRONG {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+VAR {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+B {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+U {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+I {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+CENTER {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+DL {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+DT {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+DD {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+OL {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+UL {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+LI {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+FIELDSET {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+FORM {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+LABEL {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+LEGEND {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+OL {
+	LIST-STYLE-TYPE: none
+}
+UL {
+	LIST-STYLE-TYPE: none
+}
+:focus {
+	OUTLINE-WIDTH: 0px
+}
+A IMG {
+	BORDER-RIGHT-WIDTH: 0px; BORDER-TOP-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px
+}
+IMG {
+	VERTICAL-ALIGN: middle
+}
+TABLE {
+	EMPTY-CELLS: show
+}
+INS {
+	TEXT-DECORATION: none
+}
+DEL {
+	TEXT-DECORATION: line-through
+}
+H1 {
+	FONT-FAMILY: Arial,Lucida,Verdana,"microsoft yahei","宋体",Helvetica,sans-serif; FONT-SIZE: 20px
+}
+H2 {
+	FONT-SIZE: 14px
+}
+H3 {
+	FONT-SIZE: 14px
+}
+H4 {
+	FONT-SIZE: 12px
+}
+H5 {
+	FONT-SIZE: 12px
+}
+H6 {
+	FONT-SIZE: 12px
+}
+.ftx01 {
+	COLOR: #fcd410
+}
+.flk01 A:link {
+	COLOR: #fcd410
+}
+.flk01 A:visited {
+	COLOR: #fcd410
+}
+A.flk01:link {
+	COLOR: #fcd410
+}
+A.flk01:visited {
+	COLOR: #fcd410
+}
+.ftx02 {
+	COLOR: #f90
+}
+.flk02 A:link {
+	COLOR: #f90
+}
+.flk02 A:visited {
+	COLOR: #f90
+}
+A.flk02:link {
+	COLOR: #f90
+}
+A.flk02:visited {
+	COLOR: #f90
+}
+.ftx03 {
+	COLOR: #a0410a
+}
+.flk03 A:link {
+	COLOR: #a0410a
+}
+.flk03 A:visited {
+	COLOR: #a0410a
+}
+A.flk03:link {
+	COLOR: #a0410a
+}
+A.flk03:visited {
+	COLOR: #a0410a
+}
+.ftx04 {
+	COLOR: #f00
+}
+.flk04 A:link {
+	COLOR: #f00
+}
+.flk04 A:visited {
+	COLOR: #f00
+}
+A.flk04:link {
+	COLOR: #f00
+}
+A.flk04:visited {
+	COLOR: #f00
+}
+.ftx05 {
+	COLOR: #a40f00
+}
+.flk05 A:link {
+	COLOR: #a40f00
+}
+.flk05 A:visited {
+	COLOR: #a40f00
+}
+A.flk05:link {
+	COLOR: #a40f00
+}
+A.flk05:visited {
+	COLOR: #a40f00
+}
+.ftx11 {
+	COLOR: #b8d1ea
+}
+.flk11 A:link {
+	COLOR: #b8d1ea
+}
+.flk11 A:visited {
+	COLOR: #b8d1ea
+}
+A.flk11:link {
+	COLOR: #b8d1ea
+}
+A.flk11:visited {
+	COLOR: #b8d1ea
+}
+.ftx12 {
+	COLOR: #4589bf
+}
+.flk12 A:link {
+	COLOR: #4589bf
+}
+.flk12 A:visited {
+	COLOR: #4589bf
+}
+A.flk12:link {
+	COLOR: #4589bf
+}
+A.flk12:visited {
+	COLOR: #4589bf
+}
+.ftx13 {
+	COLOR: #005aa0
+}
+.flk13 A:link {
+	COLOR: #005aa0
+}
+.flk13 A:visited {
+	COLOR: #005aa0
+}
+A.flk13:link {
+	COLOR: #005aa0
+}
+A.flk13:visited {
+	COLOR: #005aa0
+}
+.ftx14 {
+	COLOR: #12a000
+}
+.flk14 A:link {
+	COLOR: #12a000
+}
+.flk14 A:visited {
+	COLOR: #12a000
+}
+A.flk14:link {
+	COLOR: #12a000
+}
+A.flk14:visited {
+	COLOR: #12a000
+}
+.ftx21 {
+	COLOR: #fff
+}
+.flk21 A:link {
+	COLOR: #fff
+}
+.flk21 A:visited {
+	COLOR: #fff
+}
+A.flk21:link {
+	COLOR: #fff
+}
+A.flk21:visited {
+	COLOR: #fff
+}
+.ftx22 {
+	COLOR: #ccc
+}
+.flk22 A:link {
+	COLOR: #ccc
+}
+.flk22 A:visited {
+	COLOR: #ccc
+}
+A.flk22:link {
+	COLOR: #ccc
+}
+A.flk22:visited {
+	COLOR: #ccc
+}
+.ftx23 {
+	COLOR: #999
+}
+.flk23 A:link {
+	COLOR: #999
+}
+.flk23 A:visited {
+	COLOR: #999
+}
+A.flk23:link {
+	COLOR: #999
+}
+A.flk23:visited {
+	COLOR: #999
+}
+.ftx24 {
+	COLOR: #666
+}
+.flk24 A:link {
+	COLOR: #666
+}
+.flk24 A:visited {
+	COLOR: #666
+}
+A.flk24:link {
+	COLOR: #666
+}
+A.flk24:visited {
+	COLOR: #666
+}
+.ftx25 {
+	COLOR: #333
+}
+.flk25 A:link {
+	COLOR: #333
+}
+.flk25 A:visited {
+	COLOR: #333
+}
+A.flk25:link {
+	COLOR: #333
+}
+A.flk25:visited {
+	COLOR: #333
+}
+.ftx26 {
+	COLOR: #000
+}
+.flk26 A:link {
+	COLOR: #000
+}
+.flk26 A:visited {
+	COLOR: #000
+}
+A.flk26:link {
+	COLOR: #000
+}
+A.flk26:visited {
+	COLOR: #000
+}
+BODY {
+	MARGIN: 0px auto
+}
+.w {
+	PADDING-BOTTOM: 0px; MARGIN: 0px auto; PADDING-LEFT: 0px; WIDTH: 990px; PADDING-RIGHT: 0px; ZOOM: 1; PADDING-TOP: 0px
+}
+BODY .fl {
+	FLOAT: left;
+}
+
+BODY .flover {
+	FLOAT: left;overflow:hidden;
+}
+
+BODY .fr {
+	FLOAT: right
+}
+BODY .fn {
+	FLOAT: none
+}
+BODY .al {
+	TEXT-ALIGN: left
+}
+BODY .ac {
+	TEXT-ALIGN: center
+}
+BODY .ar {
+	TEXT-ALIGN: right
+}
+.clr {
+	LINE-HEIGHT: 0; DISPLAY: block; HEIGHT: 0px; CLEAR: both; FONT-SIZE: 0px; OVERFLOW: hidden
+}
+.clearfix:after {
+	DISPLAY: block; HEIGHT: 0px; VISIBILITY: hidden; CLEAR: both; CONTENT: "."
+}
+.clearfix {
+	DISPLAY: inline-table
+}
+* HTML .clearfix {
+	HEIGHT: 1%
+}
+.clearfix {
+	DISPLAY: block
+}
+* + HTML .clearfix {
+	MIN-HEIGHT: 1%
+}
+.overflow {
+	OVERFLOW: hidden
+}
+.block {
+	DISPLAY: block; OVERFLOW: hidden; CURSOR: pointer
+}
+.hide {
+	DISPLAY: none
+}
+.invisible {
+	VISIBILITY: hidden
+}
+.form LABEL {
+	FLOAT: left; FONT-SIZE: 12px
+}
+.form INPUT {
+	FLOAT: left; FONT-SIZE: 12px
+}
+.form SELECT {
+	FLOAT: left; FONT-SIZE: 12px
+}
+.form TEXTAREA {
+	FLOAT: left; FONT-SIZE: 12px
+}
+.form BUTTON {
+	FLOAT: left; FONT-SIZE: 12px
+}
+.form .label {
+	FLOAT: left; FONT-SIZE: 12px
+}
+.form .item {
+	ZOOM: 1; OVERFLOW: hidden
+}
+.btn-img {
+	TEXT-ALIGN: center; PADDING-BOTTOM: 0px; BORDER-RIGHT-WIDTH: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; BORDER-TOP-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; OVERFLOW: hidden; BORDER-LEFT-WIDTH: 0px; CURSOR: pointer; PADDING-TOP: 0px
+}
+.btn-text {
+	TEXT-ALIGN: center; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; OVERFLOW: hidden; CURSOR: pointer; PADDING-TOP: 0px
+}
+.btn-link {
+	TEXT-ALIGN: center; DISPLAY: block; OVERFLOW: hidden
+}
+.m {
+	ZOOM: 1; OVERFLOW: hidden
+}
+.mt {
+	ZOOM: 1; OVERFLOW: hidden
+}
+.mc {
+	ZOOM: 1; OVERFLOW: hidden
+}
+.mb {
+	ZOOM: 1; OVERFLOW: hidden
+}
+.mt .extra {
+	FLOAT: right
+}
+.m {
+	MARGIN-BOTTOM: 10px
+}
+.lh {
+	ZOOM: 1; OVERFLOW: hidden
+}
+.lh LI {
+	FLOAT: left
+}
+.lh DL {
+	FLOAT: left
+}
+.lh .item {
+	FLOAT: left
+}
+.ld {
+	POSITION: relative; ZOOM: 1
+}
+.ld S {
+	POSITION: absolute; OVERFLOW: hidden
+}
+.ld B {
+	POSITION: absolute; OVERFLOW: hidden
+}
+.ld .block {
+	POSITION: absolute; OVERFLOW: hidden
+}
+.tab {
+	ZOOM: 1; OVERFLOW: hidden
+}
+.tab LI {
+	TEXT-ALIGN: center; FLOAT: left
+}
+.tab-item {
+	TEXT-ALIGN: center; FLOAT: left
+}
+BODY {
+	LINE-HEIGHT: 150%; FONT-FAMILY: Arial,"宋体",Lucida,Verdana,Helvetica,sans-serif; COLOR: #333; FONT-SIZE: 12px
+}
+A:link {
+	COLOR: #333; TEXT-DECORATION: none
+}
+A:visited {
+	COLOR: #333; TEXT-DECORATION: none
+}
+A:hover {
+	COLOR: #f00; TEXT-DECORATION: underline
+}
+A:active {
+	COLOR: #f00; TEXT-DECORATION: underline
+}
+#shortcut {
+	BACKGROUND-IMAGE: url(.././img/20111221C.png); BACKGROUND-REPEAT: no-repeat
+}
+#shortcut .w {
+	BACKGROUND-IMAGE: url(.././img/20111221C.png); BACKGROUND-REPEAT: no-repeat
+}
+#shortcut .fl B {
+	BACKGROUND-IMAGE: url(.././img/20111221C.png); BACKGROUND-REPEAT: no-repeat
+}
+#shortcut .menu B {
+	BACKGROUND-IMAGE: url(.././img/20111221C.png); BACKGROUND-REPEAT: no-repeat
+}
+#shortcut LI {
+	BACKGROUND-IMAGE: url(.././img/20120112B.png); BACKGROUND-REPEAT: no-repeat
+}
+#shortcut {
+	BACKGROUND-COLOR: #efefef; BACKGROUND-REPEAT: repeat-x; HEIGHT: 30px
+}
+#shortcut .w {
+	BACKGROUND-COLOR: #efefef; BACKGROUND-REPEAT: repeat-x; HEIGHT: 30px
+}
+#shortcut {
+	PADDING-BOTTOM: 1px; LINE-HEIGHT: 30px; WIDTH: 100%
+}
+#shortcut LI {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 10px; PADDING-RIGHT: 10px; BACKGROUND-POSITION: -230px -320px; HEIGHT: 27px; PADDING-TOP: 0px
+}
+#shortcut .fl .fore1 {
+	PADDING-LEFT: 15px; BACKGROUND: none transparent scroll repeat 0% 0%
+}
+#shortcut .fl B {
+	WIDTH: 10px; BACKGROUND-POSITION: -57px -289px; HEIGHT: 10px; CURSOR: pointer; TOP: 10px; LEFT: 1px
+}
+#shortcut .fr {
+	HEIGHT: 30px; OVERFLOW: visible
+}
+#shortcut .fr .fore1 {
+	BACKGROUND: none transparent scroll repeat 0% 0%
+}
+#shortcut .fr .menu {
+	Z-INDEX: 10; POSITION: relative; PADDING-BOTTOM: 0px; PADDING-LEFT: 0px; WIDTH: 83px; PADDING-RIGHT: 0px; PADDING-TOP: 3px
+}
+#shortcut .menu DL {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 7px; WIDTH: 67px; PADDING-RIGHT: 7px; PADDING-TOP: 0px
+}
+#shortcut .menu DT {
+	PADDING-BOTTOM: 1px; LINE-HEIGHT: 24px; PADDING-LEFT: 6px; PADDING-RIGHT: 10px; HEIGHT: 24px; CURSOR: default; PADDING-TOP: 0px
+}
+#shortcut .menu B {
+	WIDTH: 7px; BACKGROUND-POSITION: -35px -281px; HEIGHT: 4px; RIGHT: 3px; TOP: 10px
+}
+#shortcut .menu DD {
+	PADDING-BOTTOM: 4px; LINE-HEIGHT: 21px; PADDING-LEFT: 5px; PADDING-RIGHT: 0px; DISPLAY: none; PADDING-TOP: 4px
+}
+#shortcut .fr .hover {
+	Z-INDEX: 11
+}
+#shortcut .hover DL {
+	BORDER-BOTTOM: #ddd 1px solid; BORDER-LEFT: #ddd 1px solid; BACKGROUND: #fff; BORDER-TOP: #ddd 1px solid; BORDER-RIGHT: #ddd 1px solid; -moz-box-shadow: 0 0 5px #ddd; -webkit-box-shadow: 0 0 5px #ddd; box-shadow: 0 0 5px #ddd
+}
+#shortcut .hover DT {
+	BORDER-BOTTOM: #f3f3f3 1px solid; LINE-HEIGHT: 23px; PADDING-LEFT: 5px
+}
+#shortcut .hover DD {
+	DISPLAY: block
+}
+#shortcut .hover B {
+	BACKGROUND-POSITION: -35px -275px; TOP: 9px
+}
+#shortcut A.link-logout:link {
+	COLOR: #999
+}
+#shortcut A.link-logout:visited {
+	COLOR: #999
+}
+#loginbar A {
+	MARGIN-LEFT: 5px
+}
+#mycity {
+	COLOR: #005ea7; FONT-WEIGHT: bold
+}
+#quit {
+	COLOR: #999
+}
+* HTML #shortcut .fl {
+	HEIGHT: 27px; OVERFLOW: hidden
+}
+* HTML #shortcut .fl B {
+	TOP: 8px
+}
+* HTML #shortcut LI.menu DL {
+	POSITION: absolute
+}
+#footer {
+	TEXT-ALIGN: center; PADDING-BOTTOM: 30px
+}
+#footer .links A {
+	MARGIN: 0px 10px
+}
+#footer .links SPAN {
+	MARGIN: 0px 10px
+}
+#footer .links SPAN A {
+	MARGIN: 0px
+}
+#footer .copyright {
+	MARGIN: 2px 0px
+}
+#footer .authentication A {
+	MARGIN: 0px 5px
+}
+#logo {
+	padding:5px 0px
+}
+#shortcut .fl SPAN {
+	DISPLAY: none
+}
+#shortcut-2013 .fl B {
+	BACKGROUND-IMAGE: url(.././img/20130330A.png); BACKGROUND-REPEAT: no-repeat
+}
+#shortcut-2013 .fr B {
+	BACKGROUND-IMAGE: url(.././img/20130330A.png); BACKGROUND-REPEAT: no-repeat
+}
+#shortcut-2013 {
+	BACKGROUND: #fafafa; HEIGHT: 30px
+}
+#shortcut-2013 .w {
+	BACKGROUND: #fafafa; HEIGHT: 30px
+}
+#shortcut-2013 {
+	BORDER-BOTTOM: #eee 1px solid; LINE-HEIGHT: 30px; WIDTH: 100%
+}
+#shortcut-2013 LI {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 12px; PADDING-RIGHT: 11px; HEIGHT: 30px; PADDING-TOP: 0px
+}
+#shortcut-2013 LI S {
+	BORDER-LEFT: #ddd 1px solid; WIDTH: 0px; HEIGHT: 12px; OVERFLOW: hidden; TOP: 9px; LEFT: 0px
+}
+#shortcut-2013 B {
+	transition: transform 0.2s ease-in 0s
+}
+#shortcut-2013 .fl {
+	OVERFLOW: visible
+}
+#shortcut-2013 .fl .fore1 {
+	Z-INDEX: 1; PADDING-LEFT: 16px
+}
+#shortcut-2013 .fl B {
+	WIDTH: 13px; BACKGROUND-POSITION: -90px -23px; HEIGHT: 13px; CURSOR: pointer; TOP: 8px; LEFT: 0px
+}
+#shortcut-2013 .fl LI:hover B {
+	transform: rotate(720deg)
+}
+#shortcut-2013 .fl .jtip {
+	LINE-HEIGHT: 16px; WIDTH: 120px; TOP: 6px; LEFT: 68px
+}
+#shortcut-2013 .fr {
+	HEIGHT: 30px; OVERFLOW: visible
+}
+#shortcut-2013 .fr B {
+	WIDTH: 7px; BACKGROUND-POSITION: -95px -55px; HEIGHT: 4px; RIGHT: 8px; TOP: 13px
+}
+#shortcut-2013 .menu {
+	Z-INDEX: 10; WIDTH: 60px
+}
+#shortcut-2013 .dd {
+	DISPLAY: none
+}
+#shortcut-2013 .hover .outline {
+	BORDER-BOTTOM: #ddd 1px solid; POSITION: absolute; BORDER-LEFT: #ddd 1px solid; BACKGROUND: #fff; BORDER-TOP: #ddd 1px solid; BORDER-RIGHT: #ddd 1px solid; -moz-box-shadow: 0 0 10px #DDD; -webkit-box-shadow: 0 0 10px #DDD; box-shadow: 0 0 10px #DDD
+}
+#shortcut-2013 .hover .dd {
+	BORDER-BOTTOM: #ddd 1px solid; POSITION: absolute; BORDER-LEFT: #ddd 1px solid; BACKGROUND: #fff; BORDER-TOP: #ddd 1px solid; BORDER-RIGHT: #ddd 1px solid; -moz-box-shadow: 0 0 10px #DDD; -webkit-box-shadow: 0 0 10px #DDD; box-shadow: 0 0 10px #DDD
+}
+#shortcut-2013 .hover .outline {
+	Z-INDEX: -1; WIDTH: 73px; HEIGHT: 28px; TOP: 3px; LEFT: 5px
+}
+#shortcut-2013 .hover .blank {
+	Z-INDEX: 1; POSITION: absolute; WIDTH: 73px; BACKGROUND: #fff; HEIGHT: 6px; OVERFLOW: hidden; TOP: 25px; LEFT: 6px
+}
+#shortcut-2013 .hover .dd {
+	DISPLAY: block; TOP: 30px
+}
+#shortcut-2013 .fr .hover B {
+	FILTER: progid:DXImageTransform.Microsoft.BasicImage(rotation=2); transform: rotate(180deg)
+}
+.hover#biz-service .dd {
+	WIDTH: 73px; LEFT: 5px
+}
+.hover#biz-service .dd DIV {
+	LINE-HEIGHT: 22px; PADDING-LEFT: 6px
+}
+#site-nav .dd {
+	WIDTH: 242px; LEFT: -164px
+}
+#site-nav .dd DL {
+	WIDTH: 70px
+}
+#site-nav .dd .fore2 {
+	WIDTH: 80px
+}
+#site-nav .dd .fore3 {
+	WIDTH: 90px
+}
+#site-nav .dd DT {
+	PADDING-BOTTOM: 4px; LINE-HEIGHT: 20px; PADDING-LEFT: 9px; PADDING-RIGHT: 0px; FONT-WEIGHT: bold; PADDING-TOP: 4px
+}
+#site-nav .dd DD {
+	LINE-HEIGHT: 22px; PADDING-LEFT: 9px
+}
+#footer-2013 {
+	TEXT-ALIGN: center; PADDING-BOTTOM: 30px
+}
+#footer-2013 .links A {
+	MARGIN: 0px 10px
+}
+#footer-2013 .links SPAN {
+	MARGIN: 0px 10px
+}
+#footer-2013 .links SPAN A {
+	MARGIN: 0px
+}
+#footer-2013 .copyright {
+	MARGIN: 10px 0px
+}
+#footer-2013 .authentication A {
+	MARGIN: 0px 5px
+}

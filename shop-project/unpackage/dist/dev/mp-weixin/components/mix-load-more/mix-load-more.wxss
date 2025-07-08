@@ -1,0 +1,21 @@
+@charset "UTF-8";
+/* 配色 */
+.mix-load-more.data-v-772a0cdc {
+  width: 750rpx;
+  height: 110rpx;
+}
+.loading-icon.data-v-772a0cdc {
+  width: 64rpx;
+  height: 68rpx;
+  margin-right: 20rpx;
+}
+.text.data-v-772a0cdc {
+  font-size: 26rpx;
+  color: #999;
+}
+.logo.data-v-772a0cdc {
+  width: 34rpx;
+  height: 34rpx;
+  margin-right: 12rpx;
+}
+

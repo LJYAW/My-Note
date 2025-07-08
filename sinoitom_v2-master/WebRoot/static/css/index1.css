@@ -1,0 +1,75 @@
+/* 
+* @Author: Marte
+* @Date:   2016-11-30 11:43:10
+* @Last Modified by:   Marte
+* @Last Modified time: 2016-11-30 11:43:11
+*/
+
+body, html {
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    width: 100%;
+}
+#index-top {
+    background: rgba(0, 0, 0, 0) url("../img/top-bg.png") repeat-x scroll left top;
+    color: White;
+    height: 60px;
+    margin-bottom: 3px;
+}
+#layout-index {
+    height: 100%;
+    width: 100%;
+}
+#index-accordion {
+    overflow: auto;
+}
+#index-bottom {
+    background: rgba(0, 0, 0, 0) url("../img/bottom.png") repeat scroll right top;
+    height: 100%;
+    text-align: center;
+    width: 100%;
+}
+#index-treeMenu {
+    margin-top: 3px;
+}
+.top_logo {
+    background: rgba(0, 0, 0, 0) url("../img/logo.png") no-repeat scroll 30px 2px;
+    float: left;
+    height: 73px;
+    width: 300px;
+}
+.top_qbar {
+    height: 29px;
+    line-height: 29px;
+    margin-right: 10px;
+}
+.top_qbar li {
+    color: #0066cc;
+    float: left;
+    height: 29px;
+    list-style: outside none none;
+    margin-right: 5px;
+    padding-left: 18px;
+}
+.top_qbar li a {
+    color: #0066cc;
+    font-size: 12px;
+    margin-right: 4px;
+}
+.home {
+    background: rgba(0, 0, 0, 0) url("../images/home.gif") no-repeat scroll left center;
+}
+.configure {
+    background: rgba(0, 0, 0, 0) url("../images/configure.png") no-repeat scroll left center;
+}
+.help_topic {
+    background: rgba(0, 0, 0, 0) url("../images/help_topic.gif") no-repeat scroll left center;
+}
+.help_view {
+    background: rgba(0, 0, 0, 0) url("../images/help_view.gif") no-repeat scroll left center;
+}
+.goback {
+    background: rgba(0, 0, 0, 0) url("../images/goback.gif") no-repeat scroll left center;
+}

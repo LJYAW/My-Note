@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "设置",
+  "usingComponents": {
+    "mix-icon-loading": "/components/mix-icon-loading/mix-icon-loading",
+    "mix-button": "/components/mix-button/mix-button",
+    "mix-modal": "/components/mix-modal/mix-modal"
+  }
+}

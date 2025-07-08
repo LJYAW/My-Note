@@ -1,0 +1,201 @@
+package com.sino.fas.res.host.entity;
+
+
+import java.util.Date;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.FetchType;
+import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.JoinColumns;
+import javax.persistence.OneToOne;
+import javax.persistence.Table;
+
+import com.sino.base.system.entity.OrgOrganization;
+
+@Entity
+@Table(name = "Ncm_IpHost")
+public class IPDevice {
+	private String orgId;
+	private Long ipHostId;
+	private Integer ipHostTypeId;
+	private String hostName;
+	private String ipAddr;
+	private long ipValue;
+	private String ipNetMask;
+	private String macAddr;
+	private Integer osType;
+	private String osVersion;
+	private String snmpRoString;
+	private String assertNO;
+	private String userId;
+	private Date modify_Time;
+	private String serialNO;
+	private Long switchId;
+	private Long ifIndex;
+	private String infoPointNo;
+/*	
+	private VlanInfo vlanInfo;
+	@OneToOne(fetch = FetchType.LAZY)
+	@JoinColumns({
+	     @JoinColumn(name="switch_Id"),
+	     @JoinColumn(name="CUST_NAME")
+	})
+	public VlanInfo getVlanInfo() {
+		return vlanInfo;
+	}
+	public void setVlanInfo(VlanInfo vlanInfo) {
+		this.vlanInfo = vlanInfo;
+	}
+	*/
+	private OrgOrganization orgOrganization;
+	
+	@OneToOne(fetch = FetchType.LAZY)
+	@JoinColumn(name = "Org_ID", nullable = false)
+	public OrgOrganization getOrgOrganization() {
+		return orgOrganization;
+	}
+	public void setOrgOrganization(OrgOrganization orgOrganization) {
+		this.orgOrganization = orgOrganization;
+	}
+	
+	@Column(name = "InfoPointNo")
+	public String getInfoPointNo() {
+		return infoPointNo;
+	}
+	public void setInfoPointNo(String infoPointNo) {
+		this.infoPointNo = infoPointNo;
+	}
+	
+	
+	
+	@Id
+	@Column(name = "IpHost_ID", unique = true, nullable = false)
+	public Long getIpHostId() {
+		return ipHostId;
+	}
+	public void setIpHostId(Long ipHostId) {
+		this.ipHostId = ipHostId;
+	}
+	
+	@Column(name = "IpHostType_ID")
+	public Integer getIpHostTypeId() {
+		return ipHostTypeId;
+	}
+	public void setIpHostTypeId(Integer ipHostTypeId) {
+		this.ipHostTypeId = ipHostTypeId;
+	}
+	
+	@Column(name = "HostName")
+	public String getHostName() {
+		return hostName;
+	}
+	public void setHostName(String hostName) {
+		this.hostName = hostName;
+	}
+	
+	@Column(name = "IpAddress")
+	public String getIpAddr() {
+		return ipAddr;
+	}
+	public void setIpAddr(String ipAddr) {
+		this.ipAddr = ipAddr;
+	}
+	
+	@Column(name = "IpValue")
+	public long getIpValue() {
+		return ipValue;
+	}
+	public void setIpValue(long ipValue) {
+		this.ipValue = ipValue;
+	}
+	
+	@Column(name = "IpNetMask")
+	public String getIpNetMask() {
+		return ipNetMask;
+	}
+	public void setIpNetMask(String ipNetMask) {
+		this.ipNetMask = ipNetMask;
+	}
+	
+	@Column(name = "MacAddress")
+	public String getMacAddr() {
+		return macAddr;
+	}
+	public void setMacAddr(String macAddr) {
+		this.macAddr = macAddr;
+	}
+	
+	@Column(name = "OS_Type")
+	public Integer getOsType() {
+		return osType;
+	}
+	public void setOsType(Integer osType) {
+		this.osType = osType;
+	}
+	
+	@Column(name = "OS_Version")
+	public String getOsVersion() {
+		return osVersion;
+	}
+	public void setOsVersion(String osVersion) {
+		this.osVersion = osVersion;
+	}
+	
+	@Column(name = "SnmpRoString")
+	public String getSnmpRoString() {
+		return snmpRoString;
+	}
+	public void setSnmpRoString(String snmpRoString) {
+		this.snmpRoString = snmpRoString;
+	}
+	
+	@Column(name = "Assert_NO")
+	public String getAssertNO() {
+		return assertNO;
+	}
+	public void setAssertNO(String assertNO) {
+		this.assertNO = assertNO;
+	}
+	
+	@Column(name = "User_ID")
+	public String getUserId() {
+		return userId;
+	}
+	public void setUserId(String userId) {
+		this.userId = userId;
+	}
+	
+	@Column(name = "LastChange_Time")
+	public Date getModify_Time() {
+		return modify_Time;
+	}
+	public void setModify_Time(Date modify_Time) {
+		this.modify_Time = modify_Time;
+	}
+	
+	@Column(name = "Serial_NO")
+	public String getSerialNO() {
+		return serialNO;
+	}
+	public void setSerialNO(String serialNO) {
+		this.serialNO = serialNO;
+	}
+	
+	@Column(name = "SwitchID")
+	public Long getSwitchId() {
+		return switchId;
+	}
+	public void setSwitchId(Long switchId) {
+		this.switchId = switchId;
+	}
+	
+	@Column(name = "SwitchIfIndex")
+	public Long getIfIndex() {
+		return ifIndex;
+	}
+	public void setIfIndex(Long ifIndex) {
+		this.ifIndex = ifIndex;
+	}
+}

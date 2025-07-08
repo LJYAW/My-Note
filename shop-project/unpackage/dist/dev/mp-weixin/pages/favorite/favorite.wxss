@@ -1,0 +1,12 @@
+
+page{
+	background-color: #f8f8f8;
+}
+
+@charset "UTF-8";
+/* 配色 */
+.app.data-v-7ced2606 {
+  padding-top: 20rpx;
+  padding-bottom: 20rpx;
+}
+

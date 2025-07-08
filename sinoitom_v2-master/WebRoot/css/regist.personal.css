@@ -1,0 +1,281 @@
+#regist .mt {
+	BACKGROUND: url(.././img/tit_regist.jpg) repeat-x 0px -34px; HEIGHT: 33px
+}
+#regist .mt H2 {
+	LINE-HEIGHT: 33px; PADDING-LEFT: 15px; BACKGROUND: url(.././img/tit_regist.jpg) no-repeat 0px 0px; FLOAT: left; HEIGHT: 33px
+}
+#regist .mt SPAN {
+	TEXT-ALIGN: right; LINE-HEIGHT: 33px; FLOAT: right; HEIGHT: 33px
+}
+#regist .mt B {
+	WIDTH: 10px; BACKGROUND: url(.././img/tit_regist.jpg) no-repeat 0px -68px; FLOAT: right; HEIGHT: 33px
+}
+#regist .mc {
+	BORDER-BOTTOM: #d1d1d1 1px solid; BORDER-LEFT: #d1d1d1 1px solid; PADDING-BOTTOM: 20px; PADDING-LEFT: 20px; PADDING-RIGHT: 20px; MARGIN-BOTTOM: 10px; BORDER-TOP: #d1d1d1 0px solid; BORDER-RIGHT: #d1d1d1 1px solid; PADDING-TOP: 15px
+}
+#regist .tab {
+	BORDER-BOTTOM: #ffcc66 1px solid; PADDING-LEFT: 367px; MARGIN-BOTTOM: 25px; HEIGHT: 29px; OVERFLOW: visible
+}
+#regist .tab LI {
+	TEXT-ALIGN: center; LINE-HEIGHT: 27px; WIDTH: 102px; HEIGHT: 27px; COLOR: #f79100; FONT-SIZE: 14px; PADDING-TOP: 3px
+}
+#regist .tab LI.fore {
+	WIDTH: 170px
+}
+#regist .tab .curr {
+	Z-INDEX: 10; POSITION: relative; BACKGROUND: url(.././img/bg_regist.jpg) no-repeat 0px -83px; COLOR: #a0410a; FONT-WEIGHT: bold
+}
+#regist .tab .line {
+	BACKGROUND: url(.././img/bg_shortcut_line.jpg) no-repeat right 7px
+}
+#regist .tab A:link {
+	LINE-HEIGHT: 23px; MARGIN: 0px auto; WIDTH: 74px; DISPLAY: block; HEIGHT: 23px; OVERFLOW: hidden
+}
+#regist .tab A:visited {
+	LINE-HEIGHT: 23px; MARGIN: 0px auto; WIDTH: 74px; DISPLAY: block; HEIGHT: 23px; OVERFLOW: hidden
+}
+#regist .tab .fore A:link {
+	WIDTH: 168px
+}
+#regist .tab .fore A:visited {
+	WIDTH: 168px
+}
+#regist .tab A:hover {
+	BACKGROUND: url(.././img/bg_regist.jpg) no-repeat -167px 0px; COLOR: #fff; TEXT-DECORATION: none
+}
+#regist .tab A:active {
+	BACKGROUND: url(.././img/bg_regist.jpg) no-repeat -167px 0px; COLOR: #fff; TEXT-DECORATION: none
+}
+#regist .tab .fore A:hover {
+	BACKGROUND: none transparent scroll repeat 0% 0%; COLOR: #333333
+}
+#regist .tab .fore A:active {
+	BACKGROUND: none transparent scroll repeat 0% 0%; COLOR: #333333
+}
+* HTML #regist .tab {
+	OVERFLOW: hidden
+}
+#regist .item {
+	LINE-HEIGHT: 26px; HEIGHT: 50px; PADDING-TOP: 5px
+}
+#regist .item A:link {
+	TEXT-DECORATION: underline
+}
+#regist .item A:visited {
+	TEXT-DECORATION: underline
+}
+#regist .label {
+	TEXT-ALIGN: right; WIDTH: 300px; FONT-SIZE: 14px
+}
+#regist .label B {
+	FONT-FAMILY: "????"; FONT-WEIGHT: normal; MARGIN-RIGHT: 5px
+}
+#regist .text {
+	BORDER-BOTTOM: #bbb 1px solid; BORDER-LEFT: #bbb 1px solid; PADDING-BOTTOM: 4px; PADDING-LEFT: 3px; WIDTH: 240px; PADDING-RIGHT: 3px; FONT-FAMILY: arial,"????"; HEIGHT: 16px; FONT-SIZE: 14px; BORDER-TOP: #bbb 1px solid; BORDER-RIGHT: #bbb 1px solid; PADDING-TOP: 4px
+}
+#regist .text-1 {
+	WIDTH: 100px
+}
+#regist .blank {
+	MARGIN: 2px 5px 0px; WIDTH: 16px; HEIGHT: 16px
+}
+#regist .img IMG {
+	MARGIN: 0px 5px; HEIGHT: 26px
+}
+
+#regist .btn-regist {
+	WIDTH: 169px; BACKGROUND: url(.././img/new-regist.jpg) no-repeat 0px 0px; HEIGHT: 30px; COLOR: #fff; FONT-SIZE: 14px; FONT-WEIGHT: bold
+}
+#regist .highlight1 {
+	BORDER-BOTTOM: #ffcc66 2px solid; BORDER-LEFT: #ffcc66 2px solid; PADDING-BOTTOM: 3px; OUTLINE-STYLE: solid; OUTLINE-COLOR: #ffdc97; PADDING-LEFT: 2px; OUTLINE-WIDTH: 2px; PADDING-RIGHT: 2px; BORDER-TOP: #ffcc66 2px solid; BORDER-RIGHT: #ffcc66 2px solid; PADDING-TOP: 3px
+}
+#regist .highlight2 {
+	BORDER-BOTTOM: #f00 1px solid; BORDER-LEFT: #f00 1px solid; OUTLINE-STYLE: solid; OUTLINE-COLOR: #ffc1c1; OUTLINE-WIDTH: 1px; COLOR: #f00; BORDER-TOP: #f00 1px solid; BORDER-RIGHT: #f00 1px solid
+}
+#regist .pwdbg {
+	BACKGROUND: #fff8eb
+}
+#regist .focus {
+	LINE-HEIGHT: 20px; COLOR: #999
+}
+#regist .null {
+	LINE-HEIGHT: 20px; COLOR: red
+}
+#regist .error {
+	LINE-HEIGHT: 20px; COLOR: red
+}
+#regist .checkbox {
+	MARGIN-TOP: 2px
+}
+#regist #referrer {
+	COLOR: #999; FONT-SIZE: 12px
+}
+#pwdstrength {
+	LINE-HEIGHT: 22px; PADDING-RIGHT: 10px; COLOR: #999
+}
+#pwdstrength B {
+	MARGIN-TOP: 3px; WIDTH: 104px; FLOAT: left; HEIGHT: 13px; OVERFLOW: hidden
+}
+.strengthA B {
+	BACKGROUND: url(.././img/pwdstrength.gif) no-repeat 0px 0px
+}
+.strengthB B {
+	BACKGROUND: url(.././img/pwdstrength.gif) no-repeat 0px -13px
+}
+.strengthC B {
+	BACKGROUND: url(.././img/pwdstrength.gif) no-repeat 0px -26px
+}
+#protocol-con {
+	BORDER-BOTTOM: #ccc 1px solid; BORDER-LEFT: #ccc 1px solid; PADDING-BOTTOM: 8px; OVERFLOW-Y: scroll; MARGIN: 0px auto; PADDING-LEFT: 8px; WIDTH: 600px; PADDING-RIGHT: 8px; HEIGHT: 80px; COLOR: #666; BORDER-TOP: #ccc 1px solid; BORDER-RIGHT: #ccc 1px solid; PADDING-TOP: 8px
+}
+.service {
+	PADDING-BOTTOM: 15px; PADDING-LEFT: 15px; PADDING-RIGHT: 15px; ZOOM: 1; MARGIN-BOTTOM: 13px; BACKGROUND: #f7f7f7; OVERFLOW: hidden; PADDING-TOP: 15px
+}
+.service LI {
+	BACKGROUND-IMAGE: url(.././img/bg20110922.png); BORDER-LEFT: #ccc 1px solid; PADDING-BOTTOM: 0px; LINE-HEIGHT: 100px; PADDING-LEFT: 17px; PADDING-RIGHT: 17px; BACKGROUND-REPEAT: no-repeat; FLOAT: left; HEIGHT: 14px; FONT-SIZE: 0px; OVERFLOW: hidden; PADDING-TOP: 0px
+}
+.service LI.fore {
+	BORDER-BOTTOM-STYLE: none; BORDER-LEFT-STYLE: none; BORDER-TOP-STYLE: none; BORDER-RIGHT-STYLE: none
+}
+.service .bl1 {
+	WIDTH: 162px; BACKGROUND-POSITION: 17px 0px
+}
+.service .bl2 {
+	WIDTH: 187px; BACKGROUND-POSITION: 17px -15px
+}
+.service .bl3 {
+	WIDTH: 162px; BACKGROUND-POSITION: 17px -30px
+}
+.service .bl4 {
+	WIDTH: 254px; BACKGROUND-POSITION: 17px -45px
+}
+#protocol-con {
+	BORDER-BOTTOM: #cccccc 1px solid; BORDER-LEFT: #cccccc 1px solid; PADDING-BOTTOM: 8px; OVERFLOW-Y: scroll; MARGIN: 0px auto; PADDING-LEFT: 8px; WIDTH: 600px; PADDING-RIGHT: 8px; HEIGHT: 80px; COLOR: #666666; BORDER-TOP: #cccccc 1px solid; BORDER-RIGHT: #cccccc 1px solid; PADDING-TOP: 8px
+}
+#protocol-con H4 {
+	TEXT-ALIGN: center; PADDING-BOTTOM: 10px; FONT-SIZE: 14px
+}
+#protocol-con H5 {
+	PADDING-BOTTOM: 5px; TEXT-INDENT: 2em; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 5px
+}
+#protocol-con P {
+	TEXT-INDENT: 2em
+}
+#protocol-con EM {
+	FONT-STYLE: italic
+}
+#protocol-con SPAN {
+	TEXT-DECORATION: underline
+}
+#protocol-con STRONG {
+	MARGIN-RIGHT: 5px
+}
+.form {
+	POSITION: relative
+}
+.form .phone {
+	POSITION: absolute; WIDTH: 220px; RIGHT: 10px; TOP: 6px
+}
+
+#regist .succeed {
+	BACKGROUND: url(.././img/pwdstrength.gif) no-repeat -105px 0px
+}
+
+.login-ok {
+	FONT-FAMILY: Microsoft Yahei; PADDING-BOTTOM: 50px; TEXT-ALIGN: center; PADDING-TOP: 40px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px
+}
+.login-oksucc {
+	BACKGROUND: url(.././img/myls04.png) no-repeat
+}
+.login-oksucc {
+	HEIGHT: 43px; BACKGROUND-POSITION: 0px -308px; DISPLAY: inline-block; WIDTH: 56px
+}
+.login-succ{
+	BACKGROUND: url(.././img/myls04.png) no-repeat;HEIGHT: 43px; BACKGROUND-POSITION: 0px -308px; DISPLAY: inline-block; WIDTH: 56px
+}
+.login-fail{
+	BACKGROUND: url(.././img/myls04.png) no-repeat;HEIGHT: 43px; BACKGROUND-POSITION: 0px -685px; DISPLAY: inline-block; WIDTH: 48px
+}
+.login-ok SPAN.note {
+	BACKGROUND-POSITION: 0px -685px; WIDTH: 48px
+}
+.login-ok B {
+	FONT-SIZE: 20px; HEIGHT: 43px; VERTICAL-ALIGN: top; COLOR: #242424; PADDING-LEFT: 10px; DISPLAY: inline-block; LINE-HEIGHT: 43px
+}
+.verify {
+	BORDER-TOP: #e2e2e2 1px solid; PADDING-BOTTOM: 50px; PADDING-TOP: 25px; PADDING-LEFT: 55px; MARGIN: 0px 65px; PADDING-RIGHT: 55px
+}
+.verify H4 {
+	MARGIN-BOTTOM: 5px; COLOR: #2e2e2e; FONT: bold 18px/1.5em Microsoft Yahei
+}
+.verify P {
+	MARGIN-BOTTOM: 10px; FONT-SIZE: 14px; COLOR: #676767
+}
+.verify P SPAN {
+	FONT-FAMILY: Arial; COLOR: #010101; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 8px; PADDING-RIGHT: 8px
+}
+.abut01 {
+	BACKGROUND: url(.././img/myls04.png) no-repeat
+}
+.abut01 SPAN {
+	BACKGROUND: url(.././img/myls04.png) no-repeat
+}
+.abut01 {
+	FONT-SIZE: 14px; HEIGHT: 36px; BACKGROUND-POSITION: left -111px; FLOAT: left; COLOR: #506eaa; PADDING-LEFT: 25px; DISPLAY: block; text-shadow: 1px 1px 1px #FFF
+}
+.abut01 SPAN {
+	OVERFLOW: hidden; CURSOR: pointer; HEIGHT: 36px; FONT-FAMILY: 瀹嬩綋; BACKGROUND-POSITION: right -111px; FLOAT: left; DISPLAY: block; LINE-HEIGHT: 34px; PADDING-RIGHT: 27px
+}
+.abut01:hover {
+	TEXT-DECORATION: none
+}
+.verify-text LI {
+	BACKGROUND: url(.././img/myls04.png) no-repeat
+}
+.verify-text {
+	BORDER-TOP: #dcdcdc 1px solid; BORDER-RIGHT: #dcdcdc 1px solid; BORDER-BOTTOM: #dcdcdc 1px solid; PADDING-BOTTOM: 20px; PADDING-TOP: 15px; PADDING-LEFT: 20px; BORDER-LEFT: #dcdcdc 1px solid; MARGIN-TOP: 15px; PADDING-RIGHT: 20px; BACKGROUND-COLOR: #f1f1f1
+}
+.verify-text B {
+	COLOR: #444
+}
+.verify-text LI {
+	HEIGHT: 18px; POSITION: relative; BACKGROUND-POSITION: -130px -245px; COLOR: #676767; PADDING-LEFT: 10px; MARGIN-TOP: 5px
+}
+.verify-text LI SPAN {
+	PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 8px; PADDING-RIGHT: 8px
+}
+.verify-text LI B {
+	PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 8px; PADDING-RIGHT: 8px
+}
+.verify-text LI A {
+	POSITION: absolute; LEFT: 67px; TOP: -2px
+}
+.verify-text LI A SPAN {
+	PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 10px
+}
+.verify-text {
+	TEXT-ALIGN: left; MARGIN-TOP: 30px
+}
+
+/** ecp 个人信息 账户安全 修改密码邮箱等 **/
+#pwdedit .label {
+	TEXT-ALIGN: right;  FONT-SIZE: 14px
+}
+#pwdedit .item {
+	LINE-HEIGHT: 26px; HEIGHT: 50px; PADDING-TOP: 5px
+}
+#pwdedit .text {
+	BORDER-BOTTOM: #bbb 1px solid; BORDER-LEFT: #bbb 1px solid; PADDING-BOTTOM: 4px; PADDING-LEFT: 3px; WIDTH: 240px; PADDING-RIGHT: 3px; FONT-FAMILY: arial,"????"; HEIGHT: 20px; FONT-SIZE: 14px; BORDER-TOP: #bbb 1px solid; BORDER-RIGHT: #bbb 1px solid; PADDING-TOP: 4px
+}
+#pwdedit .highlight1 {
+	BORDER-BOTTOM: #ffcc66 2px solid; BORDER-LEFT: #ffcc66 2px solid; PADDING-BOTTOM: 3px; OUTLINE-STYLE: solid; OUTLINE-COLOR: #ffdc97; PADDING-LEFT: 2px; OUTLINE-WIDTH: 2px; PADDING-RIGHT: 2px; BORDER-TOP: #ffcc66 2px solid; BORDER-RIGHT: #ffcc66 2px solid; PADDING-TOP: 3px
+}
+#pwdedit .highlight2 {
+	BORDER-BOTTOM: #f00 1px solid; BORDER-LEFT: #f00 1px solid; OUTLINE-STYLE: solid; OUTLINE-COLOR: #ffc1c1; OUTLINE-WIDTH: 1px; COLOR: #f00; BORDER-TOP: #f00 1px solid; BORDER-RIGHT: #f00 1px solid
+}
+#pwdedit .blank {
+	MARGIN: 2px 5px 0px; WIDTH: 16px; HEIGHT: 16px
+}
+#pwdedit .succeed {
+	BACKGROUND: url(.././img/pwdstrength.gif) no-repeat -105px 0px
+}
