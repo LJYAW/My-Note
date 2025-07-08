@@ -1,0 +1,25 @@
+/deep/ .el-form-item__label {
+  color: #101010;
+}
+/deep/ .el-input__inner {
+  width: 320px;
+  height: 30px;
+}
+/deep/ .el-input__inner::-webkit-input-placeholder {
+  color: #999999;
+  font-size: 12px;
+}
+.btn {
+  text-align: center;
+  /deep/ .el-button {
+    width: 100px;
+    height: 28px;
+    line-height: 8px;
+  }
+  /deep/ .el-form-item__content {
+    margin: 0 !important;
+  }
+}
+.video_break {
+  word-break: break-all;
+}

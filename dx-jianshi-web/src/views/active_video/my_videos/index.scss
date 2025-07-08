@@ -1,0 +1,137 @@
+.my-videos {
+  margin-top: 30px;
+
+  .header-bar {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+    .serarch-input {
+      width: 260px;
+
+      .el-input__inner {
+        border-radius: 50px;
+      }
+    }
+  }
+
+  .card-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 24%);
+    justify-content: space-around;
+    grid-gap: 14px;
+  }
+
+  .card-wrap {
+    .card {
+      border-radius: 10px 10px 0 0;
+
+      width: 100%;
+      height: 160px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      position: relative;
+      background: #e8f0ffff;
+    }
+
+    .card-name {
+      font-size: 12px;
+      color: #333333;
+      text-align: center;
+      padding: 16px 20px 20px 20px;
+      background: white;
+      border-radius: 0 0 10px 10px;
+    }
+  }
+
+  .add-video-card {
+    .iconfont {
+      font-size: 50px;
+      color: #2a79df;
+    }
+  }
+
+  .video-card {
+    .iconfont {
+      font-size: 30px;
+      color: #8d9ea7;
+    }
+
+    &:hover {
+      .btn-list {
+        li {
+          transform: translateY(0);
+        }
+      }
+    }
+
+    .btn-list {
+      position: absolute;
+      top: 0;
+      left: 0;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+      border-radius: 10px 10px 0 0;
+
+      li {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        flex: 1;
+        font-size: 12px;
+        color: #f7f7f7;
+        transform: translateY(100%);
+        transition: 0.25s ease-in-out;
+
+        .iconfont {
+          color: #f7f7f7;
+          font-size: 20px;
+          margin-bottom: 5px;
+        }
+
+        &:nth-child(1) {
+          background: rgba(0, 0, 0, 0.5);
+          transition-delay: 0s;
+        }
+
+        &:nth-child(2) {
+          background: rgba(0, 0, 0, 0.4);
+          transition-delay: 0.05s;
+        }
+
+        &:nth-child(3) {
+          background: rgba(0, 0, 0, 0.3);
+          transition-delay: 0.1s;
+        }
+      }
+    }
+  }
+
+  @keyframes topIn {
+    from {
+      transform: translateY(-50%);
+    }
+
+    to {
+      transform: translateY(0px);
+    }
+  }
+}
+.moreList {
+  li {
+    text-align: center;
+    padding: 5px;
+    cursor: pointer;
+    &:hover {
+      background-color: #e8e8e8;
+    }
+  }
+}

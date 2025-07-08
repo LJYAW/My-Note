@@ -1,0 +1,21 @@
+.video-btn-modal {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  .iframe-wrap {
+    height: 550px;
+  }
+  .content-wrap {
+    flex: 1;
+    overflow: hidden;
+    overflow-y: auto;
+  }
+  .btn-pad {
+    flex: 1;
+  }
+  .submit-btn-wrap {
+    text-align: center;
+    padding: 20px 30px;
+  }
+}

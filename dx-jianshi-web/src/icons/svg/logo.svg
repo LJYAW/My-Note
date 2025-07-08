@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="87px" height="30px" viewBox="0 0 87 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>编组 3</title>
+    <defs>
+        <rect id="path-1" x="-1" y="0" width="1920" height="70"></rect>
+        <filter x="-1.8%" y="-35.7%" width="103.6%" height="200.0%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="10" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="10" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.02 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <linearGradient x1="0%" y1="37.2166336%" x2="72.2246604%" y2="76.5668399%" id="linearGradient-3">
+            <stop stop-color="#007DFF" offset="0%"></stop>
+            <stop stop-color="#0F4DBE" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="71.0339954%" y1="40.1775549%" x2="26.7796236%" y2="58.2392967%" id="linearGradient-4">
+            <stop stop-color="#007DFF" offset="0%"></stop>
+            <stop stop-color="#0F48B8" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="97.2027972%" y1="50%" x2="0%" y2="50%" id="linearGradient-5">
+            <stop stop-color="#1049B8" offset="0%"></stop>
+            <stop stop-color="#007DFF" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="简视页面" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="智能创作页面" transform="translate(-272.000000, -20.000000)">
+            <rect fill="#F7F8F9" x="0" y="0" width="1920" height="1957"></rect>
+            <g id="矩形">
+                <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+            </g>
+            <g id="编组-3" transform="translate(272.000000, 20.000000)">
+                <text id="简视" opacity="0.800000012" font-family="PingFangSC-Light, PingFang SC" font-size="24" font-weight="300" line-spacing="24" fill="#000000">
+                    <tspan x="39" y="28">简视</tspan>
+                </text>
+                <g id="编组-2">
+                    <g id="编组">
+                        <path d="M0,7.5955485 L0,22.4743776 C8.93345302,27.4914592 13.4001795,30 13.4001795,30 C13.4001795,30 17.6001197,27.4914592 26,22.4743776 L0,7.5955485 Z" id="路径" fill="url(#linearGradient-3)"></path>
+                        <polygon id="路径-2" fill="url(#linearGradient-4)" points="13.2134671 15.1368371 26 7.5955485 13 0 -1.65745553e-14 7.5955485"></polygon>
+                    </g>
+                    <polygon id="路径-3" fill="url(#linearGradient-5)" points="16 15.0958568 29 22 29 8"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

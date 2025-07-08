@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="14px" height="14px" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>编组</title>
+    <defs>
+        <rect id="path-1" x="394" y="1007" width="870" height="795" rx="4"></rect>
+        <filter x="-4.0%" y="-3.1%" width="108.0%" height="108.8%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="10" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="10" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.364705882   0 0 0 0 0.494117647   0 0 0 0 0.921568627  0 0 0 0.1 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="简视页面" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="智能创作页面" transform="translate(-598.000000, -1102.000000)">
+            <rect fill="#F7F8F9" x="0" y="0" width="1920" height="1957"></rect>
+            <g id="矩形备份-12">
+                <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+            </g>
+            <path d="M510,1072 L1230,1072 C1232.20914,1072 1234,1073.79086 1234,1076 L1234,1186 C1234,1188.20914 1232.20914,1190 1230,1190 L428,1190 C425.790861,1190 424,1188.20914 424,1186 L424,1076 C424,1073.79086 425.790861,1072 428,1072 L444,1072 L444,1072" id="矩形" stroke="#EFEFEF"></path>
+            <g id="编组-24" transform="translate(480.000000, 1097.000000)">
+                <g id="编组" transform="translate(118.000000, 5.000000)" fill="#5675E8" fill-rule="nonzero">
+                    <path d="M7,0 C10.8599955,0 14,3.14000449 14,7 C14,10.8599955 10.8599955,14 7,14 C3.14000449,14 0,10.8599955 0,7 C0,3.14000449 3.14000449,0 7,0 Z M5.42893607,4.10333221 C5.12924391,4.10333221 4.88630042,4.3462757 4.88630042,4.64596787 L4.88630042,9.42638355 C4.88630042,9.52131036 4.91120646,9.61457586 4.95852601,9.69686777 C5.10791596,9.95667228 5.4396315,10.0461836 5.69943602,9.89679362 L9.85630828,7.50658578 C9.93943836,7.4587836 10.0084162,7.38980573 10.0562184,7.30667565 C10.2056241,7.04685541 10.1161128,6.7151556 9.85630828,6.56576564 L5.69943602,4.1755578 C5.61713948,4.12823559 5.52386822,4.10333221 5.42893607,4.10333221 Z" id="形状"></path>
+                </g>
+                <rect id="矩形" stroke="#EFEFEF" x="108.5" y="0.5" width="179" height="23" rx="4"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

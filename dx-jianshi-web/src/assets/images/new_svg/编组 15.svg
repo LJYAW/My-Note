@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="12px" height="12px" viewBox="0 0 12 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>编组 15</title>
+    <defs>
+        <rect id="path-1" x="400" y="301" width="870" height="673" rx="4"></rect>
+        <filter x="-4.0%" y="-3.7%" width="108.0%" height="110.4%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="10" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="10" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.364705882   0 0 0 0 0.494117647   0 0 0 0 0.921568627  0 0 0 0.1 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="简视页面" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="智能创作页面" transform="translate(-453.000000, -818.000000)">
+            <rect fill="#F7F8F9" x="0" y="0" width="1920" height="1957"></rect>
+            <g id="矩形">
+                <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+            </g>
+            <rect id="矩形备份-10" fill="#F8F9FC" x="433" y="730" width="577" height="120" rx="4"></rect>
+            <g id="编组-15" transform="translate(453.000000, 818.000000)">
+                <rect id="矩形" x="0" y="0" width="12" height="12"></rect>
+                <rect id="矩形" stroke="#5675E8" x="0.5" y="0.5" width="11" height="3"></rect>
+                <rect id="矩形备份-9" stroke="#5675E8" x="5.16666667" y="8.5" width="6.33333333" height="3"></rect>
+                <polyline id="路径-4" stroke="#5675E8" opacity="0.400000006" points="2.33357252 4 2.33357252 10 4.67261393 10"></polyline>
+            </g>
+        </g>
+    </g>
+</svg>

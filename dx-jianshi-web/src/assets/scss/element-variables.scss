@@ -1,0 +1,51 @@
+/* 改变主题色变量 */
+$--color-primary: #5675e8;
+// $info-color: rgba(31, 32, 32, 0.842)
+$--messagebox-info-color: #000;
+
+/* 改变 icon 字体路径变量，必需 */
+$--font-path: '~element-ui/lib/theme-chalk/fonts';
+
+.el-form-item {
+  margin-bottom: 20px;
+}
+
+.el-button {
+  border-color: $c;
+  color: $c;
+  font-weight: 400;
+
+  &.el-button--text {
+    border: none;
+    padding: 0;
+    height: max-content;
+  }
+
+  &.el-button--primary {
+    color: #fff;
+  }
+
+  &.el-button--info {
+    background-color: #3386e1;
+    border-color: #3386e1;
+    color: #fff;
+  }
+
+  &.el-button--mini {
+    line-height: 10px;
+    vertical-align: middle;
+  }
+
+  &.is-plain {
+    border-radius: 100px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border: 1px solid rgba(255, 255, 255, 0);
+    color: #fff;
+  }
+}
+
+.el-checkbox__input.is-checked + .el-checkbox__label {
+  color: #101010;
+}
+
+@import '~element-ui/packages/theme-chalk/src/index';
