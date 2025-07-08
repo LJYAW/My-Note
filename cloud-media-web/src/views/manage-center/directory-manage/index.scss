@@ -1,0 +1,193 @@
+
+
+.directory-manage {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+  .search-top {
+    margin-top: 20px;
+    height: 30px;
+
+    .form {
+      display: flex;
+      justify-content: space-between;
+
+      .item-input {
+        width: 365px;
+        height: 30px;
+
+        .el-form-item__content {
+          width: 100%;
+        }
+      }
+
+      .add {
+        margin: 0;
+      }
+
+      .top {
+        display: flex;
+
+        .btns {
+          min-width: 100px;
+
+          button {
+            width: 44px;
+            height: 30px;
+            font-size: 12px;
+            padding: 0;
+          }
+        }
+      }
+    }
+  }
+
+  .title-bar {
+    height: 37px;
+  }
+
+  .ActiveZindex {
+    z-index: 2000;
+  }
+
+  .mask-box {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: auto;
+    margin: 0;
+    // background: rgba(0,0,0,.2);
+  }
+
+  .file-list {
+    flex: 1;
+
+    .file-ul {
+      display: flex;
+      flex-wrap: wrap;
+      width: calc(100% + 24px);
+      margin-right: - 24px;
+
+      li {
+        position: relative;
+        margin-right: 24px;
+        padding: 10px;
+        box-sizing: border-box;
+        margin-top: 30px;
+        align-items: center;
+        width: 236px;
+        height: 62px;
+        cursor: pointer;
+        border-radius: 4px;
+        display: flex;
+
+        &:hover {
+          background: #f7f8f9;
+
+          .add-directory {
+            opacity: 1 !important;
+          }
+        }
+
+        .directory-box {
+          flex: 1;
+        }
+
+        .add-directory {
+          position: absolute;
+          right: 10px;
+          top: 26px;
+          width: 20px;
+          height: 20px;
+          background: #fff;
+          border-radius: 4px;
+          text-align: center;
+          line-height: 20px;
+          opacity: 0;
+
+          .icon-morre {
+            color: rgba(0, 0, 0, 1);
+          }
+        }
+
+        .icon-file {
+          width: 53px;
+          height: 36px;
+          color: rgba(125, 153, 255, 1);
+          margin-right: 11px;
+        }
+
+        .message-box {
+
+          .file-input {
+
+            .el-input__inner {
+              border: none;
+              background: #e7e7e7;
+              font-size: 12px;
+            }
+          }
+
+          .file-name {
+            width: 150px;
+            font-size: 14px;
+            font-weight: 450;
+            color: #404040;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+          }
+
+          .file-size {
+            width: 150px;
+            font-size: 12px;
+            font-weight: 400;
+            color: rgba(64, 64, 64, .5);
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            margin-top: 3px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.activeClass {
+  background: #f7f8f9;
+
+  .directory-box {
+    z-index: 2003;
+  }
+
+  .add-directory {
+    opacity: 1 !important;
+  }
+}
+
+.popover-box {
+  min-width: 128px;
+
+  .popover-list {
+
+    .detelteClass {
+      background: rgba(255, 234, 234, 1);
+      color: rgba(241, 107, 107, 1);
+    }
+
+    li {
+      font-size: 12px;
+      font-weight: 430;
+      color: #404040;
+      text-align: center;
+      cursor: pointer;
+      border-radius: 5px;
+      padding: 6px;
+      box-sizing: border-box;
+    }
+  }
+}

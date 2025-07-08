@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="74px" height="70px" viewBox="0 0 74 70" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>编组</title>
+    <defs>
+        <linearGradient x1="21.875%" y1="0%" x2="78.125%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#7D99FF" offset="0%"></stop>
+            <stop stop-color="#5675E8" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="icon以及组件与规范" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icon" transform="translate(-969.000000, -107.000000)">
+            <g id="编组" transform="translate(969.000000, 107.000000)">
+                <path d="M11.3684211,0 L47.5789474,0 C49.7880864,-4.33003142e-15 51.5789474,1.790861 51.5789474,4 L51.5789474,58.9473684 L51.5789474,58.9473684 L7.36842105,58.9473684 L7.36842105,4 C7.36842105,1.790861 9.15928205,-9.26455379e-16 11.3684211,0 Z" id="路径" fill="url(#linearGradient-1)"></path>
+                <polygon id="路径" fill="#5776E8" fill-rule="nonzero" points="0 58.9473684 73.6842105 58.9473684 73.6842105 70 0 70"></polygon>
+                <polygon id="路径" fill="#C3D2FB" fill-rule="nonzero" points="51.5789474 11.0526316 66.3157895 11.0526316 66.3157895 58.9473684 51.5789474 58.9473684"></polygon>
+                <path d="M18.4210526,11.0526316 L25.7894737,11.0526316 L25.7894737,47.8947368 L18.4210526,47.8947368 L18.4210526,11.0526316 Z M33.1578947,11.0526316 L40.5263158,11.0526316 L40.5263158,33.1578947 L33.1578947,33.1578947 L33.1578947,11.0526316 Z" id="形状" fill="#FFFFFF" fill-rule="nonzero"></path>
+            </g>
+        </g>
+    </g>
+</svg>

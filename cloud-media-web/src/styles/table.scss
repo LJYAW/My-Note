@@ -1,0 +1,30 @@
+.el-table {
+
+  .cell {
+    text-align: center;
+  }
+
+  .el-table__header-wrapper {
+
+    th {
+      background: #f8f9fa;
+      border-bottom: 1px solid #ececec;
+      border-right: 1px solid #ececec;
+    }
+  }
+
+  .el-table__body-wrapper {
+
+    td {
+      border-bottom: 1px solid #ececec;
+      border-right: 1px solid #ececec;
+    }
+
+    tr:hover {
+
+      td {
+        background-color: #f0f3fc;
+      }
+    }
+  }
+}

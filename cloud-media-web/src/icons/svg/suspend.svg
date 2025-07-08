@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="36px" height="42px" viewBox="0 0 36 42" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>编组 22</title>
+    <g id="新页" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icon" transform="translate(-503.000000, -279.000000)">
+            <g id="编组-22" transform="translate(503.000000, 279.000000)">
+                <g id="编组-12备份">
+                    <g id="矩形">
+                        <g id="蒙版" fill-rule="nonzero">
+                            <path d="M35.9983069,11.55 L35.9983069,37.3329431 C35.9983069,39.9104875 33.9834935,42 31.4980953,42 L4.49851858,42 C2.01378153,41.9990305 0,39.9098019 0,37.3329431 L0,4.66705686 C0,2.09019807 2.01378153,0.000969457686 4.49851858,0 L24.8629074,0 L36,11.55 L35.9983069,11.55 Z" id="路径" fill="#3A4C90"></path>
+                            <path d="M24.9230769,7.9840515 L24.9230769,0 L36,11.4545455 L28.2791589,11.4545455 C26.4268307,11.4545455 24.9230769,9.90126868 24.9230769,7.9840515 Z" id="路径" fill="#79819A"></path>
+                        </g>
+                        <!-- <rect fill="#080808" opacity="0.400000006" x="0" y="0" width="36" height="42"></rect> -->
+                    </g>
+                    <g id="编组-4" transform="translate(9.000000, 12.000000)">
+                        <rect id="矩形" x="0" y="0" width="20" height="20"></rect>
+                    </g>
+                </g>
+                <g id="编组-14" transform="translate(11.000000, 14.000000)" fill="#FFFFFF">
+                    <rect id="矩形" x="0" y="0" width="5" height="15" rx="2"></rect>
+                    <rect id="矩形备份-8" x="10" y="0" width="5" height="15" rx="2"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

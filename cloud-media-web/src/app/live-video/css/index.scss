@@ -1,0 +1,29 @@
+.list_flex {
+  display: flex;
+  flex-wrap: wrap;
+
+  .box_item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: stretch;
+  }
+}
+
+img {
+  vertical-align: bottom;
+}
+
+.box_flex_1 {
+  flex: 1;
+}
+
+.align_items {
+  align-items: center;
+}
+
+.justify_content {
+  justify-content: space-between;
+}

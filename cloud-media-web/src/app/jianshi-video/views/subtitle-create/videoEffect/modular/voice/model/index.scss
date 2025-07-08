@@ -1,0 +1,131 @@
+.bg-music-wrap {
+  margin-top: 10px;
+  position: relative;
+  height: 516px;
+
+  .upload-position {
+    position: absolute;
+    right: 0;
+    top: -68px;
+  }
+
+  .list {
+    height: 450px;
+    overflow: auto;
+  }
+
+  .transition-wrap {
+    display: flex;
+    flex-wrap: wrap;
+
+    .activeClass {
+      border: 1px solid blue !important;
+    }
+
+    .audio-item {
+      position: relative;
+      width: 190px;
+      height: 62px;
+      padding: 10px;
+      margin-right: 24px;
+      margin-bottom: 30px;
+      display: flex;
+      border: 1px solid transparent;
+      cursor: pointer;
+
+      &:hover {
+        background: #f7f8f9;
+        border-radius: 4px;
+      }
+
+      .progress-item {
+        position: absolute;
+        top: 22px;
+        left: 0;
+        padding: 0 6px;
+        box-sizing: border-box;
+        width: 100%;
+        z-index: 100;
+        width: 80%;
+      }
+
+      .audio-img {
+        position: relative;
+
+        &:hover {
+
+          .play-icon {
+            opacity: 1;
+            transition: all .4s;
+          }
+        }
+
+        .music-icon {
+          width: 36px;
+          height: 42px;
+          margin-right: 10px;
+        }
+
+        .play-icon {
+          width: 36px;
+          height: 42px;
+          position: absolute;
+          top: 0;
+          left: 0;
+          opacity: 0;
+          cursor: pointer;
+        }
+
+      }
+
+      .audio-msg {
+        color: #404040;
+        font-size: 14px;
+        width: calc(100% - 36px);
+
+        .audio-name {
+          line-height: 14px;
+          margin-bottom: 10px;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+
+        .audio-duration {
+          line-height: 14px;
+          opacity: .6;
+        }
+      }
+
+      .delete-btn {
+        margin-left: 40px;
+        display: flex;
+        align-items: center;
+
+        span {
+          background: #fff;
+          padding: 3px;
+          display: block;
+          border-radius: 4px;
+
+          svg {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+
+  .btns {
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+
+    button {
+      width: 300px;
+      height: 30px;
+      padding: 0;
+      font-size: 14px;
+    }
+  }
+}

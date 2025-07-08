@@ -1,0 +1,138 @@
+.add-person {
+
+  .arrow-img {
+    width: 100%;
+    text-align: center;
+
+    .icon-person {
+      width: 80px;
+      height: 63px;
+    }
+  }
+
+  .demo-ruleForm {
+
+    .person-top {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 10px;
+      margin-top: 20px;
+
+      .person-title {
+        font-size: 12px;
+        font-weight: 600;
+        color: #404040;
+      }
+
+      .swtichbtn {
+        color: #404040;
+        font-size: 12px;
+        font-weight: 500;
+        margin-right: 10px;
+      }
+
+      .num {
+        font-size: 12px;
+        font-weight: 400;
+        color: #404040;
+      }
+    }
+
+    .activeClass {
+      color: rgba(64, 64, 64, 1) !important;
+    }
+
+    .temp-item {
+      width: 100% !important;
+    }
+
+    .item-list {
+      width: 45%;
+      color: rgba(160, 160, 160, 1);
+      font-weight: bolder;
+      margin: 0px;
+      margin-right: 10px;
+      margin-top: 10px;
+
+      &:hover {
+        color: #404040;
+      }
+
+      ::v-deep .el-form-item__content {
+        position: relative;
+        display: flex;
+        width: 100%;
+
+        .title-top {
+          position: absolute;
+          left: 10px;
+          top: 0;
+          min-width: 60px;
+          text-align: left;
+          z-index: 100;
+          box-sizing: border-box;
+          font-size: 12px;
+          line-height: revert;
+
+          &::after {
+            position: absolute;
+            top: 13px;
+            right: -3px;
+            content: "";
+            width: 1px;
+            height: 15px;
+            background: rgba(216, 216, 216, 1);
+          }
+        }
+
+        .el-input {
+
+          .el-input__inner {
+            padding-left: 80px;
+            height: 30px;
+            font-size: 12px;
+
+            &:hover {
+              border-color: #5675e8;
+            }
+          }
+        }
+      }
+    }
+
+    .fun-box {
+      margin-top: 10px;
+
+      ::v-deep .el-form-item__content {
+        display: flex;
+        border: 1px solid rgba(236, 236, 236, 1);
+        border-radius: 4px;
+
+        .frontfun-box {
+          width: 50%;
+          border-right: 1px solid rgba(236, 236, 236, 1);
+        }
+
+        .afterfun-box {
+          flex: 1;
+        }
+      }
+    }
+
+    .btns {
+      width: 100%;
+
+      ::v-deep .el-form-item__content {
+        width: 100%;
+        text-align: center;
+
+        button {
+          width: 254px;
+          height: 30px;
+          font-size: 12px;
+          padding: 0;
+        }
+      }
+    }
+  }
+}

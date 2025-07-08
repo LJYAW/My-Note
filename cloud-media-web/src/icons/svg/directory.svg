@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="38px" height="39px" viewBox="0 0 38 39" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>编组 10</title>
+    <defs>
+        <linearGradient x1="0.475056689%" y1="0%" x2="99.5249433%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#A488FF" offset="0%"></stop>
+            <stop stop-color="#7232FF" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="13.2653061%" y1="0%" x2="86.7346939%" y2="100%" id="linearGradient-2">
+            <stop stop-color="#A488FF" offset="0%"></stop>
+            <stop stop-color="#7232FF" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="新页" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="编组-10">
+            <path d="M2,18.2857143 L12.8710465,18.2857143 L12.8710465,18.2857143 L19.9047619,24.9262776 L19.9047619,36.2857143 C19.9047619,37.3902838 19.0093314,38.2857143 17.9047619,38.2857143 L2,38.2857143 C0.8954305,38.2857143 -5.30863065e-16,37.3902838 0,36.2857143 L0,20.2857143 C-1.3527075e-16,19.1811448 0.8954305,18.2857143 2,18.2857143 Z" id="蒙版" fill="url(#linearGradient-1)" opacity="0.400000006"></path>
+            <rect id="矩形" fill="url(#linearGradient-2)" x="5.42857143" y="0" width="32.5714286" height="38" rx="2"></rect>
+            <g id="编组-15" transform="translate(10.857143, 12.214286)" fill="#FFFFFF">
+                <rect id="矩形" x="0" y="0" width="5.42857143" height="8.14285714" rx="0.8"></rect>
+                <rect id="矩形备份-9" x="8.14285714" y="0" width="13.5714286" height="2.71428571" rx="0.8"></rect>
+                <rect id="矩形备份-10" x="8.14285714" y="5.42857143" width="13.5714286" height="2.71428571" rx="0.8"></rect>
+                <rect id="矩形备份-11" x="8.14285714" y="10.8571429" width="13.5714286" height="2.71428571" rx="0.8"></rect>
+                <rect id="矩形备份-12" x="0" y="10.8571429" width="5.42857143" height="2.71428571" rx="0.8"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

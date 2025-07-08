@@ -1,0 +1,32 @@
+.el-button--info {
+  color: #404040;
+
+  &:hover {
+    color: #404040;
+  }
+}
+
+.el-tabs {
+
+  .el-tabs__nav-wrap::after {
+    display: none;
+  }
+
+  .el-tabs__item {
+    font-size: 18px;
+    font-weight: normal;
+    // color: #404040;
+  }
+}
+
+.el-tabs__item {
+  color: #404040;
+}
+
+.el-message--info {
+
+  .el-icon-info,
+  .el-message__content {
+    color: #909399!important;
+  }
+}

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>编组 16</title>
+    <g id="新页" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icon" transform="translate(-7.000000, -554.000000)">
+            <g id="编组-16" transform="translate(7.000000, 554.000000)">
+                <rect id="矩形备份" fill="#FFFFFF" x="0" y="0" width="24" height="24" rx="4"></rect>
+                <g id="编组-4" transform="translate(4.000000, 4.000000)">
+                    <rect id="矩形" x="0" y="0" width="16" height="16"></rect>
+                    <g id="编组-3" transform="translate(1.777778, 1.777778)" fill="#5B7AEB">
+                        <rect id="矩形" x="0" y="0" width="6.22222222" height="1" rx="0.5"></rect>
+                        <rect id="矩形备份-3" x="8" y="0" width="4.44444444" height="1" rx="0.5"></rect>
+                        <rect id="矩形备份-2" x="0" y="11.5555556" width="12.4444444" height="1" rx="0.5"></rect>
+                        <rect id="矩形" x="0" y="0" width="1" height="12.4444444" rx="0.5"></rect>
+                        <rect id="矩形备份" x="11.5555556" y="6.22222222" width="1" height="6.22222222" rx="0.5"></rect>
+                        <rect id="矩形备份-4" x="11.5555556" y="0" width="1" height="4.44444444" rx="0.5"></rect>
+                        <path d="M4.87918871,3.10141093 L12.8791887,3.10141093 C13.1246486,3.10141093 13.3236332,3.30039549 13.3236332,3.54585537 C13.3236332,3.79131526 13.1246486,3.99029982 12.8791887,3.99029982 L4.87918871,3.99029982 C4.63372882,3.99029982 4.43474426,3.79131526 4.43474426,3.54585537 C4.43474426,3.30039549 4.63372882,3.10141093 4.87918871,3.10141093 Z" id="矩形" transform="translate(8.879189, 3.545855) rotate(-45.000000) translate(-8.879189, -3.545855) "></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

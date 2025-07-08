@@ -1,0 +1,50 @@
+/*
+ * @Author: your name
+ * @Date: 2021-08-20 17:59:15
+ * @LastEditTime: 2021-09-23 16:23:47
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: /cloud-media-web/src/app/video-edit/utils/video-key-map.js
+ */
+export default (video) => {
+  // return false 禁止函数内部执行其他的事件或者方法
+  var vol = 0.1 // 1代表100%音量，每次增减0.1
+  var seekTime = 3 // 单位秒，每次增减10秒
+
+  document.onkeyup = function(event) {
+    const nodeName = event.target.nodeName
+    if (nodeName === 'INPUT') return
+    // 键盘事件
+    const e = event || window.event
+    const code = e.keyCode
+    switch (code) {
+      // 向上键
+      // case 38:
+      //   // video.volume !== 1 ? (video.volume += vol) : 1
+      //   video.volume = Math.max(video.volume += vol)
+      //   e.preventDefault()
+      //   break
+      // // 向下键
+      // case 40:
+      //   video.volume = Math.floor(Math.max((video.volume -= vol), 0))
+      //   e.preventDefault()
+      //   break
+      // 向左键;
+      case 37:
+        video.currentTime !== 0 ? (video.currentTime -= seekTime) : 1
+        e.preventDefault()
+        break
+      // 向右键
+      case 39:
+        video.volume !== video.duration ? (video.currentTime += seekTime) : 1
+        e.preventDefault()
+        break
+        // 空格键
+      case 32:
+        // 按空格键 判断当前是否暂停
+        video.paused ? video.play() : video.pause()
+        e.preventDefault()
+        break
+    }
+  }
+}

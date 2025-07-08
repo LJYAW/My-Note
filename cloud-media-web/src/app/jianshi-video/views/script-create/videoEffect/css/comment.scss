@@ -1,0 +1,96 @@
+//共同样式
+.wrap {
+  border-radius: 4px;
+  padding: 20px 20px 4px 20px;
+  position: relative;
+  margin-bottom: 30px;
+  background: rgba(247, 248, 249, 1);
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  .sub-title {
+    position: relative;
+    padding: 0 5px;
+    font-size: 14px;
+    background-color: transparent;
+    color: rgba(64, 64, 64, 1);
+    font-weight: 460;
+    margin-bottom: 20px;
+
+    &::after {
+      position: absolute;
+      left: -2px;
+      top: 4px;
+      content: "";
+      width: 2px;
+      height: 12px;
+      background: #5675e8;
+    }
+  }
+
+  .el-form-item__label {
+    font-size: 14px;
+    padding-right: 0;
+    color: rgba(69, 69, 69, 1);
+    font-weight: 400;
+    text-align: left;
+  }
+
+  .uploadBtn {
+    width: 96px;
+    height: 54px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    border: 1px solid rgba(64, 64, 64, .2);
+    border-radius: 4px;
+
+    .el-icon-plus {
+      font-size: 22px;
+    }
+  }
+
+  .comment-box {
+
+    .el-form-item__content {
+      display: flex;
+      margin-left: 0 !important;
+
+      .is-checked {
+
+        .el-switch__core {
+
+          &::after {
+            margin-left: -9px !important;
+          }
+        }
+      }
+
+      .switch-btn {
+        margin-top: 12px;
+        margin-right: 10px;
+
+        .el-switch__core {
+          width: 26px !important;
+          height: 12px;
+
+          &::after {
+            width: 8px;
+            height: 8px;
+          }
+        }
+      }
+
+      .checkbox-box {
+        margin-left: 15px;
+      }
+    }
+  }
+
+  .el-dialog__body {
+    padding: 0 20px 20px 20px;
+  }
+}

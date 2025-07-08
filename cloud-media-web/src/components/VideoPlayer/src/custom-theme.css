@@ -1,0 +1,109 @@
+/* .video-js .vjs-tech {position: relative !important;} */
+
+.video-js .vjs-time-control {display: block;}
+
+.video-js .vjs-remaining-time {display: none;}
+
+.video-js .video-custom-error {
+  color: #f56c6c;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.video-js  .vjs-fullscreen-control { display: none; }
+
+.video-js .vjs-big-play-button {
+  /* border-radius: 50%;
+  height: 2.5em;
+  width: 2.5em;
+  line-height: 2.3em;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
+  color: #fff;
+}
+
+
+
+
+/* .vjs-theme-fantasy .vjs-play-control {
+  font-size: 8px;
+} */
+
+.vjs-icon-play:before,
+.video-js .vjs-big-play-button .vjs-icon-placeholder:before {
+  content: "";
+  background: url("./icon/播放.svg");
+  background-size: 100% 100%;
+
+}
+
+.video-js .vjs-play-control.vjs-paused .vjs-icon-placeholder:before {
+  content: "";
+  background: url("./icon/播放.svg");
+  font-size: 14px;
+  background-size: 100% 100%;
+  position: absolute;
+  top: 25%;
+  left: 30%;
+
+}
+
+.video-js .vjs-play-control.vjs-playing .vjs-icon-placeholder:before {
+  content: "";
+  background: url("./icon/暂停.svg");
+  font-size: 14px;
+  background-size: 100% 100%;
+  position: absolute;
+  top: 25%;
+  left: 30%;
+
+}
+
+
+.vjs-theme-fantasy .vjs-play-progress,
+.vjs-theme-fantasy .vjs-play-progress:before {
+  background-color: #5675e8;
+}
+
+
+.vjs-theme-fantasy .vjs-play-control .vjs-icon-placeholder:before {
+  border: 0;
+  line-height: 1.5;
+}
+
+.vjs-theme-fantasy .vjs-play-control:hover .vjs-icon-placeholder:before {
+  border: 0;
+  line-height: 1.5;
+}
+
+.vjs-theme-fantasy .vjs-play-progress:before {
+  display: none;
+}
+
+/* .vjs-icon-play:before,
+.video-js .vjs-play-control .vjs-icon-placeholder:before,
+.video-js .vjs-big-play-button .vjs-icon-placeholder:before {
+  content: "";
+  background-image: url("../play.png");
+  background-size: 70%;
+  background-position: center center;
+}
+
+.vjs-icon-pause:before,
+.video-js .vjs-play-control.vjs-playing .vjs-icon-placeholder:before {
+  content: "";
+  background-image: url("../pause.png");
+  background-size: 70%;
+  background-position: center center;
+} */
+
+
+.video-js {
+  background-color: transparent;
+}
+
+/* .video-js .vjs-progress-control:hover .vjs-time-tooltip,
+.video-js .vjs-progress-control:hover .vjs-progress-holder:focus .vjs-time-tooltip {
+  display: none;
+} */
