@@ -1,0 +1,98 @@
+.add-user {
+  width: 95%;
+  margin: 60px auto;
+
+  ::v-deep .el-form-item__content {
+    display: flex;
+
+    .el-input {
+      flex: 1;
+    }
+  }
+
+  ::v-deep .el-input__inner {
+    height: 60px;
+  }
+
+  .form {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 60px;
+
+    .radio-box {
+      margin-top: 10px;
+      margin-left: 20px;
+    }
+
+    .item-list {
+      width: 45%;
+      margin-right: 30px;
+    }
+
+    .channel {
+      width: 100%;
+
+      .tags-box {
+        width: calc(100% - 196px);
+        height: auto;
+        border: 1px solid rgba(228, 228, 228, 1);
+        cursor: pointer;
+        padding: 10px;
+        box-sizing: border-box;
+      }
+
+      .tags-list {
+        display: flex;
+        height: 100%;
+        align-items: center;
+        flex-wrap: wrap;
+
+        .tags {
+          width: auto;
+          height: 40px;
+          padding: 0 10px;
+          text-align: center;
+          line-height: 40px;
+          background: #eaf1fe;
+          border-radius: 4px;
+          font-size: 14px;
+          font-weight: 400;
+          color: #000;
+          margin-right: 10px;
+          margin-top: 10px;
+
+          &:last-child {
+            margin-right: 0;
+          }
+        }
+      }
+    }
+
+    .btn {
+      width: 100%;
+
+      ::v-deep .el-form-item__content {
+        width: 100%;
+        justify-content: center;
+
+        .el-button {
+          width: 287px;
+          height: 60px;
+          border-radius: 4px;
+          color: #fff;
+          font-size: 24px;
+        }
+
+        .add {
+          background: #5675e8;
+        }
+
+        .cale {
+          background: #bfbfbf;
+        }
+      }
+
+    }
+  }
+
+}

@@ -1,0 +1,73 @@
+// sidebar
+$menuText: #bfcbd9;
+$menuActiveText: #409eff;
+$subMenuActiveText: #f4f4f5; //https://github.com/ElemeFE/element/issues/12951
+$menuBg: #fff;
+$menuHover: rgba(0, 78, 216, 0.1);
+$subMenuBg: #fff;
+$subMenuHover: #fff;
+$sideBarWidth: 220px;
+
+//
+$webBgColor: var(--webBg, #E3E3E3);
+$webThemeColor: var(--webTheme, #0073e7);
+$webTitColor: var(--webTit, #000);
+$mBgColor: var(--mBg, #0073e7);
+$mThemeColor: var(--mTheme, #fff);
+$mTitColor: var(--mTit, #000);
+$bcreenTitColor: var(--bscreenTit, #000);
+
+$Primary: #409eff;
+$Success: #67c23a;
+$Warning: #e6a23c;
+$Danger: #f56c6c;
+
+$PrimaryText: #303133;
+$RegularText: #606266;
+$SecondaryText: #909399;
+$Placeholder: #c0c4cc;
+
+
+$tableHeader:#EAEAEA;
+
+@mixin border($width: 1px, $style: solid, $color: #000, $radius: 0px) {
+  border-width: $width;
+  border-style: $style;
+  border-color: $color;
+  border-radius: $radius;
+}
+
+@mixin boxShandow($h-shadow, $v-shadow, $blur, $spread, $color,$inset:inset) {
+  box-shadow: $h-shadow $v-shadow $blur $spread $color $inset;
+}
+
+@mixin flex($h:center,$v:center) {
+    display: flex;
+    justify-content: $h;
+    align-items: $v;
+}
+
+@mixin inputReset($outline:none,$border:none,$bgColor:#fff){
+    outline:$outline;
+    border:$border;
+    background-color: $bgColor;
+}
+
+
+
+
+
+
+// the :export directive is the magic sauce for webpack
+// https://www.bluematador.com/blog/how-to-share-variables-between-js-and-sass
+// :export {
+//   menuText: $menuText;
+//   menuActiveText: $menuActiveText;
+//   subMenuActiveText: $subMenuActiveText;
+//   menuBg: $menuBg;
+//   menuHover: $menuHover;
+//   subMenuBg: $subMenuBg;
+//   subMenuHover: $subMenuHover;
+//   sideBarWidth: $sideBarWidth;
+//   interFaceColor: $interFaceColor;
+// }

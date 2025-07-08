@@ -1,0 +1,123 @@
+<!--
+ * @Author: your name
+ * @Date: 2020-11-02 15:35:02
+ * @LastEditTime: 2021-07-12 15:07:50
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: /video_edit/examples/index.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        width: 100%;
+        height: 100vh;
+      }
+    </style>
+  </head>
+  <body>
+    <iframe
+      src="http://192.168.10.96:8080"
+      height="100%"
+      width="100%"
+      frameborder="0"
+      id="videoEditiframe"
+    ></iframe>
+
+    <script>
+      window.onload = function() {
+        // 发送视频数据  src 是必选字段
+        let playerOptions = {
+          height: '360',
+          autoplay: true,
+          muted: true,
+          hls: false,
+          language: 'en',
+          playbackRates: [0.7, 1.0, 1.5, 2.0],
+          fluid: true,
+          src:
+            // "https://cwcdn-bdxcx.tmvideo.cloud//tm2021/yq/20210412/vod_JiangXiHD1618223987216.mp4",
+            // "http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4",
+            // "http://tdetect.tm.video/approve/vod?channel=CCTV1HD&type=normal&starttime=1619094039&endtime=1619094055",
+            // "http://ivi.bupt.edu.cn/hls/cctv3hd.m3u8",
+            "https://cdn-play.tmsx.net/micro_cut/online/super_medical/video/2021-06-22/a432ac42-821b-11eb-9d64-fa20200d9052_filter.mp4",
+          poster: "",
+        };
+
+        let iframe = document.getElementById("videoEditiframe").contentWindow;
+        iframe.postMessage({ cmd: "setVideoOptions", data: playerOptions },"*");
+        // hls 设置 视频播放时间
+        iframe.postMessage({ cmd: "setVideoDurantion", data: 6000 },"*");
+
+        // 获取 组件内所有数据 store
+        iframe.postMessage({ cmd: "getVideoEditAllData"},"*");
+
+        // let activeBtnList = [{"eventFn":"跳转视频片段","jumpTo":"A","img":"","text":"选项1","eventParams":"","popoverVisible":false,"editable":false,"style":{"width":"120px","height":"36px","backgroundImage":"https://cdn-magic.weijian.video/storage/mnt/online/intelligent_writing/caption_background/redianxinwen.png"}},{"eventFn":"跳转视频片段","jumpTo":"A","img":"","text":"选项2","eventParams":"","popoverVisible":false,"editable":false,"style":{"width":"120px","height":"36px","backgroundImage":"https://cdn-magic.weijian.video/storage/mnt/online/intelligent_writing/caption_background/huanqiucaijing.png"}},{"eventFn":"跳转视频片段","jumpTo":"A","img":"","text":"选项3","eventParams":"","popoverVisible":false,"editable":false,"style":{"width":"120px","height":"36px","backgroundImage":""}}]
+        let activeBtnList = [
+          {
+            end_ms: 10000,
+            height: 131,
+            start_ms: 0,
+            width: 202,
+            x: 0,
+            y: 10
+          }
+        ]
+        function iframeMsg(event) {
+
+          let cmd = event.data.cmd
+          // console.log("🚀 ~ file: index.html ~ line 72 ~ iframeMsg ~ cmd", cmd)
+          let data = event.data.data
+          // console.log("videoLoad -> event", event)
+          if (event.data.cmd == 'playerLoadeddata') {
+            // console.log('playerLoadeddata');
+            // 轨道生成生命周期
+            // 发送剪辑选框数据
+            let cutData = {
+              start_ms: 10000, // 开始时间 必传
+              end_ms: 20000, // 结束时间 必传
+              max_ms: 30000 // 选框最大时间 可不填 不填默认的就是 视频总时长的宽度
+            }
+            // iframe.postMessage({ cmd: "setCutTrackDetails", data: cutData }, "*");
+            // iframe.postMessage({ cmd: "setActiveBtnList", data: activeBtnList }, "*");
+
+          }
+          // 点击剪辑按钮的返回
+          if (event.data.cmd == 'exportcutDetails') {
+            console.log(event.data.data)
+          }
+          // 拖拽的返回
+          if (event.data.cmd == 'onDrag') {
+            // console.log(event.data.data)
+          }
+          // 改变大小的返回
+          if (event.data.cmd == 'onResize') {
+            // console.log(event.data.data)
+          }
+          // 获取当前 每像素多少毫秒
+          if (event.data.cmd == 'setPerPxMs') {
+            // console.log(event.data.data)
+          }
+          // 获取当前 cut 数据
+          if (event.data.cmd == 'getCutData') {
+            // console.log(event.data.data)
+          }
+          // 获取当前 装饰数据
+          if (event.data.cmd == 'exportArr') {
+            // console.log(event.data.data)
+          }
+
+          // 获取当前 组件内所有数据
+          if (event.data.cmd == 'exportVideoEditAllData') {
+            // console.log(event.data.data)
+          }
+        }
+
+        window.addEventListener('message', iframeMsg, false)
+      }
+    </script>
+  </body>
+</html>

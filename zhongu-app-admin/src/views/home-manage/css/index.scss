@@ -1,0 +1,103 @@
+.edit-box {
+  display : flex;
+  flex-direction : column;
+  margin-bottom : 50px;
+
+  .base-title {
+    margin-bottom : 10px;
+  }
+
+  .banner-name {
+    width : 50%;
+    max-width : 210px;
+    overflow : hidden;
+    text-overflow : ellipsis;
+    white-space : nowrap;
+    margin-right : 20px;
+  }
+
+
+  .btn-card {
+    background-color : #F8F8F8;
+    padding : 8px;
+    min-height : 50px;
+    display : flex;
+    align-items : center;
+    // line-height: 35px;
+
+    .com-btn {
+      color : #5675E8;
+    }
+
+    .upload .btn-style {
+      color : #5675E8;
+    }
+
+    .btn {
+      text-align : center;
+      cursor : pointer;
+      margin : 0 auto;
+    }
+  }
+
+  .data-list {
+    margin : 0px -10px;
+    display : flex;
+    flex-wrap : wrap;
+
+    .btn-card {
+      flex : 1;
+      margin : 10px;
+    }
+  }
+
+
+  .banner-title-wrap {
+    display : flex;
+    .banner-title {
+      flex : 1;
+      display : flex;
+      flex-wrap : wrap;
+      justify-content : space-between;
+      margin : 0 10px;
+      .size {
+        color : #929292;
+        font-size : 12px;
+      }
+    }
+  }
+
+  .edit-btn-wrap {
+    display : flex;
+    justify-content : flex-end;
+    margin-top : 20px;
+  }
+
+  .group-info-wrap {
+    display : flex;
+    justify-content : space-between;
+    flex : 1;
+    .delete-btn {
+      color : #F16B6B;
+      font-size : 12px;
+      margin-right : 10px;
+    }
+  }
+}
+
+
+.btn-info {
+  border : 1px solid #5675E8;
+  border-radius : 4px;
+  height : 40px;
+  color : #5675E8;
+  display : flex;
+  justify-content : center;
+  align-items : center;
+  cursor : pointer;
+  margin-top : 30px;
+
+  &:hover {
+    color : #3D56AF;
+  }
+}

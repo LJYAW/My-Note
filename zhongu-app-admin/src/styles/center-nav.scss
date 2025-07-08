@@ -1,0 +1,109 @@
+.center-nav {
+  padding-top : 30px;
+  background : #F7F8F9;
+
+  .title {
+    text-align : center;
+    margin-bottom : 22px;
+    font-size : 20px;
+    color : #404040;
+
+    // span {
+    //   padding-left : 15px;
+    // }
+
+    .icon {
+      font-size : 12px;
+      background : rgba(255, 255, 255, .01);
+      cursor : pointer;
+      color : #404040;
+    }
+
+    .el-icon-arrow-left:before {
+      margin-left : 20px;
+    }
+  }
+
+  .el-menu-vertical-demo:not(.el-menu--collapse) {
+    width : 168px;
+    min-height : 400px;
+  }
+
+  .el-menu {
+    background : none!important;
+    border-right : none;
+    height : calc(100vh - 150px);
+    overflow-y : auto;
+
+    .el-menu-item {
+      height : 46px;
+      line-height : 46px;
+      padding-left : 60px!important;
+      color : #404040!important;
+      transition : all .1s;
+      background : none!important;
+
+      &.is-active {
+        background : #E5EAFF!important;
+        color : #404040;
+      }
+      .svg-icon {
+        display : inline-block;
+        transition : all .2s;
+        width : 14px;
+        margin-right : 10px;
+      }
+
+      .menu-name {
+        display : inline-block;
+        vertical-align : .4px;
+      }
+    }
+
+    &.el-menu--collapse {
+      width : 92px;
+
+      .el-menu-item {
+        padding-left : 20px!important;
+        padding-top : 15px;
+        height : 92px;
+        transition : all .3s;
+        text-align : center;
+
+        .svg-icon {
+          display : inline-block;
+          animation : scale .2s;
+          width : 38px;
+          height : 38px;
+          margin : auto;
+        }
+
+        .menu-name {
+          display : block;
+          font-size : 12px;
+          line-height : 12px;
+          margin-top : -5px;
+          padding-bottom : 12px;
+        }
+      }
+    }
+  }
+}
+
+@keyframes scale {
+  0% {
+    width : 14px;  /*开始为原始大小*/
+  }
+
+  25% {
+    width : 20px; /*放大1.1倍*/
+  }
+
+  50% {
+    width : 24px;
+  }
+
+  75% {
+    width : 30px;
+  }
+}

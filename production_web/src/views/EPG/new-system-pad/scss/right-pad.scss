@@ -1,0 +1,180 @@
+.right-pad {
+  display: flex;
+  flex-direction: column;
+}
+.ad-edit-form {
+  height: 100%;
+  border: 1px solid #eee;
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  .el-textarea {
+    height: 100%;
+  }
+  ::v-deep .el-textarea.is-disabled .el-textarea__inner {
+    border-color: #F5F7FA;
+  }
+  .btn-wrap {
+    padding: 5px 10px;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    justify-content: flex-end;
+  }
+  ::v-deep .el-input__inner{
+    height: 40px;
+  }
+  ::v-deep .el-autocomplete{
+    width: 100%;
+  }
+  .epg-title {
+    width: 110px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  ::v-deep .el-form-item__content {
+    line-height: 32px;
+    flex: 1;
+  }
+  .add-btn {
+    margin-left: 16px;
+    height: 30px;
+    margin-top: 5px;
+  }
+  .date {
+    line-height: 20px;
+    font-size: 12px;
+  }
+  ::v-deep .el-table {
+    .cell {
+      max-height: fit-content;
+    }
+  }
+  .positive {
+    color: #58bd8b;
+  }
+  .advertisement {
+    color: red;
+  }
+  .category-box {
+    .title-box {
+      display: flex;
+      .title {
+        color: #333;
+        font-weight: bolder;
+      }
+      .guide {
+        font-size: 12px;
+        color: blue;
+        cursor: pointer;
+        margin-left: 10px;
+      }
+    }
+    .message {
+      display: flex;
+      color: #333;
+      font-weight: bolder;
+      div {
+        min-width: 100px;
+      }
+    }
+  }
+  ::v-deep .el-form-item__label {
+    text-align: left;
+  }
+  .category {
+    display: flex;
+  }
+  .list {
+    padding-left: 10px;
+    font-size: 14px;
+    margin-top: 0px;
+  }
+  .edit-form-head {
+    display: flex;
+    padding: 10px 20px;
+    border-bottom: 1px solid #eee;
+    flex-wrap: wrap;
+    p {
+      margin-right: 10px;
+      margin-bottom: 12px;
+      span {
+        background-color: #eee;
+        padding: 3px 6px;
+        border-radius: 3px;
+        margin-right: 5px;
+      }
+    }
+  }
+  .el-form {
+    padding: 10px 20px;
+    .el-form-item {
+      display: flex;
+      margin-bottom: 10px;
+      ::v-deep .el-form-item__error {
+        top: 80%;
+      }
+
+      &.form-mark {
+       ::v-deep .el-form-item__content {
+          width: 70%;
+          line-height: 20px;
+          textarea {
+            resize: none;
+          }
+        }
+      }
+      &.title-item {
+        .el-form-item__content {
+          width: 80%;
+          .el-input {
+            width: 170px;
+          }
+          .tag-list {
+            border: 1px solid #eee;
+            padding: 0 20px;
+            min-height: 50px;
+            position: absolute;
+            width: 100%;
+            background: #fff;
+            z-index: 9;
+            span {
+              margin-right: 20px;
+              cursor: pointer;
+            }
+          }
+        }
+      }
+    }
+  }
+  .form-btn {
+    display: flex;
+    justify-content: space-between;
+   position: absolute;
+   right: 0;
+   bottom: 10px;
+  }
+  .table-btn {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 20px;
+  }
+  .el-table {
+    flex: 1;
+    .cell {
+      max-height: 80px;
+    }
+    .el-table__body-wrapper {
+      height: calc(100% - 40px);
+      overflow-y: auto;
+    }
+  }
+  .table-content {
+    flex: 1;
+    overflow: auto;
+  }
+}
+.el-autocomplete-suggestion{
+  width: auto!important;
+}

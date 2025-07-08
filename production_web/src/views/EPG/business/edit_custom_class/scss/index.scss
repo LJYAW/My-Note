@@ -1,0 +1,16 @@
+.edit_custom_class{
+    padding: 15px;
+    box-sizing: border-box;
+    .total{
+        margin-bottom: 20px;
+    }
+    .edit_custom{
+        height: 300px;
+        .btns{
+            text-align: center;
+            .el-form-item__content{
+                margin-left: 0 !important;
+            }
+        }
+    }
+}
