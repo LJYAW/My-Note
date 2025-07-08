@@ -1,0 +1,40 @@
+// hover 的样式
+.hove-c {
+  &:hover {
+    color: $c !important;
+    transition: color 0.27s linear;
+  }
+}
+
+.hove-gray {
+  &:hover {
+    color: #f0f0f0 !important;
+    transition: color 0.27s linear;
+  }
+}
+
+@each $color, $value in $theme-colors {
+  .fc-#{$color} {
+    color: $value;
+  }
+
+  .bc-#{$color} {
+    border-color: $value !important;
+  }
+
+  .bc-r-#{$color} {
+    border-right-color: $value !important;
+  }
+
+  .bc-l-#{$color} {
+    border-left-color: $value !important;
+  }
+
+  .bc-t-#{$color} {
+    border-top-color: $value !important;
+  }
+
+  .bc-b-#{$color} {
+    border-bottom-color: $value !important;
+  }
+}

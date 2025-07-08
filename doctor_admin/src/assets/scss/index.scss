@@ -1,0 +1,87 @@
+@import 'reset';
+@import 'utilities/index';
+@import 'response.scss';
+// 文本不换行
+.nowrap {
+  white-space: nowrap;
+}
+
+.word-break-all {
+  word-break: break-all;
+}
+
+// 文本超出隐藏
+.text-ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+// 文本超出两行隐藏
+.text-ellipsis-2 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2; // 控制多行的行数
+  -webkit-box-orient: vertical;
+}
+
+// ling-height
+.ling-height-bold {
+  line-height: 1.5;
+}
+
+// 图片通用样式
+.bg-contain {
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  height: auto;
+  overflow: hidden;
+
+  img {
+    height: 100%;
+    vertical-align: top;
+  }
+
+  .img {
+    height: auto;
+    vertical-align: middle;
+    border-style: none;
+    max-width: 100%;
+    opacity: 1;
+    transition: opacity 0.8s;
+  }
+}
+
+// 透明度
+.op-0 {
+  opacity: 0;
+}
+
+@keyframes transitionFade {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.fade-card-animation {
+  animation: transitionFade 0.4s;
+}
+
+// 过渡动画
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s;
+}
+
+.fade-enter,
+  .fade-leave-to
+  
+  /* .fade-leave-active below version 2.1.8 */
+ {
+  opacity: 0;
+}

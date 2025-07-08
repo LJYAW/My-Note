@@ -1,0 +1,21 @@
+
+
+
+.font-weight-light  { font-weight: $font-weight-light !important; }
+.font-weight-normal { font-weight: $font-weight-normal !important; }
+.font-weight-bold   { font-weight: $font-weight-bold !important; }
+.font-italic        { font-style: italic !important; }
+
+.text-line-through {text-decoration: line-through}
+
+.text-left   { text-align: left !important; }
+.text-right  { text-align: right !important; }
+.text-center { text-align: center !important; }
+
+.text-nowrap   { white-space: nowrap !important; }
+
+.text-lowercase  { text-transform: lowercase !important; }
+.text-uppercase  { text-transform: uppercase !important; }
+.text-capitalize { text-transform: capitalize !important; }
+// 文本超出隐藏
+.text-ellipsis {overflow: hidden; white-space: nowrap; text-overflow: ellipsis;}

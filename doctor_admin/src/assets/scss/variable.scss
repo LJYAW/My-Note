@@ -1,0 +1,176 @@
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px
+) !default;
+
+$ui-paddings-values: (
+  2px,
+  3px,
+  4px,
+  5px,
+  6px,
+  7px,
+  8px,
+  10px,
+  11px,
+  12px,
+  13px,
+  15px,
+  18px,
+  19px,
+  20px,
+  23px,
+  26px,
+  25px,
+  24px,
+  27px,
+  28px,
+  29px,
+  30px,
+  32px,
+  34px,
+  35px,
+  40px,
+  45px,
+  48px,
+  50px,
+  55px,
+  60px,
+  65px,
+  70px,
+  75px,
+  80px,
+  82px,
+  85px,
+  90px,
+  95px,
+  100px,
+  120px,
+  140px
+);
+
+// 字号
+$fontsize: (
+  8px,
+  9px,
+  10px,
+  11px,
+  12px,
+  13px,
+  14px,
+  16px,
+  18px,
+  20px,
+  21px,
+  22px,
+  24px,
+  25px,
+  26px,
+  28px,
+  30px,
+  32px,
+  34px,
+  35px,
+  36px,
+  40px,
+  45px,
+  48px,
+  50px,
+  55px,
+  60px,
+  65px,
+  70px,
+  75px,
+  80px
+);
+
+// 颜色
+$c: #2a79df;
+$black: #141414;
+$dark: #242424;
+$white: white;
+$gray-888: #888;
+$gray-151: rgb(151, 151, 151);
+$gray-54: rgb(51, 51, 51);
+$gray-24: rgb(24, 24, 24);
+$gray-35: rgb(35, 35, 35);
+$gray-EB: #ebeff0;
+$gray: rgb(241, 242, 242);
+$glodenl: #846b40;
+$gray-333: #333;
+$blue: rgba(52, 133, 225, 1);
+$f0: rgba(240, 240, 240, 1);
+$gray-36: #363636;
+$gray-999: #999999;
+$gray-f5: #f5f5f5;
+$gray-23: #232323;
+$gray-d9: #d9d9d9;
+$gray-6d: #6d6d6d;
+$gray-666: #666666;
+$gray-28: #282828;
+$gray-bb: #bbbbbb;
+$gray-c5: #c5c5c5;
+$gray-cd: #cdcdcd;
+$blue-6f97f4: #6f97f4;
+$gray-91: #919191;
+$green-41: #41b035;
+$blue-348: #3485e1;
+$gray-f7: #f7f7f7;
+$gray-e3: #e3e3e3;
+$blue-34c: #34c0e2;
+$black-10: #101010;
+$EFEFEF: #efefef;
+$danger: rgb(250, 234, 232);
+$theme-colors: () !default;
+$theme-colors: map-merge(
+  (
+    'c': $c,
+    'black': $black,
+    'gray': $gray,
+    'gray-151': $gray-151,
+    'gray-54': $gray-54,
+    'gray-24': $gray-24,
+    'gray-35': $gray-35,
+    'gray-eb': $gray-EB,
+    'glodenl': $glodenl,
+    'green-41': $green-41,
+    'blue-34c': $blue-34c,
+    '6f97f4': $blue-6f97f4,
+    'ef': $EFEFEF,
+    'f5': $gray-f5,
+    '6d': $gray-6d,
+    '333': $gray-333,
+    '10': $black-10,
+    '666': $gray-666,
+    '28': $gray-28,
+    '999': $gray-999,
+    'f7': $gray-f7,
+    'bb': $gray-bb,
+    'c5': $gray-c5,
+    'dark': $dark,
+    'blue-348': $blue-348,
+    'cd': $gray-cd,
+    'blue': $blue,
+    'f0': $f0,
+    '91': $gray-91,
+    'gray-e3': $gray-e3,
+    'd9': $gray-d9,
+    '36': $gray-36,
+    'gray-23': $gray-23,
+    'white': $white,
+    'danger': $danger
+  ),
+  $theme-colors
+);
+
+// birder
+$border-width: 1px !default;
+$border-color: #f4f4f4 !default;
+
+// 字体粗细
+$font-weight-light: 300 !default;
+$font-weight-normal: 400 !default;
+$font-weight-bold: 700 !default;

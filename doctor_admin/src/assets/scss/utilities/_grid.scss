@@ -1,0 +1,58 @@
+// 布局 样式
+
+.container {
+  width: 1000px;
+  width: 1000px;
+  padding: 0 16px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 1000px;
+    min-width: 1000px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1280px) {
+  .container {
+    max-width: 1200px;
+    min-width: 1200px;
+  }
+}
+
+@media screen and (min-width: 1280px) and (max-width: 1369px) {
+  .container {
+    max-width: 1200px;
+    min-width: 1200px;
+  }
+}
+@media screen and (min-width: 1369px) and (max-width: 1440px) {
+  .container {
+    max-width: 1300px;
+    min-width: 1300px;
+  }
+}
+@media screen and (min-width: 1441px) and (max-width: 1600px) {
+  .container {
+    max-width: 1300px;
+    min-width: 1300px;
+  }
+}
+@media screen and (min-width: 1601px) and (max-width: 1800px) {
+  .container {
+    max-width: 1300px;
+    min-width: 1300px;
+  }
+}
+@media screen and (min-width: 1801px) and (max-width: 1920px) {
+  .container {
+    max-width: 1300px;
+    min-width: 1300px;
+  }
+}
+@media screen and (min-width: 1921px) {
+  .container {
+    max-width: 1600px;
+    min-width: 1600px;
+  }
+}
